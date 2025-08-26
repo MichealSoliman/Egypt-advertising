@@ -10,18 +10,18 @@
         }
         
        .slide-1 {
-    background: url('../ass/img/hero-1.jpg') no-repeat center center;
+    background: url('../assets/img/hero-1.jpg') no-repeat center center;
     background-size: cover;
     
 }
 
 .slide-2 {
-    background: url('../ass/img/hero-2.jpg') no-repeat center center;
+    background: url('../assets/img/hero-2.jpg') no-repeat center center;
     background-size: cover;
 }
 
 .slide-3 {
-    background: url('../ass/img/hero-3.jpg') no-repeat center center;
+    background: url('../assets/img/hero-3.jpg') no-repeat center center;
     background-size: cover;
 }
 
