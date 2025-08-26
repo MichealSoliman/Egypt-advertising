@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="شركة الإبداع للدعاية والإعلان - نقدم حلول إعلانية مبتكرة وخدمات تسويقية متميزة لتحقيق أهدافك التجارية">
+    <meta name="keywords" content="دعاية, إعلان, تسويق, تصميم, برندنج, الإبداع, حملات إعلانية">
+    <meta name="author" content="شركة الإبداع للدعاية والإعلان">
+    <title>شركة الإبداع للدعاية والإعلان - حلول إبداعية لنجاحك</title>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="شركة الإبداع للدعاية والإعلان">
+    <meta property="og:description" content="نقدم حلول إعلانية مبتكرة وخدمات تسويقية متميزة">
+    <meta property="og:type" content="website">
+    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./ass/style.css">
+
+</head>
+<body class="text-gray-800 overflow-x-hidden">
+
+  <!-- ✅ Navbar -->
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-4 bg-white shadow-md">
+  <div class="container mx-auto px-4 flex items-center justify-between">
+    <!-- Logo -->
+    <div class="flex items-center space-x-reverse space-x-4">
+      <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-3 rounded-lg">
+        <i class="fas fa-bullhorn text-xl"></i>
+      </div>
+      <div>
+        <h2 class="text-xl font-bold gradient-text">الإبداع للدعاية والإعلان</h2>
+        <p class="text-sm text-gray-600">حلول إبداعية لنجاحك</p>
+      </div>
+    </div>
+
+    <!-- Links (Desktop) -->
+    <div class="hidden lg:flex items-center space-x-reverse space-x-8">
+      <a href="#home" class="text-black hover:text-blue-600 transition-colors font-medium">الرئيسية</a>
+      <a href="#about" class="text-black hover:text-blue-600 transition-colors font-medium">من نحن</a>
+      <a href="#services" class="text-black hover:text-blue-600 transition-colors font-medium">خدماتنا</a>
+      <a href="#contact" class="text-black hover:text-blue-600 transition-colors font-medium">اتصل بنا</a>
+    </div>
+
+    <!-- CTA + Menu Button -->
+    <div class="flex items-center space-x-reverse space-x-4">
+      <div class="text-right hidden md:block">
+        <a href="tel:+966501234567"
+          class="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors">
+          <p class="text-sm">اتصل بنا</p>
+        </a>
+      </div>
+      <!-- Menu Button -->
+      <button id="menu-btn" class="lg:hidden text-gray-700 focus:outline-none">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- ✅ Mobile Menu -->
+  <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-md border-t mt-4">
+    <div class="flex flex-col items-center space-y-4 py-6">
+      <a href="#home" class="text-black hover:text-blue-600 transition-colors font-medium">الرئيسية</a>
+      <a href="#about" class="text-black hover:text-blue-600 transition-colors font-medium">من نحن</a>
+      <a href="#services" class="text-black hover:text-blue-600 transition-colors font-medium">خدماتنا</a>
+      <a href="#contact" class="text-black hover:text-blue-600 transition-colors font-medium">اتصل بنا</a>
+      <a href="tel:+966501234567"
+        class="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors">
+        اتصل بنا
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ✅ Script -->
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    mobileMenu.classList.toggle("animate-fadeIn");
+  });
+</script>
+
+<!-- ✅ Animation -->
+<style>
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+}
+</style>
+
+    <!-- Hero Section with Slider -->
+    <section id="home" class="relative h-screen">
+        <div id="heroSlider" class="relative h-full overflow-hidden">
+            <!-- Slide 1 -->
+            <div class="hero-slide slide-1 absolute inset-0 flex items-center justify-center transition-opacity duration-1000">
+                <div class="hero-overlay"></div>
+                <div class="hero-content text-center text-white px-4">
+                    <div class="fade-in">
+                        <h1 class="text-5xl lg:text-7xl font-bold mb-6">إبداع لا حدود له</h1>
+                        <p class="text-xl lg:text-2xl mb-8 max-w-3xl mx-auto">نحول أفكارك إلى حملات إعلانية مؤثرة تحقق النجاح والانتشار</p>
+                        <button class="bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors">ابدأ مشروعك</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="hero-slide slide-2 absolute inset-0 flex items-center justify-center transition-opacity duration-1000 opacity-0">
+                <div class="hero-overlay"></div>
+                <div class="hero-content text-center text-white px-4">
+                    <div class="fade-in">
+                        <h1 class="text-5xl lg:text-7xl font-bold mb-6">تميز في كل حملة</h1>
+                        <p class="text-xl lg:text-2xl mb-8 max-w-3xl mx-auto">خبرة تزيد عن 10 سنوات في صناعة الإعلان والتسويق الرقمي</p>
+                        <button class="bg-white text-pink-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors">استكشف أعمالنا</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="hero-slide slide-3 absolute inset-0 flex items-center justify-center transition-opacity duration-1000 opacity-0">
+                <div class="hero-overlay"></div>
+                <div class="hero-content text-center text-white px-4">
+                    <div class="fade-in">
+                        <h1 class="text-5xl lg:text-7xl font-bold mb-6">نجاحك هو هدفنا</h1>
+                        <p class="text-xl lg:text-2xl mb-8 max-w-3xl mx-auto">شريكك الموثوق لتحقيق أهدافك التسويقية وبناء علامتك التجارية</p>
+                        <button class="bg-white text-blue-500 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors">تواصل معنا</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slider Controls -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+            <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 transition-opacity" data-slide="0"></button>
+            <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 transition-opacity" data-slide="1"></button>
+            <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 transition-opacity" data-slide="2"></button>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 right-8 text-white z-20 floating">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </div>
+    </section>
+
+
+
+  <!-- About Section -->
+<section id="about" class="py-20 bg-gradient-to-b from-white via-gray-50 to-gray-100">
+  <div class="container mx-auto px-4">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+        من <span class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">نحن؟</span>
+      </h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-6 rounded-full"></div>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        نحن فريق من المبدعين والاستراتيجيين المتخصصين في صناعة المحتوى الدعائي المؤثر
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <!-- Content -->
+      <div class="space-y-8">
+        <div class="prose prose-lg text-gray-700 leading-relaxed">
+          <p class="text-lg mb-6">
+            منذ تأسيسنا، آمنا بأن كل علامة تجارية لها قصة فريدة تستحق أن تُروى بطريقة استثنائية. في 
+            <strong class="text-blue-600">إبداع للدعاية والإعلان</strong>، نتجاوز حدود التقليد لنقدم حلولاً إبداعية متكاملة.
+          </p>
+          <p class="text-lg mb-6">
+            نحن لا نصنع إعلانات فحسب، بل نبني جسوراً من التواصل بين علامتك التجارية وجمهورك. نجمع بين الفن والعلم، بين الإبداع والاستراتيجية، لنحقق نتائج تفوق التوقعات.
+          </p>
+        </div>
+
+        <!-- Values -->
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center mb-4">
+              <i class="fas fa-lightbulb text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">الإبداع والابتكار</h3>
+            <p class="text-gray-600">نؤمن بأن الإبداع هو روح العمل الدعائي</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center mb-4">
+              <i class="fas fa-award text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">الجودة والاحترافية</h3>
+            <p class="text-gray-600">نلتزم بأعلى معايير الجودة في كل ما نقدمه</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center mb-4">
+              <i class="fas fa-handshake text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">الشراكة والثقة</h3>
+            <p class="text-gray-600">نبني علاقات طويلة الأمد تقوم على الثقة المتبادلة</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center mb-4">
+              <i class="fas fa-target text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">النتائج المؤثرة</h3>
+            <p class="text-gray-600">هدفنا تحقيق نتائج ملموسة ومؤثرة لعملائنا</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image/Visual -->
+      <div class="relative">
+        <div class="bg-gradient-to-br from-blue-100 to-purple-100 rounded-3xl p-8 h-96 flex items-center justify-center shadow-lg">
+          <div class="text-center">
+            <div class="w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+              <i class="fas fa-users text-white text-4xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">فريق متخصص</h3>
+            <p class="text-gray-600">نخبة من المتخصصين في مختلف مجالات الدعاية والإعلان</p>
+          </div>
+        </div>
+
+        <!-- Floating Elements -->
+        <div class="absolute -top-4 -right-4 w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center animate-bounce">
+          <i class="fas fa-star text-white"></i>
+        </div>
+        <div class="absolute -bottom-4 -left-4 w-12 h-12 bg-pink-400 rounded-full flex items-center justify-center animate-bounce" style="animation-delay: -2s;">
+          <i class="fas fa-heart text-white"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold gradient-text mb-6 fade-in">خدماتنا المتميزة</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-in">نقدم مجموعة شاملة من الخدمات الإعلانية والتسويقية لتحقيق أهدافك التجارية</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+               <div class="service-card bg-white p-8 rounded-2xl fade-in">
+                <div class="bg-gradient-to-r from-yellow-500 to-orange-600 text-white p-4 rounded-xl inline-block mb-6">
+                    <i class="fas fa-lightbulb text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">تصميم وتنفيذ اللوحات المضيئة والبارزة</h3>
+                <p class="text-gray-600 mb-6">
+                    نقدم حلولاً إبداعية في تصميم وتصنيع اللوحات المضيئة والبارزة التي تمنح علامتك التجارية حضوراً قوياً وجاذباً سواء في الداخل أو الخارج.
+                </p>
+                <ul class="text-sm text-gray-500 space-y-2">
+                    <li><i class="fas fa-check text-green-500 ml-2"></i>لوحات مضيئة (Lightbox)</li>
+                    <li><i class="fas fa-check text-green-500 ml-2"></i>لوحات حروف بارزة (3D Letters)</li>
+                    <li><i class="fas fa-check text-green-500 ml-2"></i>تصاميم مخصصة تناسب نشاطك</li>
+                </ul>
+            </div>
+
+
+                
+          <div class="service-card bg-white p-8 rounded-2xl fade-in">
+            <div class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-4 rounded-xl inline-block mb-6">
+                <i class="fas fa-border-style text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">تصميم وتنفيذ الأسوار والسواتر الإعلانية</h3>
+            <p class="text-gray-600 mb-6">
+                نوفر حلولاً إبداعية في تصميم وتنفيذ الأسوار والسواتر الإعلانية التي تمنح مشروعك حضوراً قوياً وتساعد في إبراز علامتك التجارية بشكل مميز.
+            </p>
+            <ul class="text-sm text-gray-500 space-y-2">
+                <li><i class="fas fa-check text-green-500 ml-2"></i>تصاميم جذابة تناسب الهوية البصرية</li>
+                <li><i class="fas fa-check text-green-500 ml-2"></i>تنفيذ وتركيب بخامات عالية الجودة</li>
+                <li><i class="fas fa-check text-green-500 ml-2"></i>حلول دعائية للمشاريع والعقارات</li>
+            </ul>
+        </div>
+
+
+
+                
+                <div class="service-card bg-white p-8 rounded-2xl fade-in">
+                    <div class="bg-gradient-to-r from-purple-500 to-indigo-600 text-white p-4 rounded-xl inline-block mb-6">
+                        <i class="fas fa-film text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">إنتاج الفيديو والمونتاج</h3>
+                    <p class="text-gray-600 mb-6">
+                        نصنع فيديوهات احترافية وموشن جرافيك مميزة تساعدك على إيصال رسالتك بشكل مؤثر وجذاب، مع خدمات مونتاج متكاملة بجودة عالية.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>إنتاج وإخراج الفيديوهات الإعلانية</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>المونتاج والمعالجة الاحترافية</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>موشن جرافيك ورسوم متحركة</li>
+                    </ul>
+                </div>
+
+                
+                <div class="service-card bg-white p-8 rounded-2xl fade-in">
+                    <div class="bg-gradient-to-r from-orange-500 to-yellow-600 text-white p-4 rounded-xl inline-block mb-6">
+                        <i class="fas fa-paint-brush text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">تصميم الجرافيك</h3>
+                    <p class="text-gray-600 mb-6">
+                        نقدم تصاميم جرافيك مبتكرة تعكس هوية علامتك التجارية وتجذب انتباه جمهورك المستهدف عبر مختلف المنصات.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>تصميم الشعارات والهويات البصرية</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>التصميمات الدعائية والإعلانية</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>التصميمات الطباعية والديجيتال</li>
+                    </ul>
+                </div>
+
+             <div class="service-card bg-white p-8 rounded-2xl fade-in">
+                    <div class="bg-gradient-to-r from-red-500 to-orange-600 text-white p-4 rounded-xl inline-block mb-6">
+                        <i class="fas fa-scroll text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">طباعة البنرات والفليكس</h3>
+                    <p class="text-gray-600 mb-6">
+                        نوفر خدمات طباعة عالية الجودة للبنرات والفليكس بمقاسات متنوعة وألوان زاهية تعكس احترافية مشروعك وتلفت الانتباه.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>طباعة أوت دور وإن دور</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>خامات قوية مقاومة للعوامل الجوية</li>
+                        <li><i class="fas fa-check text-green-500 ml-2"></i>تصاميم مرنة بمقاسات مختلفة</li>
+                    </ul>
+                </div>
+
+
+                
+            <div class="service-card bg-white p-8 rounded-2xl fade-in">
+                <div class="bg-gradient-to-r from-indigo-500 to-blue-600 text-white p-4 rounded-xl inline-block mb-6">
+                    <i class="fas fa-id-card-alt text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">طباعة الهوية البصرية</h3>
+                <p class="text-gray-600 mb-6">
+                    نوفر خدمات طباعة متكاملة لعناصر الهوية البصرية الخاصة بشركتك بجودة عالية تعكس احترافية علامتك التجارية.
+                </p>
+                <ul class="text-sm text-gray-500 space-y-2">
+                    <li><i class="fas fa-check text-green-500 ml-2"></i>بطاقات الأعمال (Business Cards)</li>
+                    <li><i class="fas fa-check text-green-500 ml-2"></i>الأوراق الرسمية والمغلفات</li>
+                    <li><i class="fas fa-check text-green-500 ml-2"></i>المطبوعات الدعائية للشركات</li>
+                </ul>
+            </div>
+
+
+            </div>
+        </div>
+    </section>
+
+<!-- Call To Action -->
+<div class="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-10 px-6 rounded-2xl shadow-xl overflow-hidden my-12 animate-fadeInUp">
+  <div class="absolute top-0 left-0 w-full h-full opacity-20 bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/dot-grid.png')]"></div>
+
+  <div class="relative z-10 text-center">
+    <h2 class="text-2xl md:text-3xl font-bold mb-4">جاهز تميز علامتك التجارية؟ 🚀</h2>
+    <p class="text-lg text-gray-200 mb-6">تواصل معنا الآن واحصل على استشارة مجانية لحملتك الإعلانية</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="tel:+966501234567" 
+         class="bg-white text-blue-700 font-semibold px-6 py-3 rounded-xl shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+        📞 اتصل بنا
+      </a>
+      <a href="https://wa.me/966501234567" target="_blank" 
+         class="bg-green-500 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:bg-green-600 transition duration-300 transform hover:scale-105">
+        💬 واتساب
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Animation -->
+<style>
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-in-out;
+}
+</style>
+
+<!-- ✅ سكشن فاخر بخلفية بيضاء + صور -->
+<section class="relative bg-white py-20">
+  <div class="container mx-auto px-6">
+    <!-- العنوان -->
+    <div class="text-center mb-14">
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        لماذا تختار <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">الإبداع؟</span>
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+        لأننا نصنع الفارق بين الإعلان العادي والإعلان الفاخر الذي يبقى في ذهن جمهورك.
+      </p>
+    </div>
+
+    <!-- المحتوى -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    
+
+      <!-- النصوص -->
+      <div class="space-y-8">
+        <!-- ميزة -->
+        <div class="flex items-start space-x-reverse space-x-4">
+          <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-4 rounded-xl">
+            <i class="fas fa-lightbulb text-xl"></i>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold mb-2 text-gray-900">أفكار إبداعية</h3>
+            <p class="text-gray-600">نقدم حلولًا إعلانية خارج الصندوق تضعك دائمًا في المقدمة.</p>
+          </div>
+        </div>
+
+        <!-- ميزة -->
+        <div class="flex items-start space-x-reverse space-x-4">
+          <div class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white p-4 rounded-xl">
+            <i class="fas fa-gem text-xl"></i>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold mb-2 text-gray-900">جودة فاخرة</h3>
+            <p class="text-gray-600">نهتم بأدق التفاصيل لتقديم منتج يليق باسم علامتك التجارية.</p>
+          </div>
+        </div>
+
+        <!-- ميزة -->
+        <div class="flex items-start space-x-reverse space-x-4">
+          <div class="bg-gradient-to-r from-pink-500 to-red-500 text-white p-4 rounded-xl">
+            <i class="fas fa-handshake text-xl"></i>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold mb-2 text-gray-900">شراكة طويلة الأمد</h3>
+            <p class="text-gray-600">نبني علاقة نجاح متبادل تستمر معك لسنوات.</p>
+          </div>
+        </div>
+      </div>
+
+
+        <!-- الصور -->
+      <div class="grid grid-cols-2 gap-6">
+        <div class="rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-500">
+          <img src="./ass/img/istockphoto-1149597075-612x612.jpg" alt="اعلان فاخر" class="w-full h-full object-cover">
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-500 mt-10">
+          <img src="./ass/img/istockphoto-688787498-612x612.jpg" alt="تصميم براند" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+  <div class="container mx-auto px-4">
+    <!-- Section Header -->
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">
+        أعمالنا <span class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">الإبداعية</span>
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        مجموعة من أبرز التصاميم التي نفذناها لعملائنا في مجالات متعددة: لوجوهات، إعلانات، دعوات، وبوسترات دعائية.
+      </p>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="group relative overflow-hidden rounded-2xl shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+        <img src="./ass/img/istockphoto-1149597075-612x612.jpg" alt="تصميم لوجو" 
+             class="w-full h-64 object-cover transition-all duration-500 group-hover:scale-110 ">
+         <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+        <!-- Overlay with subtle blur effect -->
+        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 backdrop-blur-0 group-hover:backdrop-blur-sm 
+                    transition-all duration-500 flex items-center justify-center p-6">
+          <div class="text-center transform translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 
+                      transition-all duration-500 delay-200">
+            <h3 class="text-2xl text-white font-bold mb-3 drop-shadow-lg">
+              تصميم لوجو
+            </h3>
+            <p class="text-sm text-white font-bold leading-relaxed drop-shadow-md">
+              ابتكار هويات بصرية مميزة تعكس شخصية العلامة التجارية بأسلوب احترافي وإبداعي
+            </p>
+            <div class="mt-4">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="group relative overflow-hidden rounded-2xl shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+        <img src="./ass/img/pexels-pixabay-210126.jpg" alt="إعلان دعائي" 
+             class="w-full h-64 object-cover transition-all duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 backdrop-blur-0 group-hover:backdrop-blur-sm 
+                    transition-all duration-500 flex items-center justify-center p-6">
+          <div class="text-center transform translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 
+                      transition-all duration-500 delay-200">
+            <h3 class="text-2xl text-white font-bold mb-3 drop-shadow-lg">
+              إعلان دعائي
+            </h3>
+            <p class="text-sm text-white font-bold leading-relaxed drop-shadow-md">
+              حملات إعلانية مبتكرة لزيادة الوعي وجذب الجمهور المستهدف بأفكار خلاقة
+            </p>
+            <div class="mt-4">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="group relative overflow-hidden rounded-2xl shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+        <img src="./ass/img/event-invitations.jpg" alt="دعوات مناسبة" 
+             class="w-full h-64 object-cover transition-all duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 backdrop-blur-0 group-hover:backdrop-blur-sm 
+                    transition-all duration-500 flex items-center justify-center p-6">
+          <div class="text-center transform translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 
+                      transition-all duration-500 delay-200">
+            <h3 class="text-2xl text-white font-bold mb-3 drop-shadow-lg">
+              دعوات مناسبات
+            </h3>
+            <p class="text-sm text-white font-bold leading-relaxed drop-shadow-md">
+              تصاميم أنيقة للدعوات الخاصة بالأعراس والمناسبات المختلفة بلمسة فنية راقية
+            </p>
+            <div class="mt-4">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="group relative overflow-hidden rounded-2xl shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+        <img src="./ass/img/Leaflets-and-brochures.jpg" alt="مطويات وبروشورات" 
+             class="w-full h-64 object-cover transition-all duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 backdrop-blur-0 group-hover:backdrop-blur-sm 
+                    transition-all duration-500 flex items-center justify-center p-6">
+          <div class="text-center transform translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 
+                      transition-all duration-500 delay-200">
+            <h3 class="text-2xl text-white font-bold mb-3 drop-shadow-lg">
+              مطويات وبروشورات
+            </h3>
+            <p class="text-sm text-white font-bold leading-relaxed drop-shadow-md">
+              أدوات دعائية مؤثرة لتوصيل الرسالة التسويقية بشكل احترافي وجذاب
+            </p>
+            <div class="mt-4">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="group relative overflow-hidden rounded-2xl shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+        <img src="./ass/img/Social-media-designs.jpg" alt="تصاميم سوشيال ميديا" 
+             class="w-full h-64 object-cover transition-all duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 backdrop-blur-0 group-hover:backdrop-blur-sm 
+                    transition-all duration-500 flex items-center justify-center p-6">
+          <div class="text-center transform translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 
+                      transition-all duration-500 delay-200">
+            <h3 class="text-2xl text-white font-bold mb-3 drop-shadow-lg">
+              تصاميم سوشيال ميديا
+            </h3>
+            <p class="text-sm text-white font-bold leading-relaxed drop-shadow-md">
+              محتوى بصري جذاب لإدارة الحملات عبر مختلف منصات التواصل الاجتماعي
+            </p>
+            <div class="mt-4">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="group relative overflow-hidden rounded-2xl shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+        <img src="./ass/img/Posters-and-flyers.jpg" alt="بوسترات وفلاير" 
+             class="w-full h-64 object-cover transition-all duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 backdrop-blur-0 group-hover:backdrop-blur-sm 
+                    transition-all duration-500 flex items-center justify-center p-6">
+          <div class="text-center transform translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 
+                      transition-all duration-500 delay-200">
+            <h3 class="text-2xl font-bold text-white mb-3 drop-shadow-lg">
+              بوسترات وفلاير
+            </h3>
+            <p class="text-sm text-white font-bold leading-relaxed drop-shadow-md">
+              إبداعات مرئية قوية التأثير لترويج الفعاليات والعروض الخاصة بطريقة مبتكرة
+            </p>
+            <div class="mt-4">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ✨ سكشن رحلة النجاح -->
+<section class="relative bg-white py-24">
+  <div class="container mx-auto px-6">
+    <!-- العنوان -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        رحلتك مع <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">الإبداع</span>
+      </h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        نحن لا نقدّم خدمة فقط، بل نصنع قصة نجاح متكاملة تبدأ من فكرتك حتى تصل إلى جمهورك بأرقى صورة ممكنة.
+      </p>
+    </div>
+
+    <!-- المحتوى: تايم لاين -->
+    <div class="relative border-r-4 border-blue-500 border-opacity-20 max-w-4xl mx-auto">
+      
+      <!-- خطوة 1 -->
+      <div class="mb-16 ml-10 flex items-start space-x-reverse space-x-6">
+        <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-5 rounded-full shadow-lg">
+          <i class="fas fa-brain text-2xl"></i>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-gray-900">الفكرة والإبداع</h3>
+          <p class="text-gray-600 mt-2">
+            نجلس معك لفهم أهدافك ورؤيتك، ثم نصوغها في فكرة إبداعية تحمل بصمة فريدة لعلامتك التجارية.
+          </p>
+          
+        </div>
+      </div>
+
+      <!-- خطوة 2 -->
+      <div class="mb-16 ml-10 flex items-start space-x-reverse space-x-6">
+        <div class="bg-gradient-to-r from-yellow-400 to-orange-600 text-white p-5 rounded-full shadow-lg">
+          <i class="fas fa-paint-brush text-2xl"></i>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-gray-900">التصميم والهوية</h3>
+          <p class="text-gray-600 mt-2">
+            من الشعارات والهوية البصرية إلى اللوحات الإعلانية المطبوعة والرقمية، نصمم كل ما يبرزك بشكل فاخر.
+          </p>
+         
+        </div>
+      </div>
+
+      <!-- خطوة 3 -->
+      <div class="mb-16 ml-10 flex items-start space-x-reverse space-x-6">
+        <div class="bg-gradient-to-r from-pink-500 to-red-600 text-white p-5 rounded-full shadow-lg">
+          <i class="fas fa-bullhorn text-2xl"></i>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-gray-900">الإطلاق والتسويق</h3>
+          <p class="text-gray-600 mt-2">
+            ننفّذ حملات تسويقية ذكية عبر كل القنوات لضمان وصول رسالتك بأفضل طريقة وأوسع انتشار.
+          </p>
+         
+        </div>
+      </div>
+
+      <!-- خطوة 4 -->
+      <div class="mb-16 ml-10 flex items-start space-x-reverse space-x-6">
+        <div class="bg-gradient-to-r from-green-500 to-emerald-600 text-white p-5 rounded-full shadow-lg">
+          <i class="fas fa-chart-line text-2xl"></i>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-gray-900">النجاح والاستمرارية</h3>
+          <p class="text-gray-600 mt-2">
+            نتابع ونقيس الأداء لنضمن لك نتائج ملموسة، ونظل معك خطوة بخطوة لمزيد من النجاح.
+          </p>
+         
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center mt-20">
+      <a href="#contact"
+        class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-4 rounded-2xl shadow-lg text-lg font-bold hover:scale-105 transform transition">
+        ابدأ رحلتك معنا الآن
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ✨ سكشن شركاؤنا في النجاح -->
+<section class="bg-white py-24 relative">
+  <div class="container mx-auto px-6">
+    <!-- العنوان -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        شركاؤنا في <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">النجاح</span>
+      </h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        نفتخر بثقة عملائنا الذين شاركونا قصص نجاح ملهمة، وتركنا بصمتنا الإبداعية في مشاريعهم.
+      </p>
+    </div>
+
+    <!-- لوجوهات الشركات -->
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-10 items-center">
+      <div class="p-4 grayscale hover:grayscale-0 transition duration-500">
+        <img src="https://source.unsplash.com/200x100/?brand,logo" alt="Partner 1" class="mx-auto h-16 object-contain">
+      </div>
+      <div class="p-4 grayscale hover:grayscale-0 transition duration-500">
+        <img src="https://source.unsplash.com/200x100/?corporate,logo" alt="Partner 2" class="mx-auto h-16 object-contain">
+      </div>
+      <div class="p-4 grayscale hover:grayscale-0 transition duration-500">
+        <img src="https://source.unsplash.com/200x100/?business,logo" alt="Partner 3" class="mx-auto h-16 object-contain">
+      </div>
+      <div class="p-4 grayscale hover:grayscale-0 transition duration-500">
+        <img src="https://source.unsplash.com/200x100/?company,logo" alt="Partner 4" class="mx-auto h-16 object-contain">
+      </div>
+      <div class="p-4 grayscale hover:grayscale-0 transition duration-500">
+        <img src="https://source.unsplash.com/200x100/?agency,logo" alt="Partner 5" class="mx-auto h-16 object-contain">
+      </div>
+      <div class="p-4 grayscale hover:grayscale-0 transition duration-500">
+        <img src="https://source.unsplash.com/200x100/?technology,logo" alt="Partner 6" class="mx-auto h-16 object-contain">
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-16">
+      <a href="#contact" class="inline-block bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-2xl shadow-lg text-lg font-semibold hover:scale-105 transform transition">
+        كن شريكنا القادم 🚀
+      </a>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center space-x-reverse space-x-3 mb-6">
+                        <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-2 rounded-lg">
+                            <i class="fas fa-bullhorn text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">الإبداع للدعاية والإعلان</h3>
+                            <p class="text-gray-400 text-sm">حلول إبداعية لنجاحك</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">نحن شريكك الموثوق في رحلة النجاح، نقدم حلول إعلانية وتسويقية متميزة تحقق أهدافك وتبني علامتك التجارية.</p>
+                    <div class="flex space-x-reverse space-x-4">
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 p-3 rounded-full transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-pink-600 hover:bg-pink-700 p-3 rounded-full transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-blue-400 hover:bg-blue-500 p-3 rounded-full transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-blue-800 hover:bg-blue-900 p-3 rounded-full transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="bg-red-600 hover:bg-red-700 p-3 rounded-full transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">خدماتنا</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-left text-xs ml-2"></i>التصميم والبراندنج</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-left text-xs ml-2"></i>التسويق الرقمي</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-left text-xs ml-2"></i>إنتاج المحتوى</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-left text-xs ml-2"></i>الحملات الإعلانية</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-left text-xs ml-2"></i>التحليل والإحصائيات</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">روابط مفيدة</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-300 hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-left text-xs ml-2"></i>الرئيسية</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-left text-xs ml-2"></i>من نحن</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-left text-xs ml-2"></i>خدماتنا</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-left text-xs ml-2"></i>أعمالنا</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-left text-xs ml-2"></i>المدونة</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i class="fas fa-chevron-left text-xs ml-2"></i>سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">تواصل معنا</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-reverse space-x-3">
+                            <i class="fas fa-map-marker-alt text-blue-400"></i>
+                            <span class="text-gray-300">الرياض، المملكة العربية السعودية</span>
+                        </div>
+                        <div class="flex items-center space-x-reverse space-x-3">
+                            <i class="fas fa-phone text-blue-400"></i>
+                            <span class="text-gray-300" dir="ltr">+966 50 123 4567</span>
+                        </div>
+                        <div class="flex items-center space-x-reverse space-x-3">
+                            <i class="fas fa-envelope text-blue-400"></i>
+                            <span class="text-gray-300" dir="ltr">info@creativead.com</span>
+                        </div>
+                        <div class="flex items-center space-x-reverse space-x-3">
+                            <i class="fas fa-clock text-blue-400"></i>
+                            <span class="text-gray-300">الأحد - الخميس: 9:00 - 18:00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h5 class="font-bold mb-4">اشترك في نشرتنا الإخبارية</h5>
+                        <div class="flex">
+                            <input type="email" placeholder="بريدك الإلكتروني" class="flex-1 px-4 py-2 rounded-r-lg text-gray-800 focus:outline-none">
+                            <button class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-l-lg transition-colors">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2024 شركة الإبداع للدعاية والإعلان. جميع الحقوق محفوظة.</p>
+                    <div class="flex space-x-reverse space-x-6 text-sm">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">شروط الاستخدام</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">سياسة الخصوصية</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">سياسة الكوكيز</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-blur');
+            } else {
+                navbar.classList.remove('navbar-blur');
+            }
+        });
+
+        // Hero Slider
+        class HeroSlider {
+            constructor() {
+                this.slides = document.querySelectorAll('.hero-slide');
+                this.dots = document.querySelectorAll('.slider-dot');
+                this.currentSlide = 0;
+                this.slideInterval = 5000;
+                
+                this.init();
+            }
+            
+            init() {
+                this.updateSlider();
+                this.setupDots();
+                this.startAutoPlay();
+            }
+            
+            updateSlider() {
+                this.slides.forEach((slide, index) => {
+                    if (index === this.currentSlide) {
+                        slide.style.opacity = '1';
+                        slide.classList.add('active');
+                    } else {
+                        slide.style.opacity = '0';
+                        slide.classList.remove('active');
+                    }
+                });
+                
+                this.dots.forEach((dot, index) => {
+                    if (index === this.currentSlide) {
+                        dot.style.opacity = '1';
+                    } else {
+                        dot.style.opacity = '0.5';
+                    }
+                });
+                
+                // Trigger fade-in animation for active slide content
+                const activeSlide = this.slides[this.currentSlide];
+                const content = activeSlide.querySelector('.fade-in');
+                content.style.opacity = '0';
+                content.style.transform = 'translateY(30px)';
+                
+                setTimeout(() => {
+                    content.style.opacity = '1';
+                    content.style.transform = 'translateY(0)';
+                }, 100);
+            }
+            
+            setupDots() {
+                this.dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => {
+                        this.currentSlide = index;
+                        this.updateSlider();
+                        this.resetAutoPlay();
+                    });
+                });
+            }
+            
+            nextSlide() {
+                this.currentSlide = (this.currentSlide + 1) % this.slides.length;
+                this.updateSlider();
+            }
+            
+            startAutoPlay() {
+                this.autoPlayInterval = setInterval(() => {
+                    this.nextSlide();
+                }, this.slideInterval);
+            }
+            
+            resetAutoPlay() {
+                clearInterval(this.autoPlayInterval);
+                this.startAutoPlay();
+            }
+        }
+
+        // Initialize slider
+        const slider = new HeroSlider();
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animation elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.fade-in, .slide-up, .scale-in');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Service cards hover effect
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Add loading animation
+        window.addEventListener('load', function() {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+            
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>

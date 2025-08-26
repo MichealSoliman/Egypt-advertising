@@ -1,0 +1,146 @@
+  
+        * {
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        .hero-slide {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+       .slide-1 {
+    background: url('../ass/img/istockphoto-1407290289-612x612.jpg') no-repeat center center;
+    background-size: cover;
+    
+}
+
+.slide-2 {
+    background: url('../ass/img/istockphoto-2148229041-612x612.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.slide-3 {
+    background: url('../ass/img/istockphoto-688787498-612x612.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .slide-up {
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 1s ease;
+        }
+        
+        .slide-up.visible {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        .scale-in {
+            transform: scale(0.8);
+            opacity: 0;
+            transition: all 0.6s ease;
+        }
+        
+        .scale-in.visible {
+            transform: scale(1);
+            opacity: 1;
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .navbar-blur {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.9);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-color: #667eea;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 5;
+        }
+  
+
+          <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.9) 0%, rgba(147, 51, 234, 0.9) 100%),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ffffff" stop-opacity="0.1"/><stop offset="100%" stop-color="%23ffffff" stop-opacity="0"/></radialGradient></defs><rect width="100%" height="100%" fill="url(%23a)"/></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .parallax {
+            transform: translateZ(0);
+            will-change: transform;
+        }
+    </style>
