@@ -60,10 +60,37 @@
     }
     }
     </script>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style.css">
+  <style>
+    /* تعريف الألوان المخصصة */
+    :root {
+      --color-primary: #24b8a8;
+      --color-primary-dark: #158376;
+      --color-primary: #0bc1b8;
+      --color-dark: #1c1c1d;
+    }
+    
+    /* تجاوز فئات Tailwind CSS */
+    .text-primary { color: var(--color-primary) !important; }
+    .text-primary-dark { color: var(--color-primary-dark) !important; }
+    .text-primary { color: var(--color-primary) !important; }
+    
+    .bg-primary { background-color: var(--color-primary) !important; }
+    .bg-primary-dark { background-color: var(--color-primary-dark) !important; }
+    .bg-primary { background-color: var(--color-primary) !important; }
+    
+    .border-primary { border-color: var(--color-primary) !important; }
+    
+    .hover\:bg-primary-dark:hover { background-color: var(--color-primary-dark) !important; }
+    .hover\:text-primary:hover { color: var(--color-primary) !important; }
+    
+    .bg-gradient-to-r.from-primary.to-primary-dark {
+      background-image: linear-gradient(to right, var(--color-primary), var(--color-primary-dark)) !important;
+    }
+  </style>
 
 </head>
 
@@ -84,17 +111,17 @@
 
     <!-- Links (Desktop) -->
     <div class="hidden lg:flex items-center space-x-reverse space-x-8">
-      <a href="#home" class="text-black hover:text-blue-600 transition-colors font-medium">الرئيسية</a>
-      <a href="#about" class="text-black hover:text-blue-600 transition-colors font-medium">من نحن</a>
-      <a href="#services" class="text-black hover:text-blue-600 transition-colors font-medium">خدماتنا</a>
-      <a href="#portfolio" class="text-black hover:text-blue-600 transition-colors font-medium"> اعمالنا</a>
+      <a href="#home" class="text-black hover:text-primary transition-colors font-medium">الرئيسية</a>
+      <a href="#about" class="text-black hover:text-primary transition-colors font-medium">من نحن</a>
+      <a href="#services" class="text-black hover:text-primary transition-colors font-medium">خدماتنا</a>
+      <a href="#portfolio" class="text-black hover:text-primary transition-colors font-medium"> اعمالنا</a>
     </div>
 
     <!-- CTA + Menu Button -->
     <div class="flex items-center space-x-reverse space-x-4">
       <div class="text-right hidden md:block">
         <a href="tel:+966501234567"
-          class="inline-block bg-blue-600  text-white px-5 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors">
+          class="inline-block gradient-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors">
           <p class="text-sm">اتصل بنا</p>
         </a>
       </div>
@@ -105,16 +132,15 @@
     </div>
   </div>
 
-
   <!-- ✅ Mobile Menu -->
   <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-md border-t mt-4">
     <div class="flex flex-col items-center space-y-4 py-6">
-      <a href="#home" class="text-black hover:text-blue-600 transition-colors font-medium">الرئيسية</a>
-      <a href="#about" class="text-black hover:text-blue-600 transition-colors font-medium">من نحن</a>
-      <a href="#services" class="text-black hover:text-blue-600 transition-colors font-medium">خدماتنا</a>
-      <a href="#portfolio" class="text-black hover:text-blue-600 transition-colors font-medium">اعمالنا</a>
+      <a href="#home" class="text-black hover:text-primary transition-colors font-medium">الرئيسية</a>
+      <a href="#about" class="text-black hover:text-primary transition-colors font-medium">من نحن</a>
+      <a href="#services" class="text-black hover:text-primary transition-colors font-medium">خدماتنا</a>
+      <a href="#portfolio" class="text-black hover:text-primary transition-colors font-medium">اعمالنا</a>
       <a href="tel:+966501234567"
-        class="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors">
+        class="inline-block bg-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors">
         اتصل بنا
       </a>
     </div>
@@ -159,7 +185,12 @@
       <div class="hero-overlay"></div>
       <div class="hero-content text-center text-white px-4">
         <div class="fade-in">
-        
+          <h1 class="text-5xl lg:text-7xl font-bold mb-6">إبداع لا حدود له</h1>
+          <p class="text-xl lg:text-2xl mb-8 max-w-3xl mx-auto">نحول أفكارك إلى حملات إعلانية مؤثرة تحقق النجاح
+            والانتشار</p>
+          <button
+            class="bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors">ابدأ
+            مشروعك</button>
         </div>
       </div>
     </div>
@@ -174,7 +205,7 @@
           <p class="text-xl lg:text-2xl mb-8 max-w-3xl mx-auto">خبرة تزيد عن 10 سنوات في صناعة الإعلان والتسويق الرقمي
           </p>
           <button
-            class="bg-white text-pink-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors">استكشف
+            class="bg-primary text-whitepx-8 py-4 px-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors">استكشف
             أعمالنا</button>
         </div>
       </div>
@@ -190,7 +221,7 @@
           <p class="text-xl lg:text-2xl mb-8 max-w-3xl mx-auto">شريكك الموثوق لتحقيق أهدافك التسويقية وبناء علامتك
             التجارية</p>
           <button
-            class="bg-white text-blue-500 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors">تواصل
+            class="bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors">تواصل
             معنا</button>
         </div>
       </div>
@@ -218,9 +249,9 @@
       <!-- Section Header -->
       <div class="text-center mb-16">
         <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-          من <span class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">نحن؟</span>
+          من <span class="bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">نحن؟</span>
         </h2>
-        <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-6 rounded-full"></div>
+        <div class="w-24 h-1 bg-gradient-to-r from-primary to-primary-dark mx-auto mb-6 rounded-full"></div>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
           نحن فريق من المبدعين والاستراتيجيين المتخصصين في صناعة المحتوى الدعائي المؤثر
         </p>
@@ -232,7 +263,7 @@
           <div class="prose prose-lg text-gray-700 leading-relaxed">
             <p class="text-lg mb-6">
               منذ تأسيسنا، آمنا بأن كل علامة تجارية لها قصة فريدة تستحق أن تُروى بطريقة استثنائية. في
-              <strong class="text-blue-600">ايجبت للدعاية والإعلان</strong>، نتجاوز حدود التقليد لنقدم حلولاً إبداعية
+              <strong class="text-primary">ايجبت للدعاية والإعلان</strong>، نتجاوز حدود التقليد لنقدم حلولاً إبداعية
               متكاملة.
             </p>
             <p class="text-lg mb-6">
@@ -244,9 +275,9 @@
           <!-- Values -->
           <div class="grid md:grid-cols-2 gap-6">
             <div
-              class="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+              class="bg-gradient-to-br from-primary-light to-primary-light p-6 rounded-2xl shadow-md hover:shadow-lg transition">
               <div
-                class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center mb-4">
+                class="w-12 h-12 bg-gradient-to-br from-primary to-primary-dark rounded-lg flex items-center justify-center mb-4">
                 <i class="fas fa-lightbulb text-white"></i>
               </div>
               <h3 class="text-xl font-bold text-gray-800 mb-2">استيكرات مميزة وجذابة</h3>
@@ -256,9 +287,9 @@
             </div>
 
             <div
-              class="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+              class="bg-gradient-to-br from-primary-light to-primary-light p-6 rounded-2xl shadow-md hover:shadow-lg transition">
               <div
-                class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center mb-4">
+                class="w-12 h-12 bg-gradient-to-br from-primary to-primary rounded-lg flex items-center justify-center mb-4">
                 <i class="fas fa-award text-white"></i>
               </div>
               <h3 class="text-xl font-bold text-gray-800 mb-2">طباعة الهويات البصرية</h3>
@@ -270,7 +301,7 @@
             <div
               class="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
               <div
-                class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center mb-4">
+                class="w-12 h-12 bg-gradient-to-br from-primary to-primary rounded-lg flex items-center justify-center mb-4">
                 <i class="fas fa-handshake text-white"></i>
               </div>
               <h3 class="text-xl font-bold text-gray-800 mb-2">ورش القص والحفر</h3>
@@ -280,10 +311,10 @@
             </div>
 
             <div
-              class="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+              class="bg-gradient-to-br from-primary-50 to-primary-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
               <div
-                class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center mb-4">
-                <i class="fas fa-target text-white"></i>
+                class="w-12 h-12 bg-gradient-to-br from-primary to-primary rounded-lg flex items-center justify-center mb-4">
+                <i class="fas fa-table text-white"></i>
               </div>
               <h3 class="text-xl font-bold text-gray-800 mb-2">طباعة الاستيكر والفينيل</h3>
               <p class="text-gray-600">نقدم طباعة استيكر وفينيل عالية الجودة تضيف لمسة احترافية لعلامتك التجارية وتلفت
@@ -307,6 +338,9 @@
 
             </div>
           </div>
+
+
+
 
           <!-- Floating Elements -->
           <div
@@ -352,15 +386,15 @@
           </p>
 
           <ul class="text-sm text-gray-500 space-y-2 mb-6">
-            <li><i class="fas fa-check text-green-500 ml-2"></i>حروف نيون مضيئة (Neon Letters)</li>
-            <li><i class="fas fa-check text-green-500 ml-2"></i>حروف ثلاثية الأبعاد (3D Letters)</li>
-            <li><i class="fas fa-check text-green-500 ml-2"></i>تصاميم خاصة تناسب هوية نشاطك</li>
+            <li><i class="fas fa-check text-primary ml-2"></i>حروف نيون مضيئة (Neon Letters)</li>
+            <li><i class="fas fa-check text-primary ml-2"></i>حروف ثلاثية الأبعاد (3D Letters)</li>
+            <li><i class="fas fa-check text-primary ml-2"></i>تصاميم خاصة تناسب هوية نشاطك</li>
           </ul>
 
           <!-- زر الاتصال -->
           <div class="text-center">
             <a href="tel:+201234567890"
-              class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-3 py-2 rounded-lg shadow-md hover:scale-105 transform transition">
+              class="gradient-primary text-white px-3 py-2 rounded-lg shadow-md hover:scale-105 transform transition">
               <i class="fas fa-phone-alt ml-2"></i> اتصل بنا
             </a>
           </div>
@@ -391,11 +425,16 @@
           <!-- زر الاتصال -->
           <div class="text-center">
             <a href="tel:+201234567890"
-              class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-3 py-2 rounded-lg shadow-md hover:scale-105 transform transition">
+              class="bg-gradient-to-r from-primary to-primary-dark text-white px-3 py-2 rounded-lg shadow-md hover:scale-105 transform transition">
               <i class="fas fa-phone-alt ml-2"></i> اتصل بنا
             </a>
           </div>
         </div>
+
+
+
+
+
 
 
         <div class="service-card bg-white p-8 rounded-2xl fade-in">
@@ -424,9 +463,9 @@
           <!-- زر الاتصال -->
           <div class="text-center">
             <a href="tel:+201234567890"
-              class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-3 py-2 rounded-lg shadow-md hover:scale-105 transform transition">
-              <i class="fas fa-phone-alt ml-2"></i> اتصل بنا
-            </a>
+              class="bg-gradient-to-r from-primary to-primary-dark text-white px-3 py-2 rounded-lg shadow-md hover:scale-105 transform transition">
+                <i class="fas fa-phone-alt ml-2"></i> اتصل بنا
+              </a>
           </div>
         </div>
 
@@ -456,9 +495,9 @@
           </ul>
 
           <!-- زر الاتصال -->
-          <div class="text-center">
+        <div class="text-center">
             <a href="tel:+201234567890"
-              class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-3 py-2 rounded-lg shadow-md hover:scale-105 transform transition">
+              class="bg-gradient-to-r from-primary to-primary-dark text-white px-3 py-2 rounded-lg shadow-md hover:scale-105 transform transition">
               <i class="fas fa-phone-alt ml-2"></i> اتصل بنا
             </a>
           </div>
@@ -493,7 +532,7 @@
           <!-- زر الاتصال -->
           <div class="text-center">
             <a href="tel:+201234567890"
-              class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-3 py-2 rounded-lg shadow-md hover:scale-105 transform transition">
+              class="bg-gradient-to-r from-primary to-primary-dark text-white px-3 py-2 rounded-lg shadow-md hover:scale-105 transform transition">
               <i class="fas fa-phone-alt ml-2"></i> اتصل بنا
             </a>
           </div>
@@ -508,7 +547,7 @@
 
   <!-- Call To Action -->
   <div
-    class="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white m-5 py-10 px-6 rounded-2xl shadow-xl overflow-hidden my-12 animate-fadeInUp">
+    class="relative bg-gradient-to-r from-primary to-primary-dark text-white m-5 py-10 px-6 rounded-2xl shadow-xl overflow-hidden my-12 animate-fadeInUp">
     <div
       class="absolute top-0 left-0 w-full h-full opacity-20 bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/dot-grid.png')]">
     </div>
@@ -518,7 +557,7 @@
       <p class="text-lg text-gray-200 mb-6">تواصل معنا الآن واحصل على استشارة مجانية لحملتك الإعلانية</p>
       <div class="flex flex-wrap justify-center gap-4">
         <a href="tel:+966501234567"
-          class="bg-white text-blue-700 font-semibold px-6 py-3 rounded-xl shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+          class="bg-white text-primary-dark font-semibold px-6 py-3 rounded-xl shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105">
           📞 اتصل بنا
         </a>
         <a href="https://wa.me/966501234567" target="_blank"
@@ -555,7 +594,7 @@
       <div class="text-center mb-14">
         <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
           لماذا تختار <span
-            class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">ايجبت؟</span>
+            class="text-primary bg-clip-text bg-gradient-to-r from-primary to-primary-dark">ايجبت؟</span>
         </h2>
         <p class="text-gray-600 max-w-2xl mx-auto text-lg">
           لأننا نصنع الفارق بين الإعلان العادي والإعلان الفاخر الذي يبقى في ذهن جمهورك.
@@ -570,7 +609,7 @@
         <div class="space-y-8">
           <!-- ميزة -->
           <div class="flex items-start space-x-reverse space-x-4">
-            <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-4 rounded-xl">
+            <div class="bg-gradient-to-r from-primary to-primary-dark text-white p-4 rounded-xl">
               <i class="fas fa-lightbulb text-xl"></i>
             </div>
             <div>
@@ -581,7 +620,7 @@
 
           <!-- ميزة -->
           <div class="flex items-start space-x-reverse space-x-4">
-            <div class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white p-4 rounded-xl">
+            <div class="bg-gradient-to-r from-primary to-primary text-white p-4 rounded-xl">
               <i class="fas fa-gem text-xl"></i>
             </div>
             <div>
@@ -592,7 +631,7 @@
 
           <!-- ميزة -->
           <div class="flex items-start space-x-reverse space-x-4">
-            <div class="bg-gradient-to-r from-pink-500 to-red-500 text-white p-4 rounded-xl">
+            <div class="bg-gradient-to-r from-primary to-primary text-white p-4 rounded-xl">
               <i class="fas fa-handshake text-xl"></i>
             </div>
             <div>
@@ -625,7 +664,7 @@
       <div class="text-center mb-12">
         <h2 class="text-4xl font-bold text-gray-800 mb-4">
           أعمالنا <span
-            class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">الإبداعية</span>
+            class="bg-gradient-to-r from-primary to-primary bg-clip-text text-transparent">الإبداعية</span>
         </h2>
         <p class="text-gray-600 max-w-2xl mx-auto">
           مجموعة من أبرز التصاميم التي نفذناها لعملائنا في مجالات متعددة: لوجوهات، إعلانات، دعوات، وبوسترات دعائية.
@@ -745,6 +784,7 @@
                 محتوى بصري جذاب لإدارة الحملات عبر مختلف منصات التواصل الاجتماعي
               </p>
               <div class="mt-4">
+
               </div>
             </div>
           </div>
@@ -785,18 +825,18 @@
       <!-- العنوان -->
       <div class="text-center mb-16">
         <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          رحلتك مع <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">ايجبت</span>
+          رحلتك مع <span class="text-primary bg-clip-text bg-gradient-to-r from-primary to-primary-dark">ايجبت</span>
         </h2>
         <p class="text-lg text-gray-600 max-w-3xl mx-auto">
           نحن لا نقدّم خدمة فقط، بل نصنع قصة نجاح متكاملة تبدأ من فكرتك حتى تصل إلى جمهورك بأرقى صورة ممكنة.
         </p>
       </div>
 
-
-      <div class="relative border-r-4 border-blue-500 border-opacity-20 max-w-4xl mx-auto">
+      
+      <div class="relative border-r-4 border-primary border-opacity-20 max-w-4xl mx-auto">
         <!-- خطوة 1 -->
         <div class="mb-16 ml-10 flex items-start space-x-reverse space-x-6">
-          <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-5 rounded-full shadow-lg">
+          <div class="bg-gradient-to-r from-primary to-primary-dark text-white p-5 rounded-full shadow-lg">
             <i class="fas fa-brain text-2xl"></i>
           </div>
           <div>
@@ -809,7 +849,7 @@
 
         <!-- خطوة 2 -->
         <div class="mb-16 ml-10 flex items-start space-x-reverse space-x-6">
-          <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-5 rounded-full shadow-lg">
+          <div class="bg-gradient-to-r from-primary to-primary-dark text-white p-5 rounded-full shadow-lg">
             <i class="fas fa-paint-brush text-2xl"></i>
           </div>
           <div>
@@ -823,7 +863,7 @@
 
         <!-- خطوة 3 -->
         <div class="mb-16 ml-10 flex items-start space-x-reverse space-x-6">
-          <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-5 rounded-full shadow-lgl ">
+          <div class="bg-gradient-to-r from-primary to-primary text-white p-5 rounded-full shadow-lgl ">
             <i class="fas fa-bullhorn text-2xl"></i>
           </div>
           <div>
@@ -835,11 +875,11 @@
         </div>
 
 
-
+        
 
         <!-- خطوة 4 -->
         <div class="mb-16 ml-10 flex items-start space-x-reverse space-x-6">
-          <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-5 rounded-full shadow-lg ">
+          <div class="bg-gradient-to-r from-primary to-primary text-white p-5 rounded-full shadow-lg ">
             <i class="fas fa-chart-line text-2xl"></i>
           </div>
           <div>
@@ -854,12 +894,47 @@
       <!-- Call to Action -->
       <div class="text-center mt-20">
         <a href="#contact"
-          class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-4 rounded-2xl shadow-lg text-lg font-bold hover:scale-105 transform transition">
+          class="inline-block bg-gradient-to-r from-primary to-primary-dark text-white px-10 py-4 rounded-2xl shadow-lg text-lg font-bold hover:scale-105 transform transition">
           ابدأ رحلتك معنا الآن
         </a>
       </div>
     </div>
   </section>
+
+
+  <section class="w-full">
+  <!-- العنوان فوق الصورة -->
+  <div class="text-center py-12 ">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 animate-fade-in">
+      نرتقي بإبداعك إلى مستوى جديد ✨
+    </h2>
+    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto animate-fade-in-delay">
+      حلول متكاملة للدعاية والإعلان لنمنح علامتك التجارية حضوراً مميزاً وفعّالاً.
+    </p>
+  </div>
+
+  <!-- البانر (الصورة بعرض الصفحة) -->
+  <div class="relative w-full h-[450px] md:h-[600px] overflow-hidden rounded shadow-lg my-5">
+    <img src="./assets/img/Cover Egypt.png" 
+         alt="شركة دعاية وإعلان"
+         class="w-full h-full object-cover animate-zoom-in rounded-5" />
+  </div>
+</section>
+
+<!-- أنيميشن -->
+<style>
+@keyframes fade-in {
+  from {opacity:0; transform: translateY(20px);}
+  to {opacity:1; transform: translateY(0);}
+}
+@keyframes zoom-in {
+  from {transform: scale(1.1);}
+  to {transform: scale(1);}
+}
+.animate-fade-in { animation: fade-in 1s ease forwards; }
+.animate-fade-in-delay { animation: fade-in 1.5s ease forwards; }
+.animate-zoom-in { animation: zoom-in 10s ease forwards; }
+</style>
 
   <!--  سكشن شركاؤنا في النجاح -->
   <section class="bg-white py-24 relative">
@@ -868,7 +943,7 @@
       <div class="text-center mb-16">
         <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
           شركاؤنا في <span
-            class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">النجاح</span>
+            class="text-primary bg-clip-text bg-gradient-to-r from-primary to-primary">النجاح</span>
         </h2>
         <p class="text-lg text-gray-600 max-w-2xl mx-auto">
           نفتخر بثقة عملائنا الذين شاركونا قصص نجاح ملهمة، وتركنا بصمتنا الإبداعية في مشاريعهم.
@@ -906,71 +981,35 @@
       <!-- CTA -->
       <div class="text-center mt-16">
         <a href="#contact"
-          class="inline-block bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-2xl shadow-lg text-lg font-semibold hover:scale-105 transform transition">
+          class="inline-block bg-gradient-to-r from-primary to-primary text-white px-8 py-4 rounded-2xl shadow-lg text-lg font-semibold hover:scale-105 transform transition">
           كن شريكنا القادم
         </a>
       </div>
     </div>
   </section>
 
-
-
-  <section class="relative w-full h-full md:h-[650px] overflow-hidden">
-  <!-- صورة الخلفية -->
-  <img src="./assets/img/Cover Egypt.png" 
-       alt="شركة دعاية وإعلان"
-       class="absolute inset-0 w-full h-full object-cover" />
-
-  <!-- طبقة شفافة فوق الصورة -->
-  <div class="absolute inset-0 bg-black/40"></div>
-
-  <!-- النص فوق البانر -->
-  <div class="relative z-10 flex flex-col items-center justify-center text-center text-white h-full px-6">
-  
-  </div>
-</section>
-
-<!-- أنيميشن -->
-<style>
-@keyframes fade-in {
-  from {opacity:0; transform: translateY(20px);}
-  to {opacity:1; transform: translateY(0);}
-}
-@keyframes slide-up {
-  from {opacity:0; transform: translateY(40px);}
-  to {opacity:1; transform: translateY(0);}
-}
-.animate-fade-in { animation: fade-in 1s ease forwards; }
-.animate-fade-in-delay { animation: fade-in 1.5s ease forwards; }
-.animate-slide-up { animation: slide-up 1s ease forwards; }
-</style>
-
-
 </div>
 
-<section class="relative bg-gradient-to-r from-blue-50 to-purple-50 py-20 overflow-hidden">
+<section class="relative bg-gradient-to-r from-primary-50 to-primary-100 py-20 overflow-hidden">
   <div class="container mx-auto px-6 md:px-12 lg:px-20">
-
+    
     <!-- العنوان -->
     <div class="text-center mb-16">
       <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 animate-fadeInDown">
-        لماذا <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">الدعاية
-          والإعلان</span> هي سر النجاح؟
+        لماذا <span class="text-primary bg-clip-text bg-gradient-to-r from-primary to-primary-800">الدعاية والإعلان</span> هي سر النجاح؟
       </h2>
       <p class="text-lg text-gray-700 max-w-3xl mx-auto animate-fadeInUp">
-        لأن الإعلان مش بس وسيلة للتعريف، هو البوابة اللي بتخلي مشروعك يتشاف،
-        يترسخ في أذهان العملاء، ويتحول من فكرة بسيطة إلى <span class="font-bold text-blue-600">علامة تجارية قوية</span>.
+        لأن الإعلان مش بس وسيلة للتعريف، هو البوابة اللي بتخلي مشروعك يتشاف، 
+        يترسخ في أذهان العملاء، ويتحول من فكرة بسيطة إلى <span class="font-bold text-primary">علامة تجارية قوية</span>.
       </p>
     </div>
 
     <!-- المحتوى -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-
+      
       <!-- كارت 1 -->
-      <div
-        class="group bg-white rounded-2xl shadow-lg p-8 text-center hover:-translate-y-3 hover:shadow-2xl transition duration-500 animate-fadeInUp">
-        <div
-          class="bg-gradient-to-r from-blue-500 to-purple-600 text-white w-20 h-20 flex items-center justify-center rounded-full mx-auto mb-6 group-hover:scale-110 transition">
+      <div class="group bg-white rounded-2xl shadow-lg p-8 text-center hover:-translate-y-3 hover:shadow-2xl transition duration-500 animate-fadeInUp">
+        <div class="bg-gradient-to-r from-primary to-primary text-white w-20 h-20 flex items-center justify-center rounded-full mx-auto mb-6 group-hover:scale-110 transition">
           <i class="fas fa-bullhorn text-3xl"></i>
         </div>
         <h3 class="text-xl font-bold text-gray-900 mb-4">زيادة الانتشار</h3>
@@ -980,10 +1019,8 @@
       </div>
 
       <!-- كارت 2 -->
-      <div
-        class="group bg-white rounded-2xl shadow-lg p-8 text-center hover:-translate-y-3 hover:shadow-2xl transition duration-500 animate-fadeInUp delay-200">
-        <div
-          class="bg-gradient-to-r from-green-500 to-green-600 text-white w-20 h-20 flex items-center justify-center rounded-full mx-auto mb-6 group-hover:scale-110 transition">
+      <div class="group bg-white rounded-2xl shadow-lg p-8 text-center hover:-translate-y-3 hover:shadow-2xl transition duration-500 animate-fadeInUp delay-200">
+        <div class="bg-gradient-to-r from-primary to-primary text-white  w-20 h-20 flex items-center justify-center rounded-full mx-auto mb-6 group-hover:scale-110 transition">
           <i class="fas fa-chart-line text-3xl"></i>
         </div>
         <h3 class="text-xl font-bold text-gray-900 mb-4">تعزيز المبيعات</h3>
@@ -993,10 +1030,8 @@
       </div>
 
       <!-- كارت 3 -->
-      <div
-        class="group bg-white rounded-2xl shadow-lg p-8 text-center hover:-translate-y-3 hover:shadow-2xl transition duration-500 animate-fadeInUp delay-400">
-        <div
-          class="bg-gradient-to-r from-pink-500 to-red-600 text-white w-20 h-20 flex items-center justify-center rounded-full mx-auto mb-6 group-hover:scale-110 transition">
+      <div class="group bg-white rounded-2xl shadow-lg p-8 text-center hover:-translate-y-3 hover:shadow-2xl transition duration-500 animate-fadeInUp delay-400">
+        <div class="bg-gradient-to-r from-primary to-primary text-white w-20 h-20 flex items-center justify-center rounded-full mx-auto mb-6 group-hover:scale-110 transition">
           <i class="fas fa-lightbulb text-3xl"></i>
         </div>
         <h3 class="text-xl font-bold text-gray-900 mb-4">بناء العلامة التجارية</h3>
@@ -1009,11 +1044,9 @@
 
     <!-- صورة توضيحية -->
     <div class="relative mt-20 flex justify-center animate-fadeInUp">
-      <img src="./assets/img/ايجيبت للدعاية والاعلان 1.png" alt="أهمية الدعاية والإعلان"
-        class="max-w-3xl rounded-2xl shadow-xl p-4 transform transition-transform duration-500 hover:scale-110">
-      <div class="absolute -top-10 -left-10 w-40 h-40 bg-blue-200 rounded-full mix-blend-multiply animate-pulse"></div>
-      <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-purple-200 rounded-full mix-blend-multiply animate-pulse">
-      </div>
+      <img src="./assets/img/ايجيبت للدعاية والاعلان 1.png" alt="أهمية الدعاية والإعلان" class="max-w-3xl rounded-2xl shadow-xl p-4 transform transition-transform duration-500 hover:scale-110">
+      <div class="absolute -top-10 -left-10 w-40 h-40 bg-primary-200 rounded-full mix-blend-multiply animate-pulse"></div>
+      <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-primary-100 rounded-full mix-blend-multiply animate-pulse"></div>
     </div>
 
   </div>
@@ -1021,16 +1054,19 @@
 
 
 
+
+
+
 <div class="fixed bottom-6 left-6 flex flex-col space-y-4 z-50">
   <!-- زر الاتصال -->
-  <a href="tel:+201234567890"
-    class="bg-gradient-to-r from-blue-500 to-blue-600 text-white w-14 h-14 rounded-full shadow-lg hover:scale-110 transform transition flex items-center justify-center">
+  <a href="tel:+201234567890" 
+     class="bg-gradient-to-r from-primary to-primary text-white w-14 h-14 rounded-full shadow-lg hover:scale-110 transform transition flex items-center justify-center">
     <i class="fas fa-phone-alt text-2xl"></i>
   </a>
 
   <!-- زر الواتساب -->
   <a href="https://wa.me/201234567890" target="_blank"
-    class="bg-green-500 text-white w-14 h-14 rounded-full shadow-lg hover:scale-110 transform transition flex items-center justify-center">
+     class="bg-green-500 text-white w-14 h-14 rounded-full shadow-lg hover:scale-110 transform transition flex items-center justify-center">
     <i class="fab fa-whatsapp text-2xl"></i>
   </a>
 </div>
@@ -1046,23 +1082,23 @@
             <img src="./assets/img/ايجيبت للدعاية والاعلان 1.png" alt="">
           </div>
           <div>
-            <h3 class="text-xl font-bold">ايجبت للدعاية والإعلان</h3>
+            <h3 class="text-xl font-bold text-primary">ايجبت للدعاية والإعلان</h3>
             <p class="text-gray-400 text-sm">حلول إبداعية لنجاحك</p>
           </div>
         </div>
         <p class="text-gray-300 mb-6">نحن شريكك الموثوق في رحلة النجاح، نقدم حلول إعلانية وتسويقية متميزة تحقق أهدافك
           وتبني علامتك التجارية.</p>
         <div class="flex space-x-reverse space-x-4">
-          <a href="#" class="bg-blue-600 hover:bg-blue-700 p-3 px-4 rounded-full transition-colors">
+          <a href="#" class="bg-blue-600 hover:bg-blue-400 p-3 px-4 rounded-full transition-colors">
             <i class="fab fa-facebook-f"></i>
           </a>
           <a href="#" class="bg-pink-600 hover:bg-pink-700 p-3 px-4 rounded-full transition-colors">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="#" class="bg-blue-400 hover:bg-blue-500 p-3 px-4 rounded-full transition-colors">
+          <a href="#" class="bg-blue-600 hover:bg-blue-700  p-3 px-4 rounded-full transition-colors">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="#" class="bg-blue-800 hover:bg-blue-900 p-3 px-4 rounded-full transition-colors">
+          <a href="#" class="bg-primary-800 hover:bg-primary-900 p-3 px-4 rounded-full transition-colors">
             <i class="fab fa-linkedin-in"></i>
           </a>
           <a href="#" class="bg-red-600 hover:bg-red-700 p-3 px-4 rounded-full transition-colors">
@@ -1072,7 +1108,7 @@
       </div>
 
       <div>
-        <h4 class="text-lg font-bold mb-6">خدماتنا</h4>
+        <h4 class="text-lg font-bold mb-6 text-primary">خدماتنا</h4>
         <ul class="space-y-3">
           <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
                 class="fas fa-chevron-left text-xs ml-2"></i>التصميم والبراندنج</a></li>
@@ -1088,7 +1124,7 @@
       </div>
 
       <div>
-        <h4 class="text-lg font-bold mb-6">روابط مفيدة</h4>
+        <h4 class="text-lg font-bold mb-6 text-primary">روابط مفيدة</h4>
         <ul class="space-y-3">
           <li><a href="#home" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
                 class="fas fa-chevron-left text-xs ml-2"></i>الرئيسية</a></li>
@@ -1106,22 +1142,22 @@
       </div>
 
       <div>
-        <h4 class="text-lg font-bold mb-6">تواصل معنا</h4>
+        <h4 class="text-lg font-bold mb-6 text-primary">تواصل معنا</h4>
         <div class="space-y-4">
           <div class="flex items-center space-x-reverse space-x-3">
-            <i class="fas fa-map-marker-alt text-blue-400"></i>
+            <i class="fas fa-map-marker-alt text-primary"></i>
             <span class="text-gray-300">الرياض، المملكة العربية السعودية</span>
           </div>
           <div class="flex items-center space-x-reverse space-x-3">
-            <i class="fas fa-phone text-blue-400"></i>
+            <i class="fas fa-phone text-primary"></i>
             <span class="text-gray-300" dir="ltr">+966 50 123 4567</span>
           </div>
           <div class="flex items-center space-x-reverse space-x-3">
-            <i class="fas fa-envelope text-blue-400"></i>
+            <i class="fas fa-envelope text-primary"></i>
             <span class="text-gray-300" dir="ltr">info@creativead.com</span>
           </div>
           <div class="flex items-center space-x-reverse space-x-3">
-            <i class="fas fa-clock text-blue-400"></i>
+            <i class="fas fa-clock text-primary"></i>
             <span class="text-gray-300">الأحد - الخميس: 9:00 - 18:00</span>
           </div>
         </div>
@@ -1132,8 +1168,7 @@
 
     <div class="border-t border-gray-800 pt-8">
       <div class="flex flex-col md:flex-row  items-center text-center m-auto">
-        <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 شركة <a href="https://www.fashne.net/">FASHNE</a>. جميع
-          الحقوق محفوظة.</p>
+        <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 شركة <a href="https://www.fashne.net/">FASHNE</a>. جميع الحقوق محفوظة.</p>
 
       </div>
     </div>
