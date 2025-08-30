@@ -159,12 +159,7 @@
       <div class="hero-overlay"></div>
       <div class="hero-content text-center text-white px-4">
         <div class="fade-in">
-          <h1 class="text-5xl lg:text-7xl font-bold mb-6">إبداع لا حدود له</h1>
-          <p class="text-xl lg:text-2xl mb-8 max-w-3xl mx-auto">نحول أفكارك إلى حملات إعلانية مؤثرة تحقق النجاح
-            والانتشار</p>
-          <button
-            class="bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors">ابدأ
-            مشروعك</button>
+        
         </div>
       </div>
     </div>
@@ -917,6 +912,39 @@
       </div>
     </div>
   </section>
+
+
+
+  <section class="relative w-full h-full md:h-[650px] overflow-hidden">
+  <!-- صورة الخلفية -->
+  <img src="./assets/img/Cover Egypt.png" 
+       alt="شركة دعاية وإعلان"
+       class="absolute inset-0 w-full h-full object-cover" />
+
+  <!-- طبقة شفافة فوق الصورة -->
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <!-- النص فوق البانر -->
+  <div class="relative z-10 flex flex-col items-center justify-center text-center text-white h-full px-6">
+  
+  </div>
+</section>
+
+<!-- أنيميشن -->
+<style>
+@keyframes fade-in {
+  from {opacity:0; transform: translateY(20px);}
+  to {opacity:1; transform: translateY(0);}
+}
+@keyframes slide-up {
+  from {opacity:0; transform: translateY(40px);}
+  to {opacity:1; transform: translateY(0);}
+}
+.animate-fade-in { animation: fade-in 1s ease forwards; }
+.animate-fade-in-delay { animation: fade-in 1.5s ease forwards; }
+.animate-slide-up { animation: slide-up 1s ease forwards; }
+</style>
+
 
 </div>
 
