@@ -103,7 +103,7 @@
         }
         
        .slide-1 {
-    background: url('../assets/img/hero-1.jpg') no-repeat center center;
+    background: url('../assets/img/Cover Egypt.png') no-repeat center center;
     background-size: cover;
     
 }
@@ -236,3 +236,4 @@
             transform: translateZ(0);
             will-change: transform;
         }
+
