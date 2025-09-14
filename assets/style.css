@@ -5,7 +5,9 @@
   --color-secondary: #0bc1b8;
   --color-dark: #1c1c1d;
 }
-
+.container{
+  width: 90%;
+}
 .text-primary {
   color: var(--color-primary);
 }
