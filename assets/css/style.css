@@ -19,7 +19,6 @@
 .text-secondary {
   color: var(--color-secondary);
 }
-
 .bg-primary {
   background-color: var(--color-primary);
 }
