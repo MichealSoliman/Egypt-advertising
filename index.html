@@ -107,9 +107,17 @@
         </a>
       </div>
       <!-- Menu Button -->
-      <button id="menu-btn" class="lg:hidden text-gray-700 focus:outline-none">
-        <i class="fas fa-bars text-2xl"></i>
-      </button>
+<button 
+  id="menu-btn" 
+  class="lg:hidden text-gray-700 focus:outline-none"
+  aria-label="فتح وإغلاق قائمة التنقل"
+  aria-expanded="false"
+  aria-controls="menu"
+>
+  <i class="fas fa-bars text-2xl"></i>
+</button>
+
+
     </div>
   </div>
 
@@ -219,9 +227,30 @@
 
   <!-- Slider Controls -->
   <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20" dir="ltr">
-    <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 transition-opacity" data-slide="0"></button>
-    <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 transition-opacity" data-slide="1"></button>
-    <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 transition-opacity" data-slide="2"></button>
+    <button 
+  class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 transition-opacity" 
+  data-slide="0" 
+  aria-label="الانتقال إلى الشريحة الأولى"
+  aria-current="true"
+>
+</button>
+
+    <button 
+  class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 transition-opacity" 
+  data-slide="1" 
+  aria-label="الانتقال إلى الشريحة الأولى"
+  aria-current="true"
+>
+</button>
+
+    <button 
+  class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 transition-opacity" 
+  data-slide="2" 
+  aria-label="الانتقال إلى الشريحة الأولى"
+  aria-current="true"
+>
+</button>
+
   </div>
 
   <!-- Scroll Indicator -->
@@ -522,14 +551,24 @@
       <h2 class="text-2xl md:text-3xl font-bold mb-4">جاهز تميز علامتك التجارية؟ 🚀</h2>
       <p class="text-lg text-gray-200 mb-6">تواصل معنا الآن واحصل على استشارة مجانية لحملتك الإعلانية</p>
       <div class="flex flex-wrap justify-center gap-4">
-        <a href="tel:+966501234567"
-          class="bg-white text-primary-dark font-semibold px-6 py-3 rounded-xl shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105">
-          📞 اتصل بنا
-        </a>
-        <a href="https://wa.me/966501234567" target="_blank"
-          class="bg-green-500 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:bg-green-600 transition duration-300 transform hover:scale-105">
-          💬 واتساب
-        </a>
+       <a 
+        href="tel:0501234567"
+        class="bg-white text-primary-dark font-semibold px-6 py-3 rounded-xl shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-dark"
+        aria-label="اتصل بنا عبر الهاتف"
+      >
+        📞 اتصل بنا
+      </a>
+
+      <!-- زر الواتساب -->
+      <a 
+        href="https://wa.me/966501234567"
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="bg-green-500 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:bg-green-600 transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-500"
+        aria-label="تواصل معنا عبر واتساب"
+      >
+        💬 واتساب
+      </a>
       </div>
     </div>
   </div>
@@ -1063,16 +1102,26 @@
 
 <div class="fixed bottom-6 left-6 flex flex-col space-y-4 z-50">
   <!-- زر الاتصال -->
-  <a href="tel:+965501234567" 
-     class="bg-gradient-to-r from-primary to-primary text-white w-14 h-14 rounded-full shadow-lg hover:scale-110 transform transition flex items-center justify-center">
-    <i class="fas fa-phone-alt text-2xl"></i>
-  </a>
+<a 
+  href="tel:0501234567" 
+  class="bg-gradient-to-r from-primary to-primary text-white w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-primary"
+  aria-label="الاتصال على رقم 965501234567"
+>
+  <i class="fas fa-phone-alt text-2xl"></i>
+</a>
+
 
   <!-- زر الواتساب -->
-  <a href="https://wa.me/966501234567" target="_blank"
-     class="bg-green-500 text-white w-14 h-14 rounded-full shadow-lg hover:scale-110 transform transition flex items-center justify-center">
-    <i class="fab fa-whatsapp text-2xl"></i>
-  </a>
+ <a 
+  href="https://wa.me/966501234567" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  class="bg-green-500 text-white w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-green-500"
+  aria-label="تواصل معنا عبر الواتساب"
+>
+  <i class="fab fa-whatsapp text-2xl"></i>
+</a>
+
 </div>
 
 <!-- Footer -->
@@ -1093,18 +1142,49 @@
         <p class="text-gray-300 mb-6">نحن شريكك الموثوق في رحلة النجاح، نقدم حلول إعلانية وتسويقية متميزة تحقق أهدافك
           وتبني علامتك التجارية.</p>
         <div class="flex space-x-reverse space-x-4">
-          <a href="https://www.facebook.com/people/%D8%A7%D9%8A%D8%AC%D8%A8%D8%AA-%D9%84%D9%84%D8%AF%D8%B9%D8%A7%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86/61580300744080/" class="bg-blue-600 hover:bg-blue-600 p-3 px-4 rounded-full transition-colors">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.instagram.com/egypt.advertising/" class="bg-pink-600 hover:bg-pink-700 p-3 px-4 rounded-full transition-colors">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://x.com/egyptadvertisin" class="bg-blue-500 hover:bg-blue-500 p-3 px-4 rounded-full transition-colors">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://www.tiktok.com/@egypt.advertising?lang=ar" class="bg-primary-800 hover:bg-primary-900 p-3 px-4 rounded-full transition-colors">
-            <i class="fab fa-tiktok"></i>
-          </a>
+         <!-- Facebook -->
+  <a 
+    href="https://www.facebook.com/people/%D8%A7%D9%8A%D8%AC%D8%A8%D8%AA-%D9%84%D9%84%D8%AF%D8%B9%D8%A7%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86/61580300744080/" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="bg-blue-600 hover:bg-blue-700 px-4 p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600"
+    aria-label="تابعنا على فيسبوك"
+  >
+    <i class="fab fa-facebook-f text-white text-lg"></i>
+  </a>
+
+  <!-- Instagram -->
+  <a 
+    href="https://www.instagram.com/egypt.advertising/" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="bg-pink-600 hover:bg-pink-700 p-3 px-4  rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-pink-600"
+    aria-label="تابعنا على إنستجرام"
+  >
+    <i class="fab fa-instagram text-white text-lg"></i>
+  </a>
+
+  <!-- Twitter (X) -->
+  <a 
+    href="https://x.com/egyptadvertisin" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="bg-blue-500 hover:bg-blue-600 px-4  p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
+    aria-label="تابعنا على تويتر"
+  >
+    <i class="fab fa-twitter text-white text-lg"></i>
+  </a>
+
+  <!-- TikTok -->
+  <a 
+    href="https://www.tiktok.com/@egypt.advertising?lang=ar" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="bg-gray-900 hover:bg-gray-800 p-3  rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-gray-900"
+    aria-label="تابعنا على تيك توك"
+  >
+    <i class="fab fa-tiktok text-white text-lg "></i>
+  </a>
           
         </div>
       </div>
