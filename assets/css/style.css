@@ -104,18 +104,18 @@
         }
         
        .slide-1 {
-    background: url('../img/hero-1.png') no-repeat center center;
+    background: url('../img/hero-1.webp') no-repeat center center;
     background-size: cover;
     
 }
 
 .slide-2 {
-    background: url('../img/hero-2.png') no-repeat center center;
+    background: url('../img/hero-2.webp') no-repeat center center;
     background-size: cover;
 }
 
 .slide-3 {
-    background: url('../img/ايجيبت.png') no-repeat center center;
+    background: url('../img/hero-3.webp') no-repeat center center;
     background-size: cover;
 }
 
