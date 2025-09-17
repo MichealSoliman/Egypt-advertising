@@ -5,6 +5,9 @@
   --color-secondary: #0bc1b8;
   --color-dark: #1c1c1d;
 }
+strong{
+  color:#0e8779;
+}
 .container{
   width: 90%;
 }

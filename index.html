@@ -96,7 +96,22 @@
       background-image: linear-gradient(to right, var(--color-primary), var(--color-primary-dark)) !important;
     }
   </style>
+  <!-- script Service -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "خدمات إعلانية وتسويقية",
+    "provider": {
+      "@type": "Organization",
+      "name": "ايجبت,
+      "url": "https://yourwebsite.com"
+    },
+    "description": "نقدم مجموعة شاملة من الخدمات الإعلانية والتسويقية لتحقيق أهدافك التجارية وتنمية علامتك التجارية بشكل فعال."
+  }
+  </script>
   <script>
+
     tailwind.config = {
       theme: {
         extend: {
@@ -216,198 +231,218 @@
 </style>
 
 <!-- Hero Section with Slider -->
-<section id="home" class="relative h-screen">
+<section id="home" class="relative h-screen" role="banner" aria-label="قسم الإعلانات الرئيسي">
   <div id="heroSlider" class="relative h-full overflow-hidden">
+    
     <!-- Slide 1 -->
     <div class="hero-slide slide-1 absolute inset-0 flex items-center justify-center transition-opacity duration-1000">
-      <div class="hero-overlay"></div>
-      <div class="hero-content text-center text-white px-4">
+      <div class="hero-overlay bg-black/50 absolute inset-0"></div>
+      <div class="hero-content text-center text-white px-4 relative z-10">
         <div class="fade-in">
-          <h1 class="text-5xl lg:text-7xl font-bold mb-6">إبداع لا حدود له</h1>
-          <p class="text-xl lg:text-2xl mb-8 max-w-3xl mx-auto">نحول أفكارك إلى حملات إعلانية مؤثرة تحقق النجاح
-            والانتشار</p>
-          <a href="tel:+966501234567">
-            <button
-              class="bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors">
+          <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+            إبداع لا حدود له
+          </h1>
+          <p class="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto">
+            نحول أفكارك إلى حملات إعلانية مؤثرة تحقق النجاح والانتشار.
+          </p>
+          <a href="tel:+966501234567" aria-label="اتصل بنا لبدء مشروعك">
+            <button 
+              class="bg-white text-blue-600 px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-gray-100 transition-colors shadow-lg">
               ابدأ مشروعك
             </button>
           </a>
-
         </div>
       </div>
     </div>
- 
 
     <!-- Slide 2 -->
-    <div
-      class="hero-slide slide-2 absolute inset-0 flex items-center justify-center transition-opacity duration-1000 opacity-0">
-      <div class="hero-overlay"></div>
-      <div class="hero-content text-center text-white px-4 ">
+    <div class="hero-slide slide-2 absolute inset-0 flex items-center justify-center transition-opacity duration-1000 opacity-0">
+      <div class="hero-overlay bg-black/50 absolute inset-0"></div>
+      <div class="hero-content text-center text-white px-4 relative z-10">
         <div class="fade-in">
-          <h1 class="text-5xl lg:text-7xl font-bold mb-6">تميز في كل حملة</h1>
-          <p class="text-xl lg:text-2xl mb-8 max-w-3xl mx-auto">خبرة تزيد عن 10 سنوات في صناعة الإعلان والتسويق الرقمي
+          <h2 class="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+            تميز في كل حملة
+          </h2>
+          <p class="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto">
+            خبرة تزيد عن 10 سنوات في صناعة الإعلان والتسويق الرقمي.
           </p>
-          <a href="tel:+966501234567">
-            <button
-              class="bg-white text-pink-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors">استكشف
-              أعمالنا</button>
+          <a href="tel:+966501234567" aria-label="اكتشف أعمالنا السابقة">
+            <button 
+              class="bg-white text-pink-600 px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-gray-100 transition-colors shadow-lg">
+              استكشف أعمالنا
+            </button>
           </a>
         </div>
       </div>
     </div>
 
     <!-- Slide 3 -->
-    <div
-      class="hero-slide slide-3 absolute inset-0 flex items-center justify-center transition-opacity duration-1000 opacity-0">
-      <div class="hero-overlay"></div>
-      <div class="hero-content text-center text-white px-4">
+    <div class="hero-slide slide-3 absolute inset-0 flex items-center justify-center transition-opacity duration-1000 opacity-0">
+      <div class="hero-overlay bg-black/50 absolute inset-0"></div>
+      <div class="hero-content text-center text-white px-4 relative z-10">
         <div class="fade-in">
-          <h1 class="text-5xl lg:text-7xl font-bold mb-6">نجاحك هو هدفنا</h1>
-          <p class="text-xl lg:text-2xl mb-8 max-w-3xl mx-auto">شريكك الموثوق لتحقيق أهدافك التسويقية وبناء علامتك
-            التجارية</p>
-          <a href="tel:+966501234567">
-            <button
-              class="bg-white text-blue-500 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors">تواصل
-              معنا</button>
+          <h2 class="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+            نجاحك هو هدفنا
+          </h2>
+          <p class="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto">
+            شريكك الموثوق لتحقيق أهدافك التسويقية وبناء علامتك التجارية.
+          </p>
+          <a href="tel:+966501234567" aria-label="تواصل معنا مباشرة">
+            <button 
+              class="bg-white text-blue-500 px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-gray-100 transition-colors shadow-lg">
+              تواصل معنا
+            </button>
           </a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Slider Controls -->
-  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20" dir="ltr">
-    <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 transition-opacity" data-slide="0"
-      aria-label="الانتقال إلى الشريحة الأولى" aria-current="true">
-    </button>
-
-    <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 transition-opacity" data-slide="1"
-      aria-label="الانتقال إلى الشريحة الأولى" aria-current="true">
-    </button>
-
-    <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-50 transition-opacity" data-slide="2"
-      aria-label="الانتقال إلى الشريحة الأولى" aria-current="true">
-    </button>
-
+  <!-- Slider Dots -->
+  <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20" dir="ltr">
+    <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-70 hover:opacity-100 transition-opacity" data-slide="0"
+      aria-label="الشريحة الأولى" aria-current="true"></button>
+    <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-70 hover:opacity-100 transition-opacity" data-slide="1"
+      aria-label="الشريحة الثانية"></button>
+    <button class="slider-dot w-3 h-3 rounded-full bg-white opacity-70 hover:opacity-100 transition-opacity" data-slide="2"
+      aria-label="الشريحة الثالثة"></button>
   </div>
 
   <!-- Scroll Indicator -->
-  <div class="absolute bottom-8 right-8 text-white z-20 floating">
-    <i class="fas fa-chevron-down text-2xl"></i>
+  <div class="absolute bottom-6 right-6 text-white z-20 animate-bounce">
+    <i class="fas fa-chevron-down text-2xl" aria-hidden="true"></i>
   </div>
 </section>
+
 
 <div class="container w-75 m-auto">
 
 <!-- About Section -->
-<section id="about" class="py-20 bg-white">
-    <div class=" container mx-auto px-4">
-        <div class="flex flex-col lg:flex-row items-center justify-content-center">
-          
-            
-            <!-- Content Section (on the right) -->
-            <div class="lg:w-3/5  pl-10">
-                <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6 fade-in ">
-                    من <span class="text-gradient-bg">نحن</span>؟
-                </h2>
-                
-                <p class="text-lg text-gray-600 mb-8 leading-relaxed fade-in">
-                    نحن وكالة إبداعية متخصصة في تقديم حلول متكاملة للدعاية والإعلان وتصميم المواقع الإلكترونية. 
-                    نعمل على تحويل أفكارك إلى واقع ملموس من خلال تصميمات إبداعية واستراتيجيات تسويقية فعالة 
-                    تواكب أحدث trends في السوق.
-                </p>
-                
-                <div class="mb-10 fade-in">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4">لماذا تختارنا؟</h3>
-                    <p class="text-gray-600 mb-6">
-                        نتميز بعقود من الخبرة في مجال التسويق الإبداعي وتصميم المواقع، مع فريق من المحترفين 
-                        الذين يمتلكون المهارات اللازمة لتحويل رؤيتك إلى واقع ملموس. نقدم حلولاً مبتكرة تلبي 
-                        احتياجاتك التسويقية وتساعدك على تحقيق أهدافك التجارية.
-                    </p>
-                    
-                    <div class="grid grid-cols-2 gap-4 mb-6">
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-[#0e8779] ml-2"></i>
-                            <span class="text-gray-700">تصميم مواقع احترافية</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-[#0e8779] ml-2"></i>
-                            <span class="text-gray-700">حملات إعلانية فعالة</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-[#0e8779] ml-2"></i>
-                            <span class="text-gray-700">هوية بصرية متكاملة</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-check-circle text-[#0e8779] ml-2"></i>
-                            <span class="text-gray-700">استراتيجيات تسويق رقمي</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Services Overview -->
-                <div class="mb-10 fade-in">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">خدماتنا المتكاملة</h3>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div class="service-card bg-gray-50 p-5 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300">
-                      <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center ">
-                          <i class="fas fa-bullhorn service-icon text-white text-xl "></i>
-                        </div>
-                        <h4 class="text-lg font-bold text-gray-800 mr-2">دعاية وإعلان</h4>
-                      </div>
-                      <p class="text-gray-600 text-sm">
-                        حملات دعائية مبتكرة تساعد في تعزيز علامتك التجارية وزيادة انتشارها بشكل مؤثر.
-                      </p>
-                    </div>
+<section id="about" class="py-20 bg-white" role="region" aria-label="قسم من نحن">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col lg:flex-row items-center justify-center gap-10">
+      
+      <!-- قسم المحتوى -->
+      <div class="lg:w-3/5 pl-0 lg:pl-10">
+        <!-- عنوان رئيسي -->
+        <h2 class="text-4xl lg:text-5xl font-bold  mb-6 fade-in">
+          من <strong class="text-gradient-bg">نحن</strong>؟
+        </h2>
 
-                        
-                        <div class="service-card bg-gray-50 p-5 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300">
-                            <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mr-4">
-                                    <i class="fas fa-code service-icon text-white text-xl"></i>
-                                </div>
-                                <h4 class="text-lg font-bold text-gray-800 mr-2">برمجة مواقع</h4>
-                            </div>
-                            <p class="text-gray-600 text-sm">مواقع إلكترونية سريعة الاستجابة وسهلة الاستخدام.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                
-                <!-- CTA Button -->
-                <div class="fade-in">
-                    <a href="tel:+965501234567" class="inline-block gradient-bg text-white py-3 px-8 rounded-full font-bold text-lg shadow-md hover:shadow-lg transition-all duration-300">
-                        تواصل معنا <i class="fas fa-arrow-left mr-2"></i>
-                    </a>
-                </div>
+        <!-- وصف جديد -->
+        <p class="text-lg text-gray-600 mb-8 leading-relaxed fade-in">
+          في <strong class="text-[#0e8779]">ايجبت للدعاية والإعلان</strong>، نؤمن أن النجاح يبدأ من الإبداع وينمو مع الاستراتيجية.
+          نحن لسنا مجرد شركة دعائية، بل شريك حقيقي لعملائنا في رحلتهم نحو التميز.
+        </p>
+        <p class="text-lg text-gray-600 mb-8 leading-relaxed fade-in">
+          بفضل خبرتنا العميقة وفريقنا المبدع، أصبحنا من أفضل شركات الإعلان في جدة، حيث نجحنا في بناء سمعة قوية
+          قائمة على الثقة والجودة والابتكار.
+        </p>
+        <p class="text-lg text-gray-600 mb-8 leading-relaxed fade-in">
+          نحن نتميز بشكل خاص في مجال الدعاية والإعلان والتسويق الإلكتروني، حيث ندمج بين التقنيات الحديثة
+          وفهمنا العميق لسلوك الجمهور لنصنع استراتيجيات مؤثرة تحقق نتائج ملموسة وتضع عملاءنا في صدارة المنافسة.
+        </p>
+
+        <!-- لماذا تختارنا -->
+        <div class="mb-10 fade-in">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">لماذا تختارنا؟</h3>
+          <p class="text-gray-600 mb-6">
+            نمتلك فريقًا محترفًا بخبرة تزيد عن عشر سنوات في مجال التسويق الإبداعي وتصميم المواقع،
+            لنساعدك في بناء علامة تجارية قوية من خلال حلول مبتكرة تناسب احتياجاتك وتحقق أهدافك.
+          </p>
+
+          <!-- مميزات -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+            <div class="flex items-center">
+              <i class="fas fa-check-circle text-[#0e8779] ml-2"></i>
+              <span class="text-gray-700">تصميم مواقع احترافية</span>
             </div>
-
-
-
-              <!-- Image Section (on the left) -->
-            <div class="lg:w-2/5 mb-12 lg:mb-0 pr-10 text-center lg:text-end mx-auto lg:mx-0 pt-3">
-
-                <div class="relative">
-                    <div class="rounded-2xl overflow-hidden shadow-xl">
-                        <img src="./assets/img/Electronic-marketing.png" 
-                             alt="فريق العمل في شركة الدعاية والإعلان" class="w-full h-auto object-cover">
-                    </div>
-                    
-                    <!-- Experience Badge -->
-                    <div class="absolute -bottom-6 -right-6 gradient-bg text-white py-4 px-6 rounded-2xl shadow-xl">
-                        <div class="text-center">
-                            <span class="block text-4xl font-bold">+10</span>
-                            <span class="block text-lg">سنوات من الخبرة</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="flex items-center">
+              <i class="fas fa-check-circle text-[#0e8779] ml-2"></i>
+              <span class="text-gray-700">حملات إعلانية فعالة</span>
             </div>
+            <div class="flex items-center">
+              <i class="fas fa-check-circle text-[#0e8779] ml-2"></i>
+              <span class="text-gray-700">هوية بصرية متكاملة</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-check-circle text-[#0e8779] ml-2"></i>
+              <span class="text-gray-700">استراتيجيات تسويق رقمي</span>
+            </div>
+          </div>
         </div>
+
+        <!-- خدماتنا -->
+        <div class="mb-10 fade-in">
+          <h3 class="text-2xl font-bold text-gray-800 mb-6">خدماتنا المتكاملة</h3>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- كارت دعاية وإعلان -->
+            <div class="service-card bg-gray-50 p-5 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center">
+                  <i class="fas fa-bullhorn service-icon text-white text-xl"></i>
+                </div>
+                <h4 class="text-lg font-bold text-gray-800 mr-2">دعاية وإعلان</h4>
+              </div>
+              <p class="text-gray-600 text-sm">
+                حملات دعائية مبتكرة تعزز انتشار علامتك التجارية وتزيد من مبيعاتك بشكل مؤثر.
+              </p>
+            </div>
+
+            <!-- كارت برمجة مواقع -->
+            <div class="service-card bg-gray-50 p-5 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center">
+                  <i class="fas fa-code service-icon text-white text-xl"></i>
+                </div>
+                <h4 class="text-lg font-bold text-gray-800 mr-2">برمجة مواقع</h4>
+              </div>
+              <p class="text-gray-600 text-sm">
+                مواقع إلكترونية سريعة، متجاوبة وسهلة الاستخدام تدعم نمو أعمالك.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- زر تواصل -->
+        <div class="fade-in">
+          <a href="tel:+966501234567" 
+            class="inline-block gradient-bg text-white py-3 px-8 rounded-full font-bold text-lg shadow-md hover:shadow-lg transition-all duration-300"
+            aria-label="تواصل معنا عبر الهاتف">
+            تواصل معنا <i class="fas fa-arrow-left mr-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- قسم الصورة -->
+      <div class="lg:w-2/5 mb-12 lg:mb-0 text-center lg:text-end mx-auto lg:mx-0 pt-3">
+        <div class="relative max-w-md mx-auto">
+          <div class="rounded-2xl overflow-hidden shadow-xl group">
+          <img 
+            src="./assets/img/Electronic-marketing.webp" 
+            alt="فريق العمل في شركة الدعاية والإعلان" 
+            class="w-full h-auto object-cover lazyload lg:h-[480px] md:h-[400px] sm:h-[350px] transform transition-transform duration-500 group-hover:scale-110"
+            loading="lazy">
+        </div>
+
+
+          <!-- شارة الخبرة -->
+        <div class="absolute -bottom-10 -right-10 hidden lg:block gradient-bg text-white py-4 px-6 rounded-2xl shadow-xl">
+        <div class="text-right">
+          <span class="block text-4xl font-bold">+10</span>
+          <span class="block text-lg">سنوات من الخبرة</span>
+        </div>
+      </div>
+
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>
+
+
 
 <script>
     // Simple animation on scroll
@@ -435,12 +470,14 @@
 
 
   <!-- Services Section -->
-  <section id="services" class="py-20 bg-white">
+  <section id="services" class="py-20 bg-white" aria-labelledby="services-heading">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
         <h2 class="text-4xl lg:text-5xl font-bold gradient-text mb-6 fade-in">خدماتنا المتميزة</h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-in">نقدم مجموعة شاملة من الخدمات الإعلانية والتسويقية
-          لتحقيق أهدافك التجارية</p>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-in">
+      نقدم مجموعة شاملة من الخدمات الإعلانية والتسويقية المصممة خصيصًا لمساعدتك في
+      تحقيق أهدافك التجارية وتنمية علامتك التجارية بشكل فعال ومستدام.
+    </p>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -615,7 +652,7 @@
         <div class="service-card bg-white p-4 rounded-2xl fade-in">
           <!-- الصورة -->
           <div class="w-full h-64 mb-6 mx-auto overflow-hidden">
-            <img src="./assets/img/Design-and-programming.png" alt="تصميم وبرمجة المواقع الإلكترونية باحترافية"
+            <img src="./assets/img/Design-and-programming.webp" alt="تصميم وبرمجة المواقع الإلكترونية باحترافية"
               class="w-full  object-fit-cover transform transition-transform duration-500 hover:scale-110" loading="lazy"
               width="800" height="600">
           </div>
@@ -651,7 +688,7 @@
         <div class="service-card bg-white p-4 rounded-2xl fade-in">
           <!-- الصورة -->
           <div class="w-100 h-100 mb-6 mx-auto overflow-hidden">
-            <img src="./assets/img/Electronic-marketing.png" alt="التسويق الإلكتروني وإدارة الحملات الإعلانية"
+            <img src="./assets/img/Electronic-marketing.webp" alt="التسويق الإلكتروني وإدارة الحملات الإعلانية"
               class="w-full h-full object-contain transform transition-transform duration-500 hover:scale-110">
           </div>
 
@@ -685,7 +722,7 @@
         <div class="service-card bg-white p-4 rounded-2xl fade-in">
           <!-- الصورة -->
           <div class="w-100 h-100 mb-6 mx-auto overflow-hidden">
-            <img src="./assets/img/Photography-and-montage.png" alt="خدمات التصوير والمونتاج"
+            <img src="./assets/img/Photography-and-montage.webp" alt="خدمات التصوير والمونتاج"
               class="w-full h-full object-contain transform transition-transform duration-500 hover:scale-110">
           </div>
 
@@ -717,7 +754,7 @@
         <div class="service-card bg-white p-4 rounded-2xl fade-in">
           <!-- الصورة -->
           <div class="w-100 h-100 mb-6 mx-auto overflow-hidden">
-            <img src="./assets/img/Logo-design.png" alt="تصميم لوجو وهوية بصرية احترافية"
+            <img src="./assets/img/Logo-design.webp" alt="تصميم لوجو وهوية بصرية احترافية"
               class="w-full h-full object-contain transform transition-transform duration-500 hover:scale-110">
           </div>
 
@@ -750,6 +787,8 @@
       </div>
     </div>
   </section>
+
+
 
 
 
@@ -814,113 +853,117 @@
     }
   </style>
 
+<section id="why-choose-egypt" class="relative bg-white py-16 md:py-20" aria-labelledby="why-choose-title">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-12">
+    
+    <!-- العنوان الرئيسي -->
+    <header class="text-center mb-14 max-w-3xl mx-auto">
+      <h2 id="why-choose-title" class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-snug">
+        لماذا تختار
+        <span class="text-primary bg-clip-text bg-gradient-to-r from-primary to-primary-dark">
+          إيجيبت؟
+        </span>
+      </h2>
+      <p class="text-gray-600 text-base sm:text-lg leading-relaxed">
+        في <strong>إيجيبت</strong> نقدم حلول تسويقية مبتكرة تساعدك على تصدر المنافسة، 
+        مع التركيز على <strong>الجودة</strong>، <strong>الابتكار</strong>، وتجربة عميل مميزة
+        تترك انطباعًا لا يُنسى.
+      </p>
+    </header>
 
-  <section id="why-choose-egypt" class="relative bg-white py-16 md:py-20" aria-labelledby="why-choose-title">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-12">
-
-      <!-- العنوان -->
-      <div class="text-center mb-14 max-w-3xl mx-auto">
-        <h2 id="why-choose-title" class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-snug">
-          لماذا تختار
-          <span class="text-primary bg-clip-text bg-gradient-to-r from-primary to-primary-dark">
-            ايجبت؟
-          </span>
-        </h2>
-        <p class="text-gray-600 text-base sm:text-lg leading-relaxed">
-          نحن في <strong>ايجبت</strong> نمتاز بتقديم حلول تسويقية مبتكرة تجعل علامتك التجارية تتصدر السوق،
-          مع التركيز على الجودة، الابتكار، وتجربة عميل لا تُنسى.
-        </p>
-      </div>
-
-      <!-- المحتوى -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
-        <!-- النصوص -->
-        <div class="space-y-8">
-
-          <!-- ميزة 1 -->
-          <div class="flex items-start gap-4">
-            <div
-              class="bg-gradient-to-r from-primary to-primary-dark text-white p-4 rounded-xl flex-shrink-0 shadow-md">
-              <i class="fas fa-lightbulb text-xl" aria-hidden="true"></i>
-            </div>
-            <div>
-              <h3 class="text-xl sm:text-2xl font-bold mb-2 text-gray-900">
-                أفكار إبداعية خارج الصندوق
-              </h3>
-              <p class="text-gray-600 text-sm sm:text-base">
-                نصمم استراتيجيات تسويقية فريدة تساعدك على جذب عملاء جدد
-                وبناء صورة قوية لعلامتك التجارية في السوق.
-              </p>
-            </div>
+    <!-- المحتوى -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      
+      <!-- النصوص -->
+      <div class="space-y-8">
+        
+        <!-- ميزة 1 -->
+        <div class="flex items-start gap-4">
+          <div class="bg-gradient-to-r from-primary to-primary-dark text-white p-4 rounded-xl flex-shrink-0 shadow-md">
+            <i class="fas fa-lightbulb text-xl" aria-hidden="true"></i>
           </div>
-
-          <!-- ميزة 2 -->
-          <div class="flex items-start gap-4">
-            <div
-              class="bg-gradient-to-r from-primary to-primary-dark text-white p-4 rounded-xl flex-shrink-0 shadow-md">
-              <i class="fas fa-gem text-xl" aria-hidden="true"></i>
-            </div>
-            <div>
-              <h3 class="text-xl sm:text-2xl font-bold mb-2 text-gray-900">
-                جودة فاخرة تنافس العالمية
-              </h3>
-              <p class="text-gray-600 text-sm sm:text-base">
-                نستخدم أحدث تقنيات التصميم والإعلان لنضمن لك منتجًا يليق
-                بمكانتك ويحقق أقصى عائد استثماري.
-              </p>
-            </div>
-          </div>
-
-          <!-- ميزة 3 -->
-          <div class="flex items-start gap-4">
-            <div
-              class="bg-gradient-to-r from-primary to-primary-dark text-white p-4 rounded-xl flex-shrink-0 shadow-md">
-              <i class="fas fa-handshake text-xl" aria-hidden="true"></i>
-            </div>
-            <div>
-              <h3 class="text-xl sm:text-2xl font-bold mb-2 text-gray-900">
-                شراكة نجاح طويلة الأمد
-              </h3>
-              <p class="text-gray-600 text-sm sm:text-base">
-                نحن لا نقدم خدمات لمرة واحدة، بل نبني علاقة مستمرة
-                لدعم تطور عملك وتحقيق أهدافك المستقبلية.
-              </p>
-            </div>
-          </div>
-
-          <!-- CTA -->
-          <div class="mt-8">
-            <a href="/contact"
-              class="inline-block bg-primary text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-primary-dark transition duration-300">
-              تواصل معنا الآن
-            </a>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold mb-2 text-gray-900">
+              أفكار إبداعية خارج الصندوق
+            </h3>
+            <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+              نبتكر استراتيجيات تسويقية فريدة تساعدك على جذب العملاء الجدد 
+              وتعزيز صورة علامتك التجارية بشكل استثنائي.
+            </p>
           </div>
         </div>
 
-        <!-- الصور -->
-<!-- الصور -->
-<div class="flex justify-center items-start">
-  <div class="mt-6 sm:mt-0 w-full max-w-lg ">
-    <img 
-      src="./assets/img/Logo-design.png" 
-      alt="إعلان فاخر يلفت انتباه العملاء"
-      class="w-full h-[90%] sm:h-[90%] md:h-[85%] object-cover rounded-2xl shadow-lg transform hover:scale-105 transition duration-500"
-      loading="lazy" 
-      width="600" 
-      height="750">
-  </div>
-</div>
+        <!-- ميزة 2 -->
+        <div class="flex items-start gap-4">
+          <div class="bg-gradient-to-r from-primary to-primary-dark text-white p-4 rounded-xl flex-shrink-0 shadow-md">
+            <i class="fas fa-gem text-xl" aria-hidden="true"></i>
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold mb-2 text-gray-900">
+              جودة فاخرة تنافس العالمية
+            </h3>
+            <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+              نستخدم أحدث تقنيات التصميم والإعلان لنمنحك منتجًا يليق بمكانتك، 
+              مع ضمان أقصى عائد استثماري لمشروعك.
+            </p>
+          </div>
+        </div>
 
+        <!-- ميزة 3 -->
+        <div class="flex items-start gap-4">
+          <div class="bg-gradient-to-r from-primary to-primary-dark text-white p-4 rounded-xl flex-shrink-0 shadow-md">
+            <i class="fas fa-handshake text-xl" aria-hidden="true"></i>
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold mb-2 text-gray-900">
+              شراكة نجاح طويلة الأمد
+            </h3>
+            <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+              نحن لا نقدم خدمات لمرة واحدة، بل نلتزم بأن نكون شريكًا 
+              استراتيجيًا يدعم نمو وتطور أعمالك على المدى الطويل.
+            </p>
+          </div>
+        </div>
 
+        <!-- زر الاتصال -->
+        <div class="mt-8">
+          <a href="/contact" 
+             class="inline-block bg-primary text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-primary-dark transition duration-300"
+             aria-label="تواصل معنا الآن">
+            تواصل معنا الآن
+          </a>
+        </div>
+      </div>
 
-
-
+      <!-- الصور -->
+      <div class="flex justify-center items-start">
+        <div class="mt-6 sm:mt-0 w-full max-w-lg">
+          <img 
+            src="./assets/img/Logo-design.webp" 
+            alt="تصميم إعلاني احترافي يمثل إبداع فريق إيجيبت في التسويق" 
+            class="w-full h-[90%] sm:h-[90%] md:h-[85%] object-cover rounded-2xl shadow-lg transform hover:scale-105 transition duration-500"
+            loading="lazy" 
+            width="600" 
+            height="750">
+        </div>
       </div>
     </div>
+  </div>
 
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "إيجيبت",
+    "description": "نقدم حلول تسويقية مبتكرة تركز على الجودة، الابتكار، وتجربة عميل لا تُنسى.",
+    "url": "https://yourwebsite.com",
+    "logo": "https://yourwebsite.com/assets/img/Logo-design.webp",
+  
+  }
+  </script>
+</section>
 
-  </section>
 
 
 
@@ -981,8 +1024,10 @@
         <h2 class="text-4xl font-bold text-gray-800 mb-4">
           أعمالنا <span class="bg-gradient-to-r from-primary to-primary bg-clip-text text-transparent">المبتكرة</span>
         </h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">استكشف مجموعة من مشاريعنا المميزة في مجال التسويق الإلكتروني والدعاية
-          والإعلان التي نفخر بتقديمها لعملائنا</p>
+         <p class="text-gray-600 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
+    استكشف أبرز مشاريعنا في <strong>التسويق الإلكتروني</strong> و<strong>الدعاية والإعلان</strong>، 
+    والتي صُممت خصيصًا لمساعدة عملائنا على تحقيق نمو حقيقي وبناء علامة تجارية قوية.
+  </p>
       </div>
 
       <!-- التبويبات -->
@@ -1037,7 +1082,7 @@
         <div class="work-item marketing rounded-lg overflow-hidden shadow-lg bg-white">
           <!-- الصورة -->
           <div class="relative w-full h-64 sm:h-72 md:h-80 ">
-            <img src="./assets/img/Electronic-marketing.png"
+            <img src="./assets/img/Electronic-marketing.webp"
               alt="خدمات التسويق الإلكتروني وإدارة الحملات الإعلانية لزيادة مبيعات شركتك"
               class="w-full h-full  bg-gray-100 " loading="lazy" width="800" height="600">
 
@@ -1070,7 +1115,7 @@
         <div class="work-item social rounded-lg overflow-hidden shadow-lg bg-white">
           <!-- الصورة -->
           <div class="relative w-full h-64 sm:h-72 md:h-80">
-            <img src="./assets/img/Design-and-programming.png" alt="تصميم وبرمجة المواقع الإلكترونية"
+            <img src="./assets/img/Design-and-programming.webp" alt="تصميم وبرمجة المواقع الإلكترونية"
               class="w-full h-full   bg-gray-100 " loading="lazy" width="800" height="600">
 
             <!-- الأوفرلاي مع زر التفاصيل -->
@@ -1162,7 +1207,7 @@
         <div class="work-item social rounded-lg overflow-hidden shadow-lg bg-white">
           <!-- الصورة -->
           <div class="relative w-full h-64 sm:h-72 md:h-80">
-            <img src="./assets/img/Photography-and-montage.png"
+            <img src="./assets/img/Photography-and-montage.webp"
               alt="خدمات التصوير والمونتاج الاحترافية لإبراز علامتك التجارية"
               class="w-full h-full object-cover bg-gray-100 " loading="lazy" width="800" height="600">
 
@@ -1192,7 +1237,7 @@
   <!-- الصورة -->
   <div class="relative w-full h-64 sm:h-72 md:h-80">
     <img 
-      src="./assets/img/Logo-design.png"
+      src="./assets/img/Logo-design.webp"
       alt="تصميم وتنفيذ لوجو احترافي يعكس هوية علامتك التجارية"
       class="w-full h-full object-fit-cover bg-gray-100" 
       loading="lazy" 
@@ -1228,7 +1273,7 @@
   <!-- الصورة -->
   <div class="relative w-full h-64 sm:h-72 md:h-80">
     <img 
-      src="./assets/img/Brochures.png"
+      src="./assets/img/Brochures.webp"
       alt="تصميم مطويات وبروشورات إبداعية لعرض خدماتك ومنتجاتك بشكل احترافي"
       class="w-full h-full object-fit-cover bg-gray-100" 
       loading="lazy" 
@@ -1380,7 +1425,7 @@
 
     <!-- البانر (الصورة بعرض الصفحة) -->
     <div class="relative w-full h-[450px] md:h-[600px] overflow-hidden rounded shadow-lg my-5">
-      <img src="./assets/img/cover Egypt.png" alt="شركة دعاية وإعلان"
+      <img src="./assets/img/Cover Egypt.webp" alt="شركة دعاية وإعلان"
         class="w-full h-full object-cover animate-zoom-in rounded-5" />
     </div>
   </section>
