@@ -23,8 +23,8 @@
   <meta property="og:title" content="ايجبت للدعاية والإعلان - افضل شركة دعاية واعلان في جدة">
   <meta property="og:description"
     content="حلول مبتكرة في التسويق والإعلان، تصميم الحملات الإعلانية والهويات البصرية والمحتوى المرئي لتعزيز نجاح علامتك التجارية.">
-  <meta property="og:image" content="https://egypt-advertising.com/assets/img/og-image.jpg">
-  <meta property="og:url" content="https://creativity-omega.vercel.app/">
+  <meta property="og:image" content="https://egypt-advertising.com/assets/img/logo-egypt-advertising-1.webp">
+  <meta property="og:url" content="https://egypt-advertising.com/">
   <meta property="og:site_name" content="ايجبت للدعاية والإعلان">
 
   <!-- ====== Twitter Card ====== -->
@@ -32,11 +32,11 @@
   <meta name="twitter:title" content="ايجبت للدعاية والإعلان - افضل شركة دعاية واعلان في جدة">
   <meta name="twitter:description"
     content="حلول مبتكرة في التسويق والإعلان، تصميم الحملات الإعلانية والهويات البصرية والمحتوى المرئي لتعزيز نجاح علامتك التجارية.">
-  <meta name="twitter:image" content="https://creativity-omega.vercel.app/assets/img/og-image.jpg">
+  <meta name="twitter:image" content="https://egypt-advertising.com/assets/img/logo-egypt-advertising-1.webp">
   <meta name="twitter:site" content="@YourTwitterHandle">
 
   <!-- ====== Favicon ====== -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./assets/img/logo-egypt-advertising-1.webp" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
 
@@ -105,9 +105,21 @@
     "provider": {
       "@type": "Organization",
       "name": "ايجبت,
-      "url": "https://yourwebsite.com"
+      "url": "https://egypt-advertising.com/"
     },
     "description": "نقدم مجموعة شاملة من الخدمات الإعلانية والتسويقية لتحقيق أهدافك التجارية وتنمية علامتك التجارية بشكل فعال."
+  }
+  </script>
+    <!-- Schema Markup  why-choose-egypt-->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "إيجيبت",
+    "description": "نقدم حلول تسويقية مبتكرة تركز على الجودة، الابتكار، وتجربة عميل لا تُنسى.",
+    "url": "https://egypt-advertising.com/",
+    "logo": "https://egypt-advertising.com/assets/img/logo-egypt-advertising-1.webp",
+  
   }
   </script>
   <script>
@@ -164,7 +176,7 @@
       <a href="#home" class="text-black hover:text-primary transition-colors font-medium">الرئيسية</a>
       <a href="#about" class="text-black hover:text-primary transition-colors font-medium">من نحن</a>
       <a href="#services" class="text-black hover:text-primary transition-colors font-medium">خدماتنا</a>
-      <a href="#portfolio" class="text-black hover:text-primary transition-colors font-medium"> اعمالنا</a>
+      <a href="#Our-business" class="text-black hover:text-primary transition-colors font-medium"> اعمالنا</a>
     </div>
 
     <!-- CTA + Menu Button -->
@@ -191,7 +203,7 @@
       <a href="#home" class="text-black hover:text-primary transition-colors font-medium">الرئيسية</a>
       <a href="#about" class="text-black hover:text-primary transition-colors font-medium">من نحن</a>
       <a href="#services" class="text-black hover:text-primary transition-colors font-medium">خدماتنا</a>
-      <a href="#portfolio" class="text-black hover:text-primary transition-colors font-medium">اعمالنا</a>
+      <a href="#Our-business" class="text-black hover:text-primary transition-colors font-medium">اعمالنا</a>
       <a href="tel:+966501234567"
         class="inline-block bg-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors">
         اتصل بنا
@@ -200,35 +212,9 @@
   </div>
 </nav>
 
-<!--  Script -->
-<script>
-  const menuBtn = document.getElementById("menu-btn");
-  const mobileMenu = document.getElementById("mobile-menu");
 
-  menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-    mobileMenu.classList.toggle("animate-fadeIn");
-  });
-</script>
 
-<!--  Animation -->
-<style>
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
 
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .animate-fadeIn {
-    animation: fadeIn 0.3s ease-in-out;
-  }
-</style>
 
 <!-- Hero Section with Slider -->
 <section id="home" class="relative h-screen" role="banner" aria-label="قسم الإعلانات الرئيسي">
@@ -444,24 +430,7 @@
 
 
 
-<script>
-    // Simple animation on scroll
-    document.addEventListener('DOMContentLoaded', function() {
-        const fadeElements = document.querySelectorAll('.fade-in');
-        
-        const fadeInObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
-        
-        fadeElements.forEach(element => {
-            fadeInObserver.observe(element);
-        });
-    });
-</script>
+
 
 
 
@@ -834,24 +803,7 @@
   </section>
 
 
-  <!-- Animation -->
-  <style>
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .animate-fadeInUp {
-      animation: fadeInUp 1s ease-in-out;
-    }
-  </style>
+ 
 
 <section id="why-choose-egypt" class="relative bg-white py-16 md:py-20" aria-labelledby="why-choose-title">
   <div class="container mx-auto px-4 sm:px-6 lg:px-12">
@@ -950,18 +902,7 @@
     </div>
   </div>
 
-  <!-- Schema Markup -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "إيجيبت",
-    "description": "نقدم حلول تسويقية مبتكرة تركز على الجودة، الابتكار، وتجربة عميل لا تُنسى.",
-    "url": "https://yourwebsite.com",
-    "logo": "https://yourwebsite.com/assets/img/Logo-design.webp",
-  
-  }
-  </script>
+
 </section>
 
 
@@ -1017,7 +958,7 @@
 
 
   <!-- Portfolio Section -->
-  <section class="py-16 px-4 md:px-8 lg:px-16">
+  <section class="py-16 px-4 md:px-8 lg:px-16" id="Our-business">
     <div class="container mx-auto">
       <!-- العنوان -->
       <div class="text-center mb-12">
@@ -1430,42 +1371,7 @@
     </div>
   </section>
 
-  <!-- أنيميشن -->
-  <style>
-    @keyframes fade-in {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes zoom-in {
-      from {
-        transform: scale(1.1);
-      }
-
-      to {
-        transform: scale(1);
-      }
-    }
-
-    .animate-fade-in {
-      animation: fade-in 1s ease forwards;
-    }
-
-    .animate-fade-in-delay {
-      animation: fade-in 1.5s ease forwards;
-    }
-
-    .animate-zoom-in {
-      animation: zoom-in 10s ease forwards;
-    }
-  </style>
+  
 
 
 
@@ -1665,6 +1571,8 @@
                 class="fas fa-chevron-left text-xs ml-2"></i>الحملات الإعلانية</a></li>
           <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
                 class="fas fa-chevron-left text-xs ml-2"></i>التحليل والإحصائيات</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                class="fas fa-chevron-left text-xs ml-2"></i> تصميم وبرمجة المواقع</a></li>
         </ul>
       </div>
 
@@ -1677,12 +1585,9 @@
                 class="fas fa-chevron-left text-xs ml-2"></i>من نحن</a></li>
           <li><a href="#services" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
                 class="fas fa-chevron-left text-xs ml-2"></i>خدماتنا</a></li>
-          <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+          <li><a href="#Our-business" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
                 class="fas fa-chevron-left text-xs ml-2"></i>أعمالنا</a></li>
-          <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
-                class="fas fa-chevron-left text-xs ml-2"></i>المدونة</a></li>
-          <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
-                class="fas fa-chevron-left text-xs ml-2"></i>سياسة الخصوصية</a></li>
+         
         </ul>
       </div>
 
