@@ -209,6 +209,119 @@ strong{
         body {
             font-family: 'Cairo', sans-serif;
         }
+
+        /* Responsive Button System */
+        .btn-responsive {
+            padding: 0.625rem 1rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        @media (min-width: 640px) {
+            .btn-responsive {
+                padding: 0.75rem 1.25rem;
+                font-size: 1rem;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .btn-responsive {
+                padding: 0.875rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .btn-responsive {
+                padding: 1rem 2rem;
+                font-size: 1.125rem;
+            }
+        }
+
+        /* Button Container Responsive Spacing */
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        @media (min-width: 640px) {
+            .btn-container {
+                flex-direction: row;
+                gap: 1rem;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .btn-container {
+                gap: 1.25rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .btn-container {
+                gap: 1.5rem;
+            }
+        }
+
+        /* Service Card Button Responsive */
+        .service-btn {
+            padding: 0.5rem 0.75rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        @media (min-width: 640px) {
+            .service-btn {
+                padding: 0.625rem 1rem;
+                font-size: 0.875rem;
+                width: auto;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .service-btn {
+                padding: 0.75rem 1.25rem;
+                font-size: 0.875rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .service-btn {
+                padding: 0.875rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+
+        /* Responsive Icon Spacing */
+        .btn-icon-spacing {
+            margin-left: 0.25rem;
+        }
+        
+        @media (min-width: 640px) {
+            .btn-icon-spacing {
+                margin-left: 0.5rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .btn-icon-spacing {
+                margin-left: 0.75rem;
+            }
+        }
         .gradient-bg {
             background: linear-gradient(135deg, #24b8a8 0%, #158376 100%);
         }
@@ -263,59 +376,54 @@ strong{
     animation: fadeIn 0.3s ease-in-out;
   }
 
-
-   /* Animation */
-  <style>
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+  /* Animation keyframes */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
     }
 
-    .animate-fadeInUp {
-      animation: fadeInUp 1s ease-in-out;
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
-  </style>
+  }
 
-  /* Animation */
-  <style>
-    @keyframes fade-in {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease-in-out;
+  }
 
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+  /* More animations */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
     }
 
-    @keyframes zoom-in {
-      from {
-        transform: scale(1.1);
-      }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-      to {
-        transform: scale(1);
-      }
+  @keyframes zoom-in {
+    from {
+      transform: scale(1.1);
     }
 
-    .animate-fade-in {
-      animation: fade-in 1s ease forwards;
+    to {
+      transform: scale(1);
     }
+  }
 
-    .animate-fade-in-delay {
-      animation: fade-in 1.5s ease forwards;
-    }
+  .animate-fade-in {
+    animation: fade-in 1s ease forwards;
+  }
 
-    .animate-zoom-in {
-      animation: zoom-in 10s ease forwards;
-    }
-  </style>
+  .animate-fade-in-delay {
+    animation: fade-in 1.5s ease forwards;
+  }
+
+  .animate-zoom-in {
+    animation: zoom-in 10s ease forwards;
+  }
