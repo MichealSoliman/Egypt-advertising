@@ -1,919 +1,1015 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>خدمات الطباعة - شركة ايجبت للدعاية والإعلان بجدة</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../assets/css/style.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#148c80',
-                        primaryDark: '#0e6c62',
-                        primaryLight: '#1aac9d',
-                    }
-                }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خدمات الطباعة - شركة ايجبت للدعاية والإعلان بجدة</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#148c80',
+            primaryDark: '#0e6c62',
+            primaryLight: '#1aac9d',
+          }
         }
-    </script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
-        body {
-            font-family: 'Tajawal', sans-serif;
-            scroll-behavior: smooth;
-        }
-        .sticky-sidebar {
-            position: sticky;
-            top: 20px;
-        }
-        .content-section {
-            scroll-margin-top: 100px;
-        }
-        .hero-pattern {
-            background-color: #148c80;
-            background-image: radial-gradient(#1aac9d 0.5px, transparent 0.5px), radial-gradient(#1aac9d 0.5px, #148c80 0.5px);
-            background-size: 20px 20px;
-            background-position: 0 0, 10px 10px;
-        }
-        .nav-item {
-            transition: all 0.3s ease;
-        }
-        .nav-item:hover, .nav-item.active {
-            background-color: #0e6c62;
-            color: white;
-        }
-    </style>
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
+
+    body {
+      font-family: 'Tajawal', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .sticky-sidebar {
+      position: sticky;
+      top: 20px;
+    }
+
+    .content-section {
+      scroll-margin-top: 100px;
+    }
+
+    .hero-pattern {
+      background-color: #148c80;
+      background-image: radial-gradient(#1aac9d 0.5px, transparent 0.5px), radial-gradient(#1aac9d 0.5px, #148c80 0.5px);
+      background-size: 20px 20px;
+      background-position: 0 0, 10px 10px;
+    }
+
+    .nav-item {
+      transition: all 0.3s ease;
+    }
+
+    .nav-item:hover,
+    .nav-item.active {
+      background-color: #0e6c62;
+      color: white;
+    }
+  </style>
 </head>
+
 <body class="bg-gray-100">
-<!--  Navbar -->
-<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-4 bg-white shadow-md">
-  <div class="container mx-auto px-4 flex items-center justify-between">
-    <!-- Logo -->
-    <div class="flex items-center space-x-reverse space-x-4">
-      <div class=" text-white p-3 rounded-lg w-14 h-14 flex items-center justify-center shadow-md rounded-full">
-        <img src="../../assets/img/logo-egypt-advertising-1.webp" alt="ايجبت للدعاية والإعلان">
+  <!--  Navbar -->
+  <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-4 bg-white shadow-md">
+    <div class="container mx-auto px-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center space-x-reverse space-x-4">
+        <div class=" text-white p-3 rounded-lg w-14 h-14 flex items-center justify-center shadow-md rounded-full">
+          <img src="../../assets/img/logo-egypt-advertising-1.webp" alt="ايجبت للدعاية والإعلان">
+        </div>
+        <div>
+          <h2 class="text-xl font-bold gradient-text">ايجبت للدعاية والإعلان</h2>
+          <p class="text-sm text-gray-600">حلول إبداعية لنجاحك</p>
+        </div>
       </div>
-      <div>
-        <h2 class="text-xl font-bold gradient-text">ايجبت للدعاية والإعلان</h2>
-        <p class="text-sm text-gray-600">حلول إبداعية لنجاحك</p>
+
+      <!-- Links (Desktop) -->
+      <div class="hidden lg:flex items-center space-x-reverse space-x-8">
+        <a href="../../index.html#home" class="text-black hover:text-primary transition-colors font-medium">الرئيسية</a>
+        <a href="../../index.html#about" class="text-black hover:text-primary transition-colors font-medium">من نحن</a>
+
+        <a href="../../index.html#Our-business" class="text-black hover:text-primary transition-colors font-medium">
+          اعمالنا</a>
+      </div>
+
+      <!-- CTA + Menu Button -->
+      <div class="flex items-center space-x-reverse space-x-4">
+        <div class="text-right hidden md:block">
+          <a href="tel:0501234567"
+            class="inline-block gradient-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors">
+            <p class="text-sm">اتصل بنا</p>
+          </a>
+        </div>
+        <!-- Menu Button -->
+        <button id="menu-btn" class="lg:hidden text-gray-700 focus:outline-none" aria-label="فتح وإغلاق قائمة التنقل"
+          aria-expanded="false" aria-controls="menu">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+
+
       </div>
     </div>
 
-    <!-- Links (Desktop) -->
-    <div class="hidden lg:flex items-center space-x-reverse space-x-8">
-      <a href="../../index.html#home" class="text-black hover:text-primary transition-colors font-medium">الرئيسية</a>
-      <a href="../../index.html#about" class="text-black hover:text-primary transition-colors font-medium">من نحن</a>
-      
-      <a href="../../index.html#Our-business" class="text-black hover:text-primary transition-colors font-medium"> اعمالنا</a>
-    </div>
+    <!-- ✅ Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-md border-t mt-4">
+      <div class="flex flex-col items-center space-y-4 py-6">
+        <a href="../../index.html#home" class="text-black hover:text-primary transition-colors font-medium">الرئيسية</a>
+        <a href="../../index.html#about" class="text-black hover:text-primary transition-colors font-medium">من نحن</a>
 
-    <!-- CTA + Menu Button -->
-    <div class="flex items-center space-x-reverse space-x-4">
-      <div class="text-right hidden md:block">
+        <a href="../../index.html#Our-business"
+          class="text-black hover:text-primary transition-colors font-medium">اعمالنا</a>
         <a href="tel:0501234567"
-          class="inline-block gradient-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors">
-          <p class="text-sm">اتصل بنا</p>
+          class="inline-block bg-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors">
+          اتصل بنا
         </a>
       </div>
-      <!-- Menu Button -->
-      <button id="menu-btn" class="lg:hidden text-gray-700 focus:outline-none" aria-label="فتح وإغلاق قائمة التنقل"
-        aria-expanded="false" aria-controls="menu">
-        <i class="fas fa-bars text-2xl"></i>
-      </button>
-
-
     </div>
-  </div>
-
-  <!-- ✅ Mobile Menu -->
-  <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-md border-t mt-4">
-    <div class="flex flex-col items-center space-y-4 py-6">
-      <a href="../../index.html#home" class="text-black hover:text-primary transition-colors font-medium">الرئيسية</a>
-      <a href="../../index.html#about" class="text-black hover:text-primary transition-colors font-medium">من نحن</a>
-      
-      <a href="../../index.html#Our-business" class="text-black hover:text-primary transition-colors font-medium">اعمالنا</a>
-      <a href="tel:0501234567"
-        class="inline-block bg-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors">
-        اتصل بنا
-      </a>
-    </div>
-  </div>
-</nav>
+  </nav>
 
 
-    <!-- محتوى الصفحة -->
-    <div class="container mx-auto px-4 py-8 pt-[100px]" >
-        <div class="flex flex-col lg:flex-row gap-8">
-            <!-- القائمة الجانبية -->
-            <div class="w-full lg:w-1/4">
-                <div class="sticky-sidebar bg-white rounded-xl shadow-lg p-6">
-                    <h2 class="text-xl font-bold text-primary mb-6 border-b-2 border-primary pb-2">عناصر المحتوى</h2>
-                    <ul class="space-y-2">
-                        <li><a href="#intro" class="nav-item active block py-3 px-4 rounded-lg text-white bg-primary">مقدمة عن خدمات الطباعة</a></li>
-                        <li><a href="#outdoor" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-300">طباعة Outdoor</a></li>
-                        <li><a href="#indoor" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-300">طباعة Indoor</a></li>
-                        <li><a href="#materials" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-300">الخامات المستخدمة</a></li>
-                        <li><a href="#sizes" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-300">المقاسات المتنوعة</a></li>
-                        <li><a href="#design" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-300">خدمات التصميم</a></li>
-                        <li><a href="#applications" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-300">مجالات التطبيق</a></li>
-                        <li><a href="#production-steps" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-300">مراحل الإنتاج</a></li>
-                        <li><a href="#features" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-300">مميزات خدماتنا</a></li>
-                    </ul>
-                    
-                    <div class="mt-8 p-4 bg-primaryLight bg-opacity-10 rounded-lg border border-primary">
-                      
-                        <h3 class="text-lg font-bold text-primary mb-3">اطلب خدمتك الآن</h3>
-                        <p class="text-gray-700 mb-4">احصل على استشارة مجانية من خبرائنا</p>
-                        <a href="tel:0501234567" class="block w-full bg-primary text-white text-center py-2 px-4 rounded-lg hover:bg-primaryDark transition duration-300">اتصل بنا</a>
-                    </div>
-                </div>
+  <!-- محتوى الصفحة -->
+  <div class="container mx-auto px-4 py-8 pt-[100px]">
+    <div class="flex flex-col lg:flex-row gap-8">
+      <!-- القائمة الجانبية -->
+      <div class="w-full lg:w-1/4">
+        <div class="sticky-sidebar bg-white rounded-xl shadow-lg p-6">
+          <h2 class="text-xl font-bold text-primary mb-6 border-b-2 border-primary pb-2">عناصر المحتوى</h2>
+          <ul class="space-y-2">
+            <li><a href="#intro" class="nav-item active block py-3 px-4 rounded-lg text-white bg-primary">مقدمة عن خدمات
+                الطباعة</a></li>
+            <li><a href="#outdoor"
+                class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-300">طباعة
+                Outdoor</a></li>
+            <li><a href="#indoor"
+                class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-300">طباعة
+                Indoor</a></li>
+            <li><a href="#materials"
+                class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-300">الخامات
+                المستخدمة</a></li>
+            <li><a href="#sizes"
+                class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-300">المقاسات
+                المتنوعة</a></li>
+            <li><a href="#design"
+                class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-300">خدمات
+                التصميم</a></li>
+            <li><a href="#applications"
+                class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-300">مجالات
+                التطبيق</a></li>
+            <li><a href="#production-steps"
+                class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-300">مراحل
+                الإنتاج</a></li>
+            <li><a href="#features"
+                class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-gray-100 transition duration-300">مميزات
+                خدماتنا</a></li>
+          </ul>
+
+          <div class="mt-8 p-4 bg-primaryLight bg-opacity-10 rounded-lg border border-primary">
+
+            <h3 class="text-lg font-bold text-primary mb-3">اطلب خدمتك الآن</h3>
+            <p class="text-gray-700 mb-4">احصل على استشارة مجانية من خبرائنا</p>
+            <a href="tel:0501234567"
+              class="block w-full bg-primary text-white text-center py-2 px-4 rounded-lg hover:bg-primaryDark transition duration-300">اتصل
+              بنا</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- المحتوى الرئيسي -->
+      <div class="w-full lg:w-3/4">
+        <!-- قسم البطل -->
+        <div class="hero-pattern rounded-xl shadow-lg text-white p-8 mb-8">
+          <h1 class="text-4xl font-bold mb-4">خدمات الطباعة الاحترافية للبنرات والفليكس والفينيل</h1>
+          <p class="text-xl mb-6">جودة عالية، ألوان زاهية، وتصاميم مذهلة تعزز وجودك البصري وتلفت الانتباه لمشروعك</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="tel:0501234567"
+              class="bg-white text-primary py-3 px-6 rounded-lg font-bold hover:bg-gray-100 transition duration-300">اطلب
+              خدمتك الآن</a>
+            <a href="tel:0501234567"
+              class="border-2 border-white py-3 px-6 rounded-lg font-bold hover:bg-white hover:text-primary transition duration-300">اطلب
+              استشارة مجانية</a>
+          </div>
+        </div>
+
+        <!-- المحتوى النصي -->
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+          <!-- مقدمة عن خدمات الطباعة -->
+          <section id="intro" class="content-section mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-4">مقدمة عن خدمات الطباعة لدينا</h2>
+            <div class="flex flex-col lg:flex-row gap-6 mb-6">
+              <!-- حاوية الصورة -->
+              <div class="w-full h-full lg:w-1/2">
+                <img src="../../assets/img/banner-and-flex-printing.webp" alt="خدمات الطباعة"
+                  class="rounded-lg shadow-md w-full h-96 object-fit-cover bg-gray-100">
+              </div>
+
+              <!-- النصوص -->
+              <div class="w-full lg:w-1/2">
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                  تقدم شركة ايجبت للدعاية والإعلان بجدة خدمات طباعة احترافية عالية الجودة للبنرات والفليكس والفينيل
+                  بمقاسات متنوعة وألوان زاهية تعكس احترافية مشروعك وتلفت الانتباه. نحن نستخدم أحدث التقنيات وأفضل
+                  الخامات لضمان تحقيق نتائج مبهرة تدعم أهدافك التسويقية والترويجية.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                  سواء كنت تحتاج إلى طباعة Outdoor للاستخدام الخارجي أو Indoor للاستخدام الداخلي، فريقنا المختص يضمن لك
+                  الحصول على منتجات متينة وجذابة تتناسب مع متطلباتك وميزانيتك. نقدم حلولاً متكاملة تبدأ من التصميم وحتى
+                  التركيب، مما يجعلنا الشريك الأمثل لمشاريعك الإعلانية.
+                </p>
+              </div>
             </div>
 
-            <!-- المحتوى الرئيسي -->
-            <div class="w-full lg:w-3/4">
-                <!-- قسم البطل -->
-                <div class="hero-pattern rounded-xl shadow-lg text-white p-8 mb-8">
-                    <h1 class="text-4xl font-bold mb-4">خدمات الطباعة الاحترافية للبنرات والفليكس والفينيل</h1>
-                    <p class="text-xl mb-6">جودة عالية، ألوان زاهية، وتصاميم مذهلة تعزز وجودك البصري وتلفت الانتباه لمشروعك</p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="tel:0501234567" class="bg-white text-primary py-3 px-6 rounded-lg font-bold hover:bg-gray-100 transition duration-300">اطلب خدمتك الآن</a>
-                        <a href="tel:0501234567" class="border-2 border-white py-3 px-6 rounded-lg font-bold hover:bg-white hover:text-primary transition duration-300">اطلب استشارة مجانية</a>
-                    </div>
-                </div>
-
-                <!-- المحتوى النصي -->
-                <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
-                    <!-- مقدمة عن خدمات الطباعة -->
-                    <section id="intro" class="content-section mb-12">
-                        <h2 class="text-2xl font-bold text-primary mb-4">مقدمة عن خدمات الطباعة لدينا</h2>
-                     <div class="flex flex-col lg:flex-row gap-6 mb-6">
-  <!-- حاوية الصورة -->
-  <div class="w-full h-full lg:w-1/2">
-    <img src="../../assets/img/banner-and-flex-printing.webp" 
-         alt="خدمات الطباعة" 
-         class="rounded-lg shadow-md w-full h-96 object-fit-cover bg-gray-100">
-  </div>
-
-  <!-- النصوص -->
-  <div class="w-full lg:w-1/2">
-    <p class="text-gray-700 mb-4 leading-relaxed">
-      تقدم شركة ايجبت للدعاية والإعلان بجدة خدمات طباعة احترافية عالية الجودة للبنرات والفليكس والفينيل بمقاسات متنوعة وألوان زاهية تعكس احترافية مشروعك وتلفت الانتباه. نحن نستخدم أحدث التقنيات وأفضل الخامات لضمان تحقيق نتائج مبهرة تدعم أهدافك التسويقية والترويجية.
-    </p>
-    <p class="text-gray-700 leading-relaxed">
-      سواء كنت تحتاج إلى طباعة Outdoor للاستخدام الخارجي أو Indoor للاستخدام الداخلي، فريقنا المختص يضمن لك الحصول على منتجات متينة وجذابة تتناسب مع متطلباتك وميزانيتك. نقدم حلولاً متكاملة تبدأ من التصميم وحتى التركيب، مما يجعلنا الشريك الأمثل لمشاريعك الإعلانية.
-    </p>
-  </div>
-</div>
-
-                        <div class="bg-gray-100 p-6 rounded-lg mt-6">
-                            <h3 class="text-xl font-bold text-primary mb-3">لماذا تختار خدماتنا؟</h3>
-                            <ul class="list-disc list-inside text-gray-700 space-y-2">
-                                <li>جودة طباعة عالية بدقة تصل إلى 1440 dpi</li>
-                                <li>خامات مقاومة للعوامل الجوية والعوامل المؤثرة</li>
-                                <li>تصاميم مرنة بمقاسات مختلفة تناسب جميع الاحتياجات</li>
-                                <li>أسعار تنافسية مع خصومات على الكميات الكبيرة</li>
-                                <li>خدمة سريعة وتوصيل في الوقت المحدد</li>
-                                <li>فريق دعم فني متاح على مدار الساعة</li>
-                            </ul>
-                        </div>
-                    </section>
-
-                    <!-- طباعة Outdoor -->
-                    <section id="outdoor" class="content-section mb-12">
-                        <h2 class="text-2xl font-bold text-primary mb-4">طباعة Outdoor</h2>
-                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
-                            <div class="w-full lg:w-1/2">
-                                <p class="text-gray-700 mb-4 leading-relaxed">
-                                    طباعة Outdoor هي الخيار الأمثل للإعلانات الخارجية التي تتعرض للعوامل الجوية المختلفة. نستخدم في شركة ايجبت للدعاية والإعلان أفضل أنواع الخامات المقاومة للماء وأشعة الشمس والحرارة، مما يضمن بقاء إعلانك مشرقاً وجذاباً لأطول فترة ممكنة.
-                                </p>
-                                <p class="text-gray-700 leading-relaxed">
-                                    تتميز طباعتنا الخارجية بمقاومة عالية للتلف والتشقق، وتحافظ على الألوان زاهية حتى في أقسى الظروف الجوية. نحن نقدم حلولاً متكاملة تشمل التصميم والطباعة والتركيب، مع ضمان الجودة والتميز في كل خطوة.
-                                </p>
-                            </div>
-                            <div class="w-full lg:w-1/2">
-                                <img src="../../assets/img/print-Outdoor.jpg" alt="طباعة Outdoor" class="rounded-lg shadow-md w-full h-64 object-cover">
-                            </div>
-                        </div>
-                        
-                        <h3 class="text-xl font-bold text-primary mb-3">مميزات طباعة Outdoor</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-                                <h4 class="font-bold text-primary mb-2">مقاومة العوامل الجوية</h4>
-                                <p class="text-gray-700">خامات خاصة مقاومة للماء والأتربة وأشعة الشمس</p>
-                            </div>
-                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-                                <h4 class="font-bold text-primary mb-2">رؤية واضحة من مسافات بعيدة</h4>
-                                <p class="text-gray-700">ألوان زاهية وتصاميم جذابة تلفت الانتباه</p>
-                            </div>
-                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-                                <h4 class="font-bold text-primary mb-2">متانة وقوة تحمل</h4>
-                                <p class="text-gray-700">تصاميم تدوم طويلاً وتتحمل الظروف القاسية</p>
-                            </div>
-                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-                                <h4 class="font-bold text-primary mb-2">سهولة التركيب</h4>
-                                <p class="text-gray-700">نوفر خدمة تركيب محترفة بمعايير عالية الجودة</p>
-                            </div>
-                        </div>
-                        
-                        <h3 class="text-xl font-bold text-primary mb-3">تطبيقات طباعة Outdoor</h3>
-                        <p class="text-gray-700 mb-4 leading-relaxed">
-                            تستخدم طباعة Outdoor في مجموعة واسعة من التطبيقات الإعلانية الخارجية، بما في ذلك اللوحات الإعلانية الكبيرة، إعلانات الطرق السريعة، إعلانات المحلات التجارية، لافتات المرور، إعلانات الحافلات، لافتات البناء، إعلانات المولات التجارية، وإعلانات الأسواق. نحن نقدم حلولاً مخصصة لكل نوع من هذه التطبيقات، مع مراعاة متطلبات الرؤية والمتانة والجاذبية البصرية.
-                        </p>
-                    </section>
-
-                    <!-- طباعة Indoor -->
-                    <section id="indoor" class="content-section mb-12">
-                        <h2 class="text-2xl font-bold text-primary mb-4">طباعة Indoor</h2>
-                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
-                            <div class="w-full lg:w-1/2">
-                                <img src="../../assets/img/print-Indoor.jpg" alt="طباعة Indoor" class="rounded-lg shadow-md w-full h-64 object-cover">
-                            </div>
-                            <div class="w-full lg:w-1/2">
-                                <p class="text-gray-700 mb-4 leading-relaxed">
-                                    طباعة Indoor مصممة خصيصاً للاستخدام الداخلي، حيث تركز على الجودة العالية للألوان والتفاصيل الدقيقة. نستخدم في شركة ايجبت للدعاية والإعلان أحدث تقنيات الطباعة التي تضمن ألواناً زاهية وصوراً واضحة تنقل رسالتك الإعلانية بفعالية كبيرة.
-                                </p>
-                                <p class="text-gray-700 leading-relaxed">
-                                    تتميز طباعتنا الداخلية بدقة ألوان عالية وتفاصيل حادة، مما يجعلها مثالية للمسافات القريبة والرؤية التفصيلية. نقدم مجموعة واسعة من الخامات المناسبة للاستخدام الداخلي، بما في ذلك خامات عالية الجودة تناسب مختلف التطبيقات والمساحات.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <h3 class="text-xl font-bold text-primary mb-3">مميزات طباعة Indoor</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-                                <h4 class="font-bold text-primary mb-2">جودة ألوان عالية</h4>
-                                <p class="text-gray-700">ألوان زاهية ودقيقة تنقل الصورة بأفضل جودة</p>
-                            </div>
-                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-                                <h4 class="font-bold text-primary mb-2">تفاصيل دقيقة</h4>
-                                <p class="text-gray-700">دقة طباعة عالية تظهر التفاصيل الصغيرة بوضوح</p>
-                            </div>
-                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-                                <h4 class="font-bold text-primary mb-2">خامات متنوعة</h4>
-                                <p class="text-gray-700">نوفر خامات مختلفة تناسب كل تطبيق داخلي</p>
-                            </div>
-                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-                                <h4 class="font-bold text-primary mb-2">تصاميم مبتكرة</h4>
-                                <p class="text-gray-700">نقدم تصاميم إبداعية تجذب انتباه الزبائن</p>
-                            </div>
-                        </div>
-                        
-                        <h3 class="text-xl font-bold text-primary mb-3">تطبيقات طباعة Indoor</h3>
-                        <p class="text-gray-700 mb-4 leading-relaxed">
-                            تستخدم طباعة Indoor في العديد من التطبيقات الداخلية، بما في ذلك لافتات المحلات التجارية، إعلانات المعارض والمؤتمرات، لافتات الممرات، إعلانات المطاعم والمقاهي، لافتات المكاتب، إعلانات الفنادق، لافتات المعارض الفنية، وإعلانات المراكز الطبية. نحن نقدم حلولاً مخصصة لكل مساحة داخلية، مع التركيز على الجودة البصرية والتكامل مع ديكور المكان.
-                        </p>
-                    </section>
-
-                    <!-- الخامات المستخدمة -->
-                    <section id="materials" class="content-section mb-12">
-                        <h2 class="text-2xl font-bold text-primary mb-4">الخامات المستخدمة في الطباعة</h2>
-                        <p class="text-gray-700 mb-4 leading-relaxed">
-                            في شركة ايجبت للدعاية والإعلان، نستخدم مجموعة واسعة من الخامات عالية الجودة التي تناسب مختلف أنواع الطباعة والتطبيقات. نحن نحرص على اختيار الخامات التي تضمن متانة الإعلان وجودة الطباعة وتناسب بيئة الاستخدام.
-                        </p>
-                        
-                        <h3 class="text-xl font-bold text-primary mb-3">خامات البنر (Banner)</h3>
-                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
-                            <div class="w-full lg:w-1/2">
-                                <p class="text-gray-700 mb-4 leading-relaxed">
-                                    خامات البنر هي الأكثر شيوعاً في الطباعة الخارجية والداخلية. نقدم أنواعاً مختلفة من خامات البنر تتناسب مع مختلف الاستخدامات:
-                                </p>
-                                <ul class="list-disc list-inside text-gray-700 space-y-2">
-                                    <li><strong>بنر خارجي:</strong> خامة متينة مقاومة للماء وأشعة الشمس، مثالية للاستخدام الخارجي</li>
-                                    <li><strong>بنر داخلي:</strong> خامة ناعمة ذات جودة ألوان عالية، مناسبة للاستخدام الداخلي</li>
-                                    <li><strong>بنر أمامي وخلفي:</strong> للطباعة من الجهتين، مثالي للعارضات والمعارض</li>
-                                    <li><strong>بنر mesh:</strong> خامة مثقبة تسمح بمرور الهواء، مثالية للوحات الإعلانية الكبيرة</li>
-                                </ul>
-                            </div>
-                            <div class="w-full lg:w-1/2">
-                                <img src="../../assets/img/print-Indoor.jpg" alt="خامات البنر" class="rounded-lg shadow-md w-full h-64 object-cover">
-                            </div>
-                        </div>
-                        
-                        <h3 class="text-xl font-bold text-primary mb-3">خامات الفليكس (Flex)</h3>
-                        <p class="text-gray-700 mb-4 leading-relaxed">
-                            الفليكس هو خامة بلاستيكية مرنة ومتينة، تتميز بمقاومة عالية للتمزق والعوامل الجوية. نستخدم الفليكس في التطبيقات الخارجية principalmente بسبب متانته وقدرته على تحمل الظروف الجوية القاسية. يتوفر الفليكس بسمكات مختلفة تناسب مختلف التطبيقات والميزانيات.
-                        </p>
-                        
-                        <h3 class="text-xl font-bold text-primary mb-3">خامات الفينيل (Vinyl)</h3>
-                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
-                            <div class="w-full lg:w-1/2">
-                                <img src="../../assets/img/vinyl-materials.jpg" alt="خامات الفينيل" class="rounded-lg shadow-md w-full h-64 object-cover">
-                            </div>
-                            <div class="w-full lg:w-1/2">
-                                <p class="text-gray-700 mb-4 leading-relaxed">
-                                    الفينيل هو خامة متعددة الاستخدامات تناسب الطباعة الداخلية والخارجية. نقدم أنواعاً مختلفة من الفينيل:
-                                </p>
-                                <ul class="list-disc list-inside text-gray-700 space-y-2">
-                                    <li><strong>فينيل ذاتي اللصق:</strong> مثالي للزجاج والأسطح الملساء</li>
-                                    <li><strong>فينيل للنوافذ:</strong> شفاف يسمح بمرور الضوء مع إمكانية الطباعة عليه</li>
-                                    <li><strong>فينيل مغناطيسي:</strong> للطباعة على الأسطح المعدنية</li>
-                                    <li><strong>فينيل لامع:</strong> يعكس الضوء ويزيد من وضوح الإعلان</li>
-                                    <li><strong>فينيل مات:</strong> يقلل الانعكاسات ويناسب المساحات الداخلية</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <h3 class="text-xl font-bold text-primary mb-3">خامات خاصة أخرى</h3>
-                        <p class="text-gray-700 mb-4 leading-relaxed">
-                            بالإضافة إلى الخامات الأساسية، نقدم أيضاً خامات خاصة تناسب تطبيقات محددة، مثل قماش الكانفس عالي الجودة للطباعة الفنية، خامات البوب آب للمعارض والعروض الترويجية، خامات الورق المقوى للعروض المؤقتة، وخامات النسيج للاستخدامات الداخلية الفاخرة.
-                        </p>
-                    </section>
-
-                    <!-- المقاسات المتنوعة -->
-                    <section id="sizes" class="content-section mb-12">
-                        <h2 class="text-2xl font-bold text-primary mb-4">المقاسات المتنوعة للطباعة</h2>
-                        <p class="text-gray-700 mb-4 leading-relaxed">
-                            في شركة ايجبت للدعاية والإعلان، نقدم مجموعة واسعة من المقاسات لتناسب جميع احتياجاتك الإعلانية. سواء كنت تحتاج إلى لافتة صغيرة لمحلك التجاري أو لوحة إعلانية ضخمة على طريق سريع، لدينا الحل الأمثل لمتطلباتك.
-                        </p>
-                        
-                        <h3 class="text-xl font-bold text-primary mb-3">المقاسات القياسية</h3>
-                        <div class="bg-gray-100 p-6 rounded-lg mb-6">
-                            <p class="text-gray-700 mb-4 leading-relaxed">
-                                نقدم مجموعة من المقاسات القياسية التي تناسب معظم الاحتياجات الإعلانية، مع إمكانية التخصيص حسب الطلب:
-                            </p>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div class="bg-white p-4 rounded-lg shadow-sm">
-                                    <h4 class="font-bold text-primary mb-2">مقاسات صغيرة</h4>
-                                    <ul class="list-disc list-inside text-gray-700">
-                                        <li>50 × 70 سم</li>
-                                        <li>60 × 90 سم</li>
-                                        <li>70 × 100 سم</li>
-                                        <li>80 × 120 سم</li>
-                                    </ul>
-                                </div>
-                                <div class="bg-white p-4 rounded-lg shadow-sm">
-                                    <h4 class="font-bold text-primary mb-2">مقاسات متوسطة</h4>
-                                    <ul class="list-disc list-inside text-gray-700">
-                                        <li>1 × 1.5 متر</li>
-                                        <li>1.2 × 1.8 متر</li>
-                                        <li>1.5 × 2 متر</li>
-                                        <li>2 × 3 متر</li>
-                                    </ul>
-                                </div>
-                                <div class="bg-white p-4 rounded-lg shadow-sm">
-                                    <h4 class="font-bold text-primary mb-2">مقاسات كبيرة</h4>
-                                    <ul class="list-disc list-inside text-gray-700">
-                                        <li>3 × 4 متر</li>
-                                        <li>3 × 6 متر</li>
-                                        <li>4 × 8 متر</li>
-                                        <li>5 × 10 متر</li>
-                                    </ul>
-                                </div>
-                                <div class="bg-white p-4 rounded-lg shadow-sm">
-                                    <h4 class="font-bold text-primary mb-2">مقاسات عملاقة</h4>
-                                    <ul class="list-disc list-inside text-gray-700">
-                                        <li>6 × 12 متر</li>
-                                        <li>8 × 16 متر</li>
-                                        <li>10 × 20 متر</li>
-                                        <li>مقاسات مخصصة حسب الطلب</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <h3 class="text-xl font-bold text-primary mb-3">التخصيص حسب الطلب</h3>
-                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
-                            <div class="w-full lg:w-1/2">
-                                <p class="text-gray-700 mb-4 leading-relaxed">
-                                    إذا كنت تحتاج إلى مقاسات غير قياسية، فإن فريقنا قادر على تلبية طلباتك الخاصة. نحن نقدم خدمة التخصيص الكامل للمقاسات لتناسب المساحات المتاحة لديك بشكل مثالي. سواء كنت تحتاج إلى لافتة بعرض معين أو طول محدد، يمكننا تحقيق ذلك بدقة عالية.
-                                </p>
-                                <p class="text-gray-700 leading-relaxed">
-                                    نأخذ في الاعتبار عوامل مثل مسافة المشاهدة، زوايا الرؤية، والإضاءة المحيطة عند تحديد المقاس المناسب لإعلانك. فريقنا الفني مستعد لتقديم الاستشارات المجانية لمساعدتك في اختيار المقاس الأمثل لمشروعك.
-                                </p>
-                            </div>
-                            <div class="w-full lg:w-1/2">
-                                <img src="../../assets/img/various-sizes-advertisement.jpg" alt="المقاسات المتنوعة" class="rounded-lg shadow-md w-full h-64 object-cover">
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- خدمات التصميم -->
-                    <section id="design" class="content-section mb-12">
-                        <h2 class="text-2xl font-bold text-primary mb-4">خدمات التصميم الاحترافية</h2>
-                        <p class="text-gray-700 mb-4 leading-relaxed">
-                            في شركة ايجبت للدعاية والإعلان،我们不 نقدم خدمات الطباعة فحسب، بل نوفر أيضاً خدمات تصميم احترافية شاملة. فريق التصميم المبدع لدينا مستعد لتحويل أفكارك إلى تصاميم جذابة وفعالة تنقل رسالتك الإعلانية بأفضل صورة.
-                        </p>
-                        
-                        <h3 class="text-xl font-bold text-primary mb-3">عملية التصميم</h3>
-                        <div class="bg-gray-100 p-6 rounded-lg mb-6">
-                            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
-                                <div class="bg-white p-4 rounded-lg shadow-sm">
-                                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">1</div>
-                                    <h4 class="font-bold text-primary mb-2">الاستشارة</h4>
-                                    <p class="text-gray-700 text-sm">نناقش متطلباتك وأهدافك الإعلانية</p>
-                                </div>
-                                <div class="bg-white p-4 rounded-lg shadow-sm">
-                                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">2</div>
-                                    <h4 class="font-bold text-primary mb-2">التصميم الأولي</h4>
-                                    <p class="text-gray-700 text-sm">نقدم تصميماً أولياً يعكس رؤيتك</p>
-                                </div>
-                                <div class="bg-white p-4 rounded-lg shadow-sm">
-                                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">3</div>
-                                    <h4 class="font-bold text-primary mb-2">التعديلات</h4>
-                                    <p class="text-gray-700 text-sm">نجري التعديلات حسب ملاحظاتك</p>
-                                </div>
-                                <div class="bg-white p-4 rounded-lg shadow-sm">
-                                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">4</div>
-                                    <h4 class="font-bold text-primary mb-2">التسليم النهائي</h4>
-                                    <p class="text-gray-700 text-sm">نسلم التصميم النهائي جاهزاً للطباعة</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <h3 class="text-xl font-bold text-primary mb-3">عناصر التصميم</h3>
-                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
-                            <div class="w-full lg:w-1/2">
-                                <p class="text-gray-700 mb-4 leading-relaxed">
-                                    نهتم بكل تفاصيل التصميم لضمان فعالية الإعلان وجاذبيته البصرية:
-                                </p>
-                                <ul class="list-disc list-inside text-gray-700 space-y-2">
-                                    <li><strong>الألوان:</strong> نختار ألواناً متناسقة وجذابة تعزز الهوية البصرية لعلامتك التجارية</li>
-                                    <li><strong>الخطوط:</strong> نستخدم خطوطاً واضحة وسهلة القراءة تناسب طبيعة الإعلان</li>
-                                    <li><strong>الصور:</strong> نختار صوراً عالية الجودة تنقل الرسالة الإعلانية بشكل فعال</li>
-                                    <li><strong>التخطيط:</strong> نرتب العناصر بشكل متوازن يجذب الانتباه ويوصل الرسالة بوضوح</li>
-                                    <li><strong>الرسالة:</strong> نضمن وضوح الرسالة الإعلانية وسهولة فهمها</li>
-                                </ul>
-                            </div>
-                            <div class="w-full lg:w-1/2">
-                                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80" alt="خدمات التصميم" class="rounded-lg shadow-md w-full h-64 object-cover">
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- مجالات التطبيق -->
-                    <section id="applications" class="content-section mb-12">
-                    <h2 class="text-2xl font-bold text-primary mb-4">مجالات تطبيق طباعة البنرات والفليكس والفينيل</h2>
-                    <p class="text-gray-700 mb-4 leading-relaxed">
-                        تقدم شركة ايجبت للدعاية والإعلان خدمات طباعة احترافية عالية الجودة للبنرات والفليكس والفينيل، 
-                        مع توفير تصاميم مرنة وخامات قوية تناسب جميع الاستخدامات سواء الداخلية أو الخارجية. 
-                        نحن نحرص على تقديم حلول متكاملة تبدأ من التصميم الإبداعي وحتى التركيب النهائي، 
-                        لنمنح مشروعك مظهراً احترافياً يجذب الأنظار ويرفع من قيمة علامتك التجارية.
-                    </p>
-
-                    <!-- مجال الاستخدام الخارجي -->
-                    <h3 class="text-xl font-bold text-primary mb-3">الطباعة الخارجية (Outdoor Printing)</h3>
-                    <div class="flex flex-col lg:flex-row gap-6 mb-6">
-                        <div class="w-full lg:w-1/2">
-                        <p class="text-gray-700 mb-4 leading-relaxed">
-                            تعتبر الطباعة الخارجية واحدة من أهم مجالات الاستخدام، حيث يتم تصميم البنرات والفليكس لتحمل الظروف الجوية القاسية مثل أشعة الشمس، الأمطار، والرياح. 
-                            وتستخدم هذه الطباعة في العديد من التطبيقات مثل:
-                        </p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-2">
-                            <li><strong>واجهات المحلات:</strong> لجذب العملاء وإبراز العلامة التجارية.</li>
-                            <li><strong>اللوحات الإعلانية الضخمة:</strong> مثل اللوحات على الطرق السريعة والمباني.</li>
-                            <li><strong>الإعلانات الموسمية:</strong> مثل العروض والخصومات.</li>
-                            <li><strong>الفعاليات والمعارض:</strong> لإبراز هوية الحدث وجذب الجمهور.</li>
-                        </ul>
-                        </div>
-                        <div class="w-full lg:w-1/2">
-                        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" 
-                            alt="الطباعة الخارجية" 
-                            class="rounded-lg shadow-md w-full h-64 object-cover">
-                        </div>
-                    </div>
-
-                    <!-- مجال الاستخدام الداخلي -->
-                    <h3 class="text-xl font-bold text-primary mb-3">الطباعة الداخلية (Indoor Printing)</h3>
-                    <div class="flex flex-col lg:flex-row gap-6 mb-6">
-                        <div class="w-full lg:w-1/2">
-                        <img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" 
-                            alt="الطباعة الداخلية" 
-                            class="rounded-lg shadow-md w-full h-64 object-cover">
-                        </div>
-                        <div class="w-full lg:w-1/2">
-                        <p class="text-gray-700 mb-4 leading-relaxed">
-                            الطباعة الداخلية تعتمد على الخامات الناعمة والدقة العالية في الألوان، وهي مثالية للمساحات المغلقة حيث لا تتعرض للعوامل الجوية.
-                            ومن أبرز تطبيقاتها:
-                        </p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-2">
-                            <li><strong>الديكورات الداخلية:</strong> مثل الجدران المزخرفة والطباعة على الفينيل.</li>
-                            <li><strong>لوحات العروض:</strong> للمولات والمحلات التجارية.</li>
-                            <li><strong>المعارض الداخلية:</strong> لإظهار هوية الشركات بشكل احترافي.</li>
-                            <li><strong>مكاتب العمل:</strong> لتعزيز الهوية البصرية للشركات.</li>
-                        </ul>
-                        </div>
-                    </div>
-
-                    <!-- طباعة الفليكس -->
-                    <h3 class="text-xl font-bold text-primary mb-3">مجالات استخدام الفليكس</h3>
-                    <p class="text-gray-700 mb-4 leading-relaxed">
-                        خامة الفليكس مثالية للطباعة الخارجية حيث تمتاز بالمتانة ومقاومة التمزق، 
-                        مما يجعلها الخيار الأمثل للافتات الكبيرة واللوحات التي تحتاج إلى تحمل الظروف القاسية. 
-                        ومن أهم استخدامات الفليكس:
-                    </p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
-                        <li>لوحات المحلات التجارية.</li>
-                        <li>إعلانات الطرق السريعة.</li>
-                        <li>اللوحات الترويجية في المناطق المفتوحة.</li>
-                        <li>إعلانات الفعاليات والمهرجانات.</li>
-                    </ul>
-
-                    <!-- طباعة الفينيل -->
-                    <h3 class="text-xl font-bold text-primary mb-3">مجالات استخدام الفينيل</h3>
-                    <div class="flex flex-col lg:flex-row gap-6 mb-6">
-                        <div class="w-full lg:w-1/2">
-                        <p class="text-gray-700 mb-4 leading-relaxed">
-                            يتميز الفينيل بمرونته وتعدد استخداماته في الطباعة الداخلية والخارجية، 
-                            حيث يمكن قصه وتصميمه بأشكال مبتكرة. 
-                            ومن أبرز مجالات تطبيقه:
-                        </p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-2">
-                            <li>تزيين واجهات المحلات الزجاجية.</li>
-                            <li>الملصقات الإعلانية للمنتجات.</li>
-                            <li>إعلانات السيارات والنقل.</li>
-                            <li>ملصقات الديكور الداخلي.</li>
-                        </ul>
-                        </div>
-                        <div class="w-full lg:w-1/2">
-                        <img src="../../assets/img/use-vinyl.jpg" 
-                            alt="مجالات استخدام الفينيل" 
-                            class="rounded-lg shadow-md w-full h-64 object-cover">
-                        </div>
-                    </div>
-
-                    
-                    </section>
-
-<!-- مراحل الإنتاج -->
-<section id="production-steps" class="content-section py-12 bg-gray-50">
-  <div class="container mx-auto px-4">
-    <!-- العنوان الرئيسي -->
-    <h2 class="text-3xl font-bold text-primary mb-8 text-center">مراحل الإنتاج</h2>
-    <p class="text-gray-700 text-center max-w-3xl mx-auto mb-12 leading-relaxed">
-      نحن في شركة ايجبت للدعاية والإعلان نعمل بخطوات منظمة ومدروسة لضمان تقديم منتج نهائي عالي الجودة. 
-      تبدأ العملية من التخطيط الدقيق، مروراً بمراحل التصميم والطباعة، وحتى التركيب النهائي، 
-      بما يضمن تلبية توقعات عملائنا وتقديم أفضل تجربة في كل مشروع.
-    </p>
-
-    <!-- تايم لاين للمراحل -->
-    <div class="relative  pl-6 space-y-10 max-w-4xl mx-auto">
-      
-      <!-- المرحلة الأولى -->
-      <div class="relative">
-        <div class="absolute -left-10 top-5 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center shadow-md">
-          <i class="fas fa-lightbulb text-xl"></i>
-        </div>
-        <h3 class="text-xl font-bold text-primary mb-2">1. مرحلة التخطيط وجمع المعلومات</h3>
-        <p class="text-gray-700 leading-relaxed">
-          في هذه المرحلة، نقوم بفهم احتياجات العميل بشكل كامل، وجمع جميع المعلومات اللازمة عن المشروع مثل نوع الطباعة، 
-          المقاسات المطلوبة، الأهداف التسويقية، والميزانية المحددة. 
-          هذه الخطوة تساعدنا على وضع خطة عمل واضحة تضمن سير العملية بشكل سلس ومنظم.
-        </p>
-      </div>
-
-      <!-- المرحلة الثانية -->
-      <div class="relative">
-        <div class="absolute -left-10 top-5 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center shadow-md">
-          <i class="fas fa-pencil-ruler text-xl"></i>
-        </div>
-        <h3 class="text-xl font-bold text-primary mb-2">2. مرحلة التصميم الإبداعي</h3>
-        <p class="text-gray-700 leading-relaxed">
-          يقوم فريق التصميم لدينا بابتكار أفكار مميزة وجذابة، مع التركيز على هوية العميل 
-          وأهدافه التسويقية. 
-          نستخدم أحدث برامج التصميم لضمان الحصول على رسومات احترافية بألوان واضحة ومؤثرة، 
-          تعكس جودة العمل وتشد انتباه الجمهور المستهدف.
-        </p>
-      </div>
-
-      <!-- المرحلة الثالثة -->
-      <div class="relative">
-        <div class="absolute -left-10 top-5 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center shadow-md">
-          <i class="fas fa-print text-xl"></i>
-        </div>
-        <h3 class="text-xl font-bold text-primary mb-2">3. مرحلة الطباعة</h3>
-        <p class="text-gray-700 leading-relaxed">
-          بعد اعتماد التصميم النهائي، ننتقل إلى مرحلة الطباعة باستخدام أحدث الأجهزة والتقنيات. 
-          نحرص على اختيار الخامات المناسبة لكل مشروع سواء للبنرات، الفليكس، أو الفينيل، 
-          لضمان مخرجات عالية الجودة بألوان زاهية ودقة متناهية، 
-          مع الالتزام بالمعايير العالمية للطباعة.
-        </p>
-      </div>
-
-      <!-- المرحلة الرابعة -->
-      <div class="relative">
-        <div class="absolute -left-10 top-5 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center shadow-md">
-          <i class="fas fa-tools text-xl"></i>
-        </div>
-        <h3 class="text-xl font-bold text-primary mb-2">4. مرحلة التشطيب والقص</h3>
-        <p class="text-gray-700 leading-relaxed">
-          يتم قص الخامات وتشطيبها بدقة عالية لضمان الحصول على مقاسات مثالية وتشطيبات احترافية. 
-          نولي اهتماماً خاصاً بهذه المرحلة لأنها تعكس جودة العمل النهائي 
-          وتضمن سهولة التركيب لاحقاً.
-        </p>
-      </div>
-
-      <!-- المرحلة الخامسة -->
-      <div class="relative">
-        <div class="absolute -left-10 top-5 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center shadow-md">
-          <i class="fas fa-truck text-xl"></i>
-        </div>
-        <h3 class="text-xl font-bold text-primary mb-2">5. مرحلة التركيب والتسليم</h3>
-        <p class="text-gray-700 leading-relaxed">
-          يتم تركيب المنتجات في الموقع المحدد بواسطة فريق متخصص لضمان التثبيت الصحيح، 
-          مع مراعاة أعلى معايير السلامة والجودة. 
-          كما نقوم بتسليم المشروع في الوقت المحدد بعد التأكد من رضا العميل عن النتيجة النهائية.
-        </p>
-      </div>
-
-      <!-- المرحلة السادسة -->
-      <div class="relative">
-        <div class="absolute -left-10 top-5 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center shadow-md">
-          <i class="fas fa-check-circle text-xl"></i>
-        </div>
-        <h3 class="text-xl font-bold text-primary mb-2">6. مرحلة المتابعة وضمان الجودة</h3>
-        <p class="text-gray-700 leading-relaxed">
-          بعد الانتهاء من المشروع، نتابع مع عملائنا لضمان رضاهم الكامل، 
-          ونقدم الدعم الفني وخدمات ما بعد البيع، 
-          مع ضمان جودة المنتج وخدمته لفترة زمنية مناسبة.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- مميزات خدماتنا -->
-<section id="features" class="py-16 bg-gray-50 content-section">
-  <div class="container mx-auto px-6">
-    <!-- العنوان الرئيسي -->
-    <h2 class="text-3xl font-bold text-primary text-center mb-4">مميزات خدماتنا</h2>
-    <p class="text-gray-700 text-center max-w-2xl mx-auto mb-12 leading-relaxed">
-      نحن في شركة ايجبت للدعاية والإعلان نحرص على تقديم خدمات طباعة وتصميم احترافية 
-      تعتمد على أحدث التقنيات وأفضل الخامات، مع ضمان جودة عالية وتجربة عملاء مميزة 
-      تدعم نجاح مشاريعك التسويقية والإعلانية.
-    </p>
-
-    <!-- شبكة المميزات -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      <!-- الميزة الأولى -->
-      <div class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
-        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
-          <i class="fas fa-paint-brush text-2xl"></i>
-        </div>
-        <h3 class="text-xl font-bold text-primary mb-3">تصاميم إبداعية</h3>
-        <p class="text-gray-600 leading-relaxed">
-          نقدم تصاميم مبتكرة ومميزة تعكس هوية علامتك التجارية وتجذب انتباه جمهورك، 
-          مع مراعاة تفاصيل الألوان والخطوط بما يتناسب مع احتياجات مشروعك.
-        </p>
-      </div>
-
-      <!-- الميزة الثانية -->
-      <div class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
-        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
-          <i class="fas fa-cogs text-2xl"></i>
-        </div>
-        <h3 class="text-xl font-bold text-primary mb-3">تقنيات طباعة حديثة</h3>
-        <p class="text-gray-600 leading-relaxed">
-          نستخدم أحدث آلات وتقنيات الطباعة لضمان دقة الألوان وجودة التفاصيل 
-          سواء للطباعة الداخلية أو الخارجية.
-        </p>
-      </div>
-
-      <!-- الميزة الثالثة -->
-      <div class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
-        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
-          <i class="fas fa-shield-alt text-2xl"></i>
-        </div>
-        <h3 class="text-xl font-bold text-primary mb-3">خامات عالية الجودة</h3>
-        <p class="text-gray-600 leading-relaxed">
-          نختار أفضل الخامات التي تضمن متانة المنتج ومقاومته للعوامل الجوية، 
-          مع الحفاظ على مظهره الجذاب لفترات طويلة.
-        </p>
-      </div>
-
-      <!-- الميزة الرابعة -->
-      <div class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
-        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
-          <i class="fas fa-bolt text-2xl"></i>
-        </div>
-        <h3 class="text-xl font-bold text-primary mb-3">سرعة التنفيذ</h3>
-        <p class="text-gray-600 leading-relaxed">
-          نلتزم بتسليم المشاريع في الوقت المحدد دون التأثير على الجودة، 
-          مع فريق محترف يعمل بكفاءة عالية.
-        </p>
-      </div>
-
-      <!-- الميزة الخامسة -->
-      <div class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
-        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
-          <i class="fas fa-users text-2xl"></i>
-        </div>
-        <h3 class="text-xl font-bold text-primary mb-3">فريق عمل محترف</h3>
-        <p class="text-gray-600 leading-relaxed">
-          يمتلك فريقنا خبرة واسعة في مجال التصميم والطباعة، 
-          ويعمل على تقديم أفضل الحلول التي تناسب أهدافك التسويقية.
-        </p>
-      </div>
-
-      <!-- الميزة السادسة -->
-      <div class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
-        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
-          <i class="fas fa-headset text-2xl"></i>
-        </div>
-        <h3 class="text-xl font-bold text-primary mb-3">خدمة عملاء مميزة</h3>
-        <p class="text-gray-600 leading-relaxed">
-          نقدم دعماً متواصلاً وخدمة عملاء على مدار الساعة 
-          لضمان راحتك ومساعدتك في كل خطوة من المشروع.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-                  
-
-                    <!-- قسم دعائي -->
-                    <div class="bg-primary text-white p-8 rounded-lg mt-10 text-center">
-                        <h2 class="text-2xl font-bold mb-4">احصل على خصم 15% على أول طلبية لك</h2>
-                        <p class="mb-6">استخدم الكود EGYPT15 عند الطلب</p>
-                        <a href="tel:0501234567" class="bg-white text-primary py-3 px-8 rounded-lg font-bold inline-block hover:bg-gray-100 transition duration-300">اطلب الآن</a>
-                    </div>
-                </div>
+            <div class="bg-gray-100 p-6 rounded-lg mt-6">
+              <h3 class="text-xl font-bold text-primary mb-3">لماذا تختار خدماتنا؟</h3>
+              <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>جودة طباعة عالية بدقة تصل إلى 1440 dpi</li>
+                <li>خامات مقاومة للعوامل الجوية والعوامل المؤثرة</li>
+                <li>تصاميم مرنة بمقاسات مختلفة تناسب جميع الاحتياجات</li>
+                <li>أسعار تنافسية مع خصومات على الكميات الكبيرة</li>
+                <li>خدمة سريعة وتوصيل في الوقت المحدد</li>
+                <li>فريق دعم فني متاح على مدار الساعة</li>
+              </ul>
             </div>
+          </section>
+
+          <!-- طباعة Outdoor -->
+          <section id="outdoor" class="content-section mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-4">طباعة Outdoor</h2>
+            <div class="flex flex-col lg:flex-row gap-6 mb-6">
+              <div class="w-full lg:w-1/2">
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                  طباعة Outdoor هي الخيار الأمثل للإعلانات الخارجية التي تتعرض للعوامل الجوية المختلفة. نستخدم في شركة
+                  ايجبت للدعاية والإعلان أفضل أنواع الخامات المقاومة للماء وأشعة الشمس والحرارة، مما يضمن بقاء إعلانك
+                  مشرقاً وجذاباً لأطول فترة ممكنة.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                  تتميز طباعتنا الخارجية بمقاومة عالية للتلف والتشقق، وتحافظ على الألوان زاهية حتى في أقسى الظروف
+                  الجوية. نحن نقدم حلولاً متكاملة تشمل التصميم والطباعة والتركيب، مع ضمان الجودة والتميز في كل خطوة.
+                </p>
+              </div>
+              <div class="w-full lg:w-1/2">
+                <img src="../../assets/img/print-Outdoor.jpg" alt="طباعة Outdoor"
+                  class="rounded-lg shadow-md w-full h-64 object-cover">
+              </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-primary mb-3">مميزات طباعة Outdoor</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                <h4 class="font-bold text-primary mb-2">مقاومة العوامل الجوية</h4>
+                <p class="text-gray-700">خامات خاصة مقاومة للماء والأتربة وأشعة الشمس</p>
+              </div>
+              <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                <h4 class="font-bold text-primary mb-2">رؤية واضحة من مسافات بعيدة</h4>
+                <p class="text-gray-700">ألوان زاهية وتصاميم جذابة تلفت الانتباه</p>
+              </div>
+              <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                <h4 class="font-bold text-primary mb-2">متانة وقوة تحمل</h4>
+                <p class="text-gray-700">تصاميم تدوم طويلاً وتتحمل الظروف القاسية</p>
+              </div>
+              <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                <h4 class="font-bold text-primary mb-2">سهولة التركيب</h4>
+                <p class="text-gray-700">نوفر خدمة تركيب محترفة بمعايير عالية الجودة</p>
+              </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-primary mb-3">تطبيقات طباعة Outdoor</h3>
+            <p class="text-gray-700 mb-4 leading-relaxed">
+              تستخدم طباعة Outdoor في مجموعة واسعة من التطبيقات الإعلانية الخارجية، بما في ذلك اللوحات الإعلانية
+              الكبيرة، إعلانات الطرق السريعة، إعلانات المحلات التجارية، لافتات المرور، إعلانات الحافلات، لافتات البناء،
+              إعلانات المولات التجارية، وإعلانات الأسواق. نحن نقدم حلولاً مخصصة لكل نوع من هذه التطبيقات، مع مراعاة
+              متطلبات الرؤية والمتانة والجاذبية البصرية.
+            </p>
+          </section>
+
+          <!-- طباعة Indoor -->
+          <section id="indoor" class="content-section mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-4">طباعة Indoor</h2>
+            <div class="flex flex-col lg:flex-row gap-6 mb-6">
+              <div class="w-full lg:w-1/2">
+                <img src="../../assets/img/print-Indoor.jpg" alt="طباعة Indoor"
+                  class="rounded-lg shadow-md w-full h-64 object-cover">
+              </div>
+              <div class="w-full lg:w-1/2">
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                  طباعة Indoor مصممة خصيصاً للاستخدام الداخلي، حيث تركز على الجودة العالية للألوان والتفاصيل الدقيقة.
+                  نستخدم في شركة ايجبت للدعاية والإعلان أحدث تقنيات الطباعة التي تضمن ألواناً زاهية وصوراً واضحة تنقل
+                  رسالتك الإعلانية بفعالية كبيرة.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                  تتميز طباعتنا الداخلية بدقة ألوان عالية وتفاصيل حادة، مما يجعلها مثالية للمسافات القريبة والرؤية
+                  التفصيلية. نقدم مجموعة واسعة من الخامات المناسبة للاستخدام الداخلي، بما في ذلك خامات عالية الجودة
+                  تناسب مختلف التطبيقات والمساحات.
+                </p>
+              </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-primary mb-3">مميزات طباعة Indoor</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                <h4 class="font-bold text-primary mb-2">جودة ألوان عالية</h4>
+                <p class="text-gray-700">ألوان زاهية ودقيقة تنقل الصورة بأفضل جودة</p>
+              </div>
+              <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                <h4 class="font-bold text-primary mb-2">تفاصيل دقيقة</h4>
+                <p class="text-gray-700">دقة طباعة عالية تظهر التفاصيل الصغيرة بوضوح</p>
+              </div>
+              <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                <h4 class="font-bold text-primary mb-2">خامات متنوعة</h4>
+                <p class="text-gray-700">نوفر خامات مختلفة تناسب كل تطبيق داخلي</p>
+              </div>
+              <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                <h4 class="font-bold text-primary mb-2">تصاميم مبتكرة</h4>
+                <p class="text-gray-700">نقدم تصاميم إبداعية تجذب انتباه الزبائن</p>
+              </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-primary mb-3">تطبيقات طباعة Indoor</h3>
+            <p class="text-gray-700 mb-4 leading-relaxed">
+              تستخدم طباعة Indoor في العديد من التطبيقات الداخلية، بما في ذلك لافتات المحلات التجارية، إعلانات المعارض
+              والمؤتمرات، لافتات الممرات، إعلانات المطاعم والمقاهي، لافتات المكاتب، إعلانات الفنادق، لافتات المعارض
+              الفنية، وإعلانات المراكز الطبية. نحن نقدم حلولاً مخصصة لكل مساحة داخلية، مع التركيز على الجودة البصرية
+              والتكامل مع ديكور المكان.
+            </p>
+          </section>
+
+          <!-- الخامات المستخدمة -->
+          <section id="materials" class="content-section mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-4">الخامات المستخدمة في الطباعة</h2>
+            <p class="text-gray-700 mb-4 leading-relaxed">
+              في شركة ايجبت للدعاية والإعلان، نستخدم مجموعة واسعة من الخامات عالية الجودة التي تناسب مختلف أنواع الطباعة
+              والتطبيقات. نحن نحرص على اختيار الخامات التي تضمن متانة الإعلان وجودة الطباعة وتناسب بيئة الاستخدام.
+            </p>
+
+            <h3 class="text-xl font-bold text-primary mb-3">خامات البنر (Banner)</h3>
+            <div class="flex flex-col lg:flex-row gap-6 mb-6">
+              <div class="w-full lg:w-1/2">
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                  خامات البنر هي الأكثر شيوعاً في الطباعة الخارجية والداخلية. نقدم أنواعاً مختلفة من خامات البنر تتناسب
+                  مع مختلف الاستخدامات:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                  <li><strong>بنر خارجي:</strong> خامة متينة مقاومة للماء وأشعة الشمس، مثالية للاستخدام الخارجي</li>
+                  <li><strong>بنر داخلي:</strong> خامة ناعمة ذات جودة ألوان عالية، مناسبة للاستخدام الداخلي</li>
+                  <li><strong>بنر أمامي وخلفي:</strong> للطباعة من الجهتين، مثالي للعارضات والمعارض</li>
+                  <li><strong>بنر mesh:</strong> خامة مثقبة تسمح بمرور الهواء، مثالية للوحات الإعلانية الكبيرة</li>
+                </ul>
+              </div>
+              <div class="w-full lg:w-1/2">
+                <img src="../../assets/img/print-Indoor.jpg" alt="خامات البنر"
+                  class="rounded-lg shadow-md w-full h-64 object-cover">
+              </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-primary mb-3">خامات الفليكس (Flex)</h3>
+            <p class="text-gray-700 mb-4 leading-relaxed">
+              الفليكس هو خامة بلاستيكية مرنة ومتينة، تتميز بمقاومة عالية للتمزق والعوامل الجوية. نستخدم الفليكس في
+              التطبيقات الخارجية principalmente بسبب متانته وقدرته على تحمل الظروف الجوية القاسية. يتوفر الفليكس بسمكات
+              مختلفة تناسب مختلف التطبيقات والميزانيات.
+            </p>
+
+            <h3 class="text-xl font-bold text-primary mb-3">خامات الفينيل (Vinyl)</h3>
+            <div class="flex flex-col lg:flex-row gap-6 mb-6">
+              <div class="w-full lg:w-1/2">
+                <img src="../../assets/img/vinyl-materials.jpg" alt="خامات الفينيل"
+                  class="rounded-lg shadow-md w-full h-64 object-cover">
+              </div>
+              <div class="w-full lg:w-1/2">
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                  الفينيل هو خامة متعددة الاستخدامات تناسب الطباعة الداخلية والخارجية. نقدم أنواعاً مختلفة من الفينيل:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                  <li><strong>فينيل ذاتي اللصق:</strong> مثالي للزجاج والأسطح الملساء</li>
+                  <li><strong>فينيل للنوافذ:</strong> شفاف يسمح بمرور الضوء مع إمكانية الطباعة عليه</li>
+                  <li><strong>فينيل مغناطيسي:</strong> للطباعة على الأسطح المعدنية</li>
+                  <li><strong>فينيل لامع:</strong> يعكس الضوء ويزيد من وضوح الإعلان</li>
+                  <li><strong>فينيل مات:</strong> يقلل الانعكاسات ويناسب المساحات الداخلية</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-primary mb-3">خامات خاصة أخرى</h3>
+            <p class="text-gray-700 mb-4 leading-relaxed">
+              بالإضافة إلى الخامات الأساسية، نقدم أيضاً خامات خاصة تناسب تطبيقات محددة، مثل قماش الكانفس عالي الجودة
+              للطباعة الفنية، خامات البوب آب للمعارض والعروض الترويجية، خامات الورق المقوى للعروض المؤقتة، وخامات النسيج
+              للاستخدامات الداخلية الفاخرة.
+            </p>
+          </section>
+
+          <!-- المقاسات المتنوعة -->
+          <section id="sizes" class="content-section mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-4">المقاسات المتنوعة للطباعة</h2>
+            <p class="text-gray-700 mb-4 leading-relaxed">
+              في شركة ايجبت للدعاية والإعلان، نقدم مجموعة واسعة من المقاسات لتناسب جميع احتياجاتك الإعلانية. سواء كنت
+              تحتاج إلى لافتة صغيرة لمحلك التجاري أو لوحة إعلانية ضخمة على طريق سريع، لدينا الحل الأمثل لمتطلباتك.
+            </p>
+
+            <h3 class="text-xl font-bold text-primary mb-3">المقاسات القياسية</h3>
+            <div class="bg-gray-100 p-6 rounded-lg mb-6">
+              <p class="text-gray-700 mb-4 leading-relaxed">
+                نقدم مجموعة من المقاسات القياسية التي تناسب معظم الاحتياجات الإعلانية، مع إمكانية التخصيص حسب الطلب:
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                  <h4 class="font-bold text-primary mb-2">مقاسات صغيرة</h4>
+                  <ul class="list-disc list-inside text-gray-700">
+                    <li>50 × 70 سم</li>
+                    <li>60 × 90 سم</li>
+                    <li>70 × 100 سم</li>
+                    <li>80 × 120 سم</li>
+                  </ul>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                  <h4 class="font-bold text-primary mb-2">مقاسات متوسطة</h4>
+                  <ul class="list-disc list-inside text-gray-700">
+                    <li>1 × 1.5 متر</li>
+                    <li>1.2 × 1.8 متر</li>
+                    <li>1.5 × 2 متر</li>
+                    <li>2 × 3 متر</li>
+                  </ul>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                  <h4 class="font-bold text-primary mb-2">مقاسات كبيرة</h4>
+                  <ul class="list-disc list-inside text-gray-700">
+                    <li>3 × 4 متر</li>
+                    <li>3 × 6 متر</li>
+                    <li>4 × 8 متر</li>
+                    <li>5 × 10 متر</li>
+                  </ul>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                  <h4 class="font-bold text-primary mb-2">مقاسات عملاقة</h4>
+                  <ul class="list-disc list-inside text-gray-700">
+                    <li>6 × 12 متر</li>
+                    <li>8 × 16 متر</li>
+                    <li>10 × 20 متر</li>
+                    <li>مقاسات مخصصة حسب الطلب</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-primary mb-3">التخصيص حسب الطلب</h3>
+            <div class="flex flex-col lg:flex-row gap-6 mb-6">
+              <div class="w-full lg:w-1/2">
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                  إذا كنت تحتاج إلى مقاسات غير قياسية، فإن فريقنا قادر على تلبية طلباتك الخاصة. نحن نقدم خدمة التخصيص
+                  الكامل للمقاسات لتناسب المساحات المتاحة لديك بشكل مثالي. سواء كنت تحتاج إلى لافتة بعرض معين أو طول
+                  محدد، يمكننا تحقيق ذلك بدقة عالية.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                  نأخذ في الاعتبار عوامل مثل مسافة المشاهدة، زوايا الرؤية، والإضاءة المحيطة عند تحديد المقاس المناسب
+                  لإعلانك. فريقنا الفني مستعد لتقديم الاستشارات المجانية لمساعدتك في اختيار المقاس الأمثل لمشروعك.
+                </p>
+              </div>
+              <div class="w-full lg:w-1/2">
+                <img src="../../assets/img/various-sizes-advertisement.jpg" alt="المقاسات المتنوعة"
+                  class="rounded-lg shadow-md w-full h-64 object-cover">
+              </div>
+            </div>
+          </section>
+
+          <!-- خدمات التصميم -->
+          <section id="design" class="content-section mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-4">خدمات التصميم الاحترافية</h2>
+            <p class="text-gray-700 mb-4 leading-relaxed">
+              في شركة ايجبت للدعاية والإعلان،我们不 نقدم خدمات الطباعة فحسب، بل نوفر أيضاً خدمات تصميم احترافية شاملة. فريق
+              التصميم المبدع لدينا مستعد لتحويل أفكارك إلى تصاميم جذابة وفعالة تنقل رسالتك الإعلانية بأفضل صورة.
+            </p>
+
+            <h3 class="text-xl font-bold text-primary mb-3">عملية التصميم</h3>
+            <div class="bg-gray-100 p-6 rounded-lg mb-6">
+              <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                  <div
+                    class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">
+                    1</div>
+                  <h4 class="font-bold text-primary mb-2">الاستشارة</h4>
+                  <p class="text-gray-700 text-sm">نناقش متطلباتك وأهدافك الإعلانية</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                  <div
+                    class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">
+                    2</div>
+                  <h4 class="font-bold text-primary mb-2">التصميم الأولي</h4>
+                  <p class="text-gray-700 text-sm">نقدم تصميماً أولياً يعكس رؤيتك</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                  <div
+                    class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">
+                    3</div>
+                  <h4 class="font-bold text-primary mb-2">التعديلات</h4>
+                  <p class="text-gray-700 text-sm">نجري التعديلات حسب ملاحظاتك</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                  <div
+                    class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">
+                    4</div>
+                  <h4 class="font-bold text-primary mb-2">التسليم النهائي</h4>
+                  <p class="text-gray-700 text-sm">نسلم التصميم النهائي جاهزاً للطباعة</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-primary mb-3">عناصر التصميم</h3>
+            <div class="flex flex-col lg:flex-row gap-6 mb-6">
+              <div class="w-full lg:w-1/2">
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                  نهتم بكل تفاصيل التصميم لضمان فعالية الإعلان وجاذبيته البصرية:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                  <li><strong>الألوان:</strong> نختار ألواناً متناسقة وجذابة تعزز الهوية البصرية لعلامتك التجارية</li>
+                  <li><strong>الخطوط:</strong> نستخدم خطوطاً واضحة وسهلة القراءة تناسب طبيعة الإعلان</li>
+                  <li><strong>الصور:</strong> نختار صوراً عالية الجودة تنقل الرسالة الإعلانية بشكل فعال</li>
+                  <li><strong>التخطيط:</strong> نرتب العناصر بشكل متوازن يجذب الانتباه ويوصل الرسالة بوضوح</li>
+                  <li><strong>الرسالة:</strong> نضمن وضوح الرسالة الإعلانية وسهولة فهمها</li>
+                </ul>
+              </div>
+              <div class="w-full lg:w-1/2">
+                <img
+                  src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+                  alt="خدمات التصميم" class="rounded-lg shadow-md w-full h-64 object-cover">
+              </div>
+            </div>
+          </section>
+
+          <!-- مجالات التطبيق -->
+          <section id="applications" class="content-section mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-4">مجالات تطبيق طباعة البنرات والفليكس والفينيل</h2>
+            <p class="text-gray-700 mb-4 leading-relaxed">
+              تقدم شركة ايجبت للدعاية والإعلان خدمات طباعة احترافية عالية الجودة للبنرات والفليكس والفينيل،
+              مع توفير تصاميم مرنة وخامات قوية تناسب جميع الاستخدامات سواء الداخلية أو الخارجية.
+              نحن نحرص على تقديم حلول متكاملة تبدأ من التصميم الإبداعي وحتى التركيب النهائي،
+              لنمنح مشروعك مظهراً احترافياً يجذب الأنظار ويرفع من قيمة علامتك التجارية.
+            </p>
+
+            <!-- مجال الاستخدام الخارجي -->
+            <h3 class="text-xl font-bold text-primary mb-3">الطباعة الخارجية (Outdoor Printing)</h3>
+            <div class="flex flex-col lg:flex-row gap-6 mb-6">
+              <div class="w-full lg:w-1/2">
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                  تعتبر الطباعة الخارجية واحدة من أهم مجالات الاستخدام، حيث يتم تصميم البنرات والفليكس لتحمل الظروف
+                  الجوية القاسية مثل أشعة الشمس، الأمطار، والرياح.
+                  وتستخدم هذه الطباعة في العديد من التطبيقات مثل:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                  <li><strong>واجهات المحلات:</strong> لجذب العملاء وإبراز العلامة التجارية.</li>
+                  <li><strong>اللوحات الإعلانية الضخمة:</strong> مثل اللوحات على الطرق السريعة والمباني.</li>
+                  <li><strong>الإعلانات الموسمية:</strong> مثل العروض والخصومات.</li>
+                  <li><strong>الفعاليات والمعارض:</strong> لإبراز هوية الحدث وجذب الجمهور.</li>
+                </ul>
+              </div>
+              <div class="w-full lg:w-1/2">
+                <img
+                  src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80"
+                  alt="الطباعة الخارجية" class="rounded-lg shadow-md w-full h-64 object-cover">
+              </div>
+            </div>
+
+            <!-- مجال الاستخدام الداخلي -->
+            <h3 class="text-xl font-bold text-primary mb-3">الطباعة الداخلية (Indoor Printing)</h3>
+            <div class="flex flex-col lg:flex-row gap-6 mb-6">
+              <div class="w-full lg:w-1/2">
+                <img
+                  src="https://images.unsplash.com/photo-1615529182904-14819c35db37?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80"
+                  alt="الطباعة الداخلية" class="rounded-lg shadow-md w-full h-64 object-cover">
+              </div>
+              <div class="w-full lg:w-1/2">
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                  الطباعة الداخلية تعتمد على الخامات الناعمة والدقة العالية في الألوان، وهي مثالية للمساحات المغلقة حيث
+                  لا تتعرض للعوامل الجوية.
+                  ومن أبرز تطبيقاتها:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                  <li><strong>الديكورات الداخلية:</strong> مثل الجدران المزخرفة والطباعة على الفينيل.</li>
+                  <li><strong>لوحات العروض:</strong> للمولات والمحلات التجارية.</li>
+                  <li><strong>المعارض الداخلية:</strong> لإظهار هوية الشركات بشكل احترافي.</li>
+                  <li><strong>مكاتب العمل:</strong> لتعزيز الهوية البصرية للشركات.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- طباعة الفليكس -->
+            <h3 class="text-xl font-bold text-primary mb-3">مجالات استخدام الفليكس</h3>
+            <p class="text-gray-700 mb-4 leading-relaxed">
+              خامة الفليكس مثالية للطباعة الخارجية حيث تمتاز بالمتانة ومقاومة التمزق،
+              مما يجعلها الخيار الأمثل للافتات الكبيرة واللوحات التي تحتاج إلى تحمل الظروف القاسية.
+              ومن أهم استخدامات الفليكس:
+            </p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+              <li>لوحات المحلات التجارية.</li>
+              <li>إعلانات الطرق السريعة.</li>
+              <li>اللوحات الترويجية في المناطق المفتوحة.</li>
+              <li>إعلانات الفعاليات والمهرجانات.</li>
+            </ul>
+
+            <!-- طباعة الفينيل -->
+            <h3 class="text-xl font-bold text-primary mb-3">مجالات استخدام الفينيل</h3>
+            <div class="flex flex-col lg:flex-row gap-6 mb-6">
+              <div class="w-full lg:w-1/2">
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                  يتميز الفينيل بمرونته وتعدد استخداماته في الطباعة الداخلية والخارجية،
+                  حيث يمكن قصه وتصميمه بأشكال مبتكرة.
+                  ومن أبرز مجالات تطبيقه:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                  <li>تزيين واجهات المحلات الزجاجية.</li>
+                  <li>الملصقات الإعلانية للمنتجات.</li>
+                  <li>إعلانات السيارات والنقل.</li>
+                  <li>ملصقات الديكور الداخلي.</li>
+                </ul>
+              </div>
+              <div class="w-full lg:w-1/2">
+                <img src="../../assets/img/use-vinyl.jpg" alt="مجالات استخدام الفينيل"
+                  class="rounded-lg shadow-md w-full h-64 object-cover">
+              </div>
+            </div>
+
+
+          </section>
+
+          <!-- مراحل الإنتاج -->
+          <section id="production-steps" class="content-section py-12 bg-gray-50">
+            <div class="container mx-auto px-4">
+              <!-- العنوان الرئيسي -->
+              <h2 class="text-3xl font-bold text-primary mb-8 text-center">مراحل الإنتاج</h2>
+              <p class="text-gray-700 text-center max-w-3xl mx-auto mb-12 leading-relaxed">
+                نحن في شركة ايجبت للدعاية والإعلان نعمل بخطوات منظمة ومدروسة لضمان تقديم منتج نهائي عالي الجودة.
+                تبدأ العملية من التخطيط الدقيق، مروراً بمراحل التصميم والطباعة، وحتى التركيب النهائي،
+                بما يضمن تلبية توقعات عملائنا وتقديم أفضل تجربة في كل مشروع.
+              </p>
+
+              <!-- تايم لاين للمراحل -->
+              <div class="relative  pl-6 space-y-10 max-w-4xl mx-auto">
+
+                <!-- المرحلة الأولى -->
+                <div class="relative">
+                  <div
+                    class="absolute -left-10 top-5 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center shadow-md">
+                    <i class="fas fa-lightbulb text-xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-primary mb-2">1. مرحلة التخطيط وجمع المعلومات</h3>
+                  <p class="text-gray-700 leading-relaxed">
+                    في هذه المرحلة، نقوم بفهم احتياجات العميل بشكل كامل، وجمع جميع المعلومات اللازمة عن المشروع مثل نوع
+                    الطباعة،
+                    المقاسات المطلوبة، الأهداف التسويقية، والميزانية المحددة.
+                    هذه الخطوة تساعدنا على وضع خطة عمل واضحة تضمن سير العملية بشكل سلس ومنظم.
+                  </p>
+                </div>
+
+                <!-- المرحلة الثانية -->
+                <div class="relative">
+                  <div
+                    class="absolute -left-10 top-5 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center shadow-md">
+                    <i class="fas fa-pencil-ruler text-xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-primary mb-2">2. مرحلة التصميم الإبداعي</h3>
+                  <p class="text-gray-700 leading-relaxed">
+                    يقوم فريق التصميم لدينا بابتكار أفكار مميزة وجذابة، مع التركيز على هوية العميل
+                    وأهدافه التسويقية.
+                    نستخدم أحدث برامج التصميم لضمان الحصول على رسومات احترافية بألوان واضحة ومؤثرة،
+                    تعكس جودة العمل وتشد انتباه الجمهور المستهدف.
+                  </p>
+                </div>
+
+                <!-- المرحلة الثالثة -->
+                <div class="relative">
+                  <div
+                    class="absolute -left-10 top-5 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center shadow-md">
+                    <i class="fas fa-print text-xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-primary mb-2">3. مرحلة الطباعة</h3>
+                  <p class="text-gray-700 leading-relaxed">
+                    بعد اعتماد التصميم النهائي، ننتقل إلى مرحلة الطباعة باستخدام أحدث الأجهزة والتقنيات.
+                    نحرص على اختيار الخامات المناسبة لكل مشروع سواء للبنرات، الفليكس، أو الفينيل،
+                    لضمان مخرجات عالية الجودة بألوان زاهية ودقة متناهية،
+                    مع الالتزام بالمعايير العالمية للطباعة.
+                  </p>
+                </div>
+
+                <!-- المرحلة الرابعة -->
+                <div class="relative">
+                  <div
+                    class="absolute -left-10 top-5 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center shadow-md">
+                    <i class="fas fa-tools text-xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-primary mb-2">4. مرحلة التشطيب والقص</h3>
+                  <p class="text-gray-700 leading-relaxed">
+                    يتم قص الخامات وتشطيبها بدقة عالية لضمان الحصول على مقاسات مثالية وتشطيبات احترافية.
+                    نولي اهتماماً خاصاً بهذه المرحلة لأنها تعكس جودة العمل النهائي
+                    وتضمن سهولة التركيب لاحقاً.
+                  </p>
+                </div>
+
+                <!-- المرحلة الخامسة -->
+                <div class="relative">
+                  <div
+                    class="absolute -left-10 top-5 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center shadow-md">
+                    <i class="fas fa-truck text-xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-primary mb-2">5. مرحلة التركيب والتسليم</h3>
+                  <p class="text-gray-700 leading-relaxed">
+                    يتم تركيب المنتجات في الموقع المحدد بواسطة فريق متخصص لضمان التثبيت الصحيح،
+                    مع مراعاة أعلى معايير السلامة والجودة.
+                    كما نقوم بتسليم المشروع في الوقت المحدد بعد التأكد من رضا العميل عن النتيجة النهائية.
+                  </p>
+                </div>
+
+                <!-- المرحلة السادسة -->
+                <div class="relative">
+                  <div
+                    class="absolute -left-10 top-5 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center shadow-md">
+                    <i class="fas fa-check-circle text-xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-primary mb-2">6. مرحلة المتابعة وضمان الجودة</h3>
+                  <p class="text-gray-700 leading-relaxed">
+                    بعد الانتهاء من المشروع، نتابع مع عملائنا لضمان رضاهم الكامل،
+                    ونقدم الدعم الفني وخدمات ما بعد البيع،
+                    مع ضمان جودة المنتج وخدمته لفترة زمنية مناسبة.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+          <!-- مميزات خدماتنا -->
+          <section id="features" class="py-16 bg-gray-50 content-section">
+            <div class="container mx-auto px-6">
+              <!-- العنوان الرئيسي -->
+              <h2 class="text-3xl font-bold text-primary text-center mb-4">مميزات خدماتنا</h2>
+              <p class="text-gray-700 text-center max-w-2xl mx-auto mb-12 leading-relaxed">
+                نحن في شركة ايجبت للدعاية والإعلان نحرص على تقديم خدمات طباعة وتصميم احترافية
+                تعتمد على أحدث التقنيات وأفضل الخامات، مع ضمان جودة عالية وتجربة عملاء مميزة
+                تدعم نجاح مشاريعك التسويقية والإعلانية.
+              </p>
+
+              <!-- شبكة المميزات -->
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- الميزة الأولى -->
+                <div class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
+                  <div
+                    class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
+                    <i class="fas fa-paint-brush text-2xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-primary mb-3">تصاميم إبداعية</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    نقدم تصاميم مبتكرة ومميزة تعكس هوية علامتك التجارية وتجذب انتباه جمهورك،
+                    مع مراعاة تفاصيل الألوان والخطوط بما يتناسب مع احتياجات مشروعك.
+                  </p>
+                </div>
+
+                <!-- الميزة الثانية -->
+                <div class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
+                  <div
+                    class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
+                    <i class="fas fa-cogs text-2xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-primary mb-3">تقنيات طباعة حديثة</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    نستخدم أحدث آلات وتقنيات الطباعة لضمان دقة الألوان وجودة التفاصيل
+                    سواء للطباعة الداخلية أو الخارجية.
+                  </p>
+                </div>
+
+                <!-- الميزة الثالثة -->
+                <div class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
+                  <div
+                    class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
+                    <i class="fas fa-shield-alt text-2xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-primary mb-3">خامات عالية الجودة</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    نختار أفضل الخامات التي تضمن متانة المنتج ومقاومته للعوامل الجوية،
+                    مع الحفاظ على مظهره الجذاب لفترات طويلة.
+                  </p>
+                </div>
+
+                <!-- الميزة الرابعة -->
+                <div class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
+                  <div
+                    class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
+                    <i class="fas fa-bolt text-2xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-primary mb-3">سرعة التنفيذ</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    نلتزم بتسليم المشاريع في الوقت المحدد دون التأثير على الجودة،
+                    مع فريق محترف يعمل بكفاءة عالية.
+                  </p>
+                </div>
+
+                <!-- الميزة الخامسة -->
+                <div class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
+                  <div
+                    class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
+                    <i class="fas fa-users text-2xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-primary mb-3">فريق عمل محترف</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    يمتلك فريقنا خبرة واسعة في مجال التصميم والطباعة،
+                    ويعمل على تقديم أفضل الحلول التي تناسب أهدافك التسويقية.
+                  </p>
+                </div>
+
+                <!-- الميزة السادسة -->
+                <div class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
+                  <div
+                    class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
+                    <i class="fas fa-headset text-2xl"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-primary mb-3">خدمة عملاء مميزة</h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    نقدم دعماً متواصلاً وخدمة عملاء على مدار الساعة
+                    لضمان راحتك ومساعدتك في كل خطوة من المشروع.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+          <!-- قسم دعائي -->
+          <div class="bg-primary text-white p-8 rounded-lg mt-10 text-center">
+            <h2 class="text-2xl font-bold mb-4">احصل على خصم 15% على أول طلبية لك</h2>
+            <p class="mb-6">استخدم الكود EGYPT15 عند الطلب</p>
+            <a href="tel:0501234567"
+              class="bg-white text-primary py-3 px-8 rounded-lg font-bold inline-block hover:bg-gray-100 transition duration-300">اطلب
+              الآن</a>
+          </div>
         </div>
-    </div>
-
-<!-- Footer -->
-<footer id="contact" class="bg-gray-900 text-white py-16">
-  <div class="container mx-auto px-4">
-    <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12 mb-12">
-      <div>
-        <div class="flex items-center space-x-reverse space-x-3 mb-6">
-          <div
-            class=" text-white p-3 rounded-lg w-14 h-14 flex items-center justify-center shadow-md rounded-full border-white border-2 bg-white">
-            <img src="../../assets/img/logo-egypt-advertising-1.webp" alt="">
-          </div>
-          <div>
-            <h3 class="text-xl font-bold">ايجبت للدعاية والإعلان</h3>
-            <p class="text-gray-400 text-sm">حلول إبداعية لنجاحك</p>
-          </div>
-        </div>
-        <p class="text-gray-300 mb-6">نحن شريكك الموثوق في رحلة النجاح، نقدم حلول إعلانية وتسويقية متميزة تحقق أهدافك
-          وتبني علامتك التجارية.</p>
-        <div class="flex space-x-reverse space-x-4">
-          <!-- Facebook -->
-          <a href="https://www.facebook.com/people/%D8%A7%D9%8A%D8%AC%D8%A8%D8%AA-%D9%84%D9%84%D8%AF%D8%B9%D8%A7%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86/61580300744080/"
-            target="_blank" rel="noopener noreferrer"
-            class="bg-blue-600 hover:bg-blue-700 px-4 p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600"
-            aria-label="تابعنا على فيسبوك">
-            <i class="fab fa-facebook-f text-white text-lg"></i>
-          </a>
-
-          <!-- Instagram -->
-          <a href="https://www.instagram.com/egypt.advertising/" target="_blank" rel="noopener noreferrer"
-            class="bg-pink-600 hover:bg-pink-700 p-3 px-4  rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-pink-600"
-            aria-label="تابعنا على إنستجرام">
-            <i class="fab fa-instagram text-white text-lg"></i>
-          </a>
-
-          <!-- Twitter (X) -->
-          <a href="https://x.com/egyptadvertisin" target="_blank" rel="noopener noreferrer"
-            class="bg-blue-500 hover:bg-blue-600 px-4  p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
-            aria-label="تابعنا على تويتر">
-            <i class="fab fa-twitter text-white text-lg"></i>
-          </a>
-
-          <!-- TikTok -->
-          <a href="https://www.tiktok.com/@egypt.advertising?lang=ar" target="_blank" rel="noopener noreferrer"
-            class="bg-gray-900 hover:bg-gray-800 p-3  rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-gray-900"
-            aria-label="تابعنا على تيك توك">
-            <i class="fab fa-tiktok text-white text-lg "></i>
-          </a>
-
-        </div>
-      </div>
-
-      <div>
-        <h4 class="text-lg font-bold mb-6">خدماتنا</h4>
-        <ul class="space-y-3">
-          <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
-                class="fas fa-chevron-left text-xs ml-2"></i>التصميم والبراندنج</a></li>
-          <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
-                class="fas fa-chevron-left text-xs ml-2"></i>التسويق الرقمي</a></li>
-          <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
-                class="fas fa-chevron-left text-xs ml-2"></i>إنتاج المحتوى</a></li>
-          <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
-                class="fas fa-chevron-left text-xs ml-2"></i>الحملات الإعلانية</a></li>
-          <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
-                class="fas fa-chevron-left text-xs ml-2"></i>التحليل والإحصائيات</a></li>
-          <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
-                class="fas fa-chevron-left text-xs ml-2"></i> تصميم وبرمجة المواقع</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="text-lg font-bold mb-6">روابط مفيدة</h4>
-        <ul class="space-y-3">
-          <li><a href="../../index.html#home" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
-                class="fas fa-chevron-left text-xs ml-2"></i>الرئيسية</a></li>
-          <li><a href="../../index.html#about" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
-                class="fas fa-chevron-left text-xs ml-2"></i>من نحن</a></li>
-
-          <li><a href="../../index.html#Our-business" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
-                class="fas fa-chevron-left text-xs ml-2"></i>أعمالنا</a></li>
-         
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="text-lg font-bold mb-6">تواصل معنا</h4>
-        <div class="space-y-4">
-          <div class="flex items-center space-x-reverse space-x-3">
-            <i class="fas fa-map-marker-alt text-primary"></i>
-            <span class="text-gray-300">جدة، المملكة العربية السعودية</span>
-          </div>
-          <div class="flex items-center space-x-reverse space-x-3">
-            <i class="fas fa-phone text-primary"></i>
-            <span class="text-gray-300" dir="ltr">+966 563374482</span>
-          </div>
-          <div class="flex items-center space-x-reverse space-x-3">
-            <i class="fas fa-phone text-primary"></i>
-            <span class="text-gray-300" dir="ltr">+966 565265233</span>
-          </div>
-          <div class="flex items-center space-x-reverse space-x-3">
-            <i class="fas fa-envelope text-primary"></i>
-            <span class="text-gray-300" dir="ltr">egyptforadvertising25@gmail.com</span>
-          </div>
-          <div class="flex items-center space-x-reverse space-x-3">
-            <i class="fas fa-clock text-primary"></i>
-            <span class="text-gray-300">الأحد - الخميس: 9:00 - 18:00</span>
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-
-    <div class="border-t border-gray-800 pt-8">
-      <div class="flex flex-col md:flex-row  items-center text-center m-auto">
-        <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 شركة <a href="https://www.fashne.net/">Alfashne</a>. جميع
-          الحقوق محفوظة.</p>
-
       </div>
     </div>
   </div>
-</footer>
 
-    <script>
-        // كود JavaScript لجعل القائمة الجانبية تتابع التمرير وتحديد القسم النشط
-        document.addEventListener('DOMContentLoaded', function() {
-            const sections = document.querySelectorAll('.content-section');
-            const navItems = document.querySelectorAll('.nav-item');
-            
-            // وظيفة لتحديد العنصر النشط في القائمة
-            function setActiveNavItem() {
-                let currentSection = '';
-                
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    const sectionHeight = section.clientHeight;
-                    
-                    if (pageYOffset >= (sectionTop - 200)) {
-                        currentSection = section.getAttribute('id');
-                    }
-                });
-                
-                navItems.forEach(item => {
-                    item.classList.remove('active', 'text-white', 'bg-primary');
-                    item.classList.add('text-gray-700');
-                    
-                    if (item.getAttribute('href') === '#' + currentSection) {
-                        item.classList.add('active', 'text-white', 'bg-primary');
-                        item.classList.remove('text-gray-700');
-                    }
-                });
-            }
-            
-            // استدعاء الوظيفة عند التمرير وتحميل الصفحة
-            window.addEventListener('scroll', setActiveNavItem);
-            window.addEventListener('load', setActiveNavItem);
-            
-            // إضافة تأثير سلس للتمرير عند النقر على عناصر القائمة
-            navItems.forEach(item => {
-                item.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href');
-                    const targetSection = document.querySelector(targetId);
-                    
-                    window.scrollTo({
-                        top: targetSection.offsetTop - 100,
-                        behavior: 'smooth'
-                    });
-                });
-            });
+  <!-- Footer -->
+  <footer id="contact" class="bg-gray-900 text-white py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12 mb-12">
+        <div>
+          <div class="flex items-center space-x-reverse space-x-3 mb-6">
+            <div
+              class=" text-white p-3 rounded-lg w-14 h-14 flex items-center justify-center shadow-md rounded-full border-white border-2 bg-white">
+              <img src="../../assets/img/logo-egypt-advertising-1.webp" alt="">
+            </div>
+            <div>
+              <h3 class="text-xl font-bold">ايجبت للدعاية والإعلان</h3>
+              <p class="text-gray-400 text-sm">حلول إبداعية لنجاحك</p>
+            </div>
+          </div>
+          <p class="text-gray-300 mb-6">نحن شريكك الموثوق في رحلة النجاح، نقدم حلول إعلانية وتسويقية متميزة تحقق أهدافك
+            وتبني علامتك التجارية.</p>
+          <div class="flex space-x-reverse space-x-4">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/people/%D8%A7%D9%8A%D8%AC%D8%A8%D8%AA-%D9%84%D9%84%D8%AF%D8%B9%D8%A7%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86/61580300744080/"
+              target="_blank" rel="noopener noreferrer"
+              class="bg-blue-600 hover:bg-blue-700 px-5 p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600"
+              aria-label="تابعنا على فيسبوك">
+              <i class="fab fa-facebook-f text-white text-lg"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/egypt.advertising/" target="_blank" rel="noopener noreferrer"
+              class="bg-pink-600 hover:bg-pink-700 p-3 px-4  rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-pink-600"
+              aria-label="تابعنا على إنستجرام">
+              <i class="fab fa-instagram text-white text-lg"></i>
+            </a>
+
+            <!-- Twitter (X) -->
+            <a href="https://x.com/egyptadvertisin" target="_blank" rel="noopener noreferrer"
+              class="bg-blue-500 hover:bg-blue-600 px-4  p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
+              aria-label="تابعنا على تويتر">
+              <i class="fab fa-twitter text-white text-lg"></i>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@egypt.advertising?lang=ar" target="_blank" rel="noopener noreferrer"
+              class="bg-gray-900 hover:bg-gray-800 p-3 px-5 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-gray-900"
+              aria-label="تابعنا على تيك توك">
+              <i class="fab fa-tiktok text-white text-lg "></i>
+            </a>
+
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-bold mb-6">خدماتنا</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                  class="fas fa-chevron-left text-xs ml-2"></i>التصميم والبراندنج</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                  class="fas fa-chevron-left text-xs ml-2"></i>التسويق الرقمي</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                  class="fas fa-chevron-left text-xs ml-2"></i>إنتاج المحتوى</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                  class="fas fa-chevron-left text-xs ml-2"></i>الحملات الإعلانية</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                  class="fas fa-chevron-left text-xs ml-2"></i>التحليل والإحصائيات</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                  class="fas fa-chevron-left text-xs ml-2"></i> تصميم وبرمجة المواقع</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-bold mb-6">روابط مفيدة</h4>
+          <ul class="space-y-3">
+            <li><a href="../../index.html#home"
+                class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                  class="fas fa-chevron-left text-xs ml-2"></i>الرئيسية</a></li>
+            <li><a href="../../index.html#about"
+                class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                  class="fas fa-chevron-left text-xs ml-2"></i>من نحن</a></li>
+
+            <li><a href="../../index.html#Our-business"
+                class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                  class="fas fa-chevron-left text-xs ml-2"></i>أعمالنا</a></li>
+
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-bold mb-6">تواصل معنا</h4>
+          <div class="space-y-4">
+            <div class="flex items-center space-x-reverse space-x-3">
+              <i class="fas fa-map-marker-alt text-primary"></i>
+              <span class="text-gray-300">جدة، المملكة العربية السعودية</span>
+            </div>
+            <div class="flex items-center space-x-reverse space-x-3">
+              <i class="fas fa-phone text-primary"></i>
+              <span class="text-gray-300" dir="ltr">+966 563374482</span>
+            </div>
+            <div class="flex items-center space-x-reverse space-x-3">
+              <i class="fas fa-phone text-primary"></i>
+              <span class="text-gray-300" dir="ltr">+966 565265233</span>
+            </div>
+            <div class="flex items-center space-x-reverse space-x-3">
+              <i class="fas fa-envelope text-primary"></i>
+              <span class="text-gray-300" dir="ltr">egyptforadvertising25@gmail.com</span>
+            </div>
+            <div class="flex items-center space-x-reverse space-x-3">
+              <i class="fas fa-clock text-primary"></i>
+              <span class="text-gray-300">الأحد - الخميس: 9:00 - 18:00</span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 pt-8">
+        <div class="flex flex-col md:flex-row  items-center text-center m-auto">
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 شركة <a href="https://www.fashne.net/">Alfashne</a>. جميع
+            الحقوق محفوظة.</p>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // كود JavaScript لجعل القائمة الجانبية تتابع التمرير وتحديد القسم النشط
+    document.addEventListener('DOMContentLoaded', function () {
+      const sections = document.querySelectorAll('.content-section');
+      const navItems = document.querySelectorAll('.nav-item');
+
+      // وظيفة لتحديد العنصر النشط في القائمة
+      function setActiveNavItem() {
+        let currentSection = '';
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+
+          if (pageYOffset >= (sectionTop - 200)) {
+            currentSection = section.getAttribute('id');
+          }
         });
-    </script>
-    <script src="../../assets/js/script.js"></script>
+
+        navItems.forEach(item => {
+          item.classList.remove('active', 'text-white', 'bg-primary');
+          item.classList.add('text-gray-700');
+
+          if (item.getAttribute('href') === '#' + currentSection) {
+            item.classList.add('active', 'text-white', 'bg-primary');
+            item.classList.remove('text-gray-700');
+          }
+        });
+      }
+
+      // استدعاء الوظيفة عند التمرير وتحميل الصفحة
+      window.addEventListener('scroll', setActiveNavItem);
+      window.addEventListener('load', setActiveNavItem);
+
+      // إضافة تأثير سلس للتمرير عند النقر على عناصر القائمة
+      navItems.forEach(item => {
+        item.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href');
+          const targetSection = document.querySelector(targetId);
+
+          window.scrollTo({
+            top: targetSection.offsetTop - 100,
+            behavior: 'smooth'
+          });
+        });
+      });
+    });
+  </script>
+  <script src="../../assets/js/script.js"></script>
 </body>
+
 </html>

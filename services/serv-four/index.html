@@ -1,882 +1,1465 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>واجهات الكلادينج - شركة ايجبت للدعاية والإعلان بجدة</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#148c80',
-                        primaryDark: '#0e6c62',
-                        primaryLight: '#1aac9d',
-                        accent: '#3a86ff',
-                        dark: '#2d3748',
-                        light: '#f8f9fa'
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#148c80",
+              primaryDark: "#0e6c62",
+              primaryLight: "#1aac9d",
+              accent: "#3a86ff",
+              dark: "#2d3748",
+              light: "#f8f9fa",
+            },
+          },
+        },
+      };
     </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
-        body {
-            font-family: 'Tajawal', sans-serif;
-            scroll-behavior: smooth;
+      @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap");
+
+      body {
+        font-family: "Tajawal", sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      .sticky-sidebar {
+        position: sticky;
+        top: 20px;
+      }
+
+      .content-section {
+        scroll-margin-top: 100px;
+      }
+
+      .hero-pattern {
+        background: linear-gradient(
+          135deg,
+          #148c80 0%,
+          #1aac9d 50%,
+          #0e6c62 100%
+        );
+      }
+
+      .nav-item {
+        transition: all 0.3s ease;
+        border-right: 4px solid transparent;
+      }
+
+      .nav-item:hover,
+      .nav-item.active {
+        background-color: rgba(20, 140, 128, 0.1);
+        border-right-color: #148c80;
+        color: #148c80;
+      }
+
+      .service-card {
+        transition: all 0.3s ease;
+        border-top: 4px solid transparent;
+      }
+
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        border-top-color: #148c80;
+      }
+
+      .gradient-bg {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      }
+
+      .cladding-pattern {
+        background-image: linear-gradient(
+            45deg,
+            rgba(20, 140, 128, 0.1) 25%,
+            transparent 25%
+          ),
+          linear-gradient(-45deg, rgba(20, 140, 128, 0.1) 25%, transparent 25%),
+          linear-gradient(45deg, transparent 75%, rgba(20, 140, 128, 0.1) 75%),
+          linear-gradient(-45deg, transparent 75%, rgba(20, 140, 128, 0.1) 75%);
+        background-size: 20px 20px;
+        background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+      }
+
+      .modern-card {
+        transition: all 0.3s ease;
+        overflow: hidden;
+      }
+
+      .modern-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15);
+      }
+
+      .modern-card img {
+        transition: transform 0.5s ease;
+      }
+
+      .modern-card:hover img {
+        transform: scale(1.05);
+      }
+
+      .floating-element {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
         }
-        .sticky-sidebar {
-            position: sticky;
-            top: 20px;
+
+        50% {
+          transform: translateY(-15px);
         }
-        .content-section {
-            scroll-margin-top: 100px;
+
+        100% {
+          transform: translateY(0px);
         }
-        .hero-pattern {
-            background: linear-gradient(135deg, #148c80 0%, #1aac9d 50%, #0e6c62 100%);
-        }
-        .nav-item {
-            transition: all 0.3s ease;
-            border-right: 4px solid transparent;
-        }
-        .nav-item:hover, .nav-item.active {
-            background-color: rgba(20, 140, 128, 0.1);
-            border-right-color: #148c80;
-            color: #148c80;
-        }
-        .service-card {
-            transition: all 0.3s ease;
-            border-top: 4px solid transparent;
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-            border-top-color: #148c80;
-        }
-        .gradient-bg {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-        }
-        .cladding-pattern {
-            background-image: 
-                linear-gradient(45deg, rgba(20, 140, 128, 0.1) 25%, transparent 25%), 
-                linear-gradient(-45deg, rgba(20, 140, 128, 0.1) 25%, transparent 25%), 
-                linear-gradient(45deg, transparent 75%, rgba(20, 140, 128, 0.1) 75%), 
-                linear-gradient(-45deg, transparent 75%, rgba(20, 140, 128, 0.1) 75%);
-            background-size: 20px 20px;
-            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
-        }
-        .modern-card {
-            transition: all 0.3s ease;
-            overflow: hidden;
-        }
-        .modern-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15);
-        }
-        .modern-card img {
-            transition: transform 0.5s ease;
-        }
-        .modern-card:hover img {
-            transform: scale(1.05);
-        }
-        .floating-element {
-            animation: float 6s ease-in-out infinite;
-        }
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
-        }
+      }
     </style>
-</head>
-<body class="bg-gray-50">
-  <!--  Navbar -->
-<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-4 bg-white shadow-md">
-  <div class="container mx-auto px-4 flex items-center justify-between">
-    <!-- Logo -->
-    <div class="flex items-center space-x-reverse space-x-4">
-      <div class=" text-white p-3 rounded-lg w-14 h-14 flex items-center justify-center shadow-md rounded-full">
-        <img src="../../assets/img/logo-egypt-advertising-1.webp" alt="ايجبت للدعاية والإعلان">
+  </head>
+
+  <body class="bg-gray-50">
+    <!--  Navbar -->
+    <nav
+      id="navbar"
+      class="fixed top-0 w-full z-50 transition-all duration-300 py-4 bg-white shadow-md"
+    >
+      <div class="container mx-auto px-4 flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center space-x-reverse space-x-4">
+          <div
+            class="text-white p-3 rounded-lg w-14 h-14 flex items-center justify-center shadow-md rounded-full"
+          >
+            <img
+              src="../../assets/img/logo-egypt-advertising-1.webp"
+              alt="ايجبت للدعاية والإعلان"
+            />
+          </div>
+          <div>
+            <h2 class="text-xl font-bold gradient-text">
+              ايجبت للدعاية والإعلان
+            </h2>
+            <p class="text-sm text-gray-600">حلول إبداعية لنجاحك</p>
+          </div>
+        </div>
+
+        <!-- Links (Desktop) -->
+        <div class="hidden lg:flex items-center space-x-reverse space-x-8">
+          <a
+            href="../../index.html#home"
+            class="text-black hover:text-primary transition-colors font-medium"
+            >الرئيسية</a
+          >
+          <a
+            href="../../index.html#about"
+            class="text-black hover:text-primary transition-colors font-medium"
+            >من نحن</a
+          >
+
+          <a
+            href="../../index.html#Our-business"
+            class="text-black hover:text-primary transition-colors font-medium"
+          >
+            اعمالنا</a
+          >
+        </div>
+
+        <!-- CTA + Menu Button -->
+        <div class="flex items-center space-x-reverse space-x-4">
+          <div class="text-right hidden md:block">
+            <a
+              href="tel:0501234567"
+              class="inline-block gradient-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors"
+            >
+              <p class="text-sm">اتصل بنا</p>
+            </a>
+          </div>
+          <!-- Menu Button -->
+          <button
+            id="menu-btn"
+            class="lg:hidden text-gray-700 focus:outline-none"
+            aria-label="فتح وإغلاق قائمة التنقل"
+            aria-expanded="false"
+            aria-controls="menu"
+          >
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
       </div>
-      <div>
-        <h2 class="text-xl font-bold gradient-text">ايجبت للدعاية والإعلان</h2>
-        <p class="text-sm text-gray-600">حلول إبداعية لنجاحك</p>
+
+      <!-- ✅ Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="lg:hidden hidden bg-white shadow-md border-t mt-4"
+      >
+        <div class="flex flex-col items-center space-y-4 py-6">
+          <a
+            href="../../index.html#home"
+            class="text-black hover:text-primary transition-colors font-medium"
+            >الرئيسية</a
+          >
+          <a
+            href="../../index.html#about"
+            class="text-black hover:text-primary transition-colors font-medium"
+            >من نحن</a
+          >
+
+          <a
+            href="../../index.html#Our-business"
+            class="text-black hover:text-primary transition-colors font-medium"
+            >اعمالنا</a
+          >
+          <a
+            href="tel:0501234567"
+            class="inline-block bg-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors"
+          >
+            اتصل بنا
+          </a>
+        </div>
       </div>
-    </div>
-
-    <!-- Links (Desktop) -->
-    <div class="hidden lg:flex items-center space-x-reverse space-x-8">
-      <a href="../../index.html#home" class="text-black hover:text-primary transition-colors font-medium">الرئيسية</a>
-      <a href="../../index.html#about" class="text-black hover:text-primary transition-colors font-medium">من نحن</a>
-      
-      <a href="../../index.html#Our-business" class="text-black hover:text-primary transition-colors font-medium"> اعمالنا</a>
-    </div>
-
-    <!-- CTA + Menu Button -->
-    <div class="flex items-center space-x-reverse space-x-4">
-      <div class="text-right hidden md:block">
-        <a href="tel:0501234567"
-          class="inline-block gradient-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors">
-          <p class="text-sm">اتصل بنا</p>
-        </a>
-      </div>
-      <!-- Menu Button -->
-      <button id="menu-btn" class="lg:hidden text-gray-700 focus:outline-none" aria-label="فتح وإغلاق قائمة التنقل"
-        aria-expanded="false" aria-controls="menu">
-        <i class="fas fa-bars text-2xl"></i>
-      </button>
-
-
-    </div>
-  </div>
-
-  <!-- ✅ Mobile Menu -->
-  <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-md border-t mt-4">
-    <div class="flex flex-col items-center space-y-4 py-6">
-      <a href="../../index.html#home" class="text-black hover:text-primary transition-colors font-medium">الرئيسية</a>
-      <a href="../../index.html#about" class="text-black hover:text-primary transition-colors font-medium">من نحن</a>
-      
-      <a href="../../index.html#Our-business" class="text-black hover:text-primary transition-colors font-medium">اعمالنا</a>
-      <a href="tel:0501234567"
-        class="inline-block bg-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors">
-        اتصل بنا
-      </a>
-    </div>
-  </div>
-</nav>
+    </nav>
 
     <!-- محتوى الصفحة -->
     <div class="container mx-auto px-4 py-8 pt-[100px]">
-        <div class="flex flex-col lg:flex-row gap-8">
-            <!-- القائمة الجانبية -->
-            <div class="w-full lg:w-1/4">
-                <div class="sticky-sidebar bg-white rounded-xl shadow-lg p-6">
-                    <div class="flex items-center mb-6 pb-4 border-b border-gray-200">
-                        <i class="fas fa-building text-primary text-2xl ml-2"></i>
-                        <h2 class="text-xl font-bold text-primary">خدمات واجهات الكلادينج</h2>
-                    </div>
-                    <ul class="space-y-3">
-                        <li><a href="#intro" class="nav-item active block py-3 px-4 rounded-lg text-primary font-medium">نظرة عامة</a></li>
-                        <li><a href="#commercial" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">واجهات محلات ومراكز تجارية</a></li>
-                        <li><a href="#designs" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">تصاميم عصرية متنوعة</a></li>
-                        <li><a href="#materials" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">خامات عالية الجودة</a></li>
-                        <li><a href="#quality" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">جودة متانة التنفيذ</a></li>
-                        <li><a href="#safety" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">معايير السلامة</a></li>
-                        <li><a href="#process" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">مراحل التصنيع</a></li>
-                        <li><a href="#advantages" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">مميزات خدماتنا</a></li>
-                        <li><a href="#projects" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">معرض الأعمال</a></li>
-                        <li><a href="#faq" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">الأسئلة الشائعة</a></li>
-                    </ul>
-                    
-                    <div class="mt-8 p-4 gradient-bg rounded-lg border border-primary border-opacity-20">
-                        <h3 class="text-lg font-bold text-primary mb-3">اطلب خدمتك الآن</h3>
-                        <p class="text-gray-700 mb-4 text-sm">احصل على استشارة مجانية من خبرائنا</p>
-                        <a href="tel:0501234567" class="block w-full bg-primary text-white text-center py-2 px-4 rounded-lg hover:bg-primaryDark transition duration-300">
-                            <i class="fas fa-envelope ml-2"></i>اتصل بنا
-                        </a>
-                    </div>
-                </div>
+      <div class="flex flex-col lg:flex-row gap-8">
+        <!-- القائمة الجانبية -->
+        <div class="w-full lg:w-1/4">
+          <div class="sticky-sidebar bg-white rounded-xl shadow-lg p-6">
+            <div class="flex items-center mb-6 pb-4 border-b border-gray-200">
+              <i class="fas fa-building text-primary text-2xl ml-2"></i>
+              <h2 class="text-xl font-bold text-primary">
+                خدمات واجهات الكلادينج
+              </h2>
             </div>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#intro"
+                  class="nav-item active block py-3 px-4 rounded-lg text-primary font-medium"
+                  >نظرة عامة</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#commercial"
+                  class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium"
+                  >واجهات محلات ومراكز تجارية</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#designs"
+                  class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium"
+                  >تصاميم عصرية متنوعة</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#materials"
+                  class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium"
+                  >خامات عالية الجودة</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#quality"
+                  class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium"
+                  >جودة متانة التنفيذ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#safety"
+                  class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium"
+                  >معايير السلامة</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#process"
+                  class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium"
+                  >مراحل التصنيع</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#advantages"
+                  class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium"
+                  >مميزات خدماتنا</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium"
+                  >معرض الأعمال</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#faq"
+                  class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium"
+                  >الأسئلة الشائعة</a
+                >
+              </li>
+            </ul>
 
-            <!-- المحتوى الرئيسي -->
-            <div class="w-full lg:w-3/4">
-                <!-- قسم البطل -->
-                <div class="hero-pattern rounded-2xl shadow-lg text-white p-8 mb-8 relative overflow-hidden">
-                    <div class="absolute inset-0 bg-black opacity-20"></div>
-                    <div class="relative z-10">
-                        <h1 class="text-3xl md:text-4xl font-bold mb-4">تصميم وتنفيذ واجهات كلادينج احترافية</h1>
-                        <p class="text-lg md:text-xl mb-6">جودة عالية ومتانة مميزة تمنح واجهة متجرك أو شركتك مظهراً عصرياً يلفت الانتباه</p>
-                        <div class="flex flex-wrap gap-4">
-                            <a href="tel:0501234567" class="bg-white text-primary py-3 px-6 rounded-lg font-bold hover:bg-gray-100 transition duration-300">
-                                <i class="fas fa-pencil-ruler ml-2"></i>اطلب تصميمك
-                            </a>
-                            <a href="tel:0501234567" class="border-2 border-white py-3 px-6 rounded-lg font-bold hover:bg-white hover:text-primary transition duration-300">
-                                <i class="fas fa-y- ml-2"></i> المزيد عنا
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- خدمات سريعة -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                    <div class="service-card bg-white rounded-xl shadow-md p-6 text-center">
-                        <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-store text-primary text-2xl"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-primary mb-2">واجهات محلات تجارية</h3>
-                        <p class="text-gray-600 text-sm">تصميمات عصرية تجذب العملاء وتعزز الهوية البصرية</p>
-                    </div>
-                    
-                    <div class="service-card bg-white rounded-xl shadow-md p-6 text-center">
-                        <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-palette text-primary text-2xl"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-primary mb-2">ألوان وخامات متنوعة</h3>
-                        <p class="text-gray-600 text-sm">خيارات متعددة تناسب مختلف الأذواق والميزانيات</p>
-                    </div>
-                    
-                    <div class="service-card bg-white rounded-xl shadow-md p-6 text-center">
-                        <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-shield-alt text-primary text-2xl"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-primary mb-2">معايير السلامة</h3>
-                        <p class="text-gray-600 text-sm">تصميم وتركيب وفق أعلى معايير الجودة والسلامة</p>
-                    </div>
-                </div>
-
-                <!-- المحتوى النصي -->
-                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8">
-                    <!-- نظرة عامة -->
-                    <section id="intro" class="content-section mb-12">
-                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">نظرة عامة على خدمات واجهات الكلادينج</h2>
-                      <div class="flex flex-col lg:flex-row gap-8 mb-8">
-  <!-- النص -->
-  <div class="w-full lg:w-1/2 flex flex-col justify-center">
-    <p class="text-gray-700 mb-4 leading-relaxed text-lg">
-      تقدم شركة ايجبت للدعاية والإعلان بجدة حلولاً متكاملة في مجال تصميم وتنفيذ واجهات الكلادينج عالية الجودة التي تضيف قيمة جمالية وعملية لمشاريعكم. نحن نتميز بتقديم أعلى مستويات الجودة في التصميم والتنفيذ، باستخدام أحدث التقنيات وأفضل الخامات العالمية.
-    </p>
-    <p class="text-gray-700 leading-relaxed text-lg">
-      سواء كان مشروعك محلاً تجارياً، مركزاً تسوقياً، مبنى مكتبياً، أو منشأة صناعية، فإن واجهات الكلادينج التي نقدمها تحقق التوازن المثالي بين الجماليات والوظيفية، مع ضمان المتانة والقدرة على تحمل الظروف الجوية المختلفة.
-    </p>
-  </div>
-
-  <!-- الصورة -->
-  <div class="w-full lg:w-1/2 flex justify-center items-center">
-    <div class="w-full h-[28rem] bg-gray-100 rounded-xl shadow-lg p-2 flex items-center justify-center">
-      <img 
-        src="../../assets/img/cladding-facade-design.webp" 
-        alt="واجهات كلادينج" 
-        class="w-full h-full object-cover rounded-lg"
-      >
-    </div>
-  </div>
-</div>
-
-                        
-                        <div class="bg-gradient-to-r from-primaryLight to-primary text-white p-6 rounded-lg mt-6">
-                            <h3 class="text-xl font-bold mb-3">لماذا تختار واجهات الكلادينج من ايجبت؟</h3>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div class="flex items-start">
-                                    <i class="fas fa-check-circle text-white text-xl mt-1 ml-3"></i>
-                                    <p>تصميمات عصرية تجمع بين الجمال والوظيفية</p>
-                                </div>
-                                <div class="flex items-start">
-                                    <i class="fas fa-check-circle text-white text-xl mt-1 ml-3"></i>
-                                    <p>خامات عالية الجودة مقاومة للعوامل الجوية</p>
-                                </div>
-                                <div class="flex items-start">
-                                    <i class="fas fa-check-circle text-white text-xl mt-1 ml-3"></i>
-                                    <p>تركيب محترف يضمن متانة وديمومة المنتج</p>
-                                </div>
-                                <div class="flex items-start">
-                                    <i class="fas fa-check-circle text-white text-xl mt-1 ml-3"></i>
-                                    <p>حلول متكاملة من التصميم حتى التركيب</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- واجهات محلات ومراكز تجارية -->
-                    <section id="commercial" class="content-section mb-12">
-                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">واجهات محلات ومراكز تجارية</h2>
-                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
-                            <div class="w-full lg:w-1/2">
-                                <div class="cladding-pattern rounded-lg p-6 h-64 flex items-center justify-center mb-4">
-                                    <div class="text-center">
-                                        <i class="fas fa-shopping-cart text-4xl text-primary mb-3"></i>
-                                        <h3 class="text-xl font-bold text-primary">واجهات تجارية متميزة</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-full lg:w-1/2">
-                                <p class="text-gray-700 mb-4 leading-relaxed">
-                                    نخصص في شركة ايجبت قسمًا كاملاً لتصميم وتنفيذ واجهات المحلات والمراكز التجارية التي تعتبر الواجهة الأولى للعملاء والزائرين. ندرك أهمية التصميم الجذاب للواجهات في جذب العملاء وتعزيز الصورة الذهنية للمتجر أو المركز التجاري.
-                                </p>
-                                <p class="text-gray-700 leading-relaxed">
-                                    نقدم حلولاً مبتكرة تجمع بين الجماليات والعملية، مع مراعاة طبيعة النشاط التجاري والجمهور المستهدف. سواء كان متجراً صغيراً أو مركزاً تجارياً ضخماً، فإننا نضمن تحقيق التوازن بين التكلفة والجودة والجماليات.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <h3 class="text-xl font-bold text-primary mb-4">أنواع الواجهات التجارية</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-                                <h4 class="font-bold text-primary mb-2">واجهات محلات التجزئة</h4>
-                                <p class="text-gray-700">تصميمات جذابة لمحلات الملابس، الإلكترونيات، والمجوهرات</p>
-                            </div>
-                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-                                <h4 class="font-bold text-primary mb-2">واجهات المطاعم والمقاهي</h4>
-                                <p class="text-gray-700">تصميمات تعكس طبيعة المطبخ والهوية البصرية للمكان</p>
-                            </div>
-                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-                                <h4 class="font-bold text-primary mb-2">واجهات المراكز التجارية</h4>
-                                <p class="text-gray-700">تصميمات ضخمة ومتميزة للمراكز التجارية الكبرى</p>
-                            </div>
-                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-                                <h4 class="font-bold text-primary mb-2">واجهات العيادات والمستشفيات</h4>
-                                <p class="text-gray-700">تصميمات تعكس الطابع الطبي مع الاهتمام بالجماليات</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- تصاميم عصرية -->
-                    <section id="designs" class="content-section mb-12">
-                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">تصاميم عصرية بألوان وخامات متنوعة</h2>
-                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
-                            <div class="w-full lg:w-1/2">
-                                <p class="text-gray-700 mb-4 leading-relaxed">
-                                    نقدم في شركة ايجبت مجموعة واسعة من التصاميم العصرية للواجهات، مع خيارات لا حصر لها من الألوان والخامات التي تناسب مختلف الأذواق والميزانيات. نحن نواكب أحدث trends في تصميم الواجهات لضمان حصولك على منتج عصري يضاهي أحدث التصاميم العالمية.
-                                </p>
-                                <p class="text-gray-700 leading-relaxed">
-                                    يعمل فريق التصميم لدينا على دراسة متكاملة لاحتياجاتك ومتطلبات مشروعك، ثم يقترح الحلول التصميمية الأمثل التي تجمع بين الجماليات والوظيفية، مع مراعاة عوامل مثل الموقع الجغرافي، الظروف المناخية، والهوية البصرية لعلامتك التجارية.
-                                </p>
-                            </div>
-                            <div class="w-full lg:w-1/2">
-                                <img src="../../assets/img/modern-designs.jpg" alt="تصاميم عصرية" class="rounded-lg shadow-md w-full h-64 object-cover">
-                            </div>
-                        </div>
-                        
-                        <h3 class="text-xl font-bold text-primary mb-4">خيارات التصميم المتاحة</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                            <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
-                                <h4 class="font-bold text-primary mb-2">التصاميم الكلاسيكية</h4>
-                                <p class="text-gray-700">لمسة تقليدية أنيقة تناسب المباني التراثية</p>
-                            </div>
-                            <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
-                                <h4 class="font-bold text-primary mb-2">التصاميم العصرية</h4>
-                                <p class="text-gray-700">خطوط نظيفة وأشكال هندسية مبتكرة</p>
-                            </div>
-                            <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
-                                <h4 class="font-bold text-primary mb-2">التصاميم المختلطة</h4>
-                                <p class="text-gray-700">مزيج بين العناصر الكلاسيكية والعصرية</p>
-                            </div>
-                            <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
-                                <h4 class="font-bold text-primary mb-2">التصاميم المخصصة</h4>
-                                <p class="text-gray-700">تصميمات حصرية تنفذ حسب طلب العميل</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- خامات عالية الجودة -->
-                    <section id="materials" class="content-section mb-12">
-                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">خامات عالية الجودة ومتنوعة</h2>
-                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
-                            <div class="w-full lg:w-1/2">
-                                <img src="../../assets/img/reinforced-glass.jpg" alt="خامات عالية الجودة" class="rounded-lg shadow-md w-full h-64 object-cover">
-                            </div>
-                            <div class="w-full lg:w-1/2">
-                                <p class="text-gray-700 mb-4 leading-relaxed">
-                                    نستخدم في شركة ايجبت أفضل أنواع الخامات العالمية لتصنيع واجهات الكلادينج، التي تضمن المتانة والجمال معاً. نحن نتعامل مع أشهر الموردين العالميين لضمان حصولك على منتج نهائي يلبي أعلى معايير الجودة والسلامة.
-                                </p>
-                                <p class="text-gray-700 leading-relaxed">
-                                    نوفر مجموعة واسعة من الخامات التي تناسب مختلف الاحتياجات والميزانيات، بما في ذلك الألمنيوم، الزجاج، الحجر الصناعي، والمواد المركبة. لكل خامة خصائصها ومميزاتها التي تناسب بيئات وظروف مختلفة.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <h3 class="text-xl font-bold text-primary mb-4">أنواع الخامات المتاحة</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-                                <h4 class="font-bold text-primary mb-2">ألواح الألمنيوم</h4>
-                                <p class="text-gray-700">خفة الوزن، مقاومة الصدأ، ومتانة عالية</p>
-                            </div>
-                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-                                <h4 class="font-bold text-primary mb-2">الزجاج المقوى</h4>
-                                <p class="text-gray-700">شفافية عالية مع متانة وقوة تحمل</p>
-                            </div>
-                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-                                <h4 class="font-bold text-primary mb-2">الحجر الصناعي</h4>
-                                <p class="text-gray-700">مظهر طبيعي مع خفة وزن وسهولة تركيب</p>
-                            </div>
-                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-                                <h4 class="font-bold text-primary mb-2">المواد المركبة</h4>
-                                <p class="text-gray-700">قوة ومتانة مع خفة وزن وتعدد ألوان</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- جودة ومتانة التنفيذ -->
-                    <section id="quality" class="content-section mb-12">
-                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">تنفيذ بجودة عالية لتحمل مختلف الظروف</h2>
-                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
-                            <div class="w-full lg:w-1/2">
-                                <p class="text-gray-700 mb-4 leading-relaxed">
-                                    نحرص في شركة ايجبت على تنفيذ واجهات الكلادينج بأعلى معايير الجودة والمتانة، لضمان قدرتها على تحمل مختلف الظروف الجوية والتحديات البيئية. نحن نستخدم تقنيات متطورة في التصنيع والتركيب، مع الالتزام بمعايير الجودة العالمية.
-                                </p>
-                                <p class="text-gray-700 leading-relaxed">
-                                    يتم تنفيذ جميع مشاريعنا تحت إشراف فريق فني متخصص ذي خبرة طويلة في مجال واجهات الكلادينج، مع استخدام أحدث المعدات والأدوات لضمان دقة التنفيذ والتزام بالمواصفات المطلوبة.
-                                </p>
-                            </div>
-                            <div class="w-full lg:w-1/2">
-                                <img src="../../assets/img/to-implement.avif" alt="جودة التنفيذ" class="rounded-lg shadow-md w-full h-64 object-cover">
-                            </div>
-                        </div>
-                        
-                        <h3 class="text-xl font-bold text-primary mb-4">معايير الجودة التي نتبعها</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                            <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
-                                <h4 class="font-bold text-primary mb-2">اختبارات المتانة</h4>
-                                <p class="text-gray-700">اختبار جميع المواد لضمان مقاومتها للعوامل الجوية</p>
-                            </div>
-                            <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
-                                <h4 class="font-bold text-primary mb-2">ضمان الدقة</h4>
-                                <p class="text-gray-700">قياسات دقيقة وتنفيذ وفق المواصفات المطلوبة</p>
-                            </div>
-                            <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
-                                <h4 class="font-bold text-primary mb-2">مراقبة الجودة</h4>
-                                <p class="text-gray-700">مراقبة مستمرة خلال جميع مراحل التصنيع والتركيب</p>
-                            </div>
-                            <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
-                                <h4 class="font-bold text-primary mb-2">اختبارات السلامة</h4>
-                                <p class="text-gray-700">اختبارات شاملة لضمان سلامة التركيب والمستخدمين</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- معايير السلامة -->
-                    <section id="safety" class="content-section mb-12">
-                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">تصميم وتركيب وفق أعلى معايير السلامة</h2>
-                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
-                            <div class="w-full lg:w-1/2">
-                                <img src="../../assets/img/cladding-design-and-installation.png" alt="معايير السلامة" class="rounded-lg shadow-md w-full h-64 object-cover">
-                            </div>
-                            <div class="w-full lg:w-1/2">
-                                <p class="text-gray-700 mb-4 leading-relaxed">
-                                    تلتزم شركة ايجبت بأعلى معايير السلامة في تصميم وتركيب واجهات الكلادينج، حيث نعطي الأولوية القصوى لسلامة المستخدمين والممتلكات. نحن نتبع أحدث أنظمة السلامة العالمية ونطبق كودات البناء المعتمدة محلياً ودولياً.
-                                </p>
-                                <p class="text-gray-700 leading-relaxed">
-                                    يقوم فريقنا الفني بإجراء تحليلات دقيقة لمتطلبات السلامة لكل مشروع، مع تقديم الحلول الهندسية التي تضمان تحقيق أعلى معايير الأمان دون المساس بالجماليات التصميمية أو الوظيفية للواجهات.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <h3 class="text-xl font-bold text-primary mb-4">إجراءات السلامة التي نطبقها</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-                                <h4 class="font-bold text-primary mb-2">دراسات الأحمال</h4>
-                                <p class="text-gray-700">تحليل دقيق للأحمال الهيكلية والرياح والزلازل</p>
-                            </div>
-                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-                                <h4 class="font-bold text-primary mb-2">أنظمة التثبيت</h4>
-                                <p class="text-gray-700">أنظمة تثبيت متطورة تضمان ثبات الواجهة وسلامتها</p>
-                            </div>
-                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-                                <h4 class="font-bold text-primary mb-2">المواد المقاومة للحريق</h4>
-                                <p class="text-gray-700">استخدام مواد مقاومة أو بطيئة الاشتعال حسب المتطلبات</p>
-                            </div>
-                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-                                <h4 class="font-bold text-primary mb-2">الصيانة الدورية</h4>
-                                <p class="text-gray-700">برامج صيانة دورية لضمان استمرارية السلامة</p>
-                            </div>
-                        </div>
-                    </section>
-
-                     <!-- الأقسام المتبقية من المحتوى -->
-    
-        
-            <!-- المحتوى الرئيسي -->
-            
-               
-                    <!-- مراحل التصنيع -->
-                    <section id="process" class="content-section mb-12">
-                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">مراحل التصنيع والتركيب</h2>
-                        <div class="mb-6">
-                            <p class="text-gray-700 mb-4 leading-relaxed">
-                                نتبع في شركة ايجبت منهجية دقيقة في تصنيع وتركيب واجهات الكلادينج، تضمن الحصول على منتج نهائي يتوافق مع أعلى معايير الجودة والسلامة. تمر عملية التصنيع بعدة مراحل متتالية يتم فيها مراقبة الجودة بدقة.
-                            </p>
-                        </div>
-                        
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                            <div class="bg-white border border-gray-200 p-5 rounded-lg shadow-sm">
-                                <div class="flex items-center mb-3">
-                                    <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-3">1</div>
-                                    <h4 class="font-bold text-primary">الدراسة والتصميم</h4>
-                                </div>
-                                <p class="text-gray-700">دراسة الموقع والاحتياجات، تصميم أولي، ووضع الحلول الهندسية المناسبة.</p>
-                            </div>
-                            <div class="bg-white border border-gray-200 p-5 rounded-lg shadow-sm">
-                                <div class="flex items-center mb-3">
-                                    <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-3">2</div>
-                                    <h4 class="font-bold text-primary">اختيار المواد</h4>
-                                </div>
-                                <p class="text-gray-700">اختيار الخامات المناسبة بناءً على المتطلبات والمواصفات الفنية.</p>
-                            </div>
-                            <div class="bg-white border border-gray-200 p-5 rounded-lg shadow-sm">
-                                <div class="flex items-center mb-3">
-                                    <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-3">3</div>
-                                    <h4 class="font-bold text-primary">التصنيع</h4>
-                                </div>
-                                <p class="text-gray-700">قص وتشكيل المواد وفقاً للتصميم باستخدام أحدث التقنيات.</p>
-                            </div>
-                            <div class="bg-white border border-gray-200 p-5 rounded-lg shadow-sm">
-                                <div class="flex items-center mb-3">
-                                    <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-3">4</div>
-                                    <h4 class="font-bold text-primary">التركيب</h4>
-                                </div>
-                                <p class="text-gray-700">تركيب الواجهة في الموقع باستخدام فرق فنية متخصصة ومراقبة الجودة.</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- مميزات خدماتنا -->
-                    <section id="advantages" class="content-section mb-12">
-                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">مميزات خدماتنا</h2>
-                        <div class="mb-6">
-                            <p class="text-gray-700 mb-4 leading-relaxed">
-                                تتميز شركة ايجبت للدعاية والإعلان بمجموعة من المميزات التي تجعلها الخيار الأمثل لتنفيذ مشاريع واجهات الكلادينج، حيث نحرص على تقديم قيمة مضافة حقيقية لعملائنا من خلال الجمع بين الجودة العالية والأسعار التنافسية والخدمة المتكاملة.
-                            </p>
-                        </div>
-                        
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                            <div class="flex items-start">
-                                <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center ml-3 flex-shrink-0">
-                                    <i class="fas fa-award text-primary text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-primary mb-1">جودة لا تضاهى</h4>
-                                    <p class="text-gray-700">نستخدم مواد عالية الجودة ونتابع التنفيذ بدقة لضمان المتانة والجمال.</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center ml-3 flex-shrink-0">
-                                    <i class="fas fa-tools text-primary text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-primary mb-1">حلول متكاملة</h4>
-                                    <p class="text-gray-700">نقدم خدمة شاملة من التصميم حتى التركيب النهائي والضمان.</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center ml-3 flex-shrink-0">
-                                    <i class="fas fa-clock text-primary text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-primary mb-1">التزام بالمواعيد</h4>
-                                    <p class="text-gray-700">نلتزم بمواعيد التسليم المتفق عليها دون التأثير على جودة التنفيذ.</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center ml-3 flex-shrink-0">
-                                    <i class="fas fa-headset text-primary text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-primary mb-1">دعم فني متكامل</h4>
-                                    <p class="text-gray-700">فريق دعم فني متاح للاستشارات والمتابعة خلال وبعد التنفيذ.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- معرض الأعمال -->
-                    <section id="projects" class="content-section mb-12">
-                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">معرض أعمالنا</h2>
-                        <div class="mb-6">
-                            <p class="text-gray-700 mb-4 leading-relaxed">
-                                نفتخر في شركة ايجبت بمجموعة كبيرة من مشاريع واجهات الكلادينج التي قمنا بتنفيذها لمختلف القطاعات التجارية والصناعية. يشمل معرض أعمالنا مجموعة متنوعة من التصاميم التي تناسب مختلف الأذواق والمتطلبات.
-                            </p>
-                        </div>
-                        
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                            <div class="modern-card bg-white rounded-xl shadow-md overflow-hidden">
-                                <img src="../../assets/img/shopping-center-facade.webp" alt="مشروع كلادينج تجاري" class="w-full h-48 object-cover">
-                                <div class="p-4">
-                                    <h4 class="font-bold text-primary mb-2">واجهة مركز تجاري</h4>
-                                    <p class="text-gray-700 text-sm">تصميم عصري لواجهة مركز تجاري كبير باستخدام ألواح الألمنيوم والزجاج.</p>
-                                </div>
-                            </div>
-                            <div class="modern-card bg-white rounded-xl shadow-md overflow-hidden">
-                                <img src="../../assets/img/restaurant-facade.jpg" alt="مشروع كلادينج لمطعم" class="w-full h-48 object-cover">
-                                <div class="p-4">
-                                    <h4 class="font-bold text-primary mb-2">واجهة مطعم</h4>
-                                    <p class="text-gray-700 text-sm">تصميم جذاب لواجهة مطعم يدمج بين الكلادينج والإضاءة المميزة.</p>
-                                </div>
-                            </div>
-                            <div class="modern-card bg-white rounded-xl shadow-md overflow-hidden">
-                                <img src="../../assets/img/my-office-building.jpg" alt="مشروع كلادينج لمبنى مكتبي" class="w-full h-48 object-cover">
-                                <div class="p-4">
-                                    <h4 class="font-bold text-primary mb-2">مبنى مكتبي</h4>
-                                    <p class="text-gray-700 text-sm">واجهة كلادينج عصرية لمبنى مكاتب باستخدام ألوان وأنظمة تركيب متطورة.</p>
-                                </div>
-                            </div>
-                            <div class="modern-card bg-white rounded-xl shadow-md overflow-hidden">
-                                <img src="../../assets/img/commercial-store.jpg" alt="مشروع كلادينج لمحل تجاري" class="w-full h-48 object-cover">
-                                <div class="p-4">
-                                    <h4 class="font-bold text-primary mb-2">محل تجاري</h4>
-                                    <p class="text-gray-700 text-sm">واجهة كلادينج مميزة لمحل تجاري صغير مع إضاءة جذابة.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="text-center mt-6">
-                            <a href="#" class="inline-block bg-primary text-white py-2 px-6 rounded-lg hover:bg-primaryDark transition duration-300">
-                                <i class="fas fa-images ml-2"></i>شاهد المزيد من أعمالنا
-                            </a>
-                        </div>
-                    </section>
-
-                    <!-- الأسئلة الشائعة -->
-                    <section id="faq" class="content-section mb-12">
-                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">الأسئلة الشائعة</h2>
-                        <div class="mb-6">
-                            <p class="text-gray-700 mb-4 leading-relaxed">
-                                نجمع لكم أهم الأسئلة الشائعة حول واجهات الكلادينج والإجابات عليها لتوضيح جميع الاستفسارات التي قد تهمكم قبل اتخاذ قرار التركيب.
-                            </p>
-                        </div>
-                        
-                        <div class="space-y-4">
-                            <div class="bg-gray-50 rounded-lg p-5">
-                                <h4 class="font-bold text-primary mb-2 flex items-center">
-                                    <i class="fas fa-question-circle text-primaryLight ml-2"></i>
-                                    ما هي مدة تنفيذ مشروع واجهة كلادينج لمحل تجاري؟
-                                </h4>
-                                <p class="text-gray-700">تتراوح مدة التنفيذ بين 10-20 يوم عمل حسب مساحة الواجهة وتعقيد التصميم، ونحرص على الالتزام بموعد التسليم المتفق عليه.</p>
-                            </div>
-                            <div class="bg-gray-50 rounded-lg p-5">
-                                <h4 class="font-bold text-primary mb-2 flex items-center">
-                                    <i class="fas fa-question-circle text-primaryLight ml-2"></i>
-                                    هل تحتاج واجهات الكلادينج إلى صيانة دورية؟
-                                </h4>
-                                <p class="text-gray-700">نعم، ننصح بعمل صيانة دورية سنوية للواجهات لضمان المحافظة على مظهرها وجودتها، ونقدم لكم برنامج صيانة متكامل بعد التركيب.</p>
-                            </div>
-                            <div class="bg-gray-50 rounded-lg p-5">
-                                <h4 class="font-bold text-primary mb-2 flex items-center">
-                                    <i class="fas fa-question-circle text-primaryLight ml-2"></i>
-                                    ما هي ضمانات التي تقدمونها على الواجهات؟
-                                </h4>
-                                <p class="text-gray-700">نقدم ضمانًا لمدة تتراوح بين 2-5 سنوات حسب نوع المواد المستخدمة، يشمل الضمان عيوب التصنيع والتركيب.</p>
-                            </div>
-                            <div class="bg-gray-50 rounded-lg p-5">
-                                <h4 class="font-bold text-primary mb-2 flex items-center">
-                                    <i class="fas fa-question-circle text-primaryLight ml-2"></i>
-                                    هل تقومون بالتركيب في جميع مناطق المملكة؟
-                                </h4>
-                                <p class="text-gray-700">نعم، لدينا فرق تركيب متخصصة يمكنها التنقل إلى مختلف مناطق المملكة، وقد نفذنا مشاريع في معظم المدن الرئيسية.</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- قسم الاتصال -->
-                    <section class="bg-primaryLight bg-opacity-10 p-8 rounded-lg text-center my-8">
-                        <h2 class="text-2xl font-bold text-primary mb-4">هل لديك استفسار أو تحتاج إلى استشارة؟</h2>
-                        <p class="text-gray-700 mb-6">فريقنا متاح للإجابة على جميع استفساراتكم وتقديم الحلول المناسبة لمشاريعكم</p>
-                        <div class="flex flex-wrap justify-center gap-4">
-                            <a href="tel:0501234567" class="bg-primary text-white py-3 px-6 rounded-lg font-bold hover:bg-primaryDark transition duration-300">
-                                <i class="fas fa-phone ml-2"></i>اتصل بنا الآن
-                            </a>
-                            <a href="tel:0501234567" class="border border-primary text-primary py-3 px-6 rounded-lg font-bold hover:bg-primary hover:text-white transition duration-300">
-                                <i class="fas fa-envelope ml-2"></i>ارسل رسالة
-                            </a>
-                        </div>
-                    </section>
-                </div>
+            <div
+              class="mt-8 p-4 gradient-bg rounded-lg border border-primary border-opacity-20"
+            >
+              <h3 class="text-lg font-bold text-primary mb-3">
+                اطلب خدمتك الآن
+              </h3>
+              <p class="text-gray-700 mb-4 text-sm">
+                احصل على استشارة مجانية من خبرائنا
+              </p>
+              <a
+                href="tel:0501234567"
+                class="block w-full bg-primary text-white text-center py-2 px-4 rounded-lg hover:bg-primaryDark transition duration-300"
+              >
+                <i class="fas fa-envelope ml-2"></i>اتصل بنا
+              </a>
             </div>
+          </div>
         </div>
+
+        <!-- المحتوى الرئيسي -->
+        <div class="w-full lg:w-3/4">
+          <!-- قسم البطل -->
+          <div
+            class="hero-pattern rounded-2xl shadow-lg text-white p-8 mb-8 relative overflow-hidden"
+          >
+            <div class="absolute inset-0 bg-black opacity-20"></div>
+            <div class="relative z-10">
+              <h1 class="text-3xl md:text-4xl font-bold mb-4">
+                تصميم وتنفيذ واجهات كلادينج احترافية
+              </h1>
+              <p class="text-lg md:text-xl mb-6">
+                جودة عالية ومتانة مميزة تمنح واجهة متجرك أو شركتك مظهراً عصرياً
+                يلفت الانتباه
+              </p>
+              <div class="flex flex-wrap gap-4">
+                <a
+                  href="tel:0501234567"
+                  class="bg-white text-primary py-3 px-6 rounded-lg font-bold hover:bg-gray-100 transition duration-300"
+                >
+                  <i class="fas fa-pencil-ruler ml-2"></i>اطلب تصميمك
+                </a>
+                <a
+                  href="tel:0501234567"
+                  class="border-2 border-white py-3 px-6 rounded-lg font-bold hover:bg-white hover:text-primary transition duration-300"
+                >
+                  <i class="fas fa-y- ml-2"></i> المزيد عنا
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- خدمات سريعة -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div
+              class="service-card bg-white rounded-xl shadow-md p-6 text-center"
+            >
+              <div
+                class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fas fa-store text-primary text-2xl"></i>
+              </div>
+              <h3 class="text-lg font-bold text-primary mb-2">
+                واجهات محلات تجارية
+              </h3>
+              <p class="text-gray-600 text-sm">
+                تصميمات عصرية تجذب العملاء وتعزز الهوية البصرية
+              </p>
+            </div>
+
+            <div
+              class="service-card bg-white rounded-xl shadow-md p-6 text-center"
+            >
+              <div
+                class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fas fa-palette text-primary text-2xl"></i>
+              </div>
+              <h3 class="text-lg font-bold text-primary mb-2">
+                ألوان وخامات متنوعة
+              </h3>
+              <p class="text-gray-600 text-sm">
+                خيارات متعددة تناسب مختلف الأذواق والميزانيات
+              </p>
+            </div>
+
+            <div
+              class="service-card bg-white rounded-xl shadow-md p-6 text-center"
+            >
+              <div
+                class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fas fa-shield-alt text-primary text-2xl"></i>
+              </div>
+              <h3 class="text-lg font-bold text-primary mb-2">
+                معايير السلامة
+              </h3>
+              <p class="text-gray-600 text-sm">
+                تصميم وتركيب وفق أعلى معايير الجودة والسلامة
+              </p>
+            </div>
+          </div>
+
+          <!-- المحتوى النصي -->
+          <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8">
+            <!-- نظرة عامة -->
+            <section id="intro" class="content-section mb-12">
+              <h2
+                class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200"
+              >
+                نظرة عامة على خدمات واجهات الكلادينج
+              </h2>
+              <div class="flex flex-col lg:flex-row gap-8 mb-8">
+                <!-- النص -->
+                <div class="w-full lg:w-1/2 flex flex-col justify-center">
+                  <p class="text-gray-700 mb-4 leading-relaxed text-lg">
+                    تقدم شركة ايجبت للدعاية والإعلان بجدة حلولاً متكاملة في مجال
+                    تصميم وتنفيذ واجهات الكلادينج عالية الجودة التي تضيف قيمة
+                    جمالية وعملية لمشاريعكم. نحن نتميز بتقديم أعلى مستويات
+                    الجودة في التصميم والتنفيذ، باستخدام أحدث التقنيات وأفضل
+                    الخامات العالمية.
+                  </p>
+                  <p class="text-gray-700 leading-relaxed text-lg">
+                    سواء كان مشروعك محلاً تجارياً، مركزاً تسوقياً، مبنى مكتبياً،
+                    أو منشأة صناعية، فإن واجهات الكلادينج التي نقدمها تحقق
+                    التوازن المثالي بين الجماليات والوظيفية، مع ضمان المتانة
+                    والقدرة على تحمل الظروف الجوية المختلفة.
+                  </p>
+                </div>
+
+                <!-- الصورة -->
+                <div class="w-full lg:w-1/2 flex justify-center items-center">
+                  <div
+                    class="w-full h-[28rem] bg-gray-100 rounded-xl shadow-lg p-2 flex items-center justify-center"
+                  >
+                    <img
+                      src="../../assets/img/cladding-facade-design.webp"
+                      alt="واجهات كلادينج"
+                      class="w-full h-full object-cover rounded-lg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-gradient-to-r from-primaryLight to-primary text-white p-6 rounded-lg mt-6"
+              >
+                <h3 class="text-xl font-bold mb-3">
+                  لماذا تختار واجهات الكلادينج من ايجبت؟
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="flex items-start">
+                    <i
+                      class="fas fa-check-circle text-white text-xl mt-1 ml-3"
+                    ></i>
+                    <p>تصميمات عصرية تجمع بين الجمال والوظيفية</p>
+                  </div>
+                  <div class="flex items-start">
+                    <i
+                      class="fas fa-check-circle text-white text-xl mt-1 ml-3"
+                    ></i>
+                    <p>خامات عالية الجودة مقاومة للعوامل الجوية</p>
+                  </div>
+                  <div class="flex items-start">
+                    <i
+                      class="fas fa-check-circle text-white text-xl mt-1 ml-3"
+                    ></i>
+                    <p>تركيب محترف يضمن متانة وديمومة المنتج</p>
+                  </div>
+                  <div class="flex items-start">
+                    <i
+                      class="fas fa-check-circle text-white text-xl mt-1 ml-3"
+                    ></i>
+                    <p>حلول متكاملة من التصميم حتى التركيب</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- واجهات محلات ومراكز تجارية -->
+            <section id="commercial" class="content-section mb-12">
+              <h2
+                class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200"
+              >
+                واجهات محلات ومراكز تجارية
+              </h2>
+              <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                <div class="w-full lg:w-1/2">
+                  <div
+                    class="cladding-pattern rounded-lg p-6 h-64 flex items-center justify-center mb-4"
+                  >
+                    <div class="text-center">
+                      <i
+                        class="fas fa-shopping-cart text-4xl text-primary mb-3"
+                      ></i>
+                      <h3 class="text-xl font-bold text-primary">
+                        واجهات تجارية متميزة
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full lg:w-1/2">
+                  <p class="text-gray-700 mb-4 leading-relaxed">
+                    نخصص في شركة ايجبت قسمًا كاملاً لتصميم وتنفيذ واجهات المحلات
+                    والمراكز التجارية التي تعتبر الواجهة الأولى للعملاء
+                    والزائرين. ندرك أهمية التصميم الجذاب للواجهات في جذب العملاء
+                    وتعزيز الصورة الذهنية للمتجر أو المركز التجاري.
+                  </p>
+                  <p class="text-gray-700 leading-relaxed">
+                    نقدم حلولاً مبتكرة تجمع بين الجماليات والعملية، مع مراعاة
+                    طبيعة النشاط التجاري والجمهور المستهدف. سواء كان متجراً
+                    صغيراً أو مركزاً تجارياً ضخماً، فإننا نضمن تحقيق التوازن بين
+                    التكلفة والجودة والجماليات.
+                  </p>
+                </div>
+              </div>
+
+              <h3 class="text-xl font-bold text-primary mb-4">
+                أنواع الواجهات التجارية
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                  <h4 class="font-bold text-primary mb-2">
+                    واجهات محلات التجزئة
+                  </h4>
+                  <p class="text-gray-700">
+                    تصميمات جذابة لمحلات الملابس، الإلكترونيات، والمجوهرات
+                  </p>
+                </div>
+                <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                  <h4 class="font-bold text-primary mb-2">
+                    واجهات المطاعم والمقاهي
+                  </h4>
+                  <p class="text-gray-700">
+                    تصميمات تعكس طبيعة المطبخ والهوية البصرية للمكان
+                  </p>
+                </div>
+                <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                  <h4 class="font-bold text-primary mb-2">
+                    واجهات المراكز التجارية
+                  </h4>
+                  <p class="text-gray-700">
+                    تصميمات ضخمة ومتميزة للمراكز التجارية الكبرى
+                  </p>
+                </div>
+                <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                  <h4 class="font-bold text-primary mb-2">
+                    واجهات العيادات والمستشفيات
+                  </h4>
+                  <p class="text-gray-700">
+                    تصميمات تعكس الطابع الطبي مع الاهتمام بالجماليات
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- تصاميم عصرية -->
+            <section id="designs" class="content-section mb-12">
+              <h2
+                class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200"
+              >
+                تصاميم عصرية بألوان وخامات متنوعة
+              </h2>
+              <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                <div class="w-full lg:w-1/2">
+                  <p class="text-gray-700 mb-4 leading-relaxed">
+                    نقدم في شركة ايجبت مجموعة واسعة من التصاميم العصرية
+                    للواجهات، مع خيارات لا حصر لها من الألوان والخامات التي
+                    تناسب مختلف الأذواق والميزانيات. نحن نواكب أحدث trends في
+                    تصميم الواجهات لضمان حصولك على منتج عصري يضاهي أحدث التصاميم
+                    العالمية.
+                  </p>
+                  <p class="text-gray-700 leading-relaxed">
+                    يعمل فريق التصميم لدينا على دراسة متكاملة لاحتياجاتك
+                    ومتطلبات مشروعك، ثم يقترح الحلول التصميمية الأمثل التي تجمع
+                    بين الجماليات والوظيفية، مع مراعاة عوامل مثل الموقع
+                    الجغرافي، الظروف المناخية، والهوية البصرية لعلامتك التجارية.
+                  </p>
+                </div>
+                <div class="w-full lg:w-1/2">
+                  <img
+                    src="../../assets/img/modern-designs.jpg"
+                    alt="تصاميم عصرية"
+                    class="rounded-lg shadow-md w-full h-64 object-cover"
+                  />
+                </div>
+              </div>
+
+              <h3 class="text-xl font-bold text-primary mb-4">
+                خيارات التصميم المتاحة
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div
+                  class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm"
+                >
+                  <h4 class="font-bold text-primary mb-2">
+                    التصاميم الكلاسيكية
+                  </h4>
+                  <p class="text-gray-700">
+                    لمسة تقليدية أنيقة تناسب المباني التراثية
+                  </p>
+                </div>
+                <div
+                  class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm"
+                >
+                  <h4 class="font-bold text-primary mb-2">التصاميم العصرية</h4>
+                  <p class="text-gray-700">خطوط نظيفة وأشكال هندسية مبتكرة</p>
+                </div>
+                <div
+                  class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm"
+                >
+                  <h4 class="font-bold text-primary mb-2">التصاميم المختلطة</h4>
+                  <p class="text-gray-700">
+                    مزيج بين العناصر الكلاسيكية والعصرية
+                  </p>
+                </div>
+                <div
+                  class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm"
+                >
+                  <h4 class="font-bold text-primary mb-2">التصاميم المخصصة</h4>
+                  <p class="text-gray-700">تصميمات حصرية تنفذ حسب طلب العميل</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- خامات عالية الجودة -->
+            <section id="materials" class="content-section mb-12">
+              <h2
+                class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200"
+              >
+                خامات عالية الجودة ومتنوعة
+              </h2>
+              <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                <div class="w-full lg:w-1/2">
+                  <img
+                    src="../../assets/img/reinforced-glass.jpg"
+                    alt="خامات عالية الجودة"
+                    class="rounded-lg shadow-md w-full h-64 object-cover"
+                  />
+                </div>
+                <div class="w-full lg:w-1/2">
+                  <p class="text-gray-700 mb-4 leading-relaxed">
+                    نستخدم في شركة ايجبت أفضل أنواع الخامات العالمية لتصنيع
+                    واجهات الكلادينج، التي تضمن المتانة والجمال معاً. نحن نتعامل
+                    مع أشهر الموردين العالميين لضمان حصولك على منتج نهائي يلبي
+                    أعلى معايير الجودة والسلامة.
+                  </p>
+                  <p class="text-gray-700 leading-relaxed">
+                    نوفر مجموعة واسعة من الخامات التي تناسب مختلف الاحتياجات
+                    والميزانيات، بما في ذلك الألمنيوم، الزجاج، الحجر الصناعي،
+                    والمواد المركبة. لكل خامة خصائصها ومميزاتها التي تناسب بيئات
+                    وظروف مختلفة.
+                  </p>
+                </div>
+              </div>
+
+              <h3 class="text-xl font-bold text-primary mb-4">
+                أنواع الخامات المتاحة
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                  <h4 class="font-bold text-primary mb-2">ألواح الألمنيوم</h4>
+                  <p class="text-gray-700">
+                    خفة الوزن، مقاومة الصدأ، ومتانة عالية
+                  </p>
+                </div>
+                <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                  <h4 class="font-bold text-primary mb-2">الزجاج المقوى</h4>
+                  <p class="text-gray-700">شفافية عالية مع متانة وقوة تحمل</p>
+                </div>
+                <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                  <h4 class="font-bold text-primary mb-2">الحجر الصناعي</h4>
+                  <p class="text-gray-700">
+                    مظهر طبيعي مع خفة وزن وسهولة تركيب
+                  </p>
+                </div>
+                <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                  <h4 class="font-bold text-primary mb-2">المواد المركبة</h4>
+                  <p class="text-gray-700">قوة ومتانة مع خفة وزن وتعدد ألوان</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- جودة ومتانة التنفيذ -->
+            <section id="quality" class="content-section mb-12">
+              <h2
+                class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200"
+              >
+                تنفيذ بجودة عالية لتحمل مختلف الظروف
+              </h2>
+              <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                <div class="w-full lg:w-1/2">
+                  <p class="text-gray-700 mb-4 leading-relaxed">
+                    نحرص في شركة ايجبت على تنفيذ واجهات الكلادينج بأعلى معايير
+                    الجودة والمتانة، لضمان قدرتها على تحمل مختلف الظروف الجوية
+                    والتحديات البيئية. نحن نستخدم تقنيات متطورة في التصنيع
+                    والتركيب، مع الالتزام بمعايير الجودة العالمية.
+                  </p>
+                  <p class="text-gray-700 leading-relaxed">
+                    يتم تنفيذ جميع مشاريعنا تحت إشراف فريق فني متخصص ذي خبرة
+                    طويلة في مجال واجهات الكلادينج، مع استخدام أحدث المعدات
+                    والأدوات لضمان دقة التنفيذ والتزام بالمواصفات المطلوبة.
+                  </p>
+                </div>
+                <div class="w-full lg:w-1/2">
+                  <img
+                    src="../../assets/img/to-implement.avif"
+                    alt="جودة التنفيذ"
+                    class="rounded-lg shadow-md w-full h-64 object-cover"
+                  />
+                </div>
+              </div>
+
+              <h3 class="text-xl font-bold text-primary mb-4">
+                معايير الجودة التي نتبعها
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div
+                  class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm"
+                >
+                  <h4 class="font-bold text-primary mb-2">اختبارات المتانة</h4>
+                  <p class="text-gray-700">
+                    اختبار جميع المواد لضمان مقاومتها للعوامل الجوية
+                  </p>
+                </div>
+                <div
+                  class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm"
+                >
+                  <h4 class="font-bold text-primary mb-2">ضمان الدقة</h4>
+                  <p class="text-gray-700">
+                    قياسات دقيقة وتنفيذ وفق المواصفات المطلوبة
+                  </p>
+                </div>
+                <div
+                  class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm"
+                >
+                  <h4 class="font-bold text-primary mb-2">مراقبة الجودة</h4>
+                  <p class="text-gray-700">
+                    مراقبة مستمرة خلال جميع مراحل التصنيع والتركيب
+                  </p>
+                </div>
+                <div
+                  class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm"
+                >
+                  <h4 class="font-bold text-primary mb-2">اختبارات السلامة</h4>
+                  <p class="text-gray-700">
+                    اختبارات شاملة لضمان سلامة التركيب والمستخدمين
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- معايير السلامة -->
+            <section id="safety" class="content-section mb-12">
+              <h2
+                class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200"
+              >
+                تصميم وتركيب وفق أعلى معايير السلامة
+              </h2>
+              <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                <div class="w-full lg:w-1/2">
+                  <img
+                    src="../../assets/img/cladding-design-and-installation.png"
+                    alt="معايير السلامة"
+                    class="rounded-lg shadow-md w-full h-64 object-cover"
+                  />
+                </div>
+                <div class="w-full lg:w-1/2">
+                  <p class="text-gray-700 mb-4 leading-relaxed">
+                    تلتزم شركة ايجبت بأعلى معايير السلامة في تصميم وتركيب واجهات
+                    الكلادينج، حيث نعطي الأولوية القصوى لسلامة المستخدمين
+                    والممتلكات. نحن نتبع أحدث أنظمة السلامة العالمية ونطبق كودات
+                    البناء المعتمدة محلياً ودولياً.
+                  </p>
+                  <p class="text-gray-700 leading-relaxed">
+                    يقوم فريقنا الفني بإجراء تحليلات دقيقة لمتطلبات السلامة لكل
+                    مشروع، مع تقديم الحلول الهندسية التي تضمان تحقيق أعلى معايير
+                    الأمان دون المساس بالجماليات التصميمية أو الوظيفية للواجهات.
+                  </p>
+                </div>
+              </div>
+
+              <h3 class="text-xl font-bold text-primary mb-4">
+                إجراءات السلامة التي نطبقها
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                  <h4 class="font-bold text-primary mb-2">دراسات الأحمال</h4>
+                  <p class="text-gray-700">
+                    تحليل دقيق للأحمال الهيكلية والرياح والزلازل
+                  </p>
+                </div>
+                <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                  <h4 class="font-bold text-primary mb-2">أنظمة التثبيت</h4>
+                  <p class="text-gray-700">
+                    أنظمة تثبيت متطورة تضمان ثبات الواجهة وسلامتها
+                  </p>
+                </div>
+                <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                  <h4 class="font-bold text-primary mb-2">
+                    المواد المقاومة للحريق
+                  </h4>
+                  <p class="text-gray-700">
+                    استخدام مواد مقاومة أو بطيئة الاشتعال حسب المتطلبات
+                  </p>
+                </div>
+                <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                  <h4 class="font-bold text-primary mb-2">الصيانة الدورية</h4>
+                  <p class="text-gray-700">
+                    برامج صيانة دورية لضمان استمرارية السلامة
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- الأقسام المتبقية من المحتوى -->
+
+            <!-- المحتوى الرئيسي -->
+
+            <!-- مراحل التصنيع -->
+            <section id="process" class="content-section mb-12">
+              <h2
+                class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200"
+              >
+                مراحل التصنيع والتركيب
+              </h2>
+              <div class="mb-6">
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                  نتبع في شركة ايجبت منهجية دقيقة في تصنيع وتركيب واجهات
+                  الكلادينج، تضمن الحصول على منتج نهائي يتوافق مع أعلى معايير
+                  الجودة والسلامة. تمر عملية التصنيع بعدة مراحل متتالية يتم فيها
+                  مراقبة الجودة بدقة.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div
+                  class="bg-white border border-gray-200 p-5 rounded-lg shadow-sm"
+                >
+                  <div class="flex items-center mb-3">
+                    <div
+                      class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-3"
+                    >
+                      1
+                    </div>
+                    <h4 class="font-bold text-primary">الدراسة والتصميم</h4>
+                  </div>
+                  <p class="text-gray-700">
+                    دراسة الموقع والاحتياجات، تصميم أولي، ووضع الحلول الهندسية
+                    المناسبة.
+                  </p>
+                </div>
+                <div
+                  class="bg-white border border-gray-200 p-5 rounded-lg shadow-sm"
+                >
+                  <div class="flex items-center mb-3">
+                    <div
+                      class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-3"
+                    >
+                      2
+                    </div>
+                    <h4 class="font-bold text-primary">اختيار المواد</h4>
+                  </div>
+                  <p class="text-gray-700">
+                    اختيار الخامات المناسبة بناءً على المتطلبات والمواصفات
+                    الفنية.
+                  </p>
+                </div>
+                <div
+                  class="bg-white border border-gray-200 p-5 rounded-lg shadow-sm"
+                >
+                  <div class="flex items-center mb-3">
+                    <div
+                      class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-3"
+                    >
+                      3
+                    </div>
+                    <h4 class="font-bold text-primary">التصنيع</h4>
+                  </div>
+                  <p class="text-gray-700">
+                    قص وتشكيل المواد وفقاً للتصميم باستخدام أحدث التقنيات.
+                  </p>
+                </div>
+                <div
+                  class="bg-white border border-gray-200 p-5 rounded-lg shadow-sm"
+                >
+                  <div class="flex items-center mb-3">
+                    <div
+                      class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-3"
+                    >
+                      4
+                    </div>
+                    <h4 class="font-bold text-primary">التركيب</h4>
+                  </div>
+                  <p class="text-gray-700">
+                    تركيب الواجهة في الموقع باستخدام فرق فنية متخصصة ومراقبة
+                    الجودة.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- مميزات خدماتنا -->
+            <section id="advantages" class="content-section mb-12">
+              <h2
+                class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200"
+              >
+                مميزات خدماتنا
+              </h2>
+              <div class="mb-6">
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                  تتميز شركة ايجبت للدعاية والإعلان بمجموعة من المميزات التي
+                  تجعلها الخيار الأمثل لتنفيذ مشاريع واجهات الكلادينج، حيث نحرص
+                  على تقديم قيمة مضافة حقيقية لعملائنا من خلال الجمع بين الجودة
+                  العالية والأسعار التنافسية والخدمة المتكاملة.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div class="flex items-start">
+                  <div
+                    class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center ml-3 flex-shrink-0"
+                  >
+                    <i class="fas fa-award text-primary text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-primary mb-1">جودة لا تضاهى</h4>
+                    <p class="text-gray-700">
+                      نستخدم مواد عالية الجودة ونتابع التنفيذ بدقة لضمان المتانة
+                      والجمال.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center ml-3 flex-shrink-0"
+                  >
+                    <i class="fas fa-tools text-primary text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-primary mb-1">حلول متكاملة</h4>
+                    <p class="text-gray-700">
+                      نقدم خدمة شاملة من التصميم حتى التركيب النهائي والضمان.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center ml-3 flex-shrink-0"
+                  >
+                    <i class="fas fa-clock text-primary text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-primary mb-1">
+                      التزام بالمواعيد
+                    </h4>
+                    <p class="text-gray-700">
+                      نلتزم بمواعيد التسليم المتفق عليها دون التأثير على جودة
+                      التنفيذ.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center ml-3 flex-shrink-0"
+                  >
+                    <i class="fas fa-headset text-primary text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-primary mb-1">دعم فني متكامل</h4>
+                    <p class="text-gray-700">
+                      فريق دعم فني متاح للاستشارات والمتابعة خلال وبعد التنفيذ.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- معرض الأعمال -->
+            <section id="projects" class="content-section mb-12">
+              <h2
+                class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200"
+              >
+                معرض أعمالنا
+              </h2>
+              <div class="mb-6">
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                  نفتخر في شركة ايجبت بمجموعة كبيرة من مشاريع واجهات الكلادينج
+                  التي قمنا بتنفيذها لمختلف القطاعات التجارية والصناعية. يشمل
+                  معرض أعمالنا مجموعة متنوعة من التصاميم التي تناسب مختلف
+                  الأذواق والمتطلبات.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div
+                  class="modern-card bg-white rounded-xl shadow-md overflow-hidden"
+                >
+                  <img
+                    src="../../assets/img/shopping-center-facade.webp"
+                    alt="مشروع كلادينج تجاري"
+                    class="w-full h-48 object-cover"
+                  />
+                  <div class="p-4">
+                    <h4 class="font-bold text-primary mb-2">
+                      واجهة مركز تجاري
+                    </h4>
+                    <p class="text-gray-700 text-sm">
+                      تصميم عصري لواجهة مركز تجاري كبير باستخدام ألواح الألمنيوم
+                      والزجاج.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="modern-card bg-white rounded-xl shadow-md overflow-hidden"
+                >
+                  <img
+                    src="../../assets/img/restaurant-facade.jpg"
+                    alt="مشروع كلادينج لمطعم"
+                    class="w-full h-48 object-cover"
+                  />
+                  <div class="p-4">
+                    <h4 class="font-bold text-primary mb-2">واجهة مطعم</h4>
+                    <p class="text-gray-700 text-sm">
+                      تصميم جذاب لواجهة مطعم يدمج بين الكلادينج والإضاءة
+                      المميزة.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="modern-card bg-white rounded-xl shadow-md overflow-hidden"
+                >
+                  <img
+                    src="../../assets/img/my-office-building.jpg"
+                    alt="مشروع كلادينج لمبنى مكتبي"
+                    class="w-full h-48 object-cover"
+                  />
+                  <div class="p-4">
+                    <h4 class="font-bold text-primary mb-2">مبنى مكتبي</h4>
+                    <p class="text-gray-700 text-sm">
+                      واجهة كلادينج عصرية لمبنى مكاتب باستخدام ألوان وأنظمة
+                      تركيب متطورة.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="modern-card bg-white rounded-xl shadow-md overflow-hidden"
+                >
+                  <img
+                    src="../../assets/img/commercial-store.jpg"
+                    alt="مشروع كلادينج لمحل تجاري"
+                    class="w-full h-48 object-cover"
+                  />
+                  <div class="p-4">
+                    <h4 class="font-bold text-primary mb-2">محل تجاري</h4>
+                    <p class="text-gray-700 text-sm">
+                      واجهة كلادينج مميزة لمحل تجاري صغير مع إضاءة جذابة.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center mt-6">
+                <a
+                  href="#"
+                  class="inline-block bg-primary text-white py-2 px-6 rounded-lg hover:bg-primaryDark transition duration-300"
+                >
+                  <i class="fas fa-images ml-2"></i>شاهد المزيد من أعمالنا
+                </a>
+              </div>
+            </section>
+
+            <!-- الأسئلة الشائعة -->
+            <section id="faq" class="content-section mb-12">
+              <h2
+                class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200"
+              >
+                الأسئلة الشائعة
+              </h2>
+              <div class="mb-6">
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                  نجمع لكم أهم الأسئلة الشائعة حول واجهات الكلادينج والإجابات
+                  عليها لتوضيح جميع الاستفسارات التي قد تهمكم قبل اتخاذ قرار
+                  التركيب.
+                </p>
+              </div>
+
+              <div class="space-y-4">
+                <div class="bg-gray-50 rounded-lg p-5">
+                  <h4 class="font-bold text-primary mb-2 flex items-center">
+                    <i
+                      class="fas fa-question-circle text-primaryLight ml-2"
+                    ></i>
+                    ما هي مدة تنفيذ مشروع واجهة كلادينج لمحل تجاري؟
+                  </h4>
+                  <p class="text-gray-700">
+                    تتراوح مدة التنفيذ بين 10-20 يوم عمل حسب مساحة الواجهة
+                    وتعقيد التصميم، ونحرص على الالتزام بموعد التسليم المتفق
+                    عليه.
+                  </p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-5">
+                  <h4 class="font-bold text-primary mb-2 flex items-center">
+                    <i
+                      class="fas fa-question-circle text-primaryLight ml-2"
+                    ></i>
+                    هل تحتاج واجهات الكلادينج إلى صيانة دورية؟
+                  </h4>
+                  <p class="text-gray-700">
+                    نعم، ننصح بعمل صيانة دورية سنوية للواجهات لضمان المحافظة على
+                    مظهرها وجودتها، ونقدم لكم برنامج صيانة متكامل بعد التركيب.
+                  </p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-5">
+                  <h4 class="font-bold text-primary mb-2 flex items-center">
+                    <i
+                      class="fas fa-question-circle text-primaryLight ml-2"
+                    ></i>
+                    ما هي ضمانات التي تقدمونها على الواجهات؟
+                  </h4>
+                  <p class="text-gray-700">
+                    نقدم ضمانًا لمدة تتراوح بين 2-5 سنوات حسب نوع المواد
+                    المستخدمة، يشمل الضمان عيوب التصنيع والتركيب.
+                  </p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-5">
+                  <h4 class="font-bold text-primary mb-2 flex items-center">
+                    <i
+                      class="fas fa-question-circle text-primaryLight ml-2"
+                    ></i>
+                    هل تقومون بالتركيب في جميع مناطق المملكة؟
+                  </h4>
+                  <p class="text-gray-700">
+                    نعم، لدينا فرق تركيب متخصصة يمكنها التنقل إلى مختلف مناطق
+                    المملكة، وقد نفذنا مشاريع في معظم المدن الرئيسية.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- قسم الاتصال -->
+            <section
+              class="bg-primaryLight bg-opacity-10 p-8 rounded-lg text-center my-8"
+            >
+              <h2 class="text-2xl font-bold text-primary mb-4">
+                هل لديك استفسار أو تحتاج إلى استشارة؟
+              </h2>
+              <p class="text-gray-700 mb-6">
+                فريقنا متاح للإجابة على جميع استفساراتكم وتقديم الحلول المناسبة
+                لمشاريعكم
+              </p>
+              <div class="flex flex-wrap justify-center gap-4">
+                <a
+                  href="tel:0501234567"
+                  class="bg-primary text-white py-3 px-6 rounded-lg font-bold hover:bg-primaryDark transition duration-300"
+                >
+                  <i class="fas fa-phone ml-2"></i>اتصل بنا الآن
+                </a>
+                <a
+                  href="tel:0501234567"
+                  class="border border-primary text-primary py-3 px-6 rounded-lg font-bold hover:bg-primary hover:text-white transition duration-300"
+                >
+                  <i class="fas fa-envelope ml-2"></i>ارسل رسالة
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- زر العودة للأعلى -->
-    <button id="backToTop" class="fixed bottom-6 left-6 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center hover:bg-primaryDark transition duration-300 opacity-0 invisible">
-        <i class="fas fa-arrow-up"></i>
+    <button
+      id="backToTop"
+      class="fixed bottom-6 left-6 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center hover:bg-primaryDark transition duration-300 opacity-0 invisible"
+    >
+      <i class="fas fa-arrow-up"></i>
     </button>
 
-
-
-                  
-       
- 
-<!-- Footer -->
-<footer id="contact" class="bg-gray-900 text-white py-16">
-  <div class="container mx-auto px-4">
-    <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12 mb-12">
-      <div>
-        <div class="flex items-center space-x-reverse space-x-3 mb-6">
-          <div
-            class=" text-white p-3 rounded-lg w-14 h-14 flex items-center justify-center shadow-md rounded-full border-white border-2 bg-white">
-            <img src="../../assets/img/logo-egypt-advertising-1.webp" alt="">
-          </div>
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white py-16">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12 mb-12">
           <div>
-            <h3 class="text-xl font-bold">ايجبت للدعاية والإعلان</h3>
-            <p class="text-gray-400 text-sm">حلول إبداعية لنجاحك</p>
+            <div class="flex items-center space-x-reverse space-x-3 mb-6">
+              <div
+                class="text-white p-3 rounded-lg w-14 h-14 flex items-center justify-center shadow-md rounded-full border-white border-2 bg-white"
+              >
+                <img
+                  src="../../assets/img/logo-egypt-advertising-1.webp"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h3 class="text-xl font-bold">ايجبت للدعاية والإعلان</h3>
+                <p class="text-gray-400 text-sm">حلول إبداعية لنجاحك</p>
+              </div>
+            </div>
+            <p class="text-gray-300 mb-6">
+              نحن شريكك الموثوق في رحلة النجاح، نقدم حلول إعلانية وتسويقية
+              متميزة تحقق أهدافك وتبني علامتك التجارية.
+            </p>
+            <div class="flex space-x-reverse space-x-4">
+              <!-- Facebook -->
+              <a
+                href="https://www.facebook.com/people/%D8%A7%D9%8A%D8%AC%D8%A8%D8%AA-%D9%84%D9%84%D8%AF%D8%B9%D8%A7%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86/61580300744080/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-blue-600 hover:bg-blue-700 px-5 p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600"
+                aria-label="تابعنا على فيسبوك"
+              >
+                <i class="fab fa-facebook-f text-white text-lg"></i>
+              </a>
+
+              <!-- Instagram -->
+              <a
+                href="https://www.instagram.com/egypt.advertising/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-pink-600 hover:bg-pink-700 p-3 px-4 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-pink-600"
+                aria-label="تابعنا على إنستجرام"
+              >
+                <i class="fab fa-instagram text-white text-lg"></i>
+              </a>
+
+              <!-- Twitter (X) -->
+              <a
+                href="https://x.com/egyptadvertisin"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-blue-500 hover:bg-blue-600 px-4 p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
+                aria-label="تابعنا على تويتر"
+              >
+                <i class="fab fa-twitter text-white text-lg"></i>
+              </a>
+
+              <!-- TikTok -->
+              <a
+                href="https://www.tiktok.com/@egypt.advertising?lang=ar"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-gray-900 hover:bg-gray-800 p-3 px-5 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-gray-900"
+                aria-label="تابعنا على تيك توك"
+              >
+                <i class="fab fa-tiktok text-white text-lg"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-6">خدماتنا</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition-colors flex items-center"
+                  ><i class="fas fa-chevron-left text-xs ml-2"></i>التصميم
+                  والبراندنج</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition-colors flex items-center"
+                  ><i class="fas fa-chevron-left text-xs ml-2"></i>التسويق
+                  الرقمي</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition-colors flex items-center"
+                  ><i class="fas fa-chevron-left text-xs ml-2"></i>إنتاج
+                  المحتوى</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition-colors flex items-center"
+                  ><i class="fas fa-chevron-left text-xs ml-2"></i>الحملات
+                  الإعلانية</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition-colors flex items-center"
+                  ><i class="fas fa-chevron-left text-xs ml-2"></i>التحليل
+                  والإحصائيات</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition-colors flex items-center"
+                  ><i class="fas fa-chevron-left text-xs ml-2"></i> تصميم وبرمجة
+                  المواقع</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-6">روابط مفيدة</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="../../index.html#home"
+                  class="text-gray-300 hover:text-white transition-colors flex items-center"
+                  ><i class="fas fa-chevron-left text-xs ml-2"></i>الرئيسية</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../index.html#about"
+                  class="text-gray-300 hover:text-white transition-colors flex items-center"
+                  ><i class="fas fa-chevron-left text-xs ml-2"></i>من نحن</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="../../index.html#Our-business"
+                  class="text-gray-300 hover:text-white transition-colors flex items-center"
+                  ><i class="fas fa-chevron-left text-xs ml-2"></i>أعمالنا</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-6">تواصل معنا</h4>
+            <div class="space-y-4">
+              <div class="flex items-center space-x-reverse space-x-3">
+                <i class="fas fa-map-marker-alt text-primary"></i>
+                <span class="text-gray-300">جدة، المملكة العربية السعودية</span>
+              </div>
+              <div class="flex items-center space-x-reverse space-x-3">
+                <i class="fas fa-phone text-primary"></i>
+                <span class="text-gray-300" dir="ltr">+966 563374482</span>
+              </div>
+              <div class="flex items-center space-x-reverse space-x-3">
+                <i class="fas fa-phone text-primary"></i>
+                <span class="text-gray-300" dir="ltr">+966 565265233</span>
+              </div>
+              <div class="flex items-center space-x-reverse space-x-3">
+                <i class="fas fa-envelope text-primary"></i>
+                <span class="text-gray-300" dir="ltr"
+                  >egyptforadvertising25@gmail.com</span
+                >
+              </div>
+              <div class="flex items-center space-x-reverse space-x-3">
+                <i class="fas fa-clock text-primary"></i>
+                <span class="text-gray-300">الأحد - الخميس: 9:00 - 18:00</span>
+              </div>
+            </div>
           </div>
         </div>
-        <p class="text-gray-300 mb-6">نحن شريكك الموثوق في رحلة النجاح، نقدم حلول إعلانية وتسويقية متميزة تحقق أهدافك
-          وتبني علامتك التجارية.</p>
-        <div class="flex space-x-reverse space-x-4">
-          <!-- Facebook -->
-          <a href="https://www.facebook.com/people/%D8%A7%D9%8A%D8%AC%D8%A8%D8%AA-%D9%84%D9%84%D8%AF%D8%B9%D8%A7%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86/61580300744080/"
-            target="_blank" rel="noopener noreferrer"
-            class="bg-blue-600 hover:bg-blue-700 px-4 p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600"
-            aria-label="تابعنا على فيسبوك">
-            <i class="fab fa-facebook-f text-white text-lg"></i>
-          </a>
 
-          <!-- Instagram -->
-          <a href="https://www.instagram.com/egypt.advertising/" target="_blank" rel="noopener noreferrer"
-            class="bg-pink-600 hover:bg-pink-700 p-3 px-4  rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-pink-600"
-            aria-label="تابعنا على إنستجرام">
-            <i class="fab fa-instagram text-white text-lg"></i>
-          </a>
-
-          <!-- Twitter (X) -->
-          <a href="https://x.com/egyptadvertisin" target="_blank" rel="noopener noreferrer"
-            class="bg-blue-500 hover:bg-blue-600 px-4  p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
-            aria-label="تابعنا على تويتر">
-            <i class="fab fa-twitter text-white text-lg"></i>
-          </a>
-
-          <!-- TikTok -->
-          <a href="https://www.tiktok.com/@egypt.advertising?lang=ar" target="_blank" rel="noopener noreferrer"
-            class="bg-gray-900 hover:bg-gray-800 p-3  rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-gray-900"
-            aria-label="تابعنا على تيك توك">
-            <i class="fab fa-tiktok text-white text-lg "></i>
-          </a>
-
-        </div>
-      </div>
-
-      <div>
-        <h4 class="text-lg font-bold mb-6">خدماتنا</h4>
-        <ul class="space-y-3">
-          <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
-                class="fas fa-chevron-left text-xs ml-2"></i>التصميم والبراندنج</a></li>
-          <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
-                class="fas fa-chevron-left text-xs ml-2"></i>التسويق الرقمي</a></li>
-          <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
-                class="fas fa-chevron-left text-xs ml-2"></i>إنتاج المحتوى</a></li>
-          <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
-                class="fas fa-chevron-left text-xs ml-2"></i>الحملات الإعلانية</a></li>
-          <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
-                class="fas fa-chevron-left text-xs ml-2"></i>التحليل والإحصائيات</a></li>
-          <li><a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
-                class="fas fa-chevron-left text-xs ml-2"></i> تصميم وبرمجة المواقع</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="text-lg font-bold mb-6">روابط مفيدة</h4>
-        <ul class="space-y-3">
-          <li><a href="../../index.html#home" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
-                class="fas fa-chevron-left text-xs ml-2"></i>الرئيسية</a></li>
-          <li><a href="../../index.html#about" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
-                class="fas fa-chevron-left text-xs ml-2"></i>من نحن</a></li>
-
-          <li><a href="../../index.html#Our-business" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
-                class="fas fa-chevron-left text-xs ml-2"></i>أعمالنا</a></li>
-         
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="text-lg font-bold mb-6">تواصل معنا</h4>
-        <div class="space-y-4">
-          <div class="flex items-center space-x-reverse space-x-3">
-            <i class="fas fa-map-marker-alt text-primary"></i>
-            <span class="text-gray-300">جدة، المملكة العربية السعودية</span>
-          </div>
-          <div class="flex items-center space-x-reverse space-x-3">
-            <i class="fas fa-phone text-primary"></i>
-            <span class="text-gray-300" dir="ltr">+966 563374482</span>
-          </div>
-          <div class="flex items-center space-x-reverse space-x-3">
-            <i class="fas fa-phone text-primary"></i>
-            <span class="text-gray-300" dir="ltr">+966 565265233</span>
-          </div>
-          <div class="flex items-center space-x-reverse space-x-3">
-            <i class="fas fa-envelope text-primary"></i>
-            <span class="text-gray-300" dir="ltr">egyptforadvertising25@gmail.com</span>
-          </div>
-          <div class="flex items-center space-x-reverse space-x-3">
-            <i class="fas fa-clock text-primary"></i>
-            <span class="text-gray-300">الأحد - الخميس: 9:00 - 18:00</span>
+        <div class="border-t border-gray-800 pt-8">
+          <div
+            class="flex flex-col md:flex-row items-center text-center m-auto"
+          >
+            <p class="text-gray-400 text-sm mb-4 md:mb-0">
+              © 2025 شركة <a href="https://www.fashne.net/">Alfashne</a>. جميع
+              الحقوق محفوظة.
+            </p>
           </div>
         </div>
-
-
       </div>
-    </div>
-
-    <div class="border-t border-gray-800 pt-8">
-      <div class="flex flex-col md:flex-row  items-center text-center m-auto">
-        <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 شركة <a href="https://www.fashne.net/">Alfashne</a>. جميع
-          الحقوق محفوظة.</p>
-
-      </div>
-    </div>
-  </div>
-</footer>
+    </footer>
 
     <script>
-        // كود JavaScript للتنقل السلس والتفاعل مع الصفحة
-        document.addEventListener('DOMContentLoaded', function() {
-            // التنقل السلس
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 100,
-                            behavior: 'smooth'
-                        });
-                        
-                        // تحديث العنصر النشط في القائمة الجانبية
-                        document.querySelectorAll('.nav-item').forEach(item => {
-                            item.classList.remove('active');
-                        });
-                        this.classList.add('active');
-                    }
-                });
-            });
-            
-            // زر العودة للأعلى
-            const backToTopButton = document.getElementById('backToTop');
-            window.addEventListener('scroll', function() {
-                if (window.pageYOffset > 300) {
-                    backToTopButton.classList.remove('opacity-0', 'invisible');
-                    backToTopButton.classList.add('opacity-100', 'visible');
-                } else {
-                    backToTopButton.classList.remove('opacity-100', 'visible');
-                    backToTopButton.classList.add('opacity-0', 'invisible');
-                }
-            });
-            
-            backToTopButton.addEventListener('click', function() {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            });
-            
-            // تحديث العنصر النشط في القائمة أثناء التمرير
-            const sections = document.querySelectorAll('.content-section');
-            const navItems = document.querySelectorAll('.nav-item');
-            
-            window.addEventListener('scroll', function() {
-                let current = '';
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    const sectionHeight = section.clientHeight;
-                    if (pageYOffset >= (sectionTop - 150)) {
-                        current = section.getAttribute('id');
-                    }
-                });
-                
-                navItems.forEach(item => {
-                    item.classList.remove('active');
-                    if (item.getAttribute('href') === `#${current}`) {
-                        item.classList.add('active');
-                    }
-                });
-            });
+      // كود JavaScript للتنقل السلس والتفاعل مع الصفحة
+      document.addEventListener("DOMContentLoaded", function () {
+        // التنقل السلس
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            if (targetId === "#") return;
+
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 100,
+                behavior: "smooth",
+              });
+
+              // تحديث العنصر النشط في القائمة الجانبية
+              document.querySelectorAll(".nav-item").forEach((item) => {
+                item.classList.remove("active");
+              });
+              this.classList.add("active");
+            }
+          });
         });
+
+        // زر العودة للأعلى
+        const backToTopButton = document.getElementById("backToTop");
+        window.addEventListener("scroll", function () {
+          if (window.pageYOffset > 300) {
+            backToTopButton.classList.remove("opacity-0", "invisible");
+            backToTopButton.classList.add("opacity-100", "visible");
+          } else {
+            backToTopButton.classList.remove("opacity-100", "visible");
+            backToTopButton.classList.add("opacity-0", "invisible");
+          }
+        });
+
+        backToTopButton.addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+
+        // تحديث العنصر النشط في القائمة أثناء التمرير
+        const sections = document.querySelectorAll(".content-section");
+        const navItems = document.querySelectorAll(".nav-item");
+
+        window.addEventListener("scroll", function () {
+          let current = "";
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - 150) {
+              current = section.getAttribute("id");
+            }
+          });
+
+          navItems.forEach((item) => {
+            item.classList.remove("active");
+            if (item.getAttribute("href") === `#${current}`) {
+              item.classList.add("active");
+            }
+          });
+        });
+      });
     </script>
-<script src="../../assets/js/script.js"></script>
-</body>
+    <script src="../../assets/js/script.js"></script>
+  </body>
 </html>

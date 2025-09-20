@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>التسويق الإلكتروني وإدارة الحملات - شركة ايجبت للدعاية والإعلان بجدة</title>
-    <meta name="description" content="استراتيجيات تسويق إلكتروني احترافية وإدارة حملات إعلانية على فيسبوك وإنستجرام، تحسين محركات البحث SEO وتحليل النتائج لتحقيق أعلى عائد على الاستثمار">
+    <meta name="description"
+        content="استراتيجيات تسويق إلكتروني احترافية وإدارة حملات إعلانية على فيسبوك وإنستجرام، تحسين محركات البحث SEO وتحليل النتائج لتحقيق أعلى عائد على الاستثمار">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/css/style.css">
     <script>
         tailwind.config = {
@@ -28,131 +30,163 @@
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
+
         body {
             font-family: 'Tajawal', sans-serif;
             scroll-behavior: smooth;
         }
+
         .sticky-sidebar {
             position: sticky;
             top: 20px;
         }
+
         .content-section {
             scroll-margin-top: 100px;
         }
+
         .hero-pattern {
             background: linear-gradient(135deg, #148c80 0%, #1aac9d 50%, #0e6c62 100%);
         }
+
         .nav-item {
             transition: all 0.3s ease;
             border-right: 4px solid transparent;
         }
-        .nav-item:hover, .nav-item.active {
+
+        .nav-item:hover,
+        .nav-item.active {
             background-color: rgba(20, 140, 128, 0.1);
             border-right-color: #148c80;
             color: #148c80;
         }
+
         .service-card {
             transition: all 0.3s ease;
             border-top: 4px solid transparent;
             overflow: hidden;
         }
+
         .service-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
             border-top-color: #148c80;
         }
+
         .gradient-bg {
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         }
+
         .marketing-pattern {
-            background-image: 
-                linear-gradient(45deg, rgba(20, 140, 128, 0.1) 25%, transparent 25%), 
-                linear-gradient(-45deg, rgba(20, 140, 128, 0.1) 25%, transparent 25%), 
-                linear-gradient(45deg, transparent 75%, rgba(20, 140, 128, 0.1) 75%), 
+            background-image:
+                linear-gradient(45deg, rgba(20, 140, 128, 0.1) 25%, transparent 25%),
+                linear-gradient(-45deg, rgba(20, 140, 128, 0.1) 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, rgba(20, 140, 128, 0.1) 75%),
                 linear-gradient(-45deg, transparent 75%, rgba(20, 140, 128, 0.1) 75%);
             background-size: 20px 20px;
             background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
         }
+
         .analytics-pattern {
             background-color: #f8f9fa;
-            background-image: 
+            background-image:
                 linear-gradient(0deg, transparent 24%, rgba(20, 140, 128, 0.05) 25%, rgba(20, 140, 128, 0.05) 26%, transparent 27%, transparent 74%, rgba(20, 140, 128, 0.05) 75%, rgba(20, 140, 128, 0.05) 76%, transparent 77%, transparent),
                 linear-gradient(90deg, transparent 24%, rgba(20, 140, 128, 0.05) 25%, rgba(20, 140, 128, 0.05) 26%, transparent 27%, transparent 74%, rgba(20, 140, 128, 0.05) 75%, rgba(20, 140, 128, 0.05) 76%, transparent 77%, transparent);
             background-size: 40px 40px;
         }
+
         .floating-element {
             animation: float 6s ease-in-out infinite;
         }
+
         @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
         }
+
         .stat-card {
             transition: all 0.3s ease;
             overflow: hidden;
         }
+
         .stat-card:hover {
             transform: translateY(-3px);
             box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
+
 <body class="bg-gray-50">
-     <!--  Navbar -->
-<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-4 bg-white shadow-md">
-  <div class="container mx-auto px-4 flex items-center justify-between">
-    <!-- Logo -->
-    <div class="flex items-center space-x-reverse space-x-4">
-      <div class=" text-white p-3 rounded-lg w-14 h-14 flex items-center justify-center shadow-md rounded-full">
-        <img src="../../assets/img/logo-egypt-advertising-1.webp" alt="ايجبت للدعاية والإعلان">
-      </div>
-      <div>
-        <h2 class="text-xl font-bold gradient-text">ايجبت للدعاية والإعلان</h2>
-        <p class="text-sm text-gray-600">حلول إبداعية لنجاحك</p>
-      </div>
-    </div>
+    <!--  Navbar -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-4 bg-white shadow-md">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-reverse space-x-4">
+                <div
+                    class=" text-white p-3 rounded-lg w-14 h-14 flex items-center justify-center shadow-md rounded-full">
+                    <img src="../../assets/img/logo-egypt-advertising-1.webp" alt="ايجبت للدعاية والإعلان">
+                </div>
+                <div>
+                    <h2 class="text-xl font-bold gradient-text">ايجبت للدعاية والإعلان</h2>
+                    <p class="text-sm text-gray-600">حلول إبداعية لنجاحك</p>
+                </div>
+            </div>
 
-    <!-- Links (Desktop) -->
-    <div class="hidden lg:flex items-center space-x-reverse space-x-8">
-      <a href="../../index.html#home" class="text-black hover:text-primary transition-colors font-medium">الرئيسية</a>
-      <a href="../../index.html#about" class="text-black hover:text-primary transition-colors font-medium">من نحن</a>
-      
-      <a href="../../index.html#Our-business" class="text-black hover:text-primary transition-colors font-medium"> اعمالنا</a>
-    </div>
+            <!-- Links (Desktop) -->
+            <div class="hidden lg:flex items-center space-x-reverse space-x-8">
+                <a href="../../index.html#home"
+                    class="text-black hover:text-primary transition-colors font-medium">الرئيسية</a>
+                <a href="../../index.html#about" class="text-black hover:text-primary transition-colors font-medium">من
+                    نحن</a>
 
-    <!-- CTA + Menu Button -->
-    <div class="flex items-center space-x-reverse space-x-4">
-      <div class="text-right hidden md:block">
-        <a href="tel:0501234567"
-          class="inline-block gradient-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors">
-          <p class="text-sm">اتصل بنا</p>
-        </a>
-      </div>
-      <!-- Menu Button -->
-      <button id="menu-btn" class="lg:hidden text-gray-700 focus:outline-none" aria-label="فتح وإغلاق قائمة التنقل"
-        aria-expanded="false" aria-controls="menu">
-        <i class="fas fa-bars text-2xl"></i>
-      </button>
+                <a href="../../index.html#Our-business"
+                    class="text-black hover:text-primary transition-colors font-medium"> اعمالنا</a>
+            </div>
+
+            <!-- CTA + Menu Button -->
+            <div class="flex items-center space-x-reverse space-x-4">
+                <div class="text-right hidden md:block">
+                    <a href="tel:0501234567"
+                        class="inline-block gradient-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors">
+                        <p class="text-sm">اتصل بنا</p>
+                    </a>
+                </div>
+                <!-- Menu Button -->
+                <button id="menu-btn" class="lg:hidden text-gray-700 focus:outline-none"
+                    aria-label="فتح وإغلاق قائمة التنقل" aria-expanded="false" aria-controls="menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
 
 
-    </div>
-  </div>
+            </div>
+        </div>
 
-  <!-- ✅ Mobile Menu -->
-  <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-md border-t mt-4">
-    <div class="flex flex-col items-center space-y-4 py-6">
-      <a href="../../index.html#home" class="text-black hover:text-primary transition-colors font-medium">الرئيسية</a>
-      <a href="../../index.html#about" class="text-black hover:text-primary transition-colors font-medium">من نحن</a>
-      
-      <a href="../../index.html#Our-business" class="text-black hover:text-primary transition-colors font-medium">اعمالنا</a>
-      <a href="tel:0501234567"
-        class="inline-block bg-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors">
-        اتصل بنا
-      </a>
-    </div>
-  </div>
-</nav>
+        <!-- ✅ Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-md border-t mt-4">
+            <div class="flex flex-col items-center space-y-4 py-6">
+                <a href="../../index.html#home"
+                    class="text-black hover:text-primary transition-colors font-medium">الرئيسية</a>
+                <a href="../../index.html#about" class="text-black hover:text-primary transition-colors font-medium">من
+                    نحن</a>
+
+                <a href="../../index.html#Our-business"
+                    class="text-black hover:text-primary transition-colors font-medium">اعمالنا</a>
+                <a href="tel:0501234567"
+                    class="inline-block bg-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors">
+                    اتصل بنا
+                </a>
+            </div>
+        </div>
+    </nav>
 
     <!-- محتوى الصفحة -->
     <div class="container mx-auto px-4 py-8 pt-[100px]">
@@ -165,22 +199,39 @@
                         <h2 class="text-xl font-bold text-primary">خدمات التسويق الإلكتروني</h2>
                     </div>
                     <ul class="space-y-3">
-                        <li><a href="#intro" class="nav-item active block py-3 px-4 rounded-lg text-primary font-medium">نظرة عامة</a></li>
-                        <li><a href="#facebook-ads" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">إعلانات فيسبوك وإنستجرام</a></li>
-                        <li><a href="#seo" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">تحسين محركات البحث</a></li>
-                        <li><a href="#analytics" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">تحليل النتائج والتقارير</a></li>
-                        <li><a href="#strategies" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">استراتيجيات التسويق</a></li>
-                        <li><a href="#roi" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">تحسين عائد الاستثمار</a></li>
-                        <li><a href="#process" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">عملية إدارة الحملات</a></li>
-                        <li><a href="#success" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">قصص النجاح</a></li>
-                        <li><a href="#packages" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">باقات الخدمات</a></li>
-                        <li><a href="#faq" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">الأسئلة الشائعة</a></li>
+                        <li><a href="#intro"
+                                class="nav-item active block py-3 px-4 rounded-lg text-primary font-medium">نظرة
+                                عامة</a></li>
+                        <li><a href="#facebook-ads"
+                                class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">إعلانات فيسبوك
+                                وإنستجرام</a></li>
+                        <li><a href="#seo" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">تحسين
+                                محركات البحث</a></li>
+                        <li><a href="#analytics"
+                                class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">تحليل النتائج
+                                والتقارير</a></li>
+                        <li><a href="#strategies"
+                                class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">استراتيجيات
+                                التسويق</a></li>
+                        <li><a href="#roi" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">تحسين
+                                عائد الاستثمار</a></li>
+                        <li><a href="#process"
+                                class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">عملية إدارة
+                                الحملات</a></li>
+                        <li><a href="#success" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">قصص
+                                النجاح</a></li>
+                        <li><a href="#packages"
+                                class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">باقات الخدمات</a>
+                        </li>
+                        <li><a href="#faq" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">الأسئلة
+                                الشائعة</a></li>
                     </ul>
-                    
+
                     <div class="mt-8 p-4 gradient-bg rounded-lg border border-primary border-opacity-20">
                         <h3 class="text-lg font-bold text-primary mb-3">اطلب خدمتك الآن</h3>
                         <p class="text-gray-700 mb-4 text-sm">احصل على استشارة مجانية من خبرائنا</p>
-                        <a href="tel:0501234567" class="block w-full bg-primary text-white text-center py-2 px-4 rounded-lg hover:bg-primaryDark transition duration-300">
+                        <a href="tel:0501234567"
+                            class="block w-full bg-primary text-white text-center py-2 px-4 rounded-lg hover:bg-primaryDark transition duration-300">
                             <i class="fas fa-envelope ml-2"></i>اتصل بنا
                         </a>
                     </div>
@@ -194,12 +245,15 @@
                     <div class="absolute inset-0 bg-black opacity-20"></div>
                     <div class="relative z-10">
                         <h1 class="text-3xl md:text-4xl font-bold mb-4">التسويق الإلكتروني وإدارة الحملات الإعلانية</h1>
-                        <p class="text-lg md:text-xl mb-6">استراتيجيات تسويق احترافية لإيصال علامتك التجارية إلى جمهورك المستهدف وتحقيق أعلى عائد على الاستثمار</p>
+                        <p class="text-lg md:text-xl mb-6">استراتيجيات تسويق احترافية لإيصال علامتك التجارية إلى جمهورك
+                            المستهدف وتحقيق أعلى عائد على الاستثمار</p>
                         <div class="flex flex-wrap gap-4">
-                            <a href="tel:0501234567" class="bg-white text-primary py-3 px-6 rounded-lg font-bold hover:bg-gray-100 transition duration-300">
+                            <a href="tel:0501234567"
+                                class="bg-white text-primary py-3 px-6 rounded-lg font-bold hover:bg-gray-100 transition duration-300">
                                 <i class="fas fa-bullhorn ml-2"></i>اطلب خدمتك
                             </a>
-                            <a href="tel:0501234567" class="border-2 border-white py-3 px-6 rounded-lg font-bold hover:bg-white hover:text-primary transition duration-300">
+                            <a href="tel:0501234567"
+                                class="border-2 border-white py-3 px-6 rounded-lg font-bold hover:bg-white hover:text-primary transition duration-300">
                                 <i class="fas fa-chart-bar ml-2"></i>استشارة مجانية
                             </a>
                         </div>
@@ -209,31 +263,35 @@
                 <!-- إحصائيات سريعة -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                     <div class="stat-card bg-white rounded-xl shadow-md p-4 text-center">
-                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-2">
+                        <div
+                            class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-2">
                             <i class="fas fa-user-friends text-primary text-xl"></i>
                         </div>
                         <h3 class="text-lg font-bold text-primary">+2 مليون</h3>
                         <p class="text-gray-600 text-xs">مستهدف في حملاتنا</p>
                     </div>
-                    
+
                     <div class="stat-card bg-white rounded-xl shadow-md p-4 text-center">
-                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-2">
+                        <div
+                            class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-2">
                             <i class="fas fa-chart-pie text-primary text-xl"></i>
                         </div>
                         <h3 class="text-lg font-bold text-primary">+35%</h3>
                         <p class="text-gray-600 text-xs">متوسط زيادة المبيعات</p>
                     </div>
-                    
+
                     <div class="stat-card bg-white rounded-xl shadow-md p-4 text-center">
-                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-2">
+                        <div
+                            class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-2">
                             <i class="fas fa-search text-primary text-xl"></i>
                         </div>
                         <h3 class="text-lg font-bold text-primary">+150%</h3>
                         <p class="text-gray-600 text-xs">زيادة في الظهور</p>
                     </div>
-                    
+
                     <div class="stat-card bg-white rounded-xl shadow-md p-4 text-center">
-                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-2">
+                        <div
+                            class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-2">
                             <i class="fas fa-money-bill-wave text-primary text-xl"></i>
                         </div>
                         <h3 class="text-lg font-bold text-primary">+300%</h3>
@@ -245,44 +303,53 @@
                 <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8">
                     <!-- نظرة عامة -->
                     <section id="intro" class="content-section mb-12">
-                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">نظرة عامة على خدمات التسويق الإلكتروني</h2>
-                     <div class="flex flex-col lg:flex-row gap-6 mb-6">
-                        <!-- النصوص -->
-                       <div class="w-full lg:w-1/2">
-                            <p class="text-gray-700 mb-4 leading-relaxed">
-                                تقدم شركة ايجبت للدعاية والإعلان بجدة حلولاً متكاملة في مجال التسويق الإلكتروني وإدارة الحملات الإعلانية التي تصل بعلامتك التجارية إلى جمهورك المستهدف وتحقق أعلى عائد على الاستثمار. 
-                                نحن نتميز بتقديم استراتيجيات تسويق مدروسة ومبتكرة، باستخدام أحدث الأدوات والتقنيات لتحقيق النتائج المرجوة، مع متابعة دقيقة لأداء الحملات وتحليل البيانات باستمرار لضمان أفضل النتائج.
-                            </p>
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">نظرة عامة على
+                            خدمات التسويق الإلكتروني</h2>
+                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                            <!-- النصوص -->
+                            <div class="w-full lg:w-1/2">
+                                <p class="text-gray-700 mb-4 leading-relaxed">
+                                    تقدم شركة ايجبت للدعاية والإعلان بجدة حلولاً متكاملة في مجال التسويق الإلكتروني
+                                    وإدارة الحملات الإعلانية التي تصل بعلامتك التجارية إلى جمهورك المستهدف وتحقق أعلى
+                                    عائد على الاستثمار.
+                                    نحن نتميز بتقديم استراتيجيات تسويق مدروسة ومبتكرة، باستخدام أحدث الأدوات والتقنيات
+                                    لتحقيق النتائج المرجوة، مع متابعة دقيقة لأداء الحملات وتحليل البيانات باستمرار لضمان
+                                    أفضل النتائج.
+                                </p>
 
-                            <p class="text-gray-700 mb-4 leading-relaxed">
-                                سواء كان نشاطك تجارياً، خدمياً، أو مؤسسياً، فإن خدمات التسويق الإلكتروني التي نقدمها تساعدك على زيادة 
-                                <span class="font-semibold text-primary">Visibility</span>، جذب عملاء جدد، وزيادة المبيعات والأرباح. 
-                                نحن نعمل على دراسة متعمقة للسوق والمنافسين لتطوير استراتيجيات فعالة تناسب ميزانيتك وأهدافك، مع تقديم تقارير مفصلة لقياس الأداء وتحديد فرص التحسين بشكل مستمر.
-                            </p>
+                                <p class="text-gray-700 mb-4 leading-relaxed">
+                                    سواء كان نشاطك تجارياً، خدمياً، أو مؤسسياً، فإن خدمات التسويق الإلكتروني التي نقدمها
+                                    تساعدك على زيادة
+                                    <span class="font-semibold text-primary">Visibility</span>، جذب عملاء جدد، وزيادة
+                                    المبيعات والأرباح.
+                                    نحن نعمل على دراسة متعمقة للسوق والمنافسين لتطوير استراتيجيات فعالة تناسب ميزانيتك
+                                    وأهدافك، مع تقديم تقارير مفصلة لقياس الأداء وتحديد فرص التحسين بشكل مستمر.
+                                </p>
 
-                            <p class="text-gray-700 mb-4 leading-relaxed">
-                                تشمل خدماتنا تصميم وتنفيذ الحملات الإعلانية على مختلف المنصات مثل فيسبوك، إنستجرام، جوجل، وسناب شات، بالإضافة إلى تحسين محركات البحث 
-                                <span class="font-semibold">SEO</span>، وإدارة الحملات الإعلانية المدفوعة 
-                                <span class="font-semibold">PPC</span>، بما يضمن وصول علامتك التجارية إلى الفئة المستهدفة بدقة وفعالية.
-                            </p>
+                                <p class="text-gray-700 mb-4 leading-relaxed">
+                                    تشمل خدماتنا تصميم وتنفيذ الحملات الإعلانية على مختلف المنصات مثل فيسبوك، إنستجرام،
+                                    جوجل، وسناب شات، بالإضافة إلى تحسين محركات البحث
+                                    <span class="font-semibold">SEO</span>، وإدارة الحملات الإعلانية المدفوعة
+                                    <span class="font-semibold">PPC</span>، بما يضمن وصول علامتك التجارية إلى الفئة
+                                    المستهدفة بدقة وفعالية.
+                                </p>
 
-                            <p class="text-gray-700 leading-relaxed">
-                                هدفنا هو بناء علاقة شراكة طويلة المدى مع عملائنا، حيث نلتزم بالشفافية والابتكار في جميع مراحل العمل، بدءًا من وضع الخطة التسويقية، مرورًا بالتنفيذ، وحتى تحقيق النتائج الملموسة التي تسهم في نمو أعمالك وتوسيع نطاق تأثيرك في السوق.
-                            </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    هدفنا هو بناء علاقة شراكة طويلة المدى مع عملائنا، حيث نلتزم بالشفافية والابتكار في
+                                    جميع مراحل العمل، بدءًا من وضع الخطة التسويقية، مرورًا بالتنفيذ، وحتى تحقيق النتائج
+                                    الملموسة التي تسهم في نمو أعمالك وتوسيع نطاق تأثيرك في السوق.
+                                </p>
                             </div>
 
 
-                        <!-- الصورة -->
-                        <div class="w-full lg:w-1/2 flex justify-center items-center">
-                            <img 
-                            src="../../assets/img/Electronic-marketing.webp" 
-                            alt="التسويق الإلكتروني" 
-                            class="rounded-lg shadow-md w-full h-auto max-h-[500px] object-contain  w-full h-80  hover:scale-105 transition-transform duration-500 ease-in-out"
-                            >
-                        </div>
+                            <!-- الصورة -->
+                            <div class="w-full lg:w-1/2 flex justify-center items-center">
+                                <img src="../../assets/img/Electronic-marketing.webp" alt="التسويق الإلكتروني"
+                                    class="rounded-lg shadow-md w-full h-auto max-h-[500px] object-contain  w-full h-80  hover:scale-105 transition-transform duration-500 ease-in-out">
+                            </div>
                         </div>
 
-                        
+
                         <div class="bg-gradient-to-r from-primaryLight to-primary text-white p-6 rounded-lg mt-6">
                             <h3 class="text-xl font-bold mb-3">لماذا تختار خدماتنا في التسويق الإلكتروني؟</h3>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -308,28 +375,33 @@
 
                     <!-- إعلانات فيسبوك وإنستجرام -->
                     <section id="facebook-ads" class="content-section mb-12">
-                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">إعلانات ممولة على فيسبوك وإنستجرام</h2>
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">إعلانات ممولة على
+                            فيسبوك وإنستجرام</h2>
                         <div class="flex flex-col lg:flex-row gap-6 mb-6">
                             <div class="w-full lg:w-1/2">
-                           <div class="rounded-lg p-6 h-64 flex items-center justify-center mb-4 relative overflow-hidden">
-                            <!-- الصورة كخلفية -->
-                            <img 
-                                src="../../assets/img/Media-ads.webp" 
-                                alt="حملات إعلانية" 
-                                class="absolute inset-0 w-full h-full object-cover">
-                            </div>
+                                <div
+                                    class="rounded-lg p-6 h-64 flex items-center justify-center mb-4 relative overflow-hidden">
+                                    <!-- الصورة كخلفية -->
+                                    <img src="../../assets/img/Media-ads.webp" alt="حملات إعلانية"
+                                        class="absolute inset-0 w-full h-full object-cover">
+                                </div>
 
                             </div>
                             <div class="w-full lg:w-1/2">
                                 <p class="text-gray-700 mb-4 leading-relaxed">
-                                    نقدم في شركة ايجبت خدمات متكاملة لإدارة الحملات الإعلانية الممولة على منصتي فيسبوك وإنستجرام، حيث نستهدف الجمهور المناسب لعلامتك التجارية بأعلى دقة وكفاءة. نحن نستخدم أدوات Targeting المتقدمة للوصول إلى العملاء المحتملين بناءً على اهتماماتهم، سلوكياتهم، موقعهم الجغرافي، وعوامل أخرى.
+                                    نقدم في شركة ايجبت خدمات متكاملة لإدارة الحملات الإعلانية الممولة على منصتي فيسبوك
+                                    وإنستجرام، حيث نستهدف الجمهور المناسب لعلامتك التجارية بأعلى دقة وكفاءة. نحن نستخدم
+                                    أدوات Targeting المتقدمة للوصول إلى العملاء المحتملين بناءً على اهتماماتهم،
+                                    سلوكياتهم، موقعهم الجغرافي، وعوامل أخرى.
                                 </p>
                                 <p class="text-gray-700 leading-relaxed">
-                                    نعمل على تصميم إعلانات جذابة ومؤثرة، مع كتابة محتوى إعلاني مقنع وتحسين الصور والفيديوهات لضمان تحقيق أعلى معدلات Engagement والتحويلات. نراقب أداء الحملات بشكل مستقل ونقوم بالتحسينات اللازمة لضمان تحقيق أفضل النتائج.
+                                    نعمل على تصميم إعلانات جذابة ومؤثرة، مع كتابة محتوى إعلاني مقنع وتحسين الصور
+                                    والفيديوهات لضمان تحقيق أعلى معدلات Engagement والتحويلات. نراقب أداء الحملات بشكل
+                                    مستقل ونقوم بالتحسينات اللازمة لضمان تحقيق أفضل النتائج.
                                 </p>
                             </div>
                         </div>
-                        
+
                         <h3 class="text-xl font-bold text-primary mb-4">مميزات حملات فيسبوك وإنستجرام</h3>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                             <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
@@ -353,21 +425,27 @@
 
                     <!-- تحسين محركات البحث -->
                     <section id="seo" class="content-section mb-12">
-                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">تحسين محركات البحث (SEO)</h2>
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">تحسين محركات
+                            البحث (SEO)</h2>
                         <div class="flex flex-col lg:flex-row gap-6 mb-6">
                             <div class="w-full lg:w-1/2">
                                 <p class="text-gray-700 mb-4 leading-relaxed">
-                                    نضمن في شركة ايجبت تطبيق أفضل ممارسات تحسين محركات البحث (SEO) لزيادة ظهور موقعك في نتائج البحث الأولى على جوجل ومحركات البحث الأخرى. نحن نعمل على تحسين كافة جوانب SEO بما في ذلك التحسينات التقنية، تحسين المحتوى، وبناء الروابط الخلفية.
+                                    نضمن في شركة ايجبت تطبيق أفضل ممارسات تحسين محركات البحث (SEO) لزيادة ظهور موقعك في
+                                    نتائج البحث الأولى على جوجل ومحركات البحث الأخرى. نحن نعمل على تحسين كافة جوانب SEO
+                                    بما في ذلك التحسينات التقنية، تحسين المحتوى، وبناء الروابط الخلفية.
                                 </p>
                                 <p class="text-gray-700 leading-relaxed">
-                                    نبدأ بتحليل شامل لموقعك الحالي ومنافسيك، ثم نطور استراتيجية شاملة تشمل البحث عن الكلمات المفتاحية المناسبة، تحسين الهيكل التقني للموقع، إنشاء محتوى قيم وغني بالكلمات المفتاحية، وبناء ملف روابط خلفية قوي ومعتمد.
+                                    نبدأ بتحليل شامل لموقعك الحالي ومنافسيك، ثم نطور استراتيجية شاملة تشمل البحث عن
+                                    الكلمات المفتاحية المناسبة، تحسين الهيكل التقني للموقع، إنشاء محتوى قيم وغني
+                                    بالكلمات المفتاحية، وبناء ملف روابط خلفية قوي ومعتمد.
                                 </p>
                             </div>
                             <div class="w-full lg:w-1/2">
-                                <img src="../../assets/img/seo-improvements.jpg" alt="تحسين محركات البحث" class="rounded-lg shadow-md w-full h-64 object-cover">
+                                <img src="../../assets/img/seo-improvements.jpg" alt="تحسين محركات البحث"
+                                    class="rounded-lg shadow-md w-full h-64 object-cover">
                             </div>
                         </div>
-                        
+
                         <h3 class="text-xl font-bold text-primary mb-4">خدمات SEO التي نقدمها</h3>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                             <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
@@ -391,26 +469,33 @@
 
                     <!-- تحليل النتائج والتقارير -->
                     <section id="analytics" class="content-section mb-12">
-                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">تحليل النتائج والتقارير الدورية</h2>
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">تحليل النتائج
+                            والتقارير الدورية</h2>
                         <div class="flex flex-col lg:flex-row gap-6 mb-6">
                             <div class="w-full lg:w-1/2">
-                                <img src="../../assets/img/analyze-the-results.avif" alt="تحليل النتائج" class="rounded-lg shadow-md w-full h-64 object-cover">
+                                <img src="../../assets/img/analyze-the-results.avif" alt="تحليل النتائج"
+                                    class="rounded-lg shadow-md w-full h-64 object-cover">
                             </div>
                             <div class="w-full lg:w-1/2">
                                 <p class="text-gray-700 mb-4 leading-relaxed">
-                                    نؤمن في شركة ايجبت بأن القياس والتحليل هما أساس النجاح في أي استراتيجية تسويقية. لذلك نقدم تقارير دورية مفصلة عن أداء حملاتك الإعلانية ونتائجها، مع تحليل البيانات والمقاييس لقياس العائد على الاستثمار وتحديد الفرص والتحديات.
+                                    نؤمن في شركة ايجبت بأن القياس والتحليل هما أساس النجاح في أي استراتيجية تسويقية.
+                                    لذلك نقدم تقارير دورية مفصلة عن أداء حملاتك الإعلانية ونتائجها، مع تحليل البيانات
+                                    والمقاييس لقياس العائد على الاستثمار وتحديد الفرص والتحديات.
                                 </p>
                                 <p class="text-gray-700 leading-relaxed">
-                                    نستخدم أحدث أدوات التحليل مثل Google Analytics، Facebook Pixel، وأدوات متخصصة أخرى لرصد وقياس كافة المعاملات والمؤشرات المهمة. نقدم تقارير شهرية شاملة تحتوي على تحليلات مفصلة وتوصيات عملية لتحسين الأداء وزيادة العائد على الاستثمار.
+                                    نستخدم أحدث أدوات التحليل مثل Google Analytics، Facebook Pixel، وأدوات متخصصة أخرى
+                                    لرصد وقياس كافة المعاملات والمؤشرات المهمة. نقدم تقارير شهرية شاملة تحتوي على
+                                    تحليلات مفصلة وتوصيات عملية لتحسين الأداء وزيادة العائد على الاستثمار.
                                 </p>
                             </div>
                         </div>
-                        
+
                         <h3 class="text-xl font-bold text-primary mb-4">ما تتضمنه تقاريرنا الدورية</h3>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                             <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
                                 <h4 class="font-bold text-primary mb-2">مقاييس الأداء الرئيسية</h4>
-                                <p class="text-gray-700">تحليل معدلات التحويل، التكلفة لكل تحويل، والعائد على الاستثمار</p>
+                                <p class="text-gray-700">تحليل معدلات التحويل، التكلفة لكل تحويل، والعائد على الاستثمار
+                                </p>
                             </div>
                             <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
                                 <h4 class="font-bold text-primary mb-2">تحليل الجمهور</h4>
@@ -428,344 +513,418 @@
                     </section>
 
                     <!-- استراتيجيات التسويق -->
-<section id="strategies" class="content-section mb-12">
-    <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">استراتيجيات تسويق احترافية مخصصة</h2>
-    <div class="flex flex-col lg:flex-row gap-6 mb-6">
-        <div class="w-full lg:w-1/2">
-            <p class="text-gray-700 mb-4 leading-relaxed">
-                نطور في شركة ايجبت استراتيجيات تسويق إلكتروني مخصصة تلائم طبيعة نشاطك التجاري وأهدافك التسويقية. نحن لا نقدم حلولاً نمطية، بل نعمل على دراسة متعمقة لسوقك، جمهورك المستهدف، ومنافسيك لتطوير خطة تسويقية شاملة تحقق النتائج المرجوة.
-            </p>
-            <p class="text-gray-700 leading-relaxed">
-                نبدأ بتحديد الأهداف الرئيسية لحملتك التسويقية، ثم نحدد الجمهور المستهدف بدقة، ونصمم الرسالة التسويقية المناسبة، ونختار القنوات التسويقية الأمثل، ونضع ميزانية واقعية، ونحدد مؤشرات الأداء الرئيسية لقياس النجاح.
-            </p>
-        </div>
-        <div class="w-full lg:w-1/2">
-            <img src="../../assets/img/marketing-strategies.jpg" alt="استراتيجيات التسويق" class="rounded-lg shadow-md w-full h-64 object-cover">
-        </div>
-    </div>
-    
-    <h3 class="text-xl font-bold text-primary mb-4">عناصر استراتيجية التسويق الناجحة</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-        <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
-            <h4 class="font-bold text-primary mb-2">دراسة السوق والمنافسين</h4>
-            <p class="text-gray-700">تحليل متعمق للسوق والمنافسين لتحديد الفرص والتحديات</p>
-        </div>
-        <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
-            <h4 class="font-bold text-primary mb-2">تحديد الجمهور المستهدف</h4>
-            <p class="text-gray-700">بناء شخصيات العملاء وتحديد خصائصهم وسلوكياتهم</p>
-        </div>
-        <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
-            <h4 class="font-bold text-primary mb-2">تطوير الرسالة التسويقية</h4>
-            <p class="text-gray-700">صياغة رسالة تسويقية مؤثرة تبرز مزاياك التنافسية</p>
-        </div>
-        <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
-            <h4 class="font-bold text-primary mb-2">اختيار القنوات المناسبة</h4>
-            <p class="text-gray-700">اختيار قنوات التسويق الأمثل للوصول إلى جمهورك المستهدف</p>
-        </div>
-    </div>
-</section>
+                    <section id="strategies" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">استراتيجيات تسويق
+                            احترافية مخصصة</h2>
+                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                            <div class="w-full lg:w-1/2">
+                                <p class="text-gray-700 mb-4 leading-relaxed">
+                                    نطور في شركة ايجبت استراتيجيات تسويق إلكتروني مخصصة تلائم طبيعة نشاطك التجاري
+                                    وأهدافك التسويقية. نحن لا نقدم حلولاً نمطية، بل نعمل على دراسة متعمقة لسوقك، جمهورك
+                                    المستهدف، ومنافسيك لتطوير خطة تسويقية شاملة تحقق النتائج المرجوة.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    نبدأ بتحديد الأهداف الرئيسية لحملتك التسويقية، ثم نحدد الجمهور المستهدف بدقة، ونصمم
+                                    الرسالة التسويقية المناسبة، ونختار القنوات التسويقية الأمثل، ونضع ميزانية واقعية،
+                                    ونحدد مؤشرات الأداء الرئيسية لقياس النجاح.
+                                </p>
+                            </div>
+                            <div class="w-full lg:w-1/2">
+                                <img src="../../assets/img/marketing-strategies.jpg" alt="استراتيجيات التسويق"
+                                    class="rounded-lg shadow-md w-full h-64 object-cover">
+                            </div>
+                        </div>
 
-<!-- تحسين عائد الاستثمار -->
-<section id="roi" class="content-section mb-12">
-    <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">تحقيق أعلى عائد على الاستثمار (ROI)</h2>
-    <div class="flex flex-col lg:flex-row gap-6 mb-6">
-        <div class="w-full lg:w-1/2">
-            <div class="analytics-pattern rounded-lg p-6 h-64 flex items-center justify-center mb-4">
-                <div class="text-center">
-                    <i class="fas fa-chart-line text-4xl text-primary mb-3"></i>
-                    <h3 class="text-xl font-bold text-primary">زيادة العائد على الاستثمار</h3>
-                </div>
-            </div>
-        </div>
-        <div class="w-full lg:w-1/2">
-            <p class="text-gray-700 mb-4 leading-relaxed">
-            نركز في شركة ايجبت على تحقيق أعلى عائد على الاستثمار (ROI) من خلال تحسين أداء الحملات التسويقية وتقليل التكاليف غير الضرورية. نحن نستخدم أدوات متطورة لتحليل البيانات وقياس الأداء، مما يمكننا من تحديد الفرص لتحسين النتائج وزيادة الربحية.
-            </p>
-            <p class="text-gray-700 leading-relaxed">
-            نعمل على تحسين معدلات التحويل، تقليل تكلفة الاكتساب، وزيادة قيمة العميل مدى الحياة. نحن لا نقتصر على تحقيق النتائج فحسب، بل نضمن أن كل ريال تنفقه على التسويق يعود عليك بأعلى قيمة ممكنة.
-            </p>
-        </div>
-    </div>
-    
-    <h3 class="text-xl font-bold text-primary mb-4">استراتيجياتنا لتحسين العائد على الاستثمار</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-        <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-            <h4 class="font-bold text-primary mb-2">تحسين معدلات التحويل</h4>
-            <p class="text-gray-700">تحسين تجربة المستخدم وتصميم صفحات الهبوط لزيادة التحويلات</p>
-        </div>
-        <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-            <h4 class="font-bold text-primary mb-2">تقليل تكلفة الاكتساب</h4>
-            <p class="text-gray-700">تحسين استهداف الحملات وتقليل التكاليف غير الضرورية</p>
-        </div>
-        <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-            <h4 class="font-bold text-primary mb-2">زيادة قيمة العميل</h4>
-            <p class="text-gray-700">تحسين ولاء العملاء وزيادة قيمة مشترياتهم</p>
-        </div>
-        <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
-            <h4 class="font-bold text-primary mb-2">تحسين الاستبقاء</h4>
-            <p class="text-gray-700">تقليل معدلات التوقف وزيادة استبقاء العملاء</p>
-        </div>
-    </div>
-</section>
+                        <h3 class="text-xl font-bold text-primary mb-4">عناصر استراتيجية التسويق الناجحة</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
+                                <h4 class="font-bold text-primary mb-2">دراسة السوق والمنافسين</h4>
+                                <p class="text-gray-700">تحليل متعمق للسوق والمنافسين لتحديد الفرص والتحديات</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
+                                <h4 class="font-bold text-primary mb-2">تحديد الجمهور المستهدف</h4>
+                                <p class="text-gray-700">بناء شخصيات العملاء وتحديد خصائصهم وسلوكياتهم</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
+                                <h4 class="font-bold text-primary mb-2">تطوير الرسالة التسويقية</h4>
+                                <p class="text-gray-700">صياغة رسالة تسويقية مؤثرة تبرز مزاياك التنافسية</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
+                                <h4 class="font-bold text-primary mb-2">اختيار القنوات المناسبة</h4>
+                                <p class="text-gray-700">اختيار قنوات التسويق الأمثل للوصول إلى جمهورك المستهدف</p>
+                            </div>
+                        </div>
+                    </section>
 
-<!-- عملية إدارة الحملات -->
-<section id="process" class="content-section mb-12">
-    <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">عملية إدارة الحملات الإعلانية</h2>
-    <div class="flex flex-col lg:flex-row gap-6 mb-6">
-        <div class="w-full lg:w-1/2">
-            <p class="text-gray-700 mb-4 leading-relaxed">
-            نتبع في شركة ايجبت عملية منهجية لإدارة الحملات الإعلانية تضمن تحقيق النتائج المرجوة وتقديم قيمة حقيقية لعملائنا. تبدأ العملية بالتحليل والتخطيط، ثم التنفيذ، والمتابعة، وأخيراً التحسين المستمر بناءً على النتائج والبيانات.
-            </p>
-            <p class="text-gray-700 leading-relaxed">
-            نؤمن بأن إدارة الحملات الناجحة تتطلب التكامل بين الإبداع والتحليل، لذلك نوفق بين تصميم إعلانات جذابة ومؤثرة، وتحليل البيانات لاتخاذ قرارات مستنيرة. نعمل كشريك استراتيجي لك، ونهتم بتحقيق أهدافك كما لو كانت أهدافنا.
-            </p>
-        </div>
-        <div class="w-full lg:w-1/2">
-            <img src="../../assets/img/advertising-campaign-management.jpg" alt="عملية إدارة الحملات" class="rounded-lg shadow-md w-full h-64 object-cover">
-        </div>
-    </div>
-    
-    <h3 class="text-xl font-bold text-primary mb-4">مراحل عملية إدارة الحملات</h3>
-    <div class="bg-gray-100 p-6 rounded-lg mb-6">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
-            <div class="bg-white p-4 rounded-lg shadow-sm">
-                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">1</div>
-                <h4 class="font-bold text-primary mb-2">التحليل والتخطيط</h4>
-                <p class="text-gray-700 text-sm">دراسة السوق، المنافسين، وتحديد الأهداف</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-sm">
-                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">2</div>
-                <h4 class="font-bold text-primary mb-2">التنفيذ</h4>
-                <p class="text-gray-700 text-sm">تصميم الإعلانات وإطلاق الحملات</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-sm">
-                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">3</div>
-                <h4 class="font-bold text-primary mb-2">المتابعة</h4>
-                <p class="text-gray-700 text-sm">مراقبة الأداء وتحليل النتائج</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-sm">
-                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">4</div>
-                <h4 class="font-bold text-primary mb-2">التحسين</h4>
-                <p class="text-gray-700 text-sm">تحسين الحملات بناءً على النتائج</p>
-            </div>
-        </div>
-    </div>
-</section>
+                    <!-- تحسين عائد الاستثمار -->
+                    <section id="roi" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">تحقيق أعلى عائد
+                            على الاستثمار (ROI)</h2>
+                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                            <div class="w-full lg:w-1/2">
+                                <div
+                                    class="analytics-pattern rounded-lg p-6 h-64 flex items-center justify-center mb-4">
+                                    <div class="text-center">
+                                        <i class="fas fa-chart-line text-4xl text-primary mb-3"></i>
+                                        <h3 class="text-xl font-bold text-primary">زيادة العائد على الاستثمار</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-1/2">
+                                <p class="text-gray-700 mb-4 leading-relaxed">
+                                    نركز في شركة ايجبت على تحقيق أعلى عائد على الاستثمار (ROI) من خلال تحسين أداء
+                                    الحملات التسويقية وتقليل التكاليف غير الضرورية. نحن نستخدم أدوات متطورة لتحليل
+                                    البيانات وقياس الأداء، مما يمكننا من تحديد الفرص لتحسين النتائج وزيادة الربحية.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    نعمل على تحسين معدلات التحويل، تقليل تكلفة الاكتساب، وزيادة قيمة العميل مدى الحياة.
+                                    نحن لا نقتصر على تحقيق النتائج فحسب، بل نضمن أن كل ريال تنفقه على التسويق يعود عليك
+                                    بأعلى قيمة ممكنة.
+                                </p>
+                            </div>
+                        </div>
 
-<!-- قصص النجاح -->
-<section id="success" class="content-section mb-12">
-    <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">قصص النجاح وتجارب العملاء</h2>
-    <div class="flex flex-col lg:flex-row gap-6 mb-6">
-        <div class="w-full lg:w-1/2">
-            <img src="../../assets/img/success-stories.avif" alt="قصص النجاح" class="rounded-lg shadow-md w-full h-64 object-cover">
-        </div>
-        <div class="w-full lg:w-1/2">
-            <p class="text-gray-700 mb-4 leading-relaxed">
-            نحن فخورون بالنتائج التي حققناها لعملائنا في مختلف القطاعات والصناعات. من خلال تطبيق استراتيجيات تسويق مخصصة وإدارة احترافية للحملات الإعلانية، ساعدنا العديد من الشركات على تحقيق أهدافها التسويقية وزيادة مبيعاتها وأرباحها.
-            </p>
-            <p class="text-gray-700 leading-relaxed">
-            تتراوح نجاحاتنا بين زيادة حركة المرور إلى المواقع، تحسين معدلات التحويل، زيادة المبيعات عبر الإنترنت، وتعزيز الوعي بالعلامة التجارية. كل قصة نجاح هي شهادة على فعالية استراتيجياتنا والتزامنا بتحقيق النتائج.
-            </p>
-        </div>
-    </div>
-    
-    <h3 class="text-xl font-bold text-primary mb-4">أبرز النجاحات</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
-            <div class="flex items-center mb-4">
-                <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-3">
-                    <i class="fas fa-store text-primary text-xl"></i>
-                </div>
-                <div>
-                    <h4 class="font-bold text-primary">متجر إلكتروني للملابس</h4>
-                    <p class="text-gray-600 text-sm">زيادة المبيعات بنسبة 75% في 3 أشهر</p>
-                </div>
-            </div>
-            <p class="text-gray-700">قمنا بتطوير استراتيجية تسويق متكاملة شملت إعلانات فيسبوك وإنستجرام مستهدفة، تحسين محركات البحث، وتحسين تجربة المستخدم، مما أدى إلى زيادة المبيعات بنسبة 75% وخفض تكلفة الاكتساب بنسبة 40%.</p>
-        </div>
-        
-        <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
-            <div class="flex items-center mb-4">
-                <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-3">
-                    <i class="fas fa-utensils text-primary text-xl"></i>
-                </div>
-                <div>
-                    <h4 class="font-bold text-primary">مطعم وجبات سريعة</h4>
-                    <p class="text-gray-600 text-sm">زيادة العملاء بنسبة 120% في 4 أشهر</p>
-                </div>
-            </div>
-            <p class="text-gray-700">صممنا حملة إعلانية محلية مستهدفة على فيسبوك وإنستجرام، مع تحسين القائمة والصور، وإنشاء عروض ترويجية جذابة، مما أدى إلى زيادة عدد العملاء بنسبة 120% وزيادة المبيعات بنسبة 90%.</p>
-        </div>
-        
-        <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
-            <div class="flex items-center mb-4">
-                <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-3">
-                    <i class="fas fa-gem text-primary text-xl"></i>
-                </div>
-                <div>
-                    <h4 class="font-bold text-primary">متجر مجوهرات</h4>
-                    <p class="text-gray-600 text-sm">زيادة التحويلات بنسبة 60% في شهرين</p>
-                </div>
-            </div>
-            <p class="text-gray-700">قمنا بإعادة تصميم الموقع الإلكتروني، تحسين محركات البحث، وإنشاء حملة إعلانية مستهدفة للجمهور المهتم بالمجوهرات والفاخرة، مما أدى إلى زيادة التحويلات بنسبة 60% وزيادة متوسط قيمة الطلب بنسبة 35%.</p>
-        </div>
-        
-        <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
-            <div class="flex items-center mb-4">
-                <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-3">
-                    <i class="fas fa-home text-primary text-xl"></i>
-                </div>
-                <div>
-                    <h4 class="font-bold text-primary">شركة عقارية</h4>
-                    <p class="text-gray-600 text-sm">زيادة الاستفسارات بنسبة 200% في 3 أشهر</p>
-                </div>
-            </div>
-            <p class="text-gray-700">طورنا استراتيجية تسويق محلية مستهدفة، مع تحسين الموقع لمحركات البحث، وإنشاء محتوى قيم عن سوق العقارات، مما أدى إلى زيادة الاستفسارات بنسبة 200% وزيادة المبيعات بنسبة 45%.</p>
-        </div>
-    </div>
-</section>
+                        <h3 class="text-xl font-bold text-primary mb-4">استراتيجياتنا لتحسين العائد على الاستثمار</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">تحسين معدلات التحويل</h4>
+                                <p class="text-gray-700">تحسين تجربة المستخدم وتصميم صفحات الهبوط لزيادة التحويلات</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">تقليل تكلفة الاكتساب</h4>
+                                <p class="text-gray-700">تحسين استهداف الحملات وتقليل التكاليف غير الضرورية</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">زيادة قيمة العميل</h4>
+                                <p class="text-gray-700">تحسين ولاء العملاء وزيادة قيمة مشترياتهم</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">تحسين الاستبقاء</h4>
+                                <p class="text-gray-700">تقليل معدلات التوقف وزيادة استبقاء العملاء</p>
+                            </div>
+                        </div>
+                    </section>
 
-<!-- باقات الخدمات -->
-<section id="packages" class="content-section mb-12">
-    <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">باقات خدمات التسويق الإلكتروني</h2>
-    <p class="text-gray-700 mb-6 leading-relaxed">
-    نقدم في شركة ايجبت باقات خدمات تسويق إلكتروني متنوعة تناسب مختلف الاحتياجات والميزانيات. سواء كنت شركة ناشئة صغيرة أو شركة كبيرة established، فإن لدينا الباقة المناسبة لك. يمكنك أيضًا تخصيص الباقة حسب احتياجاتك الخاصة.
-    </p>
-    
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-        <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 text-center">
-            <h3 class="text-xl font-bold text-primary mb-4">الباقة الأساسية</h3>
-            <div class="text-3xl font-bold text-primary mb-4">1,500 <span class="text-lg">ريال/شهر</span></div>
-            <ul class="text-gray-700 space-y-3 mb-6">
-                <li class="flex items-center">
-                    <i class="fas fa-check text-primary ml-2"></i>
-                    <span>إدارة حملة واحدة على فيسبوك أو إنستجرام</span>
-                </li>
-                <li class="flex items-center">
-                    <i class="fas fa-check text-primary ml-2"></i>
-                    <span>5 منشورات أسبوعية</span>
-                </li>
-                <li class="flex items-center">
-                    <i class="fas fa-check text-primary ml-2"></i>
-                    <span>تقارير أداء شهرية</span>
-                </li>
-                <li class="flex items-center">
-                    <i class="fas fa-times text-gray-400 ml-2"></i>
-                    <span class="text-gray-400">تحسين محركات البحث</span>
-                </li>
-                <li class="flex items-center">
-                    <i class="fas fa-times text-gray-400 ml-2"></i>
-                    <span class="text-gray-400">إعلانات جوجل</span>
-                </li>
-            </ul>
-            <a href="tel:0501234567" class="block w-full bg-primary text-white text-center py-2 px-4 rounded-lg hover:bg-primaryDark transition duration-300">
-                اختر الباقة
-            </a>
-        </div>
-        
-        <div class="bg-white border border-primary rounded-lg shadow-md p-6 text-center relative">
-            <div class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg">الأكثر شيوعًا</div>
-            <h3 class="text-xl font-bold text-primary mb-4">الباقة المتوسطة</h3>
-            <div class="text-3xl font-bold text-primary mb-4">2,500 <span class="text-lg">ريال/شهر</span></div>
-            <ul class="text-gray-700 space-y-3 mb-6">
-                <li class="flex items-center">
-                    <i class="fas fa-check text-primary ml-2"></i>
-                    <span>إدارة حملتين على فيسبوك وإنستجرام</span>
-                </li>
-                <li class="flex items-center">
-                    <i class="fas fa-check text-primary ml-2"></i>
-                    <span>7 منشورات أسبوعية</span>
-                </li>
-                <li class="flex items-center">
-                    <i class="fas fa-check text-primary ml-2"></i>
-                    <span>تقارير أداء أسبوعية</span>
-                </li>
-                <li class="flex items-center">
-                    <i class="fas fa-check text-primary ml-2"></i>
-                    <span>تحسين أساسي لمحركات البحث</span>
-                </li>
-                <li class="flex items-center">
-                    <i class="fas fa-times text-gray-400 ml-2"></i>
-                    <span class="text-gray-400">إعلانات جوجل</span>
-                </li>
-            </ul>
-            <a href="tel:0501234567" class="block w-full bg-primary text-white text-center py-2 px-4 rounded-lg hover:bg-primaryDark transition duration-300">
-                اختر الباقة
-            </a>
-        </div>
-        
-        <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 text-center">
-            <h3 class="text-xl font-bold text-primary mb-4">الباقة المتكاملة</h3>
-            <div class="text-3xl font-bold text-primary mb-4">4,000 <span class="text-lg">ريال/شهر</span></div>
-            <ul class="text-gray-700 space-y-3 mb-6">
-                <li class="flex items-center">
-                    <i class="fas fa-check text-primary ml-2"></i>
-                    <span>إدارة 3 حملات على منصات متعددة</span>
-                </li>
-                <li class="flex items-center">
-                    <i class="fas fa-check text-primary ml-2"></i>
-                    <span>10 منشورات أسبوعية</span>
-                </li>
-                <li class="flex items-center">
-                    <i class="fas fa-check text-primary ml-2"></i>
-                    <span>تقارير أداء مفصلة يومية</span>
-                </li>
-                <li class="flex items-center">
-                    <i class="fas fa-check text-primary ml-2"></i>
-                    <span>تحسين متقدم لمحركات البحث</span>
-                </li>
-                <li class="flex items-center">
-                    <i class="fas fa-check text-primary ml-2"></i>
-                    <span>إعلانات جوجل</span>
-                </li>
-            </ul>
-            <a href="tel:0501234567" class="block w-full bg-primary text-white text-center py-2 px-4 rounded-lg hover:bg-primaryDark transition duration-300">
-                اختر الباقة
-            </a>
-        </div>
-    </div>
-</section>
+                    <!-- عملية إدارة الحملات -->
+                    <section id="process" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">عملية إدارة
+                            الحملات الإعلانية</h2>
+                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                            <div class="w-full lg:w-1/2">
+                                <p class="text-gray-700 mb-4 leading-relaxed">
+                                    نتبع في شركة ايجبت عملية منهجية لإدارة الحملات الإعلانية تضمن تحقيق النتائج المرجوة
+                                    وتقديم قيمة حقيقية لعملائنا. تبدأ العملية بالتحليل والتخطيط، ثم التنفيذ، والمتابعة،
+                                    وأخيراً التحسين المستمر بناءً على النتائج والبيانات.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    نؤمن بأن إدارة الحملات الناجحة تتطلب التكامل بين الإبداع والتحليل، لذلك نوفق بين
+                                    تصميم إعلانات جذابة ومؤثرة، وتحليل البيانات لاتخاذ قرارات مستنيرة. نعمل كشريك
+                                    استراتيجي لك، ونهتم بتحقيق أهدافك كما لو كانت أهدافنا.
+                                </p>
+                            </div>
+                            <div class="w-full lg:w-1/2">
+                                <img src="../../assets/img/advertising-campaign-management.jpg"
+                                    alt="عملية إدارة الحملات" class="rounded-lg shadow-md w-full h-64 object-cover">
+                            </div>
+                        </div>
 
-<!-- الأسئلة الشائعة -->
-<section id="faq" class="content-section mb-12">
-    <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">الأسئلة الشائعة</h2>
-    <p class="text-gray-700 mb-6 leading-relaxed">
-    هنا نجيب على بعض الأسئلة الشائعة حول خدمات التسويق الإلكتروني وإدارة الحملات الإعلانية. إذا كان لديك أي استفسارات أخرى، فلا تتردد في الاتصال بنا.
-    </p>
-    
-    <div class="space-y-4">
-        <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
-            <h3 class="text-lg font-bold text-primary mb-2">كم من الوقت يستغرق ظهور نتائج حملات التسويق الإلكتروني؟</h3>
-            <p class="text-gray-700">يختلف الوقت اللازم لظهور النتائج حسب نوع الحملة والأهداف المحددة. بشكل عام، تبدأ حملات الإعلانات الممولة على وسائل التواصل الاجتماعي في إظهار نتائج خلال أيام إلى أسابيع، بينما يحتاج تحسين محركات البحث (SEO) إلى 3-6 أشهر لظهور نتائج ملموسة.</p>
-        </div>
-        
-        <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
-            <h3 class="text-lg font-bold text-primary mb-2">ما هو المبلغ الذي يجب أن أستثمره في التسويق الإلكتروني؟</h3>
-            <p class="text-gray-700">يعتمد المبلغ المناسب للاستثمار في التسويق الإلكتروني على عدة عوامل مثل حجم عملك، أهدافك التسويقية، مستوى المنافسة في مجالك، والقنوات التسويقية التي تخطط للاستخدامها. ننصح بالبدء بميزانية متوسطة ثم زيادتها تدريجياً بناءً على النتائج.</p>
-        </div>
-        
-        <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
-            <h3 class="text-lg font-bold text-primary mb-2">هل يمكنكم إدارة حملاتي على منصات متعددة؟</h3>
-            <p class="text-gray-700">نعم، نحن نقدم خدمات إدارة الحملات على مختلف المنصات بما في ذلك فيسبوك، إنستجرام، تويتر، لينكدإن، جوجل، وغيرها. نطور استراتيجية متكاملة تشمل القنوات الأكثر ملاءمة لجمهورك المستهدف وأهدافك التسويقية.</p>
-        </div>
-        
-        <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
-            <h3 class="text-lg font-bold text-primary mb-2">كيف تقيسون نجاح الحملات الإعلانية؟</h3>
-            <p class="text-gray-700">نقيس نجاح الحملات الإعلانية من خلال مجموعة من المقاييس الرئيسية مثل معدل التحويل، تكلفة الاكتساب، العائد على الاستثمار، معدل النقر، والتفاعل. نقدم تقارير مفصلة عن أداء الحملات ونقوم بتحليل البيانات لتحسين النتائج باستمرار.</p>
-        </div>
-        
-        <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
-            <h3 class="text-lg font-bold text-primary mb-2">هل تقدمون خدمات التسويق للمؤسسات غير الربحية؟</h3>
-            <p class="text-gray-700">نعم، نحن نقدم خدمات التسويق الإلكتروني للمؤسسات غير الربحية والجمعيات الخيرية. نطور استراتيجيات تسويق تركز على زيادة الوعي بالقضية، جذب المتطوعين والمتبرعين، وتعزيز المشاركة المجتمعية.</p>
-        </div>
-    </div>
-</section>
+                        <h3 class="text-xl font-bold text-primary mb-4">مراحل عملية إدارة الحملات</h3>
+                        <div class="bg-gray-100 p-6 rounded-lg mb-6">
+                            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <div
+                                        class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">
+                                        1</div>
+                                    <h4 class="font-bold text-primary mb-2">التحليل والتخطيط</h4>
+                                    <p class="text-gray-700 text-sm">دراسة السوق، المنافسين، وتحديد الأهداف</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <div
+                                        class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">
+                                        2</div>
+                                    <h4 class="font-bold text-primary mb-2">التنفيذ</h4>
+                                    <p class="text-gray-700 text-sm">تصميم الإعلانات وإطلاق الحملات</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <div
+                                        class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">
+                                        3</div>
+                                    <h4 class="font-bold text-primary mb-2">المتابعة</h4>
+                                    <p class="text-gray-700 text-sm">مراقبة الأداء وتحليل النتائج</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <div
+                                        class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">
+                                        4</div>
+                                    <h4 class="font-bold text-primary mb-2">التحسين</h4>
+                                    <p class="text-gray-700 text-sm">تحسين الحملات بناءً على النتائج</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- قصص النجاح -->
+                    <section id="success" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">قصص النجاح وتجارب
+                            العملاء</h2>
+                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                            <div class="w-full lg:w-1/2">
+                                <img src="../../assets/img/success-stories.avif" alt="قصص النجاح"
+                                    class="rounded-lg shadow-md w-full h-64 object-cover">
+                            </div>
+                            <div class="w-full lg:w-1/2">
+                                <p class="text-gray-700 mb-4 leading-relaxed">
+                                    نحن فخورون بالنتائج التي حققناها لعملائنا في مختلف القطاعات والصناعات. من خلال تطبيق
+                                    استراتيجيات تسويق مخصصة وإدارة احترافية للحملات الإعلانية، ساعدنا العديد من الشركات
+                                    على تحقيق أهدافها التسويقية وزيادة مبيعاتها وأرباحها.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    تتراوح نجاحاتنا بين زيادة حركة المرور إلى المواقع، تحسين معدلات التحويل، زيادة
+                                    المبيعات عبر الإنترنت، وتعزيز الوعي بالعلامة التجارية. كل قصة نجاح هي شهادة على
+                                    فعالية استراتيجياتنا والتزامنا بتحقيق النتائج.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-primary mb-4">أبرز النجاحات</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
+                                <div class="flex items-center mb-4">
+                                    <div
+                                        class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-store text-primary text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-primary">متجر إلكتروني للملابس</h4>
+                                        <p class="text-gray-600 text-sm">زيادة المبيعات بنسبة 75% في 3 أشهر</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700">قمنا بتطوير استراتيجية تسويق متكاملة شملت إعلانات فيسبوك
+                                    وإنستجرام مستهدفة، تحسين محركات البحث، وتحسين تجربة المستخدم، مما أدى إلى زيادة
+                                    المبيعات بنسبة 75% وخفض تكلفة الاكتساب بنسبة 40%.</p>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
+                                <div class="flex items-center mb-4">
+                                    <div
+                                        class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-utensils text-primary text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-primary">مطعم وجبات سريعة</h4>
+                                        <p class="text-gray-600 text-sm">زيادة العملاء بنسبة 120% في 4 أشهر</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700">صممنا حملة إعلانية محلية مستهدفة على فيسبوك وإنستجرام، مع تحسين
+                                    القائمة والصور، وإنشاء عروض ترويجية جذابة، مما أدى إلى زيادة عدد العملاء بنسبة 120%
+                                    وزيادة المبيعات بنسبة 90%.</p>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
+                                <div class="flex items-center mb-4">
+                                    <div
+                                        class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-gem text-primary text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-primary">متجر مجوهرات</h4>
+                                        <p class="text-gray-600 text-sm">زيادة التحويلات بنسبة 60% في شهرين</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700">قمنا بإعادة تصميم الموقع الإلكتروني، تحسين محركات البحث، وإنشاء
+                                    حملة إعلانية مستهدفة للجمهور المهتم بالمجوهرات والفاخرة، مما أدى إلى زيادة التحويلات
+                                    بنسبة 60% وزيادة متوسط قيمة الطلب بنسبة 35%.</p>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
+                                <div class="flex items-center mb-4">
+                                    <div
+                                        class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-home text-primary text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-primary">شركة عقارية</h4>
+                                        <p class="text-gray-600 text-sm">زيادة الاستفسارات بنسبة 200% في 3 أشهر</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700">طورنا استراتيجية تسويق محلية مستهدفة، مع تحسين الموقع لمحركات
+                                    البحث، وإنشاء محتوى قيم عن سوق العقارات، مما أدى إلى زيادة الاستفسارات بنسبة 200%
+                                    وزيادة المبيعات بنسبة 45%.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- باقات الخدمات -->
+                    <section id="packages" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">باقات خدمات
+                            التسويق الإلكتروني</h2>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            نقدم في شركة ايجبت باقات خدمات تسويق إلكتروني متنوعة تناسب مختلف الاحتياجات والميزانيات.
+                            سواء كنت شركة ناشئة صغيرة أو شركة كبيرة established، فإن لدينا الباقة المناسبة لك. يمكنك
+                            أيضًا تخصيص الباقة حسب احتياجاتك الخاصة.
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 text-center">
+                                <h3 class="text-xl font-bold text-primary mb-4">الباقة الأساسية</h3>
+                                <div class="text-3xl font-bold text-primary mb-4">1,500 <span
+                                        class="text-lg">ريال/شهر</span></div>
+                                <ul class="text-gray-700 space-y-3 mb-6">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check text-primary ml-2"></i>
+                                        <span>إدارة حملة واحدة على فيسبوك أو إنستجرام</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check text-primary ml-2"></i>
+                                        <span>5 منشورات أسبوعية</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check text-primary ml-2"></i>
+                                        <span>تقارير أداء شهرية</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-times text-gray-400 ml-2"></i>
+                                        <span class="text-gray-400">تحسين محركات البحث</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-times text-gray-400 ml-2"></i>
+                                        <span class="text-gray-400">إعلانات جوجل</span>
+                                    </li>
+                                </ul>
+                                <a href="tel:0501234567"
+                                    class="block w-full bg-primary text-white text-center py-2 px-4 rounded-lg hover:bg-primaryDark transition duration-300">
+                                    اختر الباقة
+                                </a>
+                            </div>
+
+                            <div class="bg-white border border-primary rounded-lg shadow-md p-6 text-center relative">
+                                <div
+                                    class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                                    الأكثر شيوعًا</div>
+                                <h3 class="text-xl font-bold text-primary mb-4">الباقة المتوسطة</h3>
+                                <div class="text-3xl font-bold text-primary mb-4">2,500 <span
+                                        class="text-lg">ريال/شهر</span></div>
+                                <ul class="text-gray-700 space-y-3 mb-6">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check text-primary ml-2"></i>
+                                        <span>إدارة حملتين على فيسبوك وإنستجرام</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check text-primary ml-2"></i>
+                                        <span>7 منشورات أسبوعية</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check text-primary ml-2"></i>
+                                        <span>تقارير أداء أسبوعية</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check text-primary ml-2"></i>
+                                        <span>تحسين أساسي لمحركات البحث</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-times text-gray-400 ml-2"></i>
+                                        <span class="text-gray-400">إعلانات جوجل</span>
+                                    </li>
+                                </ul>
+                                <a href="tel:0501234567"
+                                    class="block w-full bg-primary text-white text-center py-2 px-4 rounded-lg hover:bg-primaryDark transition duration-300">
+                                    اختر الباقة
+                                </a>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 text-center">
+                                <h3 class="text-xl font-bold text-primary mb-4">الباقة المتكاملة</h3>
+                                <div class="text-3xl font-bold text-primary mb-4">4,000 <span
+                                        class="text-lg">ريال/شهر</span></div>
+                                <ul class="text-gray-700 space-y-3 mb-6">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check text-primary ml-2"></i>
+                                        <span>إدارة 3 حملات على منصات متعددة</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check text-primary ml-2"></i>
+                                        <span>10 منشورات أسبوعية</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check text-primary ml-2"></i>
+                                        <span>تقارير أداء مفصلة يومية</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check text-primary ml-2"></i>
+                                        <span>تحسين متقدم لمحركات البحث</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check text-primary ml-2"></i>
+                                        <span>إعلانات جوجل</span>
+                                    </li>
+                                </ul>
+                                <a href="tel:0501234567"
+                                    class="block w-full bg-primary text-white text-center py-2 px-4 rounded-lg hover:bg-primaryDark transition duration-300">
+                                    اختر الباقة
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- الأسئلة الشائعة -->
+                    <section id="faq" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">الأسئلة الشائعة
+                        </h2>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            هنا نجيب على بعض الأسئلة الشائعة حول خدمات التسويق الإلكتروني وإدارة الحملات الإعلانية. إذا
+                            كان لديك أي استفسارات أخرى، فلا تتردد في الاتصال بنا.
+                        </p>
+
+                        <div class="space-y-4">
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
+                                <h3 class="text-lg font-bold text-primary mb-2">كم من الوقت يستغرق ظهور نتائج حملات
+                                    التسويق الإلكتروني؟</h3>
+                                <p class="text-gray-700">يختلف الوقت اللازم لظهور النتائج حسب نوع الحملة والأهداف
+                                    المحددة. بشكل عام، تبدأ حملات الإعلانات الممولة على وسائل التواصل الاجتماعي في إظهار
+                                    نتائج خلال أيام إلى أسابيع، بينما يحتاج تحسين محركات البحث (SEO) إلى 3-6 أشهر لظهور
+                                    نتائج ملموسة.</p>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
+                                <h3 class="text-lg font-bold text-primary mb-2">ما هو المبلغ الذي يجب أن أستثمره في
+                                    التسويق الإلكتروني؟</h3>
+                                <p class="text-gray-700">يعتمد المبلغ المناسب للاستثمار في التسويق الإلكتروني على عدة
+                                    عوامل مثل حجم عملك، أهدافك التسويقية، مستوى المنافسة في مجالك، والقنوات التسويقية
+                                    التي تخطط للاستخدامها. ننصح بالبدء بميزانية متوسطة ثم زيادتها تدريجياً بناءً على
+                                    النتائج.</p>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
+                                <h3 class="text-lg font-bold text-primary mb-2">هل يمكنكم إدارة حملاتي على منصات متعددة؟
+                                </h3>
+                                <p class="text-gray-700">نعم، نحن نقدم خدمات إدارة الحملات على مختلف المنصات بما في ذلك
+                                    فيسبوك، إنستجرام، تويتر، لينكدإن، جوجل، وغيرها. نطور استراتيجية متكاملة تشمل القنوات
+                                    الأكثر ملاءمة لجمهورك المستهدف وأهدافك التسويقية.</p>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
+                                <h3 class="text-lg font-bold text-primary mb-2">كيف تقيسون نجاح الحملات الإعلانية؟</h3>
+                                <p class="text-gray-700">نقيس نجاح الحملات الإعلانية من خلال مجموعة من المقاييس الرئيسية
+                                    مثل معدل التحويل، تكلفة الاكتساب، العائد على الاستثمار، معدل النقر، والتفاعل. نقدم
+                                    تقارير مفصلة عن أداء الحملات ونقوم بتحليل البيانات لتحسين النتائج باستمرار.</p>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
+                                <h3 class="text-lg font-bold text-primary mb-2">هل تقدمون خدمات التسويق للمؤسسات غير
+                                    الربحية؟</h3>
+                                <p class="text-gray-700">نعم، نحن نقدم خدمات التسويق الإلكتروني للمؤسسات غير الربحية
+                                    والجمعيات الخيرية. نطور استراتيجيات تسويق تركز على زيادة الوعي بالقضية، جذب
+                                    المتطوعين والمتبرعين، وتعزيز المشاركة المجتمعية.</p>
+                            </div>
+                        </div>
+                    </section>
 
                     <!-- قسم دعائي -->
                     <section class="bg-primary text-white p-8 rounded-lg text-center my-8">
                         <h2 class="text-2xl font-bold mb-4">احصل على استشارة مجانية لخطة التسويق الإلكتروني</h2>
                         <p class="mb-6">فريقنا من الخبراء جاهز لمساعدتك في تطوير استراتيجية تسويق تحقق أهدافك</p>
-                        <a href="tel:0501234567" class="bg-white text-primary py-3 px-8 rounded-lg font-bold inline-block hover:bg-gray-100 transition duration-300">
+                        <a href="tel:0501234567"
+                            class="bg-white text-primary py-3 px-8 rounded-lg font-bold inline-block hover:bg-gray-100 transition duration-300">
                             <i class="fas fa-calendar-check ml-2"></i>احجز استشارتك الآن
                         </a>
                     </section>
@@ -774,7 +933,7 @@
         </div>
     </div>
 
- 
+
     <!-- Footer -->
     <footer id="contact" class="bg-gray-900 text-white py-16">
         <div class="container mx-auto px-4">
@@ -811,7 +970,7 @@
 
                         <!-- Twitter (X) -->
                         <a href="https://x.com/egyptadvertisin" target="_blank" rel="noopener noreferrer"
-                            class="bg-blue-500 hover:bg-blue-600 px-4  p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            class="bg-blue-500 hover:bg-blue-600 px-5  p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
                             aria-label="تابعنا على تويتر">
                             <i class="fab fa-twitter text-white text-lg"></i>
                         </a>
@@ -819,7 +978,7 @@
                         <!-- TikTok -->
                         <a href="https://www.tiktok.com/@egypt.advertising?lang=ar" target="_blank"
                             rel="noopener noreferrer"
-                            class="bg-gray-900 hover:bg-gray-800 p-3  rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-gray-900"
+                            class="bg-gray-900 hover:bg-gray-800 p-3 px-5 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-gray-900"
                             aria-label="تابعنا على تيك توك">
                             <i class="fab fa-tiktok text-white text-lg "></i>
                         </a>
@@ -830,17 +989,23 @@
                 <div>
                     <h4 class="text-lg font-bold mb-6">خدماتنا</h4>
                     <ul class="space-y-3">
-                        <li><a href="tel:0501234567" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                        <li><a href="tel:0501234567"
+                                class="text-gray-300 hover:text-white transition-colors flex items-center"><i
                                     class="fas fa-chevron-left text-xs ml-2"></i>التصميم والبراندنج</a></li>
-                        <li><a href="tel:0501234567" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                        <li><a href="tel:0501234567"
+                                class="text-gray-300 hover:text-white transition-colors flex items-center"><i
                                     class="fas fa-chevron-left text-xs ml-2"></i>التسويق الرقمي</a></li>
-                        <li><a href="tel:0501234567" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                        <li><a href="tel:0501234567"
+                                class="text-gray-300 hover:text-white transition-colors flex items-center"><i
                                     class="fas fa-chevron-left text-xs ml-2"></i>إنتاج المحتوى</a></li>
-                        <li><a href="tel:0501234567" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                        <li><a href="tel:0501234567"
+                                class="text-gray-300 hover:text-white transition-colors flex items-center"><i
                                     class="fas fa-chevron-left text-xs ml-2"></i>الحملات الإعلانية</a></li>
-                        <li><a href="tel:0501234567" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                        <li><a href="tel:0501234567"
+                                class="text-gray-300 hover:text-white transition-colors flex items-center"><i
                                     class="fas fa-chevron-left text-xs ml-2"></i>التحليل والإحصائيات</a></li>
-                        <li><a href="tel:0501234567" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                        <li><a href="tel:0501234567"
+                                class="text-gray-300 hover:text-white transition-colors flex items-center"><i
                                     class="fas fa-chevron-left text-xs ml-2"></i> تصميم وبرمجة المواقع</a></li>
                     </ul>
                 </div>
@@ -904,44 +1069,44 @@
 
     <script>
         // كود JavaScript لجعل القائمة الجانبية تتابع التمرير وتحديد القسم النشط
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const sections = document.querySelectorAll('.content-section');
             const navItems = document.querySelectorAll('.nav-item');
-            
+
             // وظيفة لتحديد العنصر النشط في القائمة
             function setActiveNavItem() {
                 let currentSection = '';
-                
+
                 sections.forEach(section => {
                     const sectionTop = section.offsetTop;
                     const sectionHeight = section.clientHeight;
-                    
+
                     if (pageYOffset >= (sectionTop - 200)) {
                         currentSection = section.getAttribute('id');
                     }
                 });
-                
+
                 navItems.forEach(item => {
                     item.classList.remove('active');
-                    
+
                     if (item.getAttribute('href') === '#' + currentSection) {
                         item.classList.add('active');
                     }
                 });
             }
-            
+
             // استدعاء الوظيفة عند التمرير وتحميل الصفحة
             window.addEventListener('scroll', setActiveNavItem);
             window.addEventListener('load', setActiveNavItem);
-            
+
             // إضافة تأثير سلس للتمرير عند النقر على عناصر القائمة
             navItems.forEach(item => {
-                item.addEventListener('click', function(e) {
+                item.addEventListener('click', function (e) {
                     e.preventDefault();
-                    
+
                     const targetId = this.getAttribute('href');
                     const targetSection = document.querySelector(targetId);
-                    
+
                     window.scrollTo({
                         top: targetSection.offsetTop - 100,
                         behavior: 'smooth'
@@ -952,4 +1117,5 @@
     </script>
     <script src="../../assets/js/script.js"></script>
 </body>
+
 </html>
