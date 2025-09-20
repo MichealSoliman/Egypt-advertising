@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات التصوير والمونتاج - شركة ايجبت للدعاية والإعلان بجدة</title>
+    <meta name="description" content="خدمات تصوير احترافية ومونتاج إبداعي لإبراز منتجاتك وأعمالك بأفضل صورة ممكنة، مع لمسة فنية تساهم في جذب عملائك وزيادة التفاعل">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#148c80',
+                        primaryDark: '#0e6c62',
+                        primaryLight: '#1aac9d',
+                        accent: '#3a86ff',
+                        secondary: '#ff6b35',
+                        dark: '#2d3748',
+                        light: '#f8f9fa'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .sticky-sidebar {
+            position: sticky;
+            top: 20px;
+        }
+        .content-section {
+            scroll-margin-top: 100px;
+        }
+        .hero-pattern {
+            background: linear-gradient(135deg, #148c80 0%, #1aac9d 50%, #0e6c62 100%);
+        }
+        .nav-item {
+            transition: all 0.3s ease;
+            border-right: 4px solid transparent;
+        }
+        .nav-item:hover, .nav-item.active {
+            background-color: rgba(20, 140, 128, 0.1);
+            border-right-color: #148c80;
+            color: #148c80;
+        }
+        .service-card {
+            transition: all 0.3s ease;
+            border-top: 4px solid transparent;
+            overflow: hidden;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            border-top-color: #148c80;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        .camera-pattern {
+            background-image: 
+                radial-gradient(circle, rgba(20, 140, 128, 0.1) 20%, transparent 20%),
+                radial-gradient(circle, rgba(20, 140, 128, 0.1) 20%, transparent 20%);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+        }
+        .video-pattern {
+            background-color: #f8f9fa;
+            background-image: 
+                linear-gradient(45deg, rgba(20, 140, 128, 0.05) 25%, transparent 25%),
+                linear-gradient(-45deg, rgba(20, 140, 128, 0.05) 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, rgba(20, 140, 128, 0.05) 75%),
+                linear-gradient(-45deg, transparent 75%, rgba(20, 140, 128, 0.05) 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+        .floating-element {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .gallery-item {
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        .gallery-item img {
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .video-thumbnail:hover .play-button {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+     <!--  Navbar -->
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-4 bg-white shadow-md">
+  <div class="container mx-auto px-4 flex items-center justify-between">
+    <!-- Logo -->
+    <div class="flex items-center space-x-reverse space-x-4">
+      <div class=" text-white p-3 rounded-lg w-14 h-14 flex items-center justify-center shadow-md rounded-full">
+        <img src="../../assets/img/logo-egypt-advertising-1.webp" alt="ايجبت للدعاية والإعلان">
+      </div>
+      <div>
+        <h2 class="text-xl font-bold gradient-text">ايجبت للدعاية والإعلان</h2>
+        <p class="text-sm text-gray-600">حلول إبداعية لنجاحك</p>
+      </div>
+    </div>
+
+    <!-- Links (Desktop) -->
+    <div class="hidden lg:flex items-center space-x-reverse space-x-8">
+      <a href="../../index.html#home" class="text-black hover:text-primary transition-colors font-medium">الرئيسية</a>
+      <a href="../../index.html#about" class="text-black hover:text-primary transition-colors font-medium">من نحن</a>
+      
+      <a href="../../index.html#Our-business" class="text-black hover:text-primary transition-colors font-medium"> اعمالنا</a>
+    </div>
+
+    <!-- CTA + Menu Button -->
+    <div class="flex items-center space-x-reverse space-x-4">
+      <div class="text-right hidden md:block">
+        <a href="tel:0501234567"
+          class="inline-block gradient-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors">
+          <p class="text-sm">اتصل بنا</p>
+        </a>
+      </div>
+      <!-- Menu Button -->
+      <button id="menu-btn" class="lg:hidden text-gray-700 focus:outline-none" aria-label="فتح وإغلاق قائمة التنقل"
+        aria-expanded="false" aria-controls="menu">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+
+
+    </div>
+  </div>
+
+  <!-- ✅ Mobile Menu -->
+  <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-md border-t mt-4">
+    <div class="flex flex-col items-center space-y-4 py-6">
+      <a href="../../index.html#home" class="text-black hover:text-primary transition-colors font-medium">الرئيسية</a>
+      <a href="../../index.html#about" class="text-black hover:text-primary transition-colors font-medium">من نحن</a>
+      
+      <a href="../../index.html#Our-business" class="text-black hover:text-primary transition-colors font-medium">اعمالنا</a>
+      <a href="tel:0501234567"
+        class="inline-block bg-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors">
+        اتصل بنا
+      </a>
+    </div>
+  </div>
+</nav>
+
+    <!-- محتوى الصفحة -->
+    <div class="container mx-auto px-4 py-8 pt-[100px]">
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- القائمة الجانبية -->
+            <div class="w-full lg:w-1/4">
+                <div class="sticky-sidebar bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-6 pb-4 border-b border-gray-200">
+                        <i class="fas fa-video text-primary text-2xl ml-2"></i>
+                        <h2 class="text-xl font-bold text-primary">خدمات التصوير والمونتاج</h2>
+                    </div>
+                    <ul class="space-y-3">
+                        <li><a href="#intro" class="nav-item active block py-3 px-4 rounded-lg text-primary font-medium">نظرة عامة</a></li>
+                        <li><a href="#product-photography" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">تصوير منتجات بجودة عالية</a></li>
+                        <li><a href="#video-editing" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">مونتاج احترافي للفيديوهات</a></li>
+                        <li><a href="#social-media" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">محتوى مرئي للسوشيال ميديا</a></li>
+                        <li><a href="#tv-commercials" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">إعلانات تلفزيونية</a></li>
+                        <li><a href="#equipment" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">التقنيات والمعدات</a></li>
+                        <li><a href="#portfolio" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">معرض الأعمال</a></li>
+                        <li><a href="#packages" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">باقات الخدمات</a></li>
+                        <li><a href="#faq" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">الأسئلة الشائعة</a></li>
+                    </ul>
+                    
+                    <div class="mt-8 p-4 gradient-bg rounded-lg border border-primary border-opacity-20">
+                        <h3 class="text-lg font-bold text-primary mb-3">اطلب خدمتك الآن</h3>
+                        <p class="text-gray-700 mb-4 text-sm">احصل على استشارة مجانية من خبرائنا</p>
+                        <a href="tel:0501234567" class="block w-full bg-primary text-white text-center py-2 px-4 rounded-lg hover:bg-primaryDark transition duration-300">
+                            <i class="fas fa-envelope ml-2"></i>اتصل بنا
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- المحتوى الرئيسي -->
+            <div class="w-full lg:w-3/4">
+                <!-- قسم البطل -->
+                <div class="hero-pattern rounded-2xl shadow-lg text-white p-8 mb-8 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-black opacity-20"></div>
+                    <div class="relative z-10">
+                        <h1 class="text-3xl md:text-4xl font-bold mb-4">خدمات التصوير والمونتاج الاحترافية</h1>
+                        <p class="text-lg md:text-xl mb-6">إبراز منتجاتك وأعمالك بأفضل صورة ممكنة بلمسة فنية تجذب عملائك وتزيد التفاعل مع علامتك التجارية</p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="tel:0501234567" class="bg-white text-primary py-3 px-6 rounded-lg font-bold hover:bg-gray-100 transition duration-300">
+                                <i class="fas fa-camera ml-2"></i>اطلب خدمتك
+                            </a>
+                            <a href="#portfolio" class="border-2 border-white py-3 px-6 rounded-lg font-bold hover:bg-white hover:text-primary transition duration-300">
+                                <i class="fas fa-play-circle ml-2"></i>معرض أعمالنا
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- خدمات سريعة -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                    <div class="service-card bg-white rounded-xl shadow-md p-4 text-center">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-box-open text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-md font-bold text-primary">تصوير منتجات</h3>
+                        <p class="text-gray-600 text-xs">بجودة عالية واحترافية</p>
+                    </div>
+                    
+                    <div class="service-card bg-white rounded-xl shadow-md p-4 text-center">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-film text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-md font-bold text-primary">مونتاج فيديوهات</h3>
+                        <p class="text-gray-600 text-xs">احترافي وإبداعي</p>
+                    </div>
+                    
+                    <div class="service-card bg-white rounded-xl shadow-md p-4 text-center">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <i class="fab fa-instagram text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-md font-bold text-primary">محتوى السوشيال ميديا</h3>
+                        <p class="text-gray-600 text-xs">جذاب ومتفاعل</p>
+                    </div>
+                    
+                    <div class="service-card bg-white rounded-xl shadow-md p-4 text-center">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-tv text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-md font-bold text-primary">إعلانات تلفزيونية</h3>
+                        <p class="text-gray-600 text-xs">إبداعية ومؤثرة</p>
+                    </div>
+                </div>
+
+                <!-- المحتوى النصي -->
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8">
+                    <!-- نظرة عامة -->
+                    <section id="intro" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">نظرة عامة على خدمات التصوير والمونتاج</h2>
+                       <div class="flex flex-col lg:flex-row gap-6 mb-6">
+<!-- النصوص -->
+<div class="w-full lg:w-1/2">
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    تقدم شركة ايجبت للدعاية والإعلان بجدة حلولاً متكاملة في مجال التصوير والمونتاج الاحترافي 
+    التي تبرز منتجاتك وأعمالك بأفضل صورة ممكنة. 
+    نحن نتميز بتقديم خدمات عالية الجودة باستخدام أحدث التقنيات والمعدات، 
+    مع فريق من المصورين والمخرجين المحترفين الذين يمتلكون خبرة واسعة في مجالات التصوير المختلفة،
+    بدءًا من تصوير المنتجات والخدمات وصولاً إلى تصوير المناسبات والفعاليات الكبرى.
+  </p>
+
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    نحن ندرك أن الصور والفيديوهات الاحترافية هي العنصر الأساسي في بناء هوية بصرية قوية لعلامتك التجارية،
+    لذلك نحرص على تقديم محتوى بصري مبتكر يعكس قيم شركتك ويجذب انتباه جمهورك المستهدف.
+    كما نستخدم أحدث برامج المونتاج وتقنيات الإضاءة والتصوير السينمائي لنضمن لك نتائج تضاهي المعايير العالمية.
+  </p>
+
+  <p class="text-gray-700 mb-4 leading-relaxed">
+    سواء كنت تحتاج إلى <span class="font-semibold text-primary">تصوير منتجاتك</span> بشكل احترافي لإبراز مميزاتها، 
+    أو إعداد <span class="font-semibold text-primary">فيديوهات ترويجية</span> للتسويق عبر القنوات الرقمية، 
+    أو حتى إنشاء محتوى إبداعي لوسائل التواصل الاجتماعي، 
+    فإننا نقدم لك حلولاً متكاملة تناسب احتياجاتك وتساعدك في تحقيق أهدافك التسويقية.
+  </p>
+
+  <p class="text-gray-700 leading-relaxed">
+    بالإضافة إلى ذلك، نقدم خدمة <span class="font-semibold text-primary">إنتاج الإعلانات التلفزيونية</span> 
+    والفيديوهات التعريفية للشركات والمؤسسات، مع كتابة النصوص الإبداعية 
+    وتخطيط كامل لفكرة الإعلان، بحيث تصل رسالتك للجمهور بشكل واضح وجذاب.
+    هدفنا هو مساعدتك على التميز في السوق عبر محتوى بصري يعكس هوية علامتك التجارية ويترك انطباعاً قوياً لدى عملائك.
+  </p>
+</div>
+
+  <!-- الصورة -->
+  <div class="w-full lg:w-1/2 flex justify-center items-center">
+    <img 
+      src="../../assets/img/Photography-and-montage.webp" 
+      alt="خدمات التصوير والمونتاج" 
+      class="rounded-lg shadow-md w-full h-auto max-h-[500px] object-contain hover:scale-105 transition-transform duration-500 ease-in-out"
+    >
+  </div>
+</div>
+
+                        
+                        <div class="bg-gradient-to-r from-primaryLight to-primary text-white p-6 rounded-lg mt-6">
+                            <h3 class="text-xl font-bold mb-3">لماذا تختار خدماتنا في التصوير والمونتاج؟</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-white text-xl mt-1 ml-3"></i>
+                                    <p>جودة تصوير عالية بمعدات احترافية</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-white text-xl mt-1 ml-3"></i>
+                                    <p>مونتاج إبداعي بمؤثرات بصرية وجرافيك متميز</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-white text-xl mt-1 ml-3"></i>
+                                    <p>فريق محترف من المصورين والمخرجين</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-white text-xl mt-1 ml-3"></i>
+                                    <p>خدمات متكاملة من التصوير حتى التسليم النهائي</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- تصوير منتجات بجودة عالية -->
+                    <section id="product-photography" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">تصوير منتجات بجودة عالية</h2>
+                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                            <div class="w-full lg:w-1/2">
+                                <div class="camera-pattern rounded-lg p-6 h-64 flex items-center justify-center mb-4">
+                                    <div class="text-center">
+                                        <i class="fas fa-camera text-4xl text-primary mb-3"></i>
+                                        <h3 class="text-xl font-bold text-primary">تصوير منتجات احترافي</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-1/2">
+                                <p class="text-gray-700 mb-4 leading-relaxed">
+                                    نقدم في شركة ايجبت خدمات تصوير المنتجات بجودة عالية واحترافية، حيث نستخدم أحدث المعدات والتقنيات لإبراز منتجاتك بأفضل صورة ممكنة. نحن ندرك أهمية جودة الصور في زيادة مبيعات المنتجات عبر الإنترنت، لذلك نحرص على تقديم صور عالية الجودة تعكس القيمة الحقيقية لمنتجاتك.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    نعمل في استوديوهات مجهزة بإضاءة احترافية وخلفيات متعددة، مع إمكانية التصوير في الموقع إذا لزم الأمر. نقدم مختلف أنواع تصوير المنتجات including التصوير الأبيض، التصوير في السياق، التصوير التفصيلي، والتصوير 360 درجة.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-primary mb-4">أنواع تصوير المنتجات التي نقدمها</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">التصوير على خلفية بيضاء</h4>
+                                <p class="text-gray-700">تصوير احترافي على خلفية بيضاء لمنتجات المتاجر الإلكترونية</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">التصوير في السياق</h4>
+                                <p class="text-gray-700">تصوير المنتجات في بيئة طبيعية تعكس طريقة استخدامها</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">التصوير التفصيلي</h4>
+                                <p class="text-gray-700">تصوير Close-up يبرز تفاصيل المنتج وجودة الصنعة</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">التصوير 360 درجة</h4>
+                                <p class="text-gray-700">تصوير متحرك يظهر المنتج من جميع الزوايا</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- مونتاج احترافي للفيديوهات -->
+                    <section id="video-editing" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">مونتاج احترافي للفيديوهات</h2>
+                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                            <div class="w-full lg:w-1/2">
+                                <p class="text-gray-700 mb-4 leading-relaxed">
+                                    نقدم في شركة ايجبت خدمات مونتاج احترافية للفيديوهات باستخدام أحدث برامج التحرير والتقنيات المتطورة. نحن نعمل على تحويل اللقطات الخام إلى فيديوهات إبداعية وجذابة تحكي قصة علامتك التجارية وتؤثر في جمهورك المستهدف.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    نستخدم برامج متطورة مثل Adobe Premiere Pro، After Effects، Final Cut Pro، وغيرها من أدوات المونتاج الاحترافية. نضيف المؤثرات البصرية، الجرافيك المتحرك، الترجمات، والموسيقى التصويرية لإنشاء فيديوهات احترافية تترك انطباعاً قوياً لدى المشاهدين.
+                                </p>
+                            </div>
+                            <div class="w-full lg:w-1/2">
+                               <div class="relative rounded-lg p-6 h-64 flex items-center justify-center mb-4 overflow-hidden">
+                            <!-- الصورة كخلفية -->
+                            <img 
+                                src="../../assets/img/montage.jpg" 
+                                alt="مونتاج فيديوهات إبداعي" 
+                                class="absolute inset-0 w-full h-full object-cover">
+                            </div>
+
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-primary mb-4">خدمات المونتاج التي نقدمها</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
+                                <h4 class="font-bold text-primary mb-2">مونتاج الفيديوهات الترويجية</h4>
+                                <p class="text-gray-700">تحرير فيديوهات ترويجية للمنتجات والخدمات</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
+                                <h4 class="font-bold text-primary mb-2">مونتاج الفيديوهات التوضيحية</h4>
+                                <p class="text-gray-700">تحرير فيديوهات تعليمية وتوضيحية</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
+                                <h4 class="font-bold text-primary mb-2">إضافة المؤثرات البصرية</h4>
+                                <p class="text-gray-700">إضافة مؤثرات بصرية وجرافيك متحرك</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 p-4 rounded-lg shadow-sm">
+                                <h4 class="font-bold text-primary mb-2"> color grading</h4>
+                                <p class="text-gray-700">تحسين الألوان والإضاءة للفيديوهات</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- محتوى مرئي للسوشيال ميديا -->
+                    <section id="social-media" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">إعداد محتوى مرئي للسوشيال ميديا</h2>
+                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                            <div class="w-full lg:w-1/2">
+                                <img src="../../assets/img/social-media.jpg" alt="محتوى السوشيال ميديا" class="rounded-lg shadow-md w-full h-64 object-cover">
+                            </div>
+                            <div class="w-full lg:w-1/2">
+                                <p class="text-gray-700 mb-4 leading-relaxed">
+                                    نخصص في شركة ايجبت فريقاً متكاملاً لإنشاء محتوى مرئي جذاب ومتفاعل لوسائل التواصل الاجتماعي. نحن ندرك أهمية المحتوى المرئي في جذب انتباه المتابعين وزيادة التفاعل مع علامتك التجارية، لذلك نقدم محتوى مخصصاً لكل منصة وفقاً لمعاييرها وجمهورها.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    نعمل على إنشاء محتوى متنوع يشمل صوراً، فيديوهات قصيرة، Stories، Reels، وغيرها من أشكال المحتوى المرئي. نحرص على أن يكون المحتوى متسقاً مع هوية علامتك التجارية، وجذاباً للجمهور المستهدف، ومحققاً لأهدافك التسويقية.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-primary mb-4">أنواع المحتوى المرئي الذي نقدمه</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">فيديوهات قصيرة (Reels, Shorts)</h4>
+                                <p class="text-gray-700">إنشاء فيديوهات قصيرة وجذابة للمنصات المختلفة</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">Stories</h4>
+                                <p class="text-gray-700">تصميم Stories تفاعلية للإنستجرام وفيسبوك</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">صور ومنشورات</h4>
+                                <p class="text-gray-700">إنشاء صور وجرافيكس للمنشورات الاجتماعية</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">محتويات تفاعلية</h4>
+                                <p class="text-gray-700">إنشاء محتوى تفاعلي يشارك فيه المتابعون</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="equipment" class="bg-white rounded-xl shadow-lg p-6 md:p-8 max-w-5xl mx-auto content-section">
+  <h2 class="text-3xl font-bold text-primary mb-6 pb-2 border-b border-gray-200 text-center">
+    التقنيات والمعدات المستخدمة في التصميم والمونتاج
+  </h2>
+
+  <!-- قسم التصميم -->
+  <div class="mb-12">
+    <h3 class="text-2xl font-bold text-primary mb-4">تقنيات التصميم الإبداعي</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <div class="tech-card bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+        <div class="flex items-center mb-4">
+          <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center ml-4">
+            <i class="fas fa-pencil-ruler text-primary text-2xl"></i>
+          </div>
+          <h4 class="text-lg font-bold text-primary">Adobe Creative Cloud</h4>
+        </div>
+        <p class="text-gray-700 leading-relaxed">
+          نعتمد على برامج <strong>Adobe</strong> مثل <strong>Photoshop</strong> و<strong>Illustrator</strong> و<strong>XD</strong> 
+          لتصميم الهويات البصرية، واجهات المستخدم، والرسوم الإبداعية بأعلى جودة.
+        </p>
+      </div>
+
+      <div class="tech-card bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+        <div class="flex items-center mb-4">
+          <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center ml-4">
+            <i class="fas fa-cubes text-primary text-2xl"></i>
+          </div>
+          <h4 class="text-lg font-bold text-primary">تصميم ثلاثي الأبعاد</h4>
+        </div>
+        <p class="text-gray-700 leading-relaxed">
+          نستخدم أدوات متقدمة مثل <strong>Cinema 4D</strong> و<strong>Blender</strong> 
+          لإنشاء تصاميم ثلاثية الأبعاد ورسوم متحركة مذهلة تعكس جودة العلامة التجارية.
+        </p>
+      </div>
+
+      <div class="tech-card bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+        <div class="flex items-center mb-4">
+          <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center ml-4">
+            <i class="fas fa-magic text-primary text-2xl"></i>
+          </div>
+          <h4 class="text-lg font-bold text-primary">المؤثرات البصرية</h4>
+        </div>
+        <p class="text-gray-700 leading-relaxed">
+          نضيف لمسات سحرية على التصميم من خلال برامج مثل <strong>After Effects</strong> 
+          لإنشاء موشن جرافيك احترافي ومؤثرات بصرية عالية الجودة.
+        </p>
+      </div>
+
+      <div class="tech-card bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+        <div class="flex items-center mb-4">
+          <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center ml-4">
+            <i class="fas fa-palette text-primary text-2xl"></i>
+          </div>
+          <h4 class="text-lg font-bold text-primary">تصحيح الألوان</h4>
+        </div>
+        <p class="text-gray-700 leading-relaxed">
+          نعتمد على برامج مثل <strong>DaVinci Resolve</strong> للحصول على تصحيح ألوان احترافي 
+          يضمن مظهرًا بصريًا مذهلاً ومتناسقًا لجميع الأعمال.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- قسم المونتاج -->
+  <div class="mb-12">
+    <h3 class="text-2xl font-bold text-primary mb-4">برامج وتقنيات المونتاج</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <div class="tech-card bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+        <div class="flex items-center mb-4">
+          <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center ml-4">
+            <i class="fas fa-film text-primary text-2xl"></i>
+          </div>
+          <h4 class="text-lg font-bold text-primary">Premiere Pro</h4>
+        </div>
+        <p class="text-gray-700 leading-relaxed">
+          برنامج المونتاج الأساسي لدينا لقص وتحرير الفيديو بدقة عالية، 
+          مع أدوات احترافية لدمج المشاهد والمؤثرات بسلاسة.
+        </p>
+      </div>
+
+      <div class="tech-card bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+        <div class="flex items-center mb-4">
+          <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center ml-4">
+            <i class="fas fa-headphones text-primary text-2xl"></i>
+          </div>
+          <h4 class="text-lg font-bold text-primary">معالجة الصوت</h4>
+        </div>
+        <p class="text-gray-700 leading-relaxed">
+          نعتمد على <strong>Adobe Audition</strong> و<strong>Pro Tools</strong> 
+          لضبط جودة الصوت، إزالة الضوضاء، وإضافة مؤثرات صوتية مذهلة.
+        </p>
+      </div>
+
+      <div class="tech-card bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+        <div class="flex items-center mb-4">
+          <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center ml-4">
+            <i class="fas fa-layer-group text-primary text-2xl"></i>
+          </div>
+          <h4 class="text-lg font-bold text-primary">المونتاج المتكامل</h4>
+        </div>
+        <p class="text-gray-700 leading-relaxed">
+          عبر برنامج <strong>DaVinci Resolve</strong> ننجز المونتاج، المؤثرات، 
+          تصحيح الألوان، ومزج الصوت في نظام واحد متكامل.
+        </p>
+      </div>
+
+      <div class="tech-card bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+        <div class="flex items-center mb-4">
+          <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center ml-4">
+            <i class="fas fa-video text-primary text-2xl"></i>
+          </div>
+          <h4 class="text-lg font-bold text-primary">إنتاج الفيديو الإبداعي</h4>
+        </div>
+        <p class="text-gray-700 leading-relaxed">
+          تقنيات تصوير ومونتاج متقدمة تتيح لنا إنتاج فيديوهات دعائية وسوشيال ميديا 
+          بجودة عالية وتجربة بصرية مميزة.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- استوديو العمل -->
+  <div>
+    <h3 class="text-2xl font-bold text-primary mb-4">بيئة العمل والاستوديو</h3>
+    <div class="bg-gray-100 p-6 rounded-lg">
+      <div class="flex flex-col md:flex-row gap-6 items-center">
+        
+        <div class="w-full md:w-1/2">
+          <img 
+            src="../../assets/img/design-company.jpg" 
+            alt="استوديو التصميم والمونتاج" 
+            class="rounded-lg shadow-md w-full h-64 object-cover">
+        </div>
+        
+        <div class="w-full md:w-1/2">
+          <p class="text-gray-700 mb-4 leading-relaxed">
+            نعمل في استوديو مجهز بأحدث التقنيات وأجهزة الكمبيوتر عالية الأداء 
+            مع شاشات دقيقة الألوان لضمان تنفيذ أدق التفاصيل في التصميم والمونتاج.
+          </p>
+          <ul class="text-gray-700 space-y-2">
+            <li class="flex items-start">
+              <i class="fas fa-check text-primary mt-1 ml-2"></i>
+              <span>أجهزة iMac وWorkstations مخصصة للتصميم والمونتاج</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-primary mt-1 ml-2"></i>
+              <span>أنظمة تخزين سحابية لحفظ ومشاركة المشاريع بأمان</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-primary mt-1 ml-2"></i>
+              <span>شاشات معايرة لونية لضمان ألوان متناسقة ودقيقة</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-primary mt-1 ml-2"></i>
+              <span>غرفة صوتية مهيأة لمعالجة الصوتيات باحترافية</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+                    </section>
+
+
+                    <!-- إعلانات تلفزيونية -->
+                    <section id="tv-commercials" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">تصوير إعلانات تلفزيونية وإبداعية</h2>
+                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                            <div class="w-full lg:w-1/2">
+                                <p class="text-gray-700 mb-4 leading-relaxed">
+                                    نقدم في شركة ايجبت خدمات متكاملة لإنتاج الإعلانات التلفزيونية والإبداعية التي تترك انطباعاً قوياً لدى المشاهدين وتحقق أهدافك التسويقية. نحن نعمل على تطوير فكرة إبداعية، كتابة السيناريو، التصوير، المونتاج، حتى التسليم النهائي للإعلان.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    لدينا فريق متكامل من المخرجين، المصورين، الممثلين، والمونتيرين المحترفين الذين يعملون معاً لإنتاج إعلانات إبداعية ومؤثرة. نستخدم أحدث المعدات والتقنيات في التصوير والمونتاج لضمان الحصول على إعلان عالي الجودة يليق بعلامتك التجارية.
+                                </p>
+                            </div>
+                            <div class="w-full lg:w-1/2">
+                                <img src="../../assets/img/advertisement-production.jpg" alt="إعلانات تلفزيونية" class="rounded-lg shadow-md w-full h-64 object-cover">
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-primary mb-4">مراحل إنتاج الإعلان التلفزيوني</h3>
+                        <div class="bg-gray-100 p-6 rounded-lg mb-6">
+                            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">1</div>
+                                    <h4 class="font-bold text-primary mb-2">التخطيط</h4>
+                                    <p class="text-gray-700 text-sm">تطوير الفكرة وكتابة السيناريو</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">2</div>
+                                    <h4 class="font-bold text-primary mb-2">ما قبل الإنتاج</h4>
+                                    <p class="text-gray-700 text-sm">اختيار الممثلين وتحضير Locations</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">3</div>
+                                    <h4 class="font-bold text-primary mb-2">التصوير</h4>
+                                    <p class="text-gray-700 text-sm">تصوير المشاهد حسب السيناريو</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">4</div>
+                                    <h4 class="font-bold text-primary mb-2">ما بعد الإنتاج</h4>
+                                    <p class="text-gray-700 text-sm">المونتاج وإضافة المؤثرات والصوت</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- معرض الأعمال -->
+                    <section id="portfolio" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">معرض أعمالنا في التصوير والمونتاج</h2>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            نفتخر بالأعمال التي أنتجناها لعملائنا في مختلف المجالات والقطاعات. هنا نعرض بعضاً من أعمالنا في التصوير والمونتاج التي تعكس جودة خدماتنا وإبداع فريقنا.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+                            <div class="gallery-item bg-white rounded-lg shadow-md overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1607083206968-13611e3d76db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=815&q=80" alt="تصوير منتجات" class="w-full h-48 object-cover">
+                                <div class="p-4">
+                                    <h4 class="font-bold text-primary mb-2">تصوير منتجات إلكترونية</h4>
+                                    <p class="text-gray-700 text-sm">تصوير احترافي لمنتجات متجر إلكتروني متخصص في الإلكترونيات</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item bg-white rounded-lg shadow-md overflow-hidden">
+                                <div class="video-thumbnail relative">
+                                    <img src="https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="فيديو ترويجي" class="w-full h-48 object-cover">
+                                    <div class="play-button">
+                                        <i class="fas fa-play text-primary text-2xl"></i>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <h4 class="font-bold text-primary mb-2">فيديو ترويجي لمطعم</h4>
+                                    <p class="text-gray-700 text-sm">إنتاج فيديو ترويجي لمطعم ي showcase الأطباق والجو العام</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item bg-white rounded-lg shadow-md overflow-hidden">
+                                <img src="../../assets/img/social-media.jpg" alt="محتوى السوشيال ميديا" class="w-full h-48 object-cover">
+                                <div class="p-4">
+                                    <h4 class="font-bold text-primary mb-2">محتوى لوسائل التواصل</h4>
+                                    <p class="text-gray-700 text-sm">إنشاء محتوى مرئي لحملة على الإنستجرام وفيسبوك</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item bg-white rounded-lg shadow-md overflow-hidden">
+                                <div class="video-thumbnail relative">
+                                   <img src="../../assets/img/advertisement-production.jpg" alt="إعلان تلفزيوني" class="w-full h-48 object-cover">
+                                    <div class="play-button">
+                                        <i class="fas fa-play text-primary text-2xl"></i>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <h4 class="font-bold text-primary mb-2">إعلان تلفزيوني لعلامة تجارية</h4>
+                                    <p class="text-gray-700 text-sm">إنتاج إعلان تلفزيوني لعلامة تجارية في مجال الأزياء</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item bg-white rounded-lg shadow-md overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=787&q=80" alt="تصوير طعام" class="w-full h-48 object-cover">
+                                <div class="p-4">
+                                    <h4 class="font-bold text-primary mb-2">تصوير أطباق طعام</h4>
+                                    <p class="text-gray-700 text-sm">تصوير احترافي لأطباق الطعام لمطعم فاخر</p>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item bg-white rounded-lg shadow-md overflow-hidden">
+                                <div class="video-thumbnail relative">
+                                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="فيديو تعريفي" class="w-full h-48 object-cover">
+                                    <div class="play-button">
+                                        <i class="fas fa-play text-primary text-2xl"></i>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <h4 class="font-bold text-primary mb-2">فيديو تعريفي للشركة</h4>
+                                    <p class="text-gray-700 text-sm">إنتاج فيديو تعريفي لشركة تقنية</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center mt-8">
+                            <a href="tel:0501234567" class="bg-primary text-white py-3 px-8 rounded-lg font-bold hover:bg-primaryDark transition duration-300 inline-flex items-center">
+                                <i class="fas fa-images ml-2"></i>شاهد المزيد من أعمالنا
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- باقات الخدمات -->
+                    <section id="packages" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">باقات خدمات التصوير والمونتاج</h2>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            نقدم باقات خدمات متنوعة تلبي مختلف احتياجاتك من التصوير والمونتاج. يمكنك اختيار الباقة المناسبة لك، أو طلب خدمة مخصصة حسب متطلباتك الخاصة.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                            <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 hover:shadow-xl">
+                                <div class="bg-primary text-white py-4 px-6 text-center">
+                                    <h3 class="text-xl font-bold">الباقة الأساسية</h3>
+                                    <div class="mt-2">
+                                        <span class="text-3xl font-bold">1,500</span>
+                                        <span class="text-lg">ريال/جلسة</span>
+                                    </div>
+                                </div>
+                                <div class="p-6">
+                                    <ul class="space-y-3 mb-6">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تصوير حتى 10 منتجات بخلفية بيضاء</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>5 صور احترافية لكل منتج</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تعديل أساسي على الصور</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تسليم خلال 3-5 أيام عمل</span>
+                                        </li>
+                                        <li class="flex items-start text-gray-400">
+                                            <i class="fas fa-times mt-1 ml-2"></i>
+                                            <span>مونتاج فيديو</span>
+                                        </li>
+                                        <li class="flex items-start text-gray-400">
+                                            <i class="fas fa-times mt-1 ml-2"></i>
+                                            <span>تصوير في الموقع</span>
+                                        </li>
+                                    </ul>
+                                    <a href="tel:0501234567" class="block w-full bg-primary text-white text-center py-2 px-4 rounded-lg hover:bg-primaryDark transition duration-300">
+                                        اختر هذه الباقة
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white rounded-xl shadow-lg border-2 border-primary overflow-hidden transform hover:-translate-y-1 transition-all duration-300 relative">
+                                <div class="absolute top-0 right-0 bg-primary text-white px-4 py-1 text-sm font-bold">
+                                    الأكثر طلباً
+                                </div>
+                                <div class="bg-primaryDark text-white py-4 px-6 text-center">
+                                    <h3 class="text-xl font-bold">الباقة المتكاملة</h3>
+                                    <div class="mt-2">
+                                        <span class="text-3xl font-bold">3,500</span>
+                                        <span class="text-lg">ريال/جلسة</span>
+                                    </div>
+                                </div>
+                                <div class="p-6">
+                                    <ul class="space-y-3 mb-6">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تصوير حتى 20 منتج بخلفيات متعددة</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>8 صور احترافية لكل منتج</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تعديل متقدم على الصور</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>مونتاج فيديو ترويجي (دقيقة واحدة)</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تصوير في الموقع (ساعتان)</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تسليم خلال 5-7 أيام عمل</span>
+                                        </li>
+                                    </ul>
+                                    <a href="tel:0501234567" class="block w-full bg-primary text-white text-center py-2 px-4 rounded-lg hover:bg-primaryDark transition duration-300">
+                                        اختر هذه الباقة
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 hover:shadow-xl">
+                                <div class="bg-primary text-white py-4 px-6 text-center">
+                                    <h3 class="text-xl font-bold">الباقة المميزة</h3>
+                                    <div class="mt-2">
+                                        <span class="text-3xl font-bold">6,000</span>
+                                        <span class="text-lg">ريال/جلسة</span>
+                                    </div>
+                                </div>
+                                <div class="p-6">
+                                    <ul class="space-y-3 mb-6">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تصوير عدد غير محدود من المنتجات</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>10 صور احترافية لكل منتج</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تعديل احترافي متقدم على الصور</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>إنتاج فيديو ترويجي (3 دقائق)</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تصوير في الموقع (4 ساعات)</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تسليم خلال 7-10 أيام عمل</span>
+                                        </li>
+                                    </ul>
+                                    <a href="tel:0501234567" class="block w-full bg-primary text-white text-center py-2 px-4 rounded-lg hover:bg-primaryDark transition duration-300">
+                                        اختر هذه الباقة
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-primaryLight to-primary text-white p-6 rounded-lg">
+                            <h3 class="text-xl font-bold mb-3">خدمات مخصصة حسب طلبك</h3>
+                            <p class="mb-4">إذا كانت لديك متطلبات خاصة لا تناسب أي من الباقات أعلاه، يمكننا تقديم خدمة مخصصة تناسب احتياجاتك بدقة.</p>
+                            <a href="tel:0501234567" class="bg-white text-primary py-2 px-6 rounded-lg font-bold hover:bg-gray-100 transition duration-300 inline-flex items-center">
+                                <i class="fas fa-pen ml-2"></i>اطلب خدمة مخصصة
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- الأسئلة الشائعة -->
+                    <section id="faq" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">الأسئلة الشائعة</h2>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            هنا نجيب على بعض الأسئلة الشائعة حول خدمات التصوير والمونتاج التي نقدمها. إذا كان لديك أي استفسار آخر، لا تتردد في الاتصال بنا.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                                <button class="faq-question w-full text-right p-4 bg-gray-50 hover:bg-gray-100 transition duration-300 flex justify-between items-center">
+                                    <span class="font-medium text-primary">ما هي مدة تنفيذ مشروع تصوير المنتجات؟</span>
+                                    <i class="fas fa-chevron-down text-primary"></i>
+                                </button>
+                                <div class="faq-answer p-4 border-t border-gray-200 hidden">
+                                    <p class="text-gray-700">مدة التنفيذ تعتمد على حجم المشروع وعدد المنتجات. بشكل عام، تستغرق جلسة التصوير من 2-4 ساعات للمنتجات الصغيرة، ويتم تسليم الصور النهائية خلال 3-5 أيام عمل بعد التصوير.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                                <button class="faq-question w-full text-right p-4 bg-gray-50 hover:bg-gray-100 transition duration-300 flex justify-between items-center">
+                                    <span class="font-medium text-primary">هل يمكنني الحضور خلال جلسة التصوير؟</span>
+                                    <i class="fas fa-chevron-down text-primary"></i>
+                                </button>
+                                <div class="faq-answer p-4 border-t border-gray-200 hidden">
+                                    <p class="text-gray-700">نعم، يمكنك الحضور ومتابعة جلسة التصوير للإشراف على العمل وتقديم ملاحظاتك. نحن نشجع العملاء على المشاركة لضمان تحقيق النتائج التي تتطلعون إليها.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                                <button class="faq-question w-full text-right p-4 bg-gray-50 hover:bg-gray-100 transition duration-300 flex justify-between items-center">
+                                    <span class="font-medium text-primary">ما هي المعدات التي تستخدمونها في التصوير؟</span>
+                                    <i class="fas fa-chevron-down text-primary"></i>
+                                </button>
+                                <div class="faq-answer p-4 border-t border-gray-200 hidden">
+                                    <p class="text-gray-700">نستخدم أحدث المعدات الاحترافية من كاميرات كانون ونيكون بدقة عالية، مع إضاءة احترافية من براندات عالمية، وخلفيات متخصصة لتصوير المنتجات. كما لدينا معدات خاصة للتصوير الدقيق والتصوير 360 درجة.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                                <button class="faq-question w-full text-right p-4 bg-gray-50 hover:bg-gray-100 transition duration-300 flex justify-between items-center">
+                                    <span class="font-medium text-primary">هل تقدمون خدمة التصوير خارج الاستوديو؟</span>
+                                    <i class="fas fa-chevron-down text-primary"></i>
+                                </button>
+                                <div class="faq-answer p-4 border-t border-gray-200 hidden">
+                                    <p class="text-gray-700">نعم، نقدم خدمة التصوير في الموقع حسب طلب العميل. يمكننا التصوير في مقر عملك أو في مواقع خارجية مناسبة. تختلف تكلفة الخدمة حسب الموقع والمتطلبات التقنية.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                                <button class="faq-question w-full text-right p-4 bg-gray-50 hover:bg-gray-100 transition duration-300 flex justify-between items-center">
+                                    <span class="font-medium text-primary">كم عدد التعديلات المسموح بها على التصميم؟</span>
+                                    <i class="fas fa-chevron-down text-primary"></i>
+                                </button>
+                                <div class="faq-answer p-4 border-t border-gray-200 hidden">
+                                    <p class="text-gray-700">نسمح بمراجعتين مجانيتين لكل مشروع. بعد ذلك، قد يتم تطبيق رسوم إضافية حسب طبيعة التعديلات المطلوبة. نحن نحرص على تحقيق رضاكم الكامل عن العمل النهائي.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- اتصل بنا -->
+                    <section class="content-section mb-12">
+                        <div class="bg-gradient-to-r from-primary to-primaryDark text-white rounded-2xl p-8 shadow-lg">
+                            <div class="flex flex-col md:flex-row items-center justify-between">
+                                <div class="mb-6 md:mb-0 md:w-2/3">
+                                    <h2 class="text-2xl font-bold mb-3">هل أنت مستعد لبدء مشروعك؟</h2>
+                                    <p class="text-lg">اتصل بنا الآن للحصول على استشارة مجانية ومناقشة متطلباتك</p>
+                                </div>
+                                <div class="md:w-1/3 text-center">
+                                    <a href="tel:0501234567" class="bg-white text-primary py-3 px-6 rounded-lg font-bold hover:bg-gray-100 transition duration-300 inline-flex items-center justify-center">
+                                        <i class="fas fa-phone ml-2"></i>اتصل بنا الآن
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer -->
+<footer id="contact" class="bg-gray-900 text-white py-16">
+  <div class="container mx-auto px-4">
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12 mb-12">
+      <div>
+        <div class="flex items-center space-x-reverse space-x-3 mb-6">
+          <div
+            class=" text-white p-3 rounded-lg w-14 h-14 flex items-center justify-center shadow-md rounded-full border-white border-2 bg-white">
+            <img src="../../assets/img/logo-egypt-advertising-1.webp" alt="">
+          </div>
+          <div>
+            <h3 class="text-xl font-bold">ايجبت للدعاية والإعلان</h3>
+            <p class="text-gray-400 text-sm">حلول إبداعية لنجاحك</p>
+          </div>
+        </div>
+        <p class="text-gray-300 mb-6">نحن شريكك الموثوق في رحلة النجاح، نقدم حلول إعلانية وتسويقية متميزة تحقق أهدافك
+          وتبني علامتك التجارية.</p>
+        <div class="flex space-x-reverse space-x-4">
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/people/%D8%A7%D9%8A%D8%AC%D8%A8%D8%AA-%D9%84%D9%84%D8%AF%D8%B9%D8%A7%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86/61580300744080/"
+            target="_blank" rel="noopener noreferrer"
+            class="bg-blue-600 hover:bg-blue-700 px-4 p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600"
+            aria-label="تابعنا على فيسبوك">
+            <i class="fab fa-facebook-f text-white text-lg"></i>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/egypt.advertising/" target="_blank" rel="noopener noreferrer"
+            class="bg-pink-600 hover:bg-pink-700 p-3 px-4  rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-pink-600"
+            aria-label="تابعنا على إنستجرام">
+            <i class="fab fa-instagram text-white text-lg"></i>
+          </a>
+
+          <!-- Twitter (X) -->
+          <a href="https://x.com/egyptadvertisin" target="_blank" rel="noopener noreferrer"
+            class="bg-blue-500 hover:bg-blue-600 px-4  p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
+            aria-label="تابعنا على تويتر">
+            <i class="fab fa-twitter text-white text-lg"></i>
+          </a>
+
+          <!-- TikTok -->
+          <a href="https://www.tiktok.com/@egypt.advertising?lang=ar" target="_blank" rel="noopener noreferrer"
+            class="bg-gray-900 hover:bg-gray-800 p-3  rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-gray-900"
+            aria-label="تابعنا على تيك توك">
+            <i class="fab fa-tiktok text-white text-lg "></i>
+          </a>
+
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-bold mb-6">خدماتنا</h4>
+        <ul class="space-y-3">
+          <li><a href="tel:0501234567" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                class="fas fa-chevron-left text-xs ml-2"></i>التصميم والبراندنج</a></li>
+          <li><a href="tel:0501234567" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                class="fas fa-chevron-left text-xs ml-2"></i>التسويق الرقمي</a></li>
+          <li><a href="tel:0501234567" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                class="fas fa-chevron-left text-xs ml-2"></i>إنتاج المحتوى</a></li>
+          <li><a href="tel:0501234567" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                class="fas fa-chevron-left text-xs ml-2"></i>الحملات الإعلانية</a></li>
+          <li><a href="tel:0501234567" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                class="fas fa-chevron-left text-xs ml-2"></i>التحليل والإحصائيات</a></li>
+          <li><a href="tel:0501234567" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                class="fas fa-chevron-left text-xs ml-2"></i> تصميم وبرمجة المواقع</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-bold mb-6">روابط مفيدة</h4>
+        <ul class="space-y-3">
+          <li><a href="../../index.html#home" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                class="fas fa-chevron-left text-xs ml-2"></i>الرئيسية</a></li>
+          <li><a href="../../index.html#about" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                class="fas fa-chevron-left text-xs ml-2"></i>من نحن</a></li>
+
+          <li><a href="../../index.html#Our-business" class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                class="fas fa-chevron-left text-xs ml-2"></i>أعمالنا</a></li>
+         
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-bold mb-6">تواصل معنا</h4>
+        <div class="space-y-4">
+          <div class="flex items-center space-x-reverse space-x-3">
+            <i class="fas fa-map-marker-alt text-primary"></i>
+            <span class="text-gray-300">جدة، المملكة العربية السعودية</span>
+          </div>
+          <div class="flex items-center space-x-reverse space-x-3">
+            <i class="fas fa-phone text-primary"></i>
+            <span class="text-gray-300" dir="ltr">+966 563374482</span>
+          </div>
+          <div class="flex items-center space-x-reverse space-x-3">
+            <i class="fas fa-phone text-primary"></i>
+            <span class="text-gray-300" dir="ltr">+966 565265233</span>
+          </div>
+          <div class="flex items-center space-x-reverse space-x-3">
+            <i class="fas fa-envelope text-primary"></i>
+            <span class="text-gray-300" dir="ltr">egyptforadvertising25@gmail.com</span>
+          </div>
+          <div class="flex items-center space-x-reverse space-x-3">
+            <i class="fas fa-clock text-primary"></i>
+            <span class="text-gray-300">الأحد - الخميس: 9:00 - 18:00</span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="border-t border-gray-800 pt-8">
+      <div class="flex flex-col md:flex-row  items-center text-center m-auto">
+        <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 شركة <a href="https://www.fashne.net/">Alfashne</a>. جميع
+          الحقوق محفوظة.</p>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <!-- JavaScript -->
+    <script>
+        // تنشيط عناصر القائمة عند التمرير
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.content-section');
+            const navItems = document.querySelectorAll('.nav-item');
+            
+            window.addEventListener('scroll', function() {
+                let current = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    
+                    if (pageYOffset >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navItems.forEach(item => {
+                    item.classList.remove('active');
+                    if (item.getAttribute('href').substring(1) === current) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+            
+            // تفعيل الأسئلة الشائعة
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const icon = question.querySelector('i');
+                    
+                    answer.classList.toggle('hidden');
+                    icon.classList.toggle('fa-chevron-down');
+                    icon.classList.toggle('fa-chevron-up');
+                });
+            });
+            
+            // التنقل السلس
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>
