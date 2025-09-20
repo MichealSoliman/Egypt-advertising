@@ -1,0 +1,11 @@
+
+User-agent: *
+Allow: /
+
+
+Disallow: /assets/css/
+Disallow: /assets/js/
+Disallow: /assets/img/
+
+
+Sitemap: https://egypt-advertising.com/sitemap.xml
