@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- الصفحة الرئيسية -->
+  <url>
+    <loc>https://egypt-advertising.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- صفحات الخدمات -->
+  <url>
+    <loc>https://egypt-advertising.com/services/advertising-fences-and-screens/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://egypt-advertising.com/services/banners-flex-and-vinyl/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://egypt-advertising.com/services/cladding-facades/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://egypt-advertising.com/services/electronic-marketing/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://egypt-advertising.com/services/neon-signs/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://egypt-advertising.com/services/photography-and-montage/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://egypt-advertising.com/services/signs-and-prominent-letters/</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://egypt-advertising.com/services/website-programming/</loc>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
