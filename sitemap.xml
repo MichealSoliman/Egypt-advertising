@@ -47,5 +47,9 @@
     <loc>https://egypt-advertising.com/services/website-programming/</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://egypt-advertising.com/services/logo-and-visual-identity/</loc>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>

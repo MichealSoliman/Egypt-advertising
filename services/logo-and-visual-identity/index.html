@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات تصميم الشعارات والهويات البصرية - شركة ايجبت للدعاية والإعلان بجدة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#148c80',
+                        primaryDark: '#0e6c62',
+                        primaryLight: '#1aac9d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-primary {
+          background-color: #148c80;
+        }
+        .gradient-primary:hover {
+          background-color: #0f6d68; /* لون أغمق عند التحويم */
+        }
+
+        .sticky-sidebar {
+            position: sticky;
+            top: 20px;
+        }
+        .content-section {
+            scroll-margin-top: 100px;
+        }
+        .hero-pattern {
+            background-color: #148c80;
+            background-image: radial-gradient(#1aac9d 0.5px, transparent 0.5px), radial-gradient(#1aac9d 0.5px, #148c80 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+        .nav-item {
+            transition: all 0.3s ease;
+        }
+        .nav-item:hover, .nav-item.active {
+            background-color: #0e6c62;
+            color: white;
+        }
+        .brand-pattern {
+            background-color: #f8fafc;
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23148c80' fill-opacity='0.05' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+  <!--  Navbar -->
+    <nav
+      id="navbar"
+      class="fixed top-0 w-full z-50 transition-all duration-300 py-4 bg-white shadow-md"
+    >
+      <div class="container mx-auto px-4 flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center space-x-reverse space-x-4">
+          <div
+            class="text-white p-3 rounded-lg w-14 h-14 flex items-center justify-center shadow-md rounded-full"
+          >
+            <img
+              src="../../assets/img/logo-egypt-advertising-1.webp"
+              alt="ايجبت للدعاية والإعلان"
+            />
+          </div>
+          <div>
+            <h2 class="text-xl font-bold gradient-text">
+              ايجبت للدعاية والإعلان
+            </h2>
+            <p class="text-sm text-gray-600">حلول إبداعية لنجاحك</p>
+          </div>
+        </div>
+
+        <!-- Links (Desktop) -->
+        <div class="hidden lg:flex items-center space-x-reverse space-x-8">
+          <a
+            href="../../index.html#home"
+            class="text-black hover:text-primary transition-colors font-medium"
+            >الرئيسية</a
+          >
+          <a
+            href="../../index.html#about"
+            class="text-black hover:text-primary transition-colors font-medium"
+            >من نحن</a
+          >
+
+          <a
+            href="../../index.html#Our-business"
+            class="text-black hover:text-primary transition-colors font-medium"
+          >
+            اعمالنا</a
+          >
+        </div>
+
+        <!-- CTA + Menu Button -->
+        <div class="flex items-center space-x-reverse space-x-4">
+          <div class="text-right hidden md:block">
+            <a
+              href="tel:0501234567"
+              class="inline-block gradient-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors"
+            >
+              <p class="text-sm">اتصل بنا</p>
+            </a>
+          </div>
+          <!-- Menu Button -->
+          <button
+            id="menu-btn"
+            class="lg:hidden text-gray-700 focus:outline-none"
+            aria-label="فتح وإغلاق قائمة التنقل"
+            aria-expanded="false"
+            aria-controls="menu"
+          >
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- ✅ Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="lg:hidden hidden bg-white shadow-md border-t mt-4"
+      >
+        <div class="flex flex-col items-center space-y-4 py-6">
+          <a
+            href="../../index.html#home"
+            class="text-black hover:text-primary transition-colors font-medium"
+            >الرئيسية</a
+          >
+          <a
+            href="../../index.html#about"
+            class="text-black hover:text-primary transition-colors font-medium"
+            >من نحن</a
+          >
+
+          <a
+            href="../../index.html#Our-business"
+            class="text-black hover:text-primary transition-colors font-medium"
+            >اعمالنا</a
+          >
+          <a
+            href="tel:0501234567"
+            class="inline-block bg-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors"
+          >
+            اتصل بنا
+          </a>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- محتوى الصفحة -->
+    <div class="container mx-auto px-4 py-8 pt-[100px]" >
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- القائمة الجانبية -->
+            <div class="w-full lg:w-1/4">
+                <div class="sticky-sidebar bg-white rounded-xl shadow-lg p-6">
+                    <h2 class="text-xl font-bold text-primary mb-6 border-b-2 border-primary pb-2">عناصر المحتوى</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#intro" class="nav-item active block py-3 px-4 rounded-lg text-white bg-primary">مقدمة عن تصميم الهوية</a></li>
+                        <li><a href="#why-us" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-Green-400 transition duration-300">لماذا تختار خدماتنا؟</a></li>
+                        <li><a href="#logo-design" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-Green-400 transition duration-300">تصميم الشعار (اللوجو)</a></li>
+                        <li><a href="#logo-features" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-Green-400 transition duration-300">مميزات تصميم الشعار</a></li>
+                        <li><a href="#logo-applications" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-Green-400 transition duration-300">تطبيقات تصميم الشعار</a></li>
+                        <li><a href="#brand-identity" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-Green-400 transition duration-300">الهوية البصرية المتكاملة</a></li>
+                        <li><a href="#brand-features" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-Green-400 transition duration-300">مميزات الهوية البصرية</a></li>
+                        <li><a href="#brand-applications" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-Green-400 transition duration-300">تطبيقات الهوية البصرية</a></li>
+                        <li><a href="#colors" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-Green-400 transition duration-300">الألوان في الهوية البصرية</a></li>
+                        <li><a href="#typography" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-Green-400 transition duration-300">الخطوط في الهوية البصرية</a></li>
+                        <li><a href="#icons" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-Green-400 transition duration-300">الأيقونات والرموز</a></li>
+                        <li><a href="#design-process" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-Green-400 transition duration-300">عملية التصميم</a></li>
+                        <li><a href="#production-steps" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-Green-400 transition duration-300">مراحل الإنتاج</a></li>
+                        <li><a href="#features" class="nav-item block py-3 px-4 rounded-lg text-gray-700 hover:bg-Green-400 transition duration-300">مميزات خدماتنا</a></li>
+                    </ul>
+                    
+                    <div class="mt-8 p-4 bg-primaryLight bg-opacity-10 rounded-lg border border-primary">
+                      
+                        <a href="href="tel:0501234567" class="text-lg font-bold text-primary mb-3">اطلب خدمتك الآن</ش>
+                        <p class="text-gray-700 mb-4">احصل على استشارة مجانية من خبرائنا</p>
+                        <a href="tel:0501234567" class="block w-full bg-primary text-white text-center py-2 px-4 rounded-lg hover:bg-primaryDark transition duration-300">اتصل بنا</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- المحتوى الرئيسي -->
+            <div class="w-full lg:w-3/4">
+                <!-- قسم البطل -->
+                <div class="hero-pattern rounded-xl shadow-lg text-white p-8 mb-8">
+                    <h1 class="text-4xl font-bold mb-4">خدمات تصميم احترافية للشعارات والهويات البصرية</h1>
+                    <p class="text-xl mb-6">هوية قوية، ألوان متناسقة، ولوجوهات مبتكرة تبرز علامتك التجارية وتجذب جمهورك المستهدف</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="tel:0501234567" class="bg-white text-primary py-3 px-6 rounded-lg font-bold hover:bg-gray-100 transition duration-300">اطلب هويتك الآن</a>
+                        <a href="tel:0501234567" class="border-2 border-white py-3 px-6 rounded-lg font-bold hover:bg-white hover:text-primary transition duration-300">اطلب استشارة مجانية</a>
+                    </div>
+                </div>
+
+                <!-- المحتوى النصي -->
+                <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                    <!-- مقدمة عن تصميم الهوية -->
+                    <section id="intro" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-4">مقدمة عن خدمات تصميم الهوية لدينا</h2>
+                     <div class="flex flex-col lg:flex-row gap-6 mb-6">
+  <!-- حاوية الصورة -->
+  <div class="w-full h-full lg:w-1/2">
+    <img src="../../assets/img/Logo-design.webp" 
+         alt="خدمات تصميم الهوية البصرية" 
+         class="rounded-lg shadow-md w-full h-96 object-fit-contain bg-gray-100">
+  </div>
+
+  <!-- النصوص -->
+  <div class="w-full lg:w-1/2">
+    <p class="text-gray-700 mb-4 leading-relaxed">
+      تقدم شركة ايجبت للدعاية والإعلان بجدة خدمات تصميم احترافية للشعارات والهويات البصرية بشكل مبتكر يعكس شخصية علامتك التجارية ويترك انطباعًا قويًا لدى جمهورك المستهدف. نحن نوفر تصاميم متناسقة وعصرية تعزز ثقة عملائك وتدعم مكانتك في السوق.
+    </p>
+    <p class="text-gray-700 leading-relaxed">
+      سواء كنت تبحث عن تصميم لوجو مميز أو هوية بصرية متكاملة تشمل جميع وسائطك المطبوعة والرقمية، فإن فريقنا المتخصص يضمن لك حلولًا إبداعية متوافقة مع رؤيتك وميزانيتك. نقدم لك خدمات شاملة تبدأ من اختيار الألوان والخطوط وحتى تسليم الملفات الجاهزة للاستخدام، مما يجعلنا الشريك المثالي لبناء علامتك التجارية.
+    </p>
+  </div>
+</div>
+
+                        <div class="bg-gray-100 p-6 rounded-lg mt-6">
+                            <h3 class="text-xl font-bold text-primary mb-3">لماذا تختار خدماتنا؟</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>تصاميم لوجوهات احترافية تعكس هوية علامتك التجارية</li>
+                                <li>هوية بصرية متكاملة تناسب جميع الوسائط المطبوعة والرقمية</li>
+                                <li>اختيار ألوان وخطوط مدروسة تعبر عن رؤيتك ورسالتك</li>
+                                <li>أسعار تنافسية مع باقات متنوعة تناسب مختلف الميزانيات</li>
+                                <li>تسليم سريع للملفات الجاهزة للطباعة والاستخدام الرقمي</li>
+                                <li>فريق إبداعي متخصص لدعمك في كل مرحلة من مراحل التصميم</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- لماذا تختار خدماتنا -->
+                    <section id="why-us" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-4">لماذا تختار خدماتنا؟</h2>
+                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                            <div class="w-full lg:w-1/2">
+                                <p class="text-gray-700 mb-4 leading-relaxed">
+                                    في شركة ايجبت للدعاية والإعلان، نقدم تجربة تصميم فريدة تجمع بين الإبداع والاستراتيجية. نحن لا نصنع مجرد تصاميم جميلة، بل نبتكر هويات بصرية تعكس جوهر علامتك التجارية وتنقل رسالتك بشكل فعال.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    نعمل وفق منهجية مدروسة تبدأ بفهم عميق لعملك وجمهورك المستهدف، ثم ننتقل إلى مرحلة الإبداع والتصميم، وأخيرًا نضمن التنفيذ الأمثل عبر جميع القنوات. فريقنا من المصممين المحترفين والمستشارين الإستراتيجيين يعملون معًا لضمان تحقيق أهدافك التجارية.
+                                </p>
+                            </div>
+                            <div class="w-full lg:w-1/2">
+                                <img src="../../assets/img/pexels-rccbtn-11180937.jpg" alt="لماذا تختار خدماتنا" class="rounded-lg shadow-md w-full h-64 object-cover">
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-primary mb-3">قيمنا في التصميم</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">الإبداع والابتكار</h4>
+                                <p class="text-gray-700">نقدم حلولاً إبداعية فريدة تميزك عن المنافسين</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">الجودة والاحترافية</h4>
+                                <p class="text-gray-700">نلتزم بأعلى معايير الجودة في كل مشروع</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">الفهم الاستراتيجي</h4>
+                                <p class="text-gray-700">نصمم بناءً على فهم عميق لاستراتيجية عملك</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">الالتزام بالوقت</h4>
+                                <p class="text-gray-700">نسلم مشاريعنا في الوقت المتفق عليه بدقة</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- تصميم الشعار (اللوجو) -->
+                    <section id="logo-design" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-4">تصميم الشعار (اللوجو)</h2>
+                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                            <div class="w-full lg:w-1/2">
+                                <p class="text-gray-700 mb-4 leading-relaxed">
+                                    تصميم اللوجو هو الخطوة الأولى لبناء هوية تجارية قوية ومميزة. في شركة ايجبت للدعاية والإعلان، نؤمن أن الشعار ليس مجرد شكل جمالي، بل هو الانعكاس الحقيقي لرسالة علامتك التجارية وقيمها الأساسية.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    لذلك نحرص على تقديم لوجوهات مبتكرة تعبر عن شخصية مشروعك وتبقى عالقة في أذهان جمهورك المستهدف، مع مراعاة أحدث معايير التصميم الاحترافي. تتميز تصاميمنا بالبساطة والوضوح والقدرة على التعبير عن رسالتك بشكل مباشر.
+                                </p>
+                            </div>
+                            <div class="w-full lg:w-1/2">
+                                <img src="../../assets/img/pexels-ekaterinabelinskaya-4744755.jpg" alt="تصميم الشعار" class="rounded-lg shadow-md w-full h-64 object-cover">
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-primary mb-3">أنواع الشعارات التي نقدمها</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">شعارات نصية (Logotype)</h4>
+                                <p class="text-gray-700">تعتمد على اسم العلامة بشكل أساسي بتصميم مميز</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">شعارات رمزية (Symbols)</h4>
+                                <p class="text-gray-700">أيقونات أو رموز تعبر عن هوية العلامة التجارية</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">شعارات مجتمعة (Combination)</h4>
+                                <p class="text-gray-700">تجمع بين العنصر النصي والرمزي بشكل متكامل</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">شعارات مختصرة (Emblems)</h4>
+                                <p class="text-gray-700">تصاميم كلاسيكية تبدو كختم أو شعار رسمي</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- مميزات تصميم الشعار -->
+                    <section id="logo-features" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-4">مميزات تصميم الشعار</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">تعزيز الهوية البصرية</h4>
+                                <p class="text-gray-700">شعار فريد يميز علامتك التجارية ويجعلها أكثر حضورًا في السوق</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">سهولة التذكر والتأثير</h4>
+                                <p class="text-gray-700">تصاميم بسيطة وواضحة تبقى عالقة في أذهان جمهورك المستهدف</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">مرونة الاستخدام</h4>
+                                <p class="text-gray-700">لوجو متوافق مع جميع الوسائط الرقمية والمطبوعة بجودة عالية</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">جودة احترافية</h4>
+                                <p class="text-gray-700">تصميم وفق معايير عالمية يضمن لك مظهرًا احترافيًا يرسخ الثقة بعلامتك</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- تطبيقات تصميم الشعار -->
+                    <section id="logo-applications" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-4">تطبيقات تصميم الشعار</h2>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            يُستخدم تصميم اللوجو في مجموعة واسعة من التطبيقات التي تُعزز هوية علامتك التجارية، بما في ذلك المواقع الإلكترونية، تطبيقات الهواتف، منصات التواصل الاجتماعي، المطبوعات الدعائية، بطاقات الأعمال، المنتجات والتغليف، اللوحات الإعلانية، العروض التقديمية، والمواد التسويقية المختلفة.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            نحن نقدم حلولًا مخصصة لكل وسيلة من هذه الوسائط، مع مراعاة وضوح الشعار، انسجامه مع الهوية البصرية، وضمان ظهوره بشكل احترافي وجذاب في كل مكان.
+                        </p>
+                    </section>
+
+                    <!-- الهوية البصرية المتكاملة -->
+                    <section id="brand-identity" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-4">الهوية البصرية المتكاملة</h2>
+                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                            <div class="w-full lg:w-1/2">
+                                <img src="../../assets/img/pexels-eva-bronzini-7661590.jpg" alt="الهوية البصرية المتكاملة" class="rounded-lg shadow-md w-full h-64 object-cover">
+                            </div>
+                            <div class="w-full lg:w-1/2">
+                                <p class="text-gray-700 mb-4 leading-relaxed">
+                                    الهوية البصرية مصممة خصيصًا لتعكس شخصية علامتك التجارية وتمنحها حضورًا مميزًا في أذهان العملاء. في شركة ايجبت للدعاية والإعلان، نركز على بناء هوية متكاملة تشمل جميع العناصر البصرية مثل الألوان، الخطوط، الأنماط، والشعارات الفرعية.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    تتميز هويتنا البصرية بالدقة والتفاصيل المدروسة، مما يجعلها مثالية للاستخدام في جميع التطبيقات الرقمية والمطبوعة. نحن نقدم مجموعة واسعة من التصاميم والملفات الجاهزة التي تناسب مختلف الاحتياجات، وتساعدك على إبراز مشروعك بشكل احترافي.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- مميزات الهوية البصرية -->
+                    <section id="brand-features" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-4">مميزات الهوية البصرية</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">جاذبية بصرية عالية</h4>
+                                <p class="text-gray-700">ألوان متناسقة وعناصر مميزة تعبر عن شخصية علامتك التجارية</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">اتساق ووضوح</h4>
+                                <p class="text-gray-700">تفاصيل دقيقة ومدروسة تضمن انسجام الهوية عبر جميع الوسائط</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">مرونة متعددة الاستخدامات</h4>
+                                <p class="text-gray-700">تصاميم قابلة للتطبيق على مختلف الوسائط المطبوعة والرقمية</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">ابتكار وإبداع</h4>
+                                <p class="text-gray-700">هوية متكاملة تُصمم بشكل إبداعي لتلفت الانتباه وتترك انطباعًا قويًا</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- تطبيقات الهوية البصرية -->
+                    <section id="brand-applications" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-4">تطبيقات الهوية البصرية</h2>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            تُستخدم الهوية البصرية في العديد من التطبيقات التي تعزز قوة العلامة التجارية، بما في ذلك بطاقات الأعمال، الأوراق الرسمية، الملفات التعريفية، المطبوعات التسويقية، التغليف، العروض التقديمية، اللافتات الداخلية، ومحتوى وسائل التواصل الاجتماعي.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            نحن نقدم حلولًا مخصصة لكل وسيلة، مع التركيز على الجودة البصرية والانسجام التام مع شخصية علامتك التجارية، لضمان حضور متكامل في جميع نقاط الاتصال مع عملائك.
+                        </p>
+                    </section>
+
+                    <!-- الألوان في الهوية البصرية -->
+                    <section id="colors" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-4">الألوان في الهوية البصرية</h2>
+                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                            <div class="w-full lg:w-1/2">
+                                <p class="text-gray-700 mb-4 leading-relaxed">
+                                    الألوان عنصر أساسي في بناء هوية بصرية قوية، فهي تعبر عن شخصية العلامة التجارية وتؤثر بشكل مباشر على انطباع الجمهور. نحرص في شركة ايجبت للدعاية والإعلان على اختيار ألوان متناسقة ومدروسة تعكس رسالتك وتثير المشاعر التي ترغب في إيصالها.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    نقدم لك دليلاً كاملاً للألوان يشمل الألوان الأساسية والثانوية، مع رموزها الدقيقة لضمان الاتساق في جميع التطبيقات. نحن ندرس سيكولوجية الألوان ومدى تناسبها مع قطاعك التجاري وجمهورك المستهدف.
+                                </p>
+                            </div>
+                            <div class="w-full lg:w-1/2">
+                                <img src="../../assets/img/pexels-katierainbow-8317788.jpg" alt="الألوان في الهوية البصرية" class="rounded-lg shadow-md w-full h-64 object-cover">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- الخطوط في الهوية البصرية -->
+                    <section id="typography" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-4">الخطوط في الهوية البصرية</h2>
+                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                            <div class="w-full lg:w-1/2">
+                                <img src="../../assets/img/pexels-magda-ehlers-pexels-1337382.jpg" alt="الخطوط في الهوية البصرية" class="rounded-lg shadow-md w-full h-64 object-cover">
+                            </div>
+                            <div class="w-full lg:w-1/2">
+                                <p class="text-gray-700 mb-4 leading-relaxed">
+                                    الخطوط تلعب دورًا محوريًا في إبراز شخصية العلامة التجارية والتواصل مع الجمهور. فالخط المناسب يعكس الاحترافية ويمنح الهوية طابعًا مميزًا يسهل تمييزه وسط المنافسين.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    نختار لك مجموعة من الخطوط المتوافقة التي تعكس شخصية علامتك التجارية، مع توفير دليل استخدام مفصل يشمل العناوين، النصوص الأساسية، والنصوص الثانوية. نهتم باختيار خطوط واضحة وسهلة القراءة تناسب جميع وسائطك.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- الأيقونات والرموز -->
+                    <section id="icons" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-4">الأيقونات والرموز في الهوية البصرية</h2>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            الأيقونات والرموز عنصر أساسي في بناء هوية بصرية متكاملة، فهي تسهّل عملية التواصل وتساعد على إيصال الأفكار بسرعة ووضوح. استخدامها بشكل مدروس يمنح العلامة التجارية شخصية مميزة ويعزز من حضورها البصري.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            نقدم مجموعة متكاملة من الأيقونات والرموز المتناسقة مع هويتك البصرية، مصممة بدقة عالية ومناسبة للاستخدام في التطبيقات الرقمية والمطبوعة. نضمن أن تكون أيقوناتك فريدة ومعبرة وسهلة الفهم.
+                        </p>
+                    </section>
+
+                    <!-- عملية التصميم -->
+                    <section id="design-process" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-4">عملية تصميم الهوية البصرية</h2>
+                        <div class="bg-gray-100 p-6 rounded-lg mb-6">
+                            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">1</div>
+                                    <h4 class="font-bold text-primary mb-2">الاستشارة</h4>
+                                    <p class="text-gray-700 text-sm">نبدأ بجلسة استشارية لفهم نشاطك التجاري وأهدافك</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">2</div>
+                                    <h4 class="font-bold text-primary mb-2">البحث والتحليل</h4>
+                                    <p class="text-gray-700 text-sm">نقوم بدراسة السوق والمنافسين وتحليل الجمهور المستهدف</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">3</div>
+                                    <h4 class="font-bold text-primary mb-2">التصميم الأولي</h4>
+                                    <p class="text-gray-700 text-sm">نبتكر عدة مقترحات أولية للوجو وعناصر الهوية</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">4</div>
+                                    <h4 class="font-bold text-primary mb-2">التعديلات</h4>
+                                    <p class="text-gray-700 text-sm">نطور التصاميم بناءً على ملاحظاتك لنصل للشكل الأمثل</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- مراحل الإنتاج -->
+                    <section id="production-steps" class="content-section py-12 bg-gray-50">
+                        <div class="container mx-auto px-4">
+                            <!-- العنوان الرئيسي -->
+                            <h2 class="text-3xl font-bold text-primary mb-8 text-center">مراحل الإنتاج</h2>
+                            <p class="text-gray-700 text-center max-w-3xl mx-auto mb-12 leading-relaxed">
+                                نحن في شركة ايجبت للدعاية والإعلان نعمل بخطوات منظمة ومدروسة لضمان تقديم منتج نهائي عالي الجودة. 
+                                تبدأ العملية من التخطيط الدقيق، مروراً بمراحل التصميم والتنفيذ، وحتى التسليم النهائي، 
+                                بما يضمن تلبية توقعات عملائنا وتقديم أفضل تجربة في كل مشروع.
+                            </p>
+
+                            <!-- تايم لاين للمراحل -->
+                            <div class="relative border-l-4 border-primary pl-6 space-y-10 max-w-4xl mx-auto">
+                                
+                                <!-- المرحلة الأولى -->
+                                <div class="relative">
+
+                                    <h3 class="text-xl font-bold text-primary mb-2">1. مرحلة التخطيط وجمع المعلومات</h3>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        في هذه المرحلة، نقوم بفهم احتياجات العميل بشكل كامل، وجمع جميع المعلومات اللازمة عن المشروع مثل نوع التصميم، 
+                                        الأهداف التسويقية، الجمهور المستهدف، والميزانية المحددة. 
+                                        هذه الخطوة تساعدنا على وضع خطة عمل واضحة تضمن سير العملية بشكل سلس ومنظم.
+                                    </p>
+                                </div>
+
+                                <!-- المرحلة الثانية -->
+                                <div class="relative">
+
+                                    <h3 class="text-xl font-bold text-primary mb-2">2. مرحلة التصميم الإبداعي</h3>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        يقوم فريق التصميم لدينا بابتكار أفكار مميزة وجذابة، مع التركيز على هوية العميل 
+                                        وأهدافه التسويقية. 
+                                        نستخدم أحدث برامج التصميم لضمان الحصول على رسومات احترافية بألوان واضحة ومؤثرة، 
+                                        تعكس جودة العمل وتشد انتباه الجمهور المستهدف.
+                                    </p>
+                                </div>
+
+                                <!-- المرحلة الثالثة -->
+                                <div class="relative">
+
+                                    <h3 class="text-xl font-bold text-primary mb-2">3. مرحلة تطوير الهوية المتكاملة</h3>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        بعد اعتماد التصميم النهائي للشعار، ننتقل إلى تطوير الهوية البصرية المتكاملة التي تشمل 
+                                        الألوان، الخطوط، الأيقونات، وأنماط التصميم. نحرص على اختيار العناصر التي تضمن 
+                                        اتساق الهوية عبر جميع الوسائط مع الالتزام بالمعايير العالمية للتصميم.
+                                    </p>
+                                </div>
+
+                                <!-- المرحلة الرابعة -->
+                                <div class="relative">
+
+                                    <h3 class="text-xl font-bold text-primary mb-2">4. مرحلة إعداد الملفات والتشطيبات</h3>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        يتم إعداد الملفات النهائية بجميع الصيغ المطلوبة للاستخدام الرقمي والمطبوع، 
+                                        مع الاهتمام بأدق التفاصيل لضمان الجودة العالية في كل تطبيق. 
+                                        نولي اهتماماً خاصاً لهذه المرحلة لأنها تعكس جودة العمل النهائي 
+                                        وتضمن سهولة الاستخدام لاحقاً.
+                                    </p>
+                                </div>
+
+                                <!-- المرحلة الخامسة -->
+                                <div class="relative">
+
+                                    <h3 class="text-xl font-bold text-primary mb-2">5. مرحلة التسليم النهائي</h3>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        يتم تسليم جميع ملفات الهوية البصرية للعميل بشكل منظم وواضح، 
+                                        مع شرح كامل لكيفية استخدامها في مختلف التطبيقات. 
+                                        كما نقوم بتسليم المشروع في الوقت المحدد بعد التأكد من رضا العميل عن النتيجة النهائية.
+                                    </p>
+                                </div>
+
+                                <!-- المرحلة السادسة -->
+                                <div class="relative">
+
+                                    <h3 class="text-xl font-bold text-primary mb-2">6. مرحلة المتابعة وضمان الجودة</h3>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        بعد الانتهاء من المشروع، نتابع مع عملائنا لضمان رضاهم الكامل، 
+                                        ونقدم الدعم الفني وخدمات ما بعد البيع، 
+                                        مع ضمان جودة المنتج وخدمته لفترة زمنية مناسبة.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- مميزات خدماتنا -->
+                    <section id="features" class="py-16 bg-gray-50 content-section">
+                        <div class="container mx-auto px-6">
+                            <!-- العنوان الرئيسي -->
+                            <h2 class="text-3xl font-bold text-primary text-center mb-4">مميزات خدماتنا</h2>
+                            <p class="text-gray-700 text-center max-w-2xl mx-auto mb-12 leading-relaxed">
+                                نحن في شركة ايجبت للدعاية والإعلان نحرص على تقديم خدمات تصميم هوية بصرية احترافية 
+                                تعتمد على أحدث التقنيات وأفضل الممارسات، مع ضمان جودة عالية وتجربة عملاء مميزة 
+                                تدعم نجاح مشاريعك التسويقية والإعلانية.
+                            </p>
+
+                            <!-- شبكة المميزات -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                                <!-- الميزة الأولى -->
+                                <div class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
+                                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-paint-brush text-2xl"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-primary mb-3">تصاميم مبتكرة</h3>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        نصنع تصاميم فريدة تعكس شخصية علامتك التجارية وتترك انطباعًا قويًا لدى جمهورك، مع الاهتمام بتناسق الألوان والخطوط بما يتوافق مع أهداف مشروعك.
+                                    </p>
+                                </div>
+
+                                <!-- الميزة الثانية -->
+                                <div class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
+                                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-cogs text-2xl"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-primary mb-3">تقنيات حديثة ومتطورة</h3>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        نستخدم أحدث برامج وتقنيات التصميم لضمان دقة الألوان وجودة التفاصيل 
+                                        سواء للاستخدامات الرقمية أو المطبوعة.
+                                    </p>
+                                </div>
+
+                                <!-- الميزة الثالثة -->
+                                <div class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
+                                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-shield-alt text-2xl"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-primary mb-3">جودة عالية</h3>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        نختار أفضل المواد والتقنيات التي تضمن متانة المنتج وجودته، 
+                                        مع الحفاظ على مظهره الجذاب لفترات طويلة.
+                                    </p>
+                                </div>
+
+                                <!-- الميزة الرابعة -->
+                                <div class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
+                                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-bolt text-2xl"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-primary mb-3">سرعة التنفيذ</h3>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        نلتزم بتسليم المشاريع في الوقت المحدد دون التأثير على الجودة، 
+                                        مع فريق محترف يعمل بكفاءة عالية.
+                                    </p>
+                                </div>
+
+                                <!-- الميزة الخامسة -->
+                                <div class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
+                                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-users text-2xl"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-primary mb-3">فريق عمل محترف</h3>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        يمتلك فريقنا خبرة واسعة في مجال التصميم والهوية البصرية، 
+                                        ويعمل على تقديم أفضل الحلول التي تناسب أهدافك التسويقية.
+                                    </p>
+                                </div>
+
+                                <!-- الميزة السادسة -->
+                                <div class="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
+                                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-headset text-2xl"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-primary mb-3">خدمة عملاء مميزة</h3>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        نقدم دعماً متواصلاً وخدمة عملاء على مدار الساعة 
+                                        لضمان راحتك ومساعدتك في كل خطوة من المشروع.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- قسم دعائي -->
+                    <div class="bg-primary text-white p-8 rounded-lg mt-10 text-center">
+                        <h2 class="text-2xl font-bold mb-4">احصل على خصم 15% على أول طلبية لك</h2>
+                        <p class="mb-6">استخدم الكود BRAND15 عند الطلب</p>
+                        <a href="tel:0501234567" class="bg-white text-primary py-3 px-8 rounded-lg font-bold inline-block hover:bg-gray-100 transition duration-300">اطلب الآن</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white py-16">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12 mb-12">
+          <div>
+            <div class="flex items-center space-x-reverse space-x-3 mb-6">
+              <div
+                class="text-white p-3 rounded-lg w-14 h-14 flex items-center justify-center shadow-md rounded-full border-white border-2 bg-white"
+              >
+                <img
+                  src="../../assets/img/logo-egypt-advertising-1.webp"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h3 class="text-xl font-bold">ايجبت للدعاية والإعلان</h3>
+                <p class="text-gray-400 text-sm">حلول إبداعية لنجاحك</p>
+              </div>
+            </div>
+            <p class="text-gray-300 mb-6">
+              نحن شريكك الموثوق في رحلة النجاح، نقدم حلول إعلانية وتسويقية
+              متميزة تحقق أهدافك وتبني علامتك التجارية.
+            </p>
+            <div class="flex space-x-reverse space-x-4">
+              <!-- Facebook -->
+              <a
+                href="https://www.facebook.com/people/%D8%A7%D9%8A%D8%AC%D8%A8%D8%AA-%D9%84%D9%84%D8%AF%D8%B9%D8%A7%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86/61580300744080/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-blue-600 hover:bg-blue-700 px-5 p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600"
+                aria-label="تابعنا على فيسبوك"
+              >
+                <i class="fab fa-facebook-f text-white text-lg"></i>
+              </a>
+
+              <!-- Instagram -->
+              <a
+                href="https://www.instagram.com/egypt.advertising/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-pink-600 hover:bg-pink-700 p-3 px-4 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-pink-600"
+                aria-label="تابعنا على إنستجرام"
+              >
+                <i class="fab fa-instagram text-white text-lg"></i>
+              </a>
+
+              <!-- Twitter (X) -->
+              <a
+                href="https://x.com/egyptadvertisin"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-blue-500 hover:bg-blue-600 px-4 p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
+                aria-label="تابعنا على تويتر"
+              >
+                <i class="fab fa-twitter text-white text-lg"></i>
+              </a>
+
+              <!-- TikTok -->
+              <a
+                href="https://www.tiktok.com/@egypt.advertising?lang=ar"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-gray-900 hover:bg-gray-800 p-3 px-5 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-gray-900"
+                aria-label="تابعنا على تيك توك"
+              >
+                <i class="fab fa-tiktok text-white text-lg"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-6">خدماتنا</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="tel:0501234567"
+                  class="text-gray-300 hover:text-white transition-colors flex items-center"
+                  ><i class="fas fa-chevron-left text-xs ml-2"></i>التصميم
+                  والبراندنج</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tel:0501234567"
+                  class="text-gray-300 hover:text-white transition-colors flex items-center"
+                  ><i class="fas fa-chevron-left text-xs ml-2"></i>التسويق
+                  الرقمي</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tel:0501234567"
+                  class="text-gray-300 hover:text-white transition-colors flex items-center"
+                  ><i class="fas fa-chevron-left text-xs ml-2"></i>إنتاج
+                  المحتوى</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tel:0501234567"
+                  class="text-gray-300 hover:text-white transition-colors flex items-center"
+                  ><i class="fas fa-chevron-left text-xs ml-2"></i>الحملات
+                  الإعلانية</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tel:0501234567"
+                  class="text-gray-300 hover:text-white transition-colors flex items-center"
+                  ><i class="fas fa-chevron-left text-xs ml-2"></i>التحليل
+                  والإحصائيات</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tel:0501234567"
+                  class="text-gray-300 hover:text-white transition-colors flex items-center"
+                  ><i class="fas fa-chevron-left text-xs ml-2"></i> تصميم وبرمجة
+                  المواقع</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-6">روابط مفيدة</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="../../index.html#home"
+                  class="text-gray-300 hover:text-white transition-colors flex items-center"
+                  ><i class="fas fa-chevron-left text-xs ml-2"></i>الرئيسية</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../index.html#about"
+                  class="text-gray-300 hover:text-white transition-colors flex items-center"
+                  ><i class="fas fa-chevron-left text-xs ml-2"></i>من نحن</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="../../index.html#Our-business"
+                  class="text-gray-300 hover:text-white transition-colors flex items-center"
+                  ><i class="fas fa-chevron-left text-xs ml-2"></i>أعمالنا</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-6">تواصل معنا</h4>
+            <div class="space-y-4">
+              <div class="flex items-center space-x-reverse space-x-3">
+                <i class="fas fa-map-marker-alt text-primary"></i>
+                <span class="text-gray-300">جدة، المملكة العربية السعودية</span>
+              </div>
+              <div class="flex items-center space-x-reverse space-x-3">
+                <i class="fas fa-phone text-primary"></i>
+                <span class="text-gray-300" dir="ltr">+966 563374482</span>
+              </div>
+              <div class="flex items-center space-x-reverse space-x-3">
+                <i class="fas fa-phone text-primary"></i>
+                <span class="text-gray-300" dir="ltr">+966 565265233</span>
+              </div>
+              <div class="flex items-center space-x-reverse space-x-3">
+                <i class="fas fa-envelope text-primary"></i>
+                <span class="text-gray-300" dir="ltr"
+                  >egyptforadvertising25@gmail.com</span
+                >
+              </div>
+              <div class="flex items-center space-x-reverse space-x-3">
+                <i class="fas fa-clock text-primary"></i>
+                <span class="text-gray-300">الأحد - الخميس: 9:00 - 18:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-8">
+          <div
+            class="flex flex-col md:flex-row items-center text-center m-auto"
+          >
+            <p class="text-gray-400 text-sm mb-4 md:mb-0">
+              © 2025 شركة <a href="https://www.fashne.net/">Alfashne</a>. جميع
+              الحقوق محفوظة.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script>
+        // كود JavaScript لجعل القائمة الجانبية تتابع التمرير وتحديد القسم النشط
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.content-section');
+            const navItems = document.querySelectorAll('.nav-item');
+            
+            // وظيفة لتحديد العنصر النشط في القائمة
+            function setActiveNavItem() {
+                let currentSection = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    
+                    if (pageYOffset >= (sectionTop - 200)) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+                
+                navItems.forEach(item => {
+                    item.classList.remove('active', 'text-white', 'bg-primary');
+                    item.classList.add('text-gray-700');
+                    
+                    if (item.getAttribute('href') === '#' + currentSection) {
+                        item.classList.add('active', 'text-white', 'bg-primary');
+                        item.classList.remove('text-gray-700');
+                    }
+                });
+            }
+            
+            // استدعاء الوظيفة عند التمرير وتحميل الصفحة
+            window.addEventListener('scroll', setActiveNavItem);
+            window.addEventListener('load', setActiveNavItem);
+            
+            // إضافة تأثير سلس للتمرير عند النقر على عناصر القائمة
+            navItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>
