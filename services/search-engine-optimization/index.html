@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحسين محركات البحث (SEO) - شركة ايجبت للدعاية والإعلان بجدة</title>
+    <meta name="description"
+        content="نقدم خدمات تحسين محركات البحث (SEO) لرفع ترتيب موقعك في نتائج البحث وجذب المزيد من العملاء المحتملين. خبرة واسعة في تحسين المواقع لمختلف القطاعات.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#148c80',
+                        primaryDark: '#0e6c62',
+                        primaryLight: '#1aac9d',
+                        accent: '#3a86ff',
+                        secondary: '#ff6b35',
+                        dark: '#2d3748',
+                        light: '#f8f9fa'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .sticky-sidebar {
+            position: sticky;
+            top: 20px;
+        }
+
+        .content-section {
+            scroll-margin-top: 100px;
+        }
+
+        .hero-pattern {
+            background: linear-gradient(135deg, #148c80 0%, #1aac9d 50%, #0e6c62 100%);
+        }
+
+        .nav-item {
+            transition: all 0.3s ease;
+            border-right: 4px solid transparent;
+        }
+
+        .nav-item:hover,
+        .nav-item.active {
+            background-color: rgba(20, 140, 128, 0.1);
+            border-right-color: #148c80;
+            color: #148c80;
+        }
+
+        .service-card {
+            transition: all 0.3s ease;
+            border-top: 4px solid transparent;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            border-top-color: #148c80;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .seo-pattern {
+            background-color: #f8f9fa;
+            background-image:
+                radial-gradient(circle, rgba(20, 140, 128, 0.1) 20%, transparent 20%),
+                radial-gradient(circle, rgba(58, 134, 255, 0.1) 20%, transparent 20%);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+        }
+
+        .website-card {
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .website-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .progress-bar {
+            height: 8px;
+            background-color: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #148c80, #1aac9d);
+            border-radius: 4px;
+            transition: width 1s ease-in-out;
+        }
+
+        .floating-element {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .accordion-header {
+            cursor: pointer;
+            padding: 1rem 0;
+            position: relative;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .accordion-content.active {
+            max-height: 500px;
+        }
+
+        .accordion-header::after {
+            content: '\f078';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-header.active::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!--  Navbar -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-4 bg-white shadow-md">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-reverse space-x-4">
+                <div
+                    class="text-white p-3 rounded-lg w-14 h-14 flex items-center justify-center shadow-md rounded-full">
+                    <img src="../../assets/img/logo-egypt-advertising-1.webp" alt="ايجبت للدعاية والإعلان" />
+                </div>
+                <div>
+                    <h2 class="text-xl font-bold gradient-text">
+                        ايجبت للدعاية والإعلان
+                    </h2>
+                    <p class="text-sm text-gray-600">حلول إبداعية لنجاحك</p>
+                </div>
+            </div>
+
+            <!-- Links (Desktop) -->
+            <div class="hidden lg:flex items-center space-x-reverse space-x-8">
+                <a href="../../index.html#home"
+                    class="text-black hover:text-primary transition-colors font-medium">الرئيسية</a>
+                <a href="../../index.html#about" class="text-black hover:text-primary transition-colors font-medium">من
+                    نحن</a>
+
+                <a href="../../index.html#Our-business"
+                    class="text-black hover:text-primary transition-colors font-medium">
+                    اعمالنا</a>
+            </div>
+
+            <!-- CTA + Menu Button -->
+            <div class="flex items-center space-x-reverse space-x-4">
+                <div class="text-right hidden md:block">
+                    <a href="tel:0501234567"
+                        class="inline-block gradient-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors">
+                        <p class="text-sm">اتصل بنا</p>
+                    </a>
+                </div>
+                <!-- Menu Button -->
+                <button id="menu-btn" class="lg:hidden text-gray-700 focus:outline-none"
+                    aria-label="فتح وإغلاق قائمة التنقل" aria-expanded="false" aria-controls="menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- ✅ Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-md border-t mt-4">
+            <div class="flex flex-col items-center space-y-4 py-6">
+                <a href="../../index.html#home"
+                    class="text-black hover:text-primary transition-colors font-medium">الرئيسية</a>
+                <a href="../../index.html#about" class="text-black hover:text-primary transition-colors font-medium">من
+                    نحن</a>
+
+                <a href="../../index.html#Our-business"
+                    class="text-black hover:text-primary transition-colors font-medium">اعمالنا</a>
+                <a href="tel:0501234567"
+                    class="inline-block bg-primary text-white px-5 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-colors">
+                    اتصل بنا
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- محتوى الصفحة -->
+    <div class="container mx-auto px-4 py-8 pt-[100px]">
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- القائمة الجانبية -->
+            <div class="w-full lg:w-1/4">
+                <div class="sticky-sidebar bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-6 pb-4 border-b border-gray-200">
+                        <i class="fas fa-chart-line text-primary text-2xl ml-2"></i>
+                        <h2 class="text-xl font-bold text-primary">تحسين محركات البحث</h2>
+                    </div>
+                    <ul class="space-y-3">
+                        <li><a href="#intro"
+                                class="nav-item active block py-3 px-4 rounded-lg text-primary font-medium">نظرة
+                                عامة</a></li>
+                        <li><a href="#what-is-seo"
+                                class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">ما هو SEO؟</a>
+                        </li>
+                        <li><a href="#seo-services"
+                                class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">خدمات SEO</a></li>
+                        <li><a href="#seo-process"
+                                class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">عملية التحسين</a>
+                        </li>
+                        <li><a href="#our-websites"
+                                class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">مواقع عملائنا</a>
+                        </li>
+                        <li><a href="#results"
+                                class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">نتائج ملموسة</a>
+                        </li>
+                        <li><a href="#packages"
+                                class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">باقات SEO</a></li>
+                        <li><a href="#faq" class="nav-item block py-3 px-4 rounded-lg text-gray-700 font-medium">الأسئلة
+                                الشائعة</a></li>
+                    </ul>
+
+                    <div class="mt-8 p-4 gradient-bg rounded-lg border border-primary border-opacity-20">
+                        <h3 class="text-lg font-bold text-primary mb-3">اطلب خدمة SEO الآن</h3>
+                        <p class="text-gray-700 mb-4 text-sm">احصل على تحليل مجاني لموقعك</p>
+                        <a href="tel:+966501234567"
+                            class="block w-full bg-primary text-white text-center py-2 px-4 rounded-lg hover:bg-primaryDark transition duration-300 mb-2">
+                            <i class="fas fa-phone ml-2"></i>اتصل بنا
+                        </a>
+                        <a href="https://wa.me/966501234567" target="_blank"
+                            class="block w-full bg-green-500 text-white text-center py-2 px-4 rounded-lg hover:bg-green-600 transition duration-300">
+                            <i class="fab fa-whatsapp ml-2"></i>تواصل عبر واتساب
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- المحتوى الرئيسي -->
+            <div class="w-full lg:w-3/4">
+                <!-- قسم البطل -->
+                <div class="hero-pattern rounded-2xl shadow-lg text-white p-8 mb-8 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-black opacity-20"></div>
+                    <div class="relative z-10">
+                        <h1 class="text-3xl md:text-4xl font-bold mb-4">تحسين محركات البحث (SEO)</h1>
+                        <p class="text-lg md:text-xl mb-6">ارفع ترتيب موقعك في نتائج البحث وجذب المزيد من العملاء
+                            المحتملين بخدمات SEO المتكاملة</p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="tel:+966501234567"
+                                class="bg-white text-primary py-3 px-6 rounded-lg font-bold hover:bg-gray-100 transition duration-300">
+                                <i class="fas fa-phone ml-2"></i>اطلب خدمتك
+                            </a>
+                            <a href="#our-websites"
+                                class="border-2 border-white py-3 px-6 rounded-lg font-bold hover:bg-white hover:text-primary transition duration-300">
+                                <i class="fas fa-eye ml-2"></i>شاهد نتائجنا
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- خدمات سريعة -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                    <div class="service-card bg-white rounded-xl shadow-md p-4 text-center">
+                        <div
+                            class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-search text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-md font-bold text-primary">تحليل موقعك</h3>
+                        <p class="text-gray-600 text-xs">تحليل شامل لنقاط القوة والضعف</p>
+                    </div>
+
+                    <div class="service-card bg-white rounded-xl shadow-md p-4 text-center">
+                        <div
+                            class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-key text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-md font-bold text-primary">كلمات مفتاحية</h3>
+                        <p class="text-gray-600 text-xs">بحث واختيار الكلمات الأكثر ربحية</p>
+                    </div>
+
+                    <div class="service-card bg-white rounded-xl shadow-md p-4 text-center">
+                        <div
+                            class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-pen text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-md font-bold text-primary">تحسين المحتوى</h3>
+                        <p class="text-gray-600 text-xs">تحسين محتوى موقعك لمحركات البحث</p>
+                    </div>
+
+                    <div class="service-card bg-white rounded-xl shadow-md p-4 text-center">
+                        <div
+                            class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-chart-bar text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-md font-bold text-primary">تقارير أداء</h3>
+                        <p class="text-gray-600 text-xs">متابعة وتقارير دورية عن الأداء</p>
+                    </div>
+                </div>
+
+                <!-- المحتوى النصي -->
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8">
+                    <!-- نظرة عامة -->
+                    <section id="intro" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">نظرة عامة على
+                            خدمات تحسين محركات البحث (SEO)</h2>
+                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                            <div class="w-full lg:w-1/2">
+                                <p class="text-gray-700 mb-4 leading-relaxed">
+                                    تقدم شركة ايجبت للدعاية والإعلان بجدة حلولاً متكاملة في مجال تحسين محركات البحث
+                                    (SEO) لمساعدة مواقع عملائنا على الظهور في المراكز الأولى في نتائج محركات البحث مثل
+                                    جوجل، وبالتالي جذب المزيد من الزوار والعملاء المحتملين.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    نحن نتميز بفريق متخصص في SEO يمتلك خبرة واسعة في تحليل المواقع، اختيار الكلمات
+                                    المفتاحية المناسبة، وتحسين المحتوى والهيكل التقني للمواقع لتحقيق أفضل النتائج في
+                                    أقصر وقت ممكن.
+                                </p>
+                            </div>
+                            <div class="w-full lg:w-1/2">
+                              <div class="seo-pattern rounded-lg h-64 mb-4 overflow-hidden">
+                            <img src="../../assets/img/search-engine-optimization.jpg" 
+                                alt="تحسين محركات البحث" 
+                                class="w-full h-full object-cover">
+                            </div>
+
+                            </div>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-primaryLight to-primary text-white p-6 rounded-lg mt-6">
+                            <h3 class="text-xl font-bold mb-3">لماذا تختار خدمات SEO من شركة ايجبت؟</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-white text-xl mt-1 ml-3"></i>
+                                    <p>فريق متخصص بخبرة تزيد عن 7 سنوات في SEO</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-white text-xl mt-1 ml-3"></i>
+                                    <p>استراتيجيات مخصصة تناسب كل موقع ونشاط</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-white text-xl mt-1 ml-3"></i>
+                                    <p>نتائج ملموسة وزيادة في حركة الزوار</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-check-circle text-white text-xl mt-1 ml-3"></i>
+                                    <p>تقارير دورية شفافة لمتابعة التقدم</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ما هو SEO -->
+                    <section id="what-is-seo" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">ما هو تحسين
+                            محركات البحث (SEO)؟</h2>
+                        <div class="flex flex-col lg:flex-row gap-6 mb-6">
+                            <div class="w-full lg:w-1/2">
+                                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                    alt="تحسين محركات البحث" class="rounded-lg shadow-md w-full h-64 object-cover">
+                            </div>
+                            <div class="w-full lg:w-1/2">
+                                <p class="text-gray-700 mb-4 leading-relaxed">
+                                    SEO هو عملية تحسين موقعك الإلكتروني لزيادة ظهوره في نتائج محركات البحث المجانية (غير
+                                    المدفوعة) مثل جوجل، بينج، وياهو. كلما كان موقعك في مرتبة أعلى في نتائج البحث، زادت
+                                    احتمالية أن يزوره العملاء المحتملون.
+                                </p>
+                                <p class="text-gray-700 leading-relaxed">
+                                    يتضمن SEO مجموعة من الاستراتيجيات والتقنيات التي تهدف إلى جعل موقعك أكثر جاذبية
+                                    لمحركات البحث، مما يزيد من فرص ظهوره عندما يبحث الأشخاص عن منتجاتك أو خدماتك.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-primary mb-4">أنواع تحسين محركات البحث</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">SEO التقني</h4>
+                                <p class="text-gray-700">تحسين الجوانب التقنية للموقع مثل السرعة، البنية، والأمان</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">SEO المحتوى</h4>
+                                <p class="text-gray-700">تحسين المحتوى النصي والمرئي ليكون ملائماً لمحركات البحث</p>
+                            </div>
+                            <div class="bg-primaryLight bg-opacity-10 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">SEO خارج الموقع</h4>
+                                <p class="text-gray-700">بناء الروابط الخلفية وزيادة السمعة الرقمية للموقع</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- خدمات SEO -->
+                    <section id="seo-services" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">خدمات تحسين
+                            محركات البحث التي نقدمها</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div class="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+                                <div
+                                    class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl mb-4">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-primary mb-3">دراسة وتحليل الموقع</h3>
+                                <ul class="text-gray-700 space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                        <span>تحليل شامل للموقع الحالي وتحديد نقاط القوة والضعف</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                        <span>دراسة المنافسين وتحليل استراتيجياتهم</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                        <span>تحديد الفرص والتهديدات في السوق</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+                                <div
+                                    class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl mb-4">
+                                    <i class="fas fa-key"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-primary mb-3">بحث الكلمات المفتاحية</h3>
+                                <ul class="text-gray-700 space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                        <span>بحث عن الكلمات المفتاحية الأكثر بحثاً في مجال عملك</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                        <span>تحليل حجم البحث وصعوبة المنافسة على كل كلمة</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                        <span>تحديد الكلمات المفتاحية طويلة الذيل</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+                                <div
+                                    class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl mb-4">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-primary mb-3">تحسين الهيكل التقني</h3>
+                                <ul class="text-gray-700 space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                        <span>تحسين سرعة تحميل الموقع</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                        <span>تحسين تجربة المستخدم وسهولة التصفح</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                        <span>تحسين الموقع للعرض على الجوال</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+                                <div
+                                    class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl mb-4">
+                                    <i class="fas fa-pen"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-primary mb-3">تحسين المحتوى</h3>
+                                <ul class="text-gray-700 space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                        <span>تحسين المحتوى الحالي وإضافة محتوى جديد</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                        <span>تحسين العناوين والوصف التعريفي</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                        <span>تحسين الصور والفيديو</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- عملية التحسين -->
+                    <section id="seo-process" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">عملية تحسين
+                            محركات البحث</h2>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            نتبع في شركة ايجبت عملية منهجية لتحسين محركات البحث تضمن تحقيق أفضل النتائج في أقصر وقت
+                            ممكن. تمر عملية التحسين بعدة مراحل نحرص فيها على مشاركتك لمتابعة التقدم.
+                        </p>
+
+                        <div class="bg-gray-100 p-6 rounded-lg mb-6">
+                            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <div
+                                        class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">
+                                        1</div>
+                                    <h4 class="font-bold text-primary mb-2">التحليل والتخطيط</h4>
+                                    <p class="text-gray-700 text-sm">تحليل الموقع والمنافسين وتخطيط الاستراتيجية</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <div
+                                        class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">
+                                        2</div>
+                                    <h4 class="font-bold text-primary mb-2">التنفيذ التقني</h4>
+                                    <p class="text-gray-700 text-sm">تحسين الجوانب التقنية للموقع</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <div
+                                        class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">
+                                        3</div>
+                                    <h4 class="font-bold text-primary mb-2">تحسين المحتوى</h4>
+                                    <p class="text-gray-700 text-sm">تحسين المحتوى الحالي وإنشاء محتوى جديد</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <div
+                                        class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mx-auto mb-3">
+                                        4</div>
+                                    <h4 class="font-bold text-primary mb-2">المتابعة والتقارير</h4>
+                                    <p class="text-gray-700 text-sm">متابعة الأداء وإعداد تقارير دورية</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- مواقع عملائنا -->
+                    <section id="our-websites" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">مواقع عملائنا
+                            وتحسينها في SEO</h2>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            نفتخر بالعمل مع مجموعة متنوعة من العملاء في مختلف القطاعات. هنا نعرض بعضاً من المواقع التي
+                            قمنا بتحسينها ورفع ترتيبها في محركات البحث.
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <!-- موقع 1 -->
+                            <div class="website-card bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="relative">
+                                <img src="../../assets/img/ar-color.txt" alt="نقاء كلين"
+                                class="w-full h-48 object-cover">
+                                <div class="absolute top-4 left-4 bg-primary text-white py-1 px-3 rounded-full text-sm">
+                                نقاء كلين
+                                </div>
+                            </div>
+                            
+                            <div class="p-6">
+                                <!-- عنوان الخدمة -->
+                                <h4 class="font-bold text-primary mb-2">شركة نقاء كلين لخدمات النظافة</h4>
+                                <p class="text-gray-700 mb-4">
+                                شركة متخصصة في تقديم خدمات تنظيف المنازل، المكاتب، والفلل باحترافية عالية لضمان
+                                بيئة نظيفة وصحية.
+                                </p>
+
+                                <!-- الترتيب قبل التحسين -->
+                                <div class="mb-4">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium text-gray-700">الترتيب قبل تحسين محركات البحث</span>
+                                    <span class="text-sm font-medium text-gray-700">المركز 35</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 25%"></div>
+                                </div>
+                                </div>
+
+                                <!-- الترتيب بعد التحسين -->
+                                <div class="mb-4">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium text-primary">الترتيب بعد تحسين محركات البحث</span>
+                                    <span class="text-sm font-medium text-primary">المركز 2</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 95%"></div>
+                                </div>
+                                </div>
+
+                                <!-- النتائج -->
+                                <div class="flex justify-between text-sm text-gray-600 mb-4">
+                                <span>زيادة في العملاء: <strong class="text-primary">+250%</strong></span>
+                                <span>مدة المشروع: <strong>4 أشهر</strong></span>
+                                </div>
+
+                                <!-- زر زيارة الموقع -->
+                                <div class="text-center">
+                                <a href="https://www.naqaa-clean.com" target="_blank"
+                                    class="bg-primary text-white py-2 px-6 rounded-lg shadow-md hover:bg-primary-dark transition duration-300">
+                                    زيارة الموقع
+                                </a>
+                                </div>
+                            </div>
+                            </div>
+
+
+                            <!-- موقع 2 -->
+                        <div class="website-card bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="relative">
+                                <img src="../../assets/img/naqlaty.png"
+                                    alt="شركة نقلاتي لنقل العفش والأثاث" 
+                                    class="w-full h-48 object-cover">
+                                <div class="absolute top-4 left-4 bg-primary text-white py-1 px-3 rounded-full text-sm">
+                                نقلاتي
+                                </div>
+                            </div>
+
+                            <div class="p-6">
+                                <!-- عنوان الشركة -->
+                                <h4 class="font-bold text-primary mb-2">شركة نقلاتي لخدمات نقل العفش والأثاث</h4>
+                                <p class="text-gray-700 mb-4">
+                                نقدم خدمات احترافية لنقل العفش والأثاث بأمان وسرعة، مع فريق متخصص يضمن سلامة ممتلكاتك أثناء النقل.
+                                </p>
+
+                                <!-- الترتيب قبل التحسين -->
+                                <div class="mb-4">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium text-gray-700">الترتيب قبل تحسين محركات البحث</span>
+                                    <span class="text-sm font-medium text-gray-700">المركز 54</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 18%"></div>
+                                </div>
+                                </div>
+
+                                <!-- الترتيب بعد التحسين -->
+                                <div class="mb-4">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium text-primary">الترتيب بعد تحسين محركات البحث</span>
+                                    <span class="text-sm font-medium text-primary">المركز 4</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 88%"></div>
+                                </div>
+                                </div>
+
+                                <!-- النتائج -->
+                                <div class="flex justify-between text-sm text-gray-600 mb-4">
+                                <span>زيادة في العملاء: <strong class="text-primary">+300%</strong></span>
+                                <span>مدة المشروع: <strong>5 أشهر</strong></span>
+                                </div>
+
+                                <!-- زر زيارة الموقع -->
+                                <div class="text-center">
+                                <a href="https://naqlaty-ship.com/" target="_blank"
+                                    class="bg-primary text-white py-2 px-6 rounded-lg shadow-md hover:bg-primary-dark transition duration-300">
+                                    زيارة الموقع
+                                </a>
+                                </div>
+                            </div>
+                            </div>
+
+
+                          <!-- موقع 3 -->
+                        <div class="website-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="../../assets/img/bashir-mover.png"
+                                alt="شركة بشاير الخير لنقل العفش بالكويت" 
+                                class="w-full h-48 object-fit-contain">
+                            <div class="absolute top-4 left-4 bg-primary text-white py-1 px-3 rounded-full text-sm">
+                            نقل عفش
+                            </div>
+                        </div>
+
+                        <div class="p-6">
+                            <!-- عنوان الشركة -->
+                            <h4 class="font-bold text-primary mb-2">شركة بشاير الخير لنقل العفش بالكويت</h4>
+                            <p class="text-gray-700 mb-4">
+                            نقدم خدمات متكاملة في نقل العفش والأثاث داخل الكويت، مع ضمان الحماية الكاملة لمقتنياتك وسرعة التنفيذ بواسطة فريق محترف ومدرب.
+                            </p>
+
+                            <!-- الترتيب قبل التحسين -->
+                            <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-gray-700">الترتيب قبل تحسين محركات البحث</span>
+                                <span class="text-sm font-medium text-gray-700">المركز 42</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 22%"></div>
+                            </div>
+                            </div>
+
+                            <!-- الترتيب بعد التحسين -->
+                            <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-primary">الترتيب بعد تحسين محركات البحث</span>
+                                <span class="text-sm font-medium text-primary">المركز 3</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 92%"></div>
+                            </div>
+                            </div>
+
+                            <!-- النتائج -->
+                            <div class="flex justify-between text-sm text-gray-600 mb-4">
+                            <span>زيادة في العملاء: <strong class="text-primary">+380%</strong></span>
+                            <span>مدة المشروع: <strong>5 أشهر</strong></span>
+                            </div>
+
+                            <!-- زر زيارة الموقع -->
+                            <div class="text-center">
+                            <a href="https://www.bashir-mover.com/" target="_blank"
+                                class="bg-primary text-white py-2 px-6 rounded-lg shadow-md hover:bg-primary-dark transition duration-300">
+                                زيارة الموقع
+                            </a>
+                            </div>
+                        </div>
+                        </div>
+
+
+                            <!-- موقع 4 -->
+                        <div class="website-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="https://naqaa-clean.com/blog/logo.webp"
+                                alt="شركة نظرة الإبداع  لانظمة السلامة"
+                                class="w-full h-48 object-cover">
+                            <div class="absolute top-4 left-4 bg-primary text-white py-1 px-3 rounded-full text-sm">
+                            مكافحة حرائق
+                            </div>
+                        </div>
+
+                        <div class="p-6">
+                            <!-- عنوان الشركة -->
+                            <h4 class="font-bold text-primary mb-2">شركة نظرة الإبداع  لانظمة السلامة </h4>
+                            <p class="text-gray-700 mb-4">
+                            نقدم خدمات متكاملة في مجال مكافحة الحرائق، بدءًا من توريد وتركيب أنظمة الإنذار والإطفاء، 
+                            وحتى الصيانة الدورية لضمان أقصى درجات الأمان والحماية.
+                            </p>
+
+                            <!-- الترتيب قبل التحسين -->
+                            <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-gray-700">الترتيب قبل تحسين محركات البحث</span>
+                                <span class="text-sm font-medium text-gray-700">المركز 32</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 28%"></div>
+                            </div>
+                            </div>
+
+                            <!-- الترتيب بعد التحسين -->
+                            <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-medium text-primary">الترتيب بعد تحسين محركات البحث</span>
+                                <span class="text-sm font-medium text-primary">المركز 3</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                            </div>
+
+                            <!-- النتائج -->
+                            <div class="flex justify-between text-sm text-gray-600 mb-4">
+                            <span>زيادة في العملاء: <strong class="text-primary">+420%</strong></span>
+                            <span>مدة المشروع: <strong>4 أشهر</strong></span>
+                            </div>
+
+                            <!-- زر زيارة الموقع -->
+                            <div class="text-center">
+                            <a href="https://nazretelebdaa.com/index.html" target="_blank"
+                                class="bg-primary text-white py-2 px-6 rounded-lg shadow-md hover:bg-primary-dark transition duration-300">
+                                زيارة الموقع
+                            </a>
+                            </div>
+                        </div>
+                        </div>
+
+                        </div>
+                    </section>
+
+                    <!-- نتائج ملموسة -->
+                    <section id="results" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">نتائج ملموسة
+                            لتحسين SEO</h2>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            نقدم لكم بعض الإحصائيات والأرقام التي توضح تأثير خدمات تحسين محركات البحث على مواقع عملائنا:
+                        </p>
+
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center mb-8">
+                            <div class="bg-white p-6 rounded-lg shadow-sm">
+                                <div class="text-3xl font-bold text-primary mb-2">+320%</div>
+                                <p class="text-gray-700">متوسط زيادة في حركة الزوار</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-sm">
+                                <div class="text-3xl font-bold text-primary mb-2">85%</div>
+                                <p class="text-gray-700">من العملاء حققوا المركز الخامس أو أفضل</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-sm">
+                                <div class="text-3xl font-bold text-primary mb-2">+200%</div>
+                                <p class="text-gray-700">زيادة في معدل التحويل (Leads)</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-sm">
+                                <div class="text-3xl font-bold text-primary mb-2">4.2</div>
+                                <p class="text-gray-700">شهر متوسط مدة تحقيق النتائج</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- باقات SEO -->
+                    <section id="packages" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">باقات خدمات تحسين
+                            محركات البحث</h2>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            نقدم مجموعة من الباقات المتنوعة لتناسب مختلف الميزانيات والاحتياجات. يمكنك اختيار الباقة
+                            المناسبة لموقعك أو طلب باقة مخصصة.
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <!-- الباقة الأساسية -->
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                                <div class="bg-primary text-white p-6 text-center">
+                                    <h3 class="text-xl font-bold">الباقة الأساسية</h3>
+                                    <div class="text-3xl font-bold mt-2">1,500 <span class="text-lg">ريال/شهر</span>
+                                    </div>
+                                    <p class="text-primaryLight mt-2">مناسبة للمواقع الصغيرة والناشئة</p>
+                                </div>
+                                <div class="p-6">
+                                    <ul class="space-y-3 mb-6">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تحليل موقع واحد شامل</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>بحث عن 10 كلمات مفتاحية</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تحسين 5 صفحات رئيسية</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تقرير أداء شهري</span>
+                                        </li>
+                                        <li class="flex items-start text-gray-400">
+                                            <i class="fas fa-times mt-1 ml-2"></i>
+                                            <span>بناء روابط خلفية</span>
+                                        </li>
+                                        <li class="flex items-start text-gray-400">
+                                            <i class="fas fa-times mt-1 ml-2"></i>
+                                            <span>تحسين محلي للبحث</span>
+                                        </li>
+                                    </ul>
+                                    <a href="tel:+966501234567"
+                                        class="block w-full bg-gray-200 text-gray-800 text-center py-2 px-4 rounded-lg hover:bg-gray-300 transition duration-300">
+                                        اختر هذه الباقة
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- الباقة المتوسطة -->
+                            <div class="bg-white border-2 border-primary rounded-lg shadow-lg overflow-hidden relative">
+                                <div
+                                    class="absolute top-0 right-0 bg-primary text-white py-1 px-3 rounded-bl-lg text-sm">
+                                    الأكثر طلباً</div>
+                                <div class="bg-primary text-white p-6 text-center">
+                                    <h3 class="text-xl font-bold">الباقة المتوسطة</h3>
+                                    <div class="text-3xl font-bold mt-2">2,500 <span class="text-lg">ريال/شهر</span>
+                                    </div>
+                                    <p class="text-primaryLight mt-2">مناسبة لمعظم الشركات والمتاجر</p>
+                                </div>
+                                <div class="p-6">
+                                    <ul class="space-y-3 mb-6">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تحليل موقع شامل مع منافسيه</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>بحث عن 25 كلمة مفتاحية</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تحسين 15 صفحة رئيسية</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تقرير أداء أسبوعي</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>بناء 10 روابط خلفية شهرياً</span>
+                                        </li>
+                                        <li class="flex items-start text-gray-400">
+                                            <i class="fas fa-times mt-1 ml-2"></i>
+                                            <span>تحسين محلي للبحث</span>
+                                        </li>
+                                    </ul>
+                                    <a href="tel:+966501234567"
+                                        class="block w-full bg-primary text-white text-center py-2 px-4 rounded-lg hover:bg-primaryDark transition duration-300">
+                                        اختر هذه الباقة
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- الباقة المتقدمة -->
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                                <div class="bg-primary text-white p-6 text-center">
+                                    <h3 class="text-xl font-bold">الباقة المتقدمة</h3>
+                                    <div class="text-3xl font-bold mt-2">4,000 <span class="text-lg">ريال/شهر</span>
+                                    </div>
+                                    <p class="text-primaryLight mt-2">مناسبة للشركات الكبيرة والمواقع التنافسية</p>
+                                </div>
+                                <div class="p-6">
+                                    <ul class="space-y-3 mb-6">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تحليل موقع شامل مع 5 منافسين</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>بحث عن 50 كلمة مفتاحية</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تحسين جميع صفحات الموقع</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تقرير أداء أسبوعي مفصل</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>بناء 20 رابط خلفي شهرياً</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-primary mt-1 ml-2"></i>
+                                            <span>تحسين محلي للبحث (Local SEO)</span>
+                                        </li>
+                                    </ul>
+                                    <a href="tel:+966501234567"
+                                        class="block w-full bg-gray-200 text-gray-800 text-center py-2 px-4 rounded-lg hover:bg-gray-300 transition duration-300">
+                                        اختر هذه الباقة
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- الأسئلة الشائعة -->
+                    <section id="faq" class="content-section mb-12">
+                        <h2 class="text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">الأسئلة الشائعة
+                            حول SEO</h2>
+
+                        <div class="space-y-4">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 class="text-lg font-medium text-gray-900">كم من الوقت يستغرق ظهور نتائج SEO؟
+                                    </h3>
+                                </div>
+                                <div class="accordion-content">
+                                    <p class="text-gray-700 py-4">
+                                        تظهر النتائج الأولية عادة خلال 3-4 أشهر، لكن النتائج الكاملة والمستدامة تحتاج من
+                                        6 إلى 12 شهراً. يعتمد الوقت على عدة عوامل مثل مستوى المنافسة في مجال عملك، جودة
+                                        الموقع الحالي، ومدى التزامك بتطبيق توصياتنا.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 class="text-lg font-medium text-gray-900">هل يمكنني إيقاف خدمات SEO بعد تحقيق
+                                        النتائج؟</h3>
+                                </div>
+                                <div class="accordion-content">
+                                    <p class="text-gray-700 py-4">
+                                        نعم، لكن ننصح بالاستمرار في خدمات الصيانة والتطوير للحفاظ على النتائج. محركات
+                                        البحث تتغير باستمرار، والمنافسين لا يتوقفون عن التحسين. بدون استمرار التحسين، قد
+                                        تفقد موقعك تدريجياً مركزه في نتائج البحث.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 class="text-lg font-medium text-gray-900">ما الفرق بين SEO والإعلانات المدفوعة
+                                        (PPC)؟</h3>
+                                </div>
+                                <div class="accordion-content">
+                                    <p class="text-gray-700 py-4">
+                                        SEO هو تحسين موقعك للظهور في النتائج المجانية لمحركات البحث، بينما PPC هو الدفع
+                                        مقابل الظهور في الإعلانات المميزة. SEO يحتاج وقتاً لكن نتائجه مستدامة وتكلفته
+                                        على المدى الطويل أقل، بينما PPC يعطي نتائج فورية لكنه يتوقف بمجرد التوقف عن
+                                        الدفع.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 class="text-lg font-medium text-gray-900">هل خدمات SEO مناسبة لجميع أنواع
+                                        المواقع؟</h3>
+                                </div>
+                                <div class="accordion-content">
+                                    <p class="text-gray-700 py-4">
+                                        نعم، خدمات SEO مفيدة لجميع أنواع المواقع سواء كانت مواقع تجارة إلكترونية،
+                                        مدونات، مواقع شركات، أو مواقع خدمات. المهم هو تحديد الأهداف المناسبة واختيار
+                                        الاستراتيجية الصحيحة التي تتناسب مع طبيعة موقعك وجمهورك المستهدف.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center space-x-reverse space-x-3 mb-6">
+                        <div
+                            class="text-white p-3 rounded-lg w-14 h-14 flex items-center justify-center shadow-md rounded-full border-white border-2 bg-white">
+                            <img src="../../assets/img/logo-egypt-advertising-1.webp" alt="" />
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">ايجبت للدعاية والإعلان</h3>
+                            <p class="text-gray-400 text-sm">حلول إبداعية لنجاحك</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">
+                        نحن شريكك الموثوق في رحلة النجاح، نقدم حلول إعلانية وتسويقية
+                        متميزة تحقق أهدافك وتبني علامتك التجارية.
+                    </p>
+                    <div class="flex space-x-reverse space-x-4">
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/people/%D8%A7%D9%8A%D8%AC%D8%A8%D8%AA-%D9%84%D9%84%D8%AF%D8%B9%D8%A7%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86/61580300744080/"
+                            target="_blank" rel="noopener noreferrer"
+                            class="bg-blue-600 hover:bg-blue-700 px-5 p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600"
+                            aria-label="تابعنا على فيسبوك">
+                            <i class="fab fa-facebook-f text-white text-lg"></i>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/egypt.advertising/" target="_blank" rel="noopener noreferrer"
+                            class="bg-pink-600 hover:bg-pink-700 p-3 px-4 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-pink-600"
+                            aria-label="تابعنا على إنستجرام">
+                            <i class="fab fa-instagram text-white text-lg"></i>
+                        </a>
+
+                        <!-- Twitter (X) -->
+                        <a href="https://x.com/egyptadvertisin" target="_blank" rel="noopener noreferrer"
+                            class="bg-blue-500 hover:bg-blue-600 px-4 p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            aria-label="تابعنا على تويتر">
+                            <i class="fab fa-twitter text-white text-lg"></i>
+                        </a>
+
+                        <!-- TikTok -->
+                        <a href="https://www.tiktok.com/@egypt.advertising?lang=ar" target="_blank"
+                            rel="noopener noreferrer"
+                            class="bg-gray-900 hover:bg-gray-800 p-3 px-5 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-gray-900"
+                            aria-label="تابعنا على تيك توك">
+                            <i class="fab fa-tiktok text-white text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">خدماتنا</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="tel:0501234567"
+                                class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                                    class="fas fa-chevron-left text-xs ml-2"></i>التصميم
+                                والبراندنج</a>
+                        </li>
+                        <li>
+                            <a href="tel:0501234567"
+                                class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                                    class="fas fa-chevron-left text-xs ml-2"></i>التسويق
+                                الرقمي</a>
+                        </li>
+                        <li>
+                            <a href="tel:0501234567"
+                                class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                                    class="fas fa-chevron-left text-xs ml-2"></i>إنتاج
+                                المحتوى</a>
+                        </li>
+                        <li>
+                            <a href="tel:0501234567"
+                                class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                                    class="fas fa-chevron-left text-xs ml-2"></i>الحملات
+                                الإعلانية</a>
+                        </li>
+                        <li>
+                            <a href="tel:0501234567"
+                                class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                                    class="fas fa-chevron-left text-xs ml-2"></i>التحليل
+                                والإحصائيات</a>
+                        </li>
+                        <li>
+                            <a href="tel:0501234567"
+                                class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                                    class="fas fa-chevron-left text-xs ml-2"></i> تصميم وبرمجة
+                                المواقع</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">روابط مفيدة</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="../../index.html#home"
+                                class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                                    class="fas fa-chevron-left text-xs ml-2"></i>الرئيسية</a>
+                        </li>
+                        <li>
+                            <a href="../../index.html#about"
+                                class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                                    class="fas fa-chevron-left text-xs ml-2"></i>من نحن</a>
+                        </li>
+
+                        <li>
+                            <a href="../../index.html#Our-business"
+                                class="text-gray-300 hover:text-white transition-colors flex items-center"><i
+                                    class="fas fa-chevron-left text-xs ml-2"></i>أعمالنا</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">تواصل معنا</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-reverse space-x-3">
+                            <i class="fas fa-map-marker-alt text-primary"></i>
+                            <span class="text-gray-300">جدة، المملكة العربية السعودية</span>
+                        </div>
+                        <div class="flex items-center space-x-reverse space-x-3">
+                            <i class="fas fa-phone text-primary"></i>
+                            <span class="text-gray-300" dir="ltr">+966 563374482</span>
+                        </div>
+                        <div class="flex items-center space-x-reverse space-x-3">
+                            <i class="fas fa-phone text-primary"></i>
+                            <span class="text-gray-300" dir="ltr">+966 565265233</span>
+                        </div>
+                        <div class="flex items-center space-x-reverse space-x-3">
+                            <i class="fas fa-envelope text-primary"></i>
+                            <span class="text-gray-300" dir="ltr">egyptforadvertising25@gmail.com</span>
+                        </div>
+                        <div class="flex items-center space-x-reverse space-x-3">
+                            <i class="fas fa-clock text-primary"></i>
+                            <span class="text-gray-300">الأحد - الخميس: 9:00 - 18:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row items-center text-center m-auto">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                        © 2025 شركة <a href="https://www.fashne.net/">Alfashne</a>. جميع
+                        الحقوق محفوظة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // تنشيط عناصر القائمة عند التمرير
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll(".content-section");
+            const navItems = document.querySelectorAll(".nav-item");
+
+            window.addEventListener("scroll", function () {
+                let current = "";
+
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+
+                    if (pageYOffset >= sectionTop - 200) {
+                        current = section.getAttribute("id");
+                    }
+                });
+
+                navItems.forEach((item) => {
+                    item.classList.remove("active");
+                    if (item.getAttribute("href").substring(1) === current) {
+                        item.classList.add("active");
+                    }
+                });
+            });
+
+
+            // تفعيل الأكورديون
+            document.querySelectorAll('.accordion-header').forEach(header => {
+                header.addEventListener('click', () => {
+                    header.classList.toggle('active');
+                    const content = header.nextElementSibling;
+                    content.classList.toggle('active');
+                });
+            });
+
+            // التنقل السلس
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute("href");
+                    if (targetId === "#") return;
+
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: "smooth",
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>
